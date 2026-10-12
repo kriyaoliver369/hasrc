@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herman Adrian Spruit Research Centre | HASRC</title>
+  <meta name="description" content="A Learned Society and Research Centre for Sacramental Science, Antiochian Mysticism, and Metaphysical Theology.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Cinzel', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              black: '#0a0b0e',
+              surface: '#12141c',
+              card: '#181b26',
+              gold: '#d4af37',
+              goldLight: '#f3e5ab',
+              crimson: '#8b1e2a',
+              crimsonGlow: '#b91c1c'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Prevent text highlight on protected promotional areas */
+    .unselectable {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #fce8a6 0%, #d4af37 50%, #aa7c11 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .rose-gradient-border {
+      border-image: linear-gradient(to bottom right, #8b1e2a, #d4af37) 1;
+    }
+  </style>
+</head>
+<body class="bg-brand-black text-slate-300 font-sans antialiased selection:bg-brand-gold selection:text-brand-black">
+
+  <!-- ================= TOP NOTIFICATION / MOTTO BAR ================= -->
+  <div class="bg-gradient-to-r from-brand-surface via-brand-crimson/30 to-brand-surface border-b border-brand-gold/20 py-2 px-4 text-center">
+    <p class="text-xs uppercase tracking-[0.25em] font-serif text-brand-goldLight/90">
+      Scientia et Sapientia Per Spiritum &bull; Knowledge and Wisdom Through Spirit
+    </p>
+  </div>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-brand-black/85 border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full border border-brand-gold/40 flex items-center justify-center bg-brand-surface group-hover:border-brand-gold transition">
+          <i data-lucide="shield" class="w-5 h-5 text-brand-gold"></i>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif font-bold tracking-wider text-white text-base leading-tight">HASRC</span>
+          <span class="text-[10px] uppercase tracking-widest text-brand-gold/80 font-serif">Research Centre</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+        <a href="#about" class="hover:text-brand-gold transition">Charism & Lineage</a>
+        <a href="#fellowship" class="hover:text-brand-gold transition">Fellowship Society</a>
+        <a href="#licentiates" class="hover:text-brand-gold transition">Licentiate Pathways</a>
+        <a href="#flagship" class="hover:text-brand-gold transition">Module I Course</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a href="#flagship" class="hidden sm:inline-flex px-5 py-2.5 rounded text-xs font-semibold uppercase tracking-widest bg-gradient-to-r from-brand-gold to-yellow-600 text-brand-black hover:brightness-110 transition shadow-lg shadow-brand-gold/10">
+          Enroll in Module I
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="relative pt-24 pb-20 md:pt-36 md:pb-32 overflow-hidden border-b border-white/5">
+    <!-- Ambient backlights -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-crimson/20 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute bottom-10 right-10 w-80 h-80 bg-brand-gold/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-brand-gold/30 bg-brand-surface/70 text-brand-gold text-xs font-serif uppercase tracking-widest mb-8">
+        <i data-lucide="award" class="w-3.5 h-3.5"></i>
+        Learned Society & Theological Research Centre
+      </div>
+
+      <h1 class="font-serif text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white mb-6 leading-tight">
+        Preserving the Living Charism of <br class="hidden sm:inline">
+        <span class="gold-gradient-text">Sacramental Mysticism</span>
+      </h1>
+
+      <p class="max-w-3xl mx-auto text-base sm:text-lg text-slate-400 font-light leading-relaxed mb-10">
+        Dedicated to the systematic exploration of inner spirituality, energetic sacramental sciences, and esoteric Christian traditions preserved through the lineages of Patriarch Herman Adrian Spruit and Archbishop Frank Bugge.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#flagship" class="w-full sm:w-auto px-8 py-3.5 rounded bg-brand-gold text-brand-black font-semibold text-sm tracking-wider uppercase hover:bg-brand-goldLight transition shadow-xl shadow-brand-gold/10 flex items-center justify-center gap-2">
+          <span>Explore Flagship Module</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+        <a href="#licentiates" class="w-full sm:w-auto px-8 py-3.5 rounded border border-white/10 hover:border-brand-gold/50 text-slate-300 font-medium text-sm tracking-wider uppercase transition flex items-center justify-center gap-2">
+          <span>Licentiate Framework</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DIRECTOR'S PROLOGUE ================= -->
+  <section class="py-16 bg-brand-surface/40 border-b border-white/5">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="relative bg-brand-card/60 border border-brand-gold/20 p-8 md:p-12 rounded-lg">
+        <i data-lucide="quote" class="w-10 h-10 text-brand-gold/20 absolute top-6 right-6"></i>
+        <p class="font-serif italic text-base sm:text-lg text-slate-300 leading-relaxed mb-6">
+          "True spiritual inquiry transcends mere dogma. When ancient sacramental practice unites with conscious inner development, the mysteries become an operative science of transformation. We offer this sanctuary of study for those called to serve as beacons in both inner and outer worlds."
+        </p>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full border border-brand-gold/40 flex items-center justify-center bg-brand-surface text-brand-gold">
+            <i data-lucide="cross" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-white tracking-wide text-sm">The Rt. Rev. Mar Elisha Thoma</h4>
+            <p class="text-xs text-brand-gold/80 font-serif">Director of Studies & Senior Fellow, HASRC</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT & FOUNDATIONAL CHARISM ================= -->
+  <section id="about" class="py-24 border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="font-serif text-2xl sm:text-4xl font-bold text-white mb-4">A Sacred Synthesis</h2>
+        <div class="w-12 h-0.5 bg-brand-gold mx-auto mb-4"></div>
+        <p class="text-slate-400 text-sm sm:text-base">Bridging ancient apostolic lines with transformative metaphysical science.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-brand-card/40 border border-white/5 p-8 rounded-lg hover:border-brand-gold/30 transition">
+          <div class="w-12 h-12 rounded bg-brand-crimson/20 border border-brand-crimson/40 flex items-center justify-center text-rose-400 mb-6">
+            <i data-lucide="flame" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif font-bold text-lg text-white mb-3">Patriarch Herman A. Spruit</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            First Patriarch of the Catholic Apostolic Church of Antioch. He pioneered an inclusive sacramental theology rooted in the foundational belief that "only mysticism sustains the vitality and reality of faith."
+          </p>
+        </div>
+
+        <div class="bg-brand-card/40 border border-white/5 p-8 rounded-lg hover:border-brand-gold/30 transition">
+          <div class="w-12 h-12 rounded bg-brand-gold/10 border border-brand-gold/30 flex items-center justify-center text-brand-gold mb-6">
+            <i data-lucide="compass" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif font-bold text-lg text-white mb-3">Archbishop Frank Bugge</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Australian successor and guardian of esoteric Antiochian lineages. He expanded the charism through practical pastoral application, spiritual numerology, and deep metaphysical contemplation.
+          </p>
+        </div>
+
+        <div class="bg-brand-card/40 border border-white/5 p-8 rounded-lg hover:border-brand-gold/30 transition">
+          <div class="w-12 h-12 rounded bg-brand-crimson/20 border border-brand-crimson/40 flex items-center justify-center text-rose-400 mb-6">
+            <i data-lucide="layers" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif font-bold text-lg text-white mb-3">Spiritual Engineering</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            We reject passive dogma in favor of dynamic interior reality: exploring the metaphysical mechanics of the altar, energetic liturgy, subconscious transformation, and universal love.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= THE 4 LICENTIATE PATHWAYS (INTERACTIVE TABS) ================= -->
+  <section id="licentiates" class="py-24 bg-brand-surface/30 border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-gold text-xs font-serif uppercase tracking-widest block mb-2">Academic & Ministerial Credentials</span>
+        <h2 class="font-serif text-2xl sm:text-4xl font-bold text-white mb-4">The Licentiate Diplomas</h2>
+        <div class="w-12 h-0.5 bg-brand-gold mx-auto mb-4"></div>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Specialist postgraduate-equivalent religious diplomas conferred through modular, stackable credits.
+        </p>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="flex flex-wrap justify-center gap-2 mb-12">
+        <button onclick="switchTab('lsmin')" id="tab-btn-lsmin" class="px-5 py-2.5 rounded text-xs font-serif font-bold tracking-wider uppercase transition border border-brand-gold bg-brand-gold text-brand-black">
+          L.S.Min (Sacramental)
+        </button>
+        <button onclick="switchTab('lcsp')" id="tab-btn-lcsp" class="px-5 py-2.5 rounded text-xs font-serif font-bold tracking-wider uppercase transition border border-white/10 hover:border-brand-gold/40 text-slate-300">
+          L.C.Sp (Contemporary)
+        </button>
+        <button onclick="switchTab('lamsc')" id="tab-btn-lamsc" class="px-5 py-2.5 rounded text-xs font-serif font-bold tracking-wider uppercase transition border border-white/10 hover:border-brand-gold/40 text-slate-300">
+          L.AMsc (Metaphysical)
+        </button>
+        <button onclick="switchTab('lmphyth')" id="tab-btn-lmphyth" class="px-5 py-2.5 rounded text-xs font-serif font-bold tracking-wider uppercase transition border border-white/10 hover:border-brand-gold/40 text-slate-300">
+          L.Mphy.Th (Theology)
+        </button>
+      </div>
+
+      <!-- Tab Content Panels -->
+      <div class="max-w-4xl mx-auto bg-brand-card/60 border border-brand-gold/20 rounded-xl p-8 md:p-12 relative">
+        
+        <!-- Tab 1: L.S.Min -->
+        <div id="tab-content-lsmin" class="tab-panel space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-6">
+            <div>
+              <span class="text-xs font-serif text-brand-gold uppercase tracking-widest">Post-Nominal: L.S.Min</span>
+              <h3 class="font-serif text-2xl font-bold text-white">Licentiate of Sacramental Ministry</h3>
+            </div>
+            <span class="px-3 py-1 rounded bg-brand-crimson/20 border border-brand-crimson/40 text-rose-300 text-xs font-semibold self-start sm:self-auto">
+              Ordination & Clergy Track
+            </span>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            A practice-focused program preparing candidates for sacramental ministry within the Independent Sacramental Movement (ISM) and interfaith communities. Equips ministers with practical competence in ancient and liberal sacramental rites, altar presence, pastoral counseling, and esoteric liturgy.
+          </p>
+          <div class="grid sm:grid-cols-2 gap-4 pt-4 border-t border-white/5 text-xs text-slate-400">
+            <div><strong>Prerequisites:</strong> Foundational Certificate or Bachelor's equivalence</div>
+            <div><strong>Requirements:</strong> 72 Credits + Altar Practicum & Homiletics</div>
+          </div>
+        </div>
+
+        <!-- Tab 2: L.C.Sp -->
+        <div id="tab-content-lcsp" class="tab-panel hidden space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-6">
+            <div>
+              <span class="text-xs font-serif text-brand-gold uppercase tracking-widest">Post-Nominal: L.C.Sp</span>
+              <h3 class="font-serif text-2xl font-bold text-white">Licentiate in Contemporary Spirituality</h3>
+            </div>
+            <span class="px-3 py-1 rounded bg-amber-500/10 border border-amber-500/30 text-brand-gold text-xs font-semibold self-start sm:self-auto">
+              Seekers & Spiritual Directors
+            </span>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Structured for non-ordinands, modern contemplatives, authors, and holistic life mentors. Explores mystical Christianity, conscious living, perennial wisdom, and contemplative mindfulness without dogma, empowering learners to articulate their personal spiritual voice in everyday life.
+          </p>
+          <div class="grid sm:grid-cols-2 gap-4 pt-4 border-t border-white/5 text-xs text-slate-400">
+            <div><strong>Prerequisites:</strong> Open enrollment for mature adult learners</div>
+            <div><strong>Requirements:</strong> Modular coursework + Capstone Synthesis Project</div>
+          </div>
+        </div>
+
+        <!-- Tab 3: L.AMsc -->
+        <div id="tab-content-lamsc" class="tab-panel hidden space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-6">
+            <div>
+              <span class="text-xs font-serif text-brand-gold uppercase tracking-widest">Post-Nominal: L.AMsc</span>
+              <h3 class="font-serif text-2xl font-bold text-white">Licentiate of Applied Metaphysical Science</h3>
+            </div>
+            <span class="px-3 py-1 rounded bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-semibold self-start sm:self-auto">
+              Energy Healers & Coaches
+            </span>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Tailored for practitioners and mentors focusing on the practical mechanics of consciousness, subconscious mind realignment, spiritual mind therapeutics, and energetic healing traditions integrated with the esoteric Christos principle.
+          </p>
+          <div class="grid sm:grid-cols-2 gap-4 pt-4 border-t border-white/5 text-xs text-slate-400">
+            <div><strong>Prerequisites:</strong> Demonstrated engagement in healing/coaching arts</div>
+            <div><strong>Requirements:</strong> Applied Case Studies + Metaphysical Dissertation</div>
+          </div>
+        </div>
+
+        <!-- Tab 4: L.Mphy.Th -->
+        <div id="tab-content-lmphyth" class="tab-panel hidden space-y-6">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/10 pb-6">
+            <div>
+              <span class="text-xs font-serif text-brand-gold uppercase tracking-widest">Post-Nominal: L.Mphy.Th</span>
+              <h3 class="font-serif text-2xl font-bold text-white">Licentiate of Metaphysical Theology</h3>
+            </div>
+            <span class="px-3 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-semibold self-start sm:self-auto">
+              Scholarly & Theological Focus
+            </span>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Designed for researchers, theologians, and spiritual writers seeking profound contextual mastery of the Independent Sacramental Movement, apostolic successions, early Christian gnosis, and comparative mystical theologies.
+          </p>
+          <div class="grid sm:grid-cols-2 gap-4 pt-4 border-t border-white/5 text-xs text-slate-400">
+            <div><strong>Prerequisites:</strong> Prior theological or liberal arts background</div>
+            <div><strong>Requirements:</strong> Rigorous Academic Papers + Final Research Thesis</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= THE FELLOWSHIP FRAMEWORK ================= -->
+  <section id="fellowship" class="py-24 border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-gold text-xs font-serif uppercase tracking-widest block mb-2">Learned Society</span>
+        <h2 class="font-serif text-2xl sm:text-4xl font-bold text-white mb-4">HASRC Fellowship Framework</h2>
+        <div class="w-12 h-0.5 bg-brand-gold mx-auto mb-4"></div>
+        <p class="text-slate-400 text-sm sm:text-base">Three honorary ranks recognizing progressive scholarship, contemplative practice, and service.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Rank 3 -->
+        <div class="bg-brand-card/40 border border-white/5 p-8 rounded-lg relative">
+          <div class="text-xs font-serif text-slate-400 tracking-widest uppercase mb-1">Rank III &bull; Foundational</div>
+          <h3 class="font-serif text-xl font-bold text-white mb-2">Member Scholar</h3>
+          <p class="text-brand-gold text-xs font-mono mb-4">Post-nominal: M.Sch.HASRC</p>
+          <p class="text-slate-400 text-xs leading-relaxed mb-6">
+            Open to all serious seekers and researchers aligning with the Centre's values. Grants access to digital archives, reading monographs, and scholarly communiqués.
+          </p>
+        </div>
+
+        <!-- Rank 2 -->
+        <div class="bg-brand-card/40 border border-brand-gold/30 p-8 rounded-lg relative">
+          <div class="text-xs font-serif text-brand-gold tracking-widest uppercase mb-1">Rank II &bull; Intermediate</div>
+          <h3 class="font-serif text-xl font-bold text-white mb-2">Associate Fellow</h3>
+          <p class="text-brand-gold text-xs font-mono mb-4">Post-nominal: Assc.F.HASRC</p>
+          <p class="text-slate-400 text-xs leading-relaxed mb-6">
+            Conferred upon active contributors completing foundational coursework or conducting original research in Antiochian sacramental theology.
+          </p>
+        </div>
+
+        <!-- Rank 1 -->
+        <div class="bg-brand-card/40 border border-white/5 p-8 rounded-lg relative">
+          <div class="text-xs font-serif text-rose-400 tracking-widest uppercase mb-1">Rank I &bull; Senior Leadership</div>
+          <h3 class="font-serif text-xl font-bold text-white mb-2">Fellow</h3>
+          <p class="text-brand-gold text-xs font-mono mb-4">Post-nominal: Sen.F / Hon.F.HASRC</p>
+          <p class="text-slate-400 text-xs leading-relaxed mb-6">
+            Conferred by appointment upon established mentors, consecrated episcopoi, or scholars who have produced substantial treatises within the lineage.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FLAGSHIP MODULE 1 ENROLLMENT ================= -->
+  <section id="flagship" class="py-24 bg-gradient-to-b from-brand-surface/40 to-brand-black border-b border-white/5">
+    <div class="max-w-5xl mx-auto px-6">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-brand-gold text-xs font-serif uppercase tracking-widest block mb-2">Enrollment Open</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">Module I: The Science of the Sacraments</h2>
+        <div class="w-12 h-0.5 bg-brand-gold mx-auto mb-4"></div>
+        <p class="text-slate-400 text-sm">
+          A standalone continuing education course & foundational requirement across all four Licentiate tracks.
+        </p>
+      </div>
+
+      <div class="bg-brand-card border border-brand-gold/30 rounded-xl overflow-hidden shadow-2xl">
+        <div class="p-8 sm:p-10 border-b border-white/5 grid md:grid-cols-3 gap-8 items-center">
+          <div class="md:col-span-2 space-y-4">
+            <span class="px-3 py-1 rounded bg-brand-gold/10 text-brand-gold text-xs font-serif uppercase tracking-widest border border-brand-gold/20">
+              Transferable &bull; 3 Credit Hours
+            </span>
+            <h3 class="font-serif text-2xl font-bold text-white">Inner Spiritual Mechanics of the Liturgy</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Explore the metaphysical principles of ritual efficacy, Leadbeater’s and Spruit’s clairvoyant investigations into the Eucharist, and how sacred geometry, sound, and intention interact on the subtle planes.
+            </p>
+            <div class="flex flex-wrap gap-4 text-xs text-slate-400 pt-2">
+              <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-gold"></i> Fully Self-Paced</span>
+              <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-gold"></i> Certificate Conferred</span>
+              <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-brand-gold"></i> Asynchronous Review</span>
+            </div>
+          </div>
+
+          <div class="bg-brand-surface/80 border border-white/10 rounded-lg p-6 text-center space-y-4">
+            <div class="text-xs text-slate-400 uppercase tracking-widest font-serif">Tuition Offering</div>
+            <div class="font-serif text-4xl font-bold text-white">$45 <span class="text-xs text-slate-400 font-sans font-normal">USD</span></div>
+            <p class="text-[11px] text-slate-400 leading-tight">One-time payment &bull; Lifetime syllabus & monograph access</p>
+            
+            <!-- Replace URL with your Lemon Squeezy or Gumroad Checkout Link -->
+            <a href="https://gumroad.com" target="_blank" rel="noopener noreferrer" class="block w-full py-3 rounded bg-brand-gold text-brand-black font-serif font-bold text-xs uppercase tracking-widest hover:bg-brand-goldLight transition shadow-lg shadow-brand-gold/10">
+              Enroll Instantly
+            </a>
+            <p class="text-[10px] text-slate-400">Instant access to course vaults via email</p>
+          </div>
+        </div>
+
+        <!-- Interactive Syllabus Accordion -->
+        <div class="p-8 sm:p-10 bg-brand-black/40">
+          <h4 class="font-serif text-sm font-bold text-white uppercase tracking-wider mb-6">Course Syllabus & Curriculum Units</h4>
+          
+          <div class="space-y-3 text-sm">
+            <div class="border border-white/5 rounded bg-brand-card/40 p-4">
+              <span class="text-brand-gold font-mono text-xs block mb-1">Unit 1</span>
+              <h5 class="text-white font-medium mb-1">The Metaphysical Framework of Sacred Mystery</h5>
+              <p class="text-slate-400 text-xs">The transition from outer ritualism to inner energetic science; Herman Adrian Spruit’s meta-Catholic vision.</p>
+            </div>
+
+            <div class="border border-white/5 rounded bg-brand-card/40 p-4">
+              <span class="text-brand-gold font-mono text-xs block mb-1">Unit 2</span>
+              <h5 class="text-white font-medium mb-1">Anatomy of the Eucharistic Temple</h5>
+              <p class="text-slate-400 text-xs">Clairvoyant dynamics of the eucharistic thought-form; invocations, vestments, and elemental consecration.</p>
+            </div>
+
+            <div class="border border-white/5 rounded bg-brand-card/40 p-4">
+              <span class="text-brand-gold font-mono text-xs block mb-1">Unit 3</span>
+              <h5 class="text-white font-medium mb-1">The Esoteric Creeds & Hermetic Symbolism</h5>
+              <p class="text-slate-400 text-xs">Translating traditional dogma into cosmic truths: solar Christology, the Monad, and mystical regeneration.</p>
+            </div>
+
+            <div class="border border-white/5 rounded bg-brand-card/40 p-4">
+              <span class="text-brand-gold font-mono text-xs block mb-1">Unit 4 & Assessment</span>
+              <h5 class="text-white font-medium mb-1">Contemplative Integration & Capstone Paper</h5>
+              <p class="text-slate-400 text-xs">Submission of a 1,500-word pastoral-mystical reflection reviewed directly by the Director of Studies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ACCREDITATION & RELIGIOUS STATEMENT ================= -->
+  <section class="py-16 border-b border-white/5 bg-brand-surface/20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <i data-lucide="shield-check" class="w-8 h-8 text-brand-gold/60 mx-auto mb-4"></i>
+      <h3 class="font-serif text-lg font-bold text-white mb-2">Statement on Ecclesiastical Legitimacy & Recognition</h3>
+      <p class="text-xs text-slate-400 leading-relaxed">
+        The Herman Adrian Spruit Research Centre (HASRC) operates as an independent learned society and religious educational centre grounded in the spiritual heritage of the Australian Church of Antioch (ACOA) and the Independent Sacramental Movement. Awards, Licentiates, and Fellowship ranks are purely ecclesiastical and spiritual in nature, designed for ministerial preparation and personal enrichment. They are not accredited by secular state higher education boards (e.g. MQA, CHEA, TEQSA) and are not intended for secular employment or civil transfer credits.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="py-12 bg-brand-black text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <i data-lucide="shield" class="w-4 h-4 text-brand-gold"></i>
+        <span class="font-serif text-slate-300 font-bold">Herman Adrian Spruit Research Centre</span>
+      </div>
+      <p>&copy; 2026 HASRC. All Rights Reserved. Dedicated to Inner Sacred Studies.</p>
+      <div class="flex gap-4">
+        <a href="mailto:office@hasrc.org" class="hover:text-brand-gold transition">Office of the Registrar</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= INTERACTIVE SCRIPTS & PROTECTION ================= -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Tab Switcher for Licentiate Pathways
+    function switchTab(tabId) {
+      const panels = document.querySelectorAll('.tab-panel');
+      panels.forEach(p => p.classList.add('hidden'));
+
+      const activePanel = document.getElementById('tab-content-' + tabId);
+      if (activePanel) {
+        activePanel.classList.remove('hidden');
+      }
+
+      // Reset button styles
+      const buttons = [
+        { id: 'tab-btn-lsmin', target: 'lsmin' },
+        { id: 'tab-btn-lcsp', target: 'lcsp' },
+        { id: 'tab-btn-lamsc', target: 'lamsc' },
+        { id: 'tab-btn-lmphyth', target: 'lmphyth' }
+      ];
+
+      buttons.forEach(b => {
+        const btn = document.getElementById(b.id);
+        if (b.target === tabId) {
+          btn.className = "px-5 py-2.5 rounded text-xs font-serif font-bold tracking-wider uppercase transition border border-brand-gold bg-brand-gold text-brand-black";
+        } else {
+          btn.className = "px-5 py-2.5 rounded text-xs font-serif font-bold tracking-wider uppercase transition border border-white/10 hover:border-brand-gold/40 text-slate-300";
+        }
+      });
+    }
+
+    // Protection Script: Disable right-click & common inspection shortcuts
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      // Block F12
+      if (e.key === 'F12') {
+        e.preventDefault();
+      }
+      // Block Ctrl+Shift+I / Cmd+Option+I
+      if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'I' || e.key === 'i')) {
+        e.preventDefault();
+      }
+      // Block Ctrl+U
+      if ((e.ctrlKey || e.metaKey) && (e.key === 'u' || e.key === 'U')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
