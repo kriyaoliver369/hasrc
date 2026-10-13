@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Licentiate in Sacramental Ministry (L.S.Min) | HASRC</title>
+  <meta name="description" content="Comprehensive 72-credit theological, mystical, and practical distance learning program preparing candidates for holy orders and inclusive sacramental ministry.">
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS & Lucide Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            linen: { 50: '#FCFAF7', 100: '#F7F3EC', 200: '#EDE5D8', 300: '#DFD3C0' },
+            gold: { 300: '#F4E5B8', 400: '#E6CA7D', 500: '#C5A059', 600: '#A47E3B', 700: '#7B5D28' },
+            terracotta: { 100: '#F9ECE8', 500: '#B85D43', 600: '#96442E' },
+            obsidian: { 800: '#22201E', 900: '#141312' }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { background-color: #FCFAF7; color: #22201E; }
+    .gold-foil { background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 35%, #B38728 70%, #FBF5B7 100%); }
+    .gold-border { border-color: rgba(197, 160, 89, 0.4); }
+    .card-shadow { box-shadow: 0 15px 35px -5px rgba(20, 19, 18, 0.05), 0 0 1px 1px rgba(197, 160, 89, 0.2); }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-gold-300 selection:text-obsidian-900">
+
+  <!-- TOP BANNER -->
+  <div class="gold-foil py-2 px-4 text-center">
+    <p class="text-[11px] sm:text-xs font-serif font-semibold tracking-[0.25em] uppercase text-obsidian-900">
+      Herman Adrian Spruit Research Centre &bull; Advanced Ministerial Studies[cite: 2, 11]
+    </p>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-linen-50/95 border-b gold-border">
+    <div class="max-w-7xl mx-auto px-6 h-22 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <div class="w-11 h-11 rounded-full border border-gold-500/60 bg-white flex items-center justify-center shadow-xs">
+          <i data-lucide="cross" class="w-5 h-5 text-gold-600"></i>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif font-bold text-lg text-obsidian-900 tracking-wider leading-none">HASRC</span>
+          <span class="text-[10px] uppercase tracking-widest text-gold-700 font-sans font-semibold mt-1">Sacramental Studies[cite: 2, 11]</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-xs font-semibold uppercase tracking-wider text-obsidian-800">
+        <a href="index.html" class="hover:text-gold-600 transition">Main Portal</a>
+        <a href="#overview" class="hover:text-gold-600 transition">Overview</a>
+        <a href="#outcomes" class="hover:text-gold-600 transition">Outcomes</a>
+        <a href="#curriculum" class="hover:text-gold-600 transition">Curriculum (72 Cr)[cite: 18, 19]</a>
+        <a href="#admission" class="hover:text-gold-600 transition">Admission</a>
+        <a href="fellowship.html" class="hover:text-gold-600 transition">Fellowship</a>
+        <a href="jois.html" class="hover:text-gold-600 transition">JOIS Review</a>
+      </nav>
+
+      <a href="#inquire" class="px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 hover:bg-gold-600 text-linen-50 transition shadow-sm">
+        Inquire for Admission[cite: 10, 20]
+      </a>
+    </div>
+  </header>
+
+  <!-- BREADCRUMBS -->
+  <nav class="bg-linen-100/70 border-b gold-border py-3 px-6 text-xs text-obsidian-800/70">
+    <div class="max-w-7xl mx-auto flex items-center gap-2 flex-wrap">
+      <a href="index.html" class="hover:text-gold-700">Home</a>
+      <span>/</span>
+      <span>Licentiate Programs[cite: 2]</span>
+      <span>/</span>
+      <span class="text-obsidian-900 font-medium">Licentiate in Sacramental Ministry (L.S.Min)[cite: 2, 18]</span>
+    </div>
+  </nav>
+
+  <!-- HERO HEADER & PROGRAM CARD (UNIATHENA STYLE) -->
+  <section class="py-12 lg:py-16 bg-linen-100/40 border-b gold-border">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-10 items-center">
+      
+      <!-- Left Column: Title & Key Badges -->
+      <div class="lg:col-span-8 space-y-6">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="px-3 py-1 rounded-full bg-gold-300/40 border gold-border text-obsidian-900 text-xs font-serif font-semibold">
+            Postgraduate Specialist Religious Award[cite: 2]
+          </span>
+          <span class="px-3 py-1 rounded-full bg-linen-200 border gold-border text-obsidian-900 text-xs font-sans">
+            Holy Orders & Clergy Formation[cite: 18, 20]
+          </span>
+          <span class="px-3 py-1 rounded-full bg-white border gold-border text-gold-700 text-xs font-mono font-medium">
+            Post-nominal: L.S.Min[cite: 2, 20]
+          </span>
+        </div>
+
+        <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl text-obsidian-900 font-normal leading-tight">
+          Licentiate in <br class="hidden sm:inline">
+          <span class="italic gold-foil-text font-serif">Sacramental Ministry</span>[cite: 18]
+        </h1>
+
+        <p class="text-sm sm:text-base text-obsidian-800/85 font-light leading-relaxed max-w-2xl">
+          A comprehensive theological, mystical, and practical ministerial formation program designed for candidates pursuing priestly ordination within the Independent Sacramental Movement (ISM) and interfaith sacramental ministry[cite: 2, 18]. Integrates altar mechanics, esoteric Christian theology, pastoral counseling, and energy healing into a structured 72-credit distance learning pathway[cite: 18, 19, 20].
+        </p>
+
+        <!-- Quick Facts Matrix (From Reference Layout) -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t gold-border">
+          <div class="p-3.5 bg-white rounded-2xl border gold-border">
+            <span class="text-[10px] font-serif uppercase tracking-wider text-gold-700 block">Total Credits[cite: 19, 20]</span>
+            <span class="font-serif text-xl font-bold text-obsidian-900">72 Credits[cite: 18, 19]</span>
+            <span class="text-[10px] text-obsidian-800/60 block mt-0.5">2,880 Learning Hrs[cite: 20]</span>
+          </div>
+          <div class="p-3.5 bg-white rounded-2xl border gold-border">
+            <span class="text-[10px] font-serif uppercase tracking-wider text-gold-700 block">Duration[cite: 20]</span>
+            <span class="font-serif text-xl font-bold text-obsidian-900">Up to 3 Years[cite: 20]</span>
+            <span class="text-[10px] text-obsidian-800/60 block mt-0.5">Self-Paced Mode[cite: 2, 20]</span>
+          </div>
+          <div class="p-3.5 bg-white rounded-2xl border gold-border">
+            <span class="text-[10px] font-serif uppercase tracking-wider text-gold-700 block">Delivery[cite: 20]</span>
+            <span class="font-serif text-xl font-bold text-obsidian-900">Online & Rites[cite: 20, 26]</span>
+            <span class="text-[10px] text-obsidian-800/60 block mt-0.5">Distance + Practicum[cite: 18, 20]</span>
+          </div>
+          <div class="p-3.5 bg-white rounded-2xl border gold-border">
+            <span class="text-[10px] font-serif uppercase tracking-wider text-gold-700 block">Prior Learning[cite: 20]</span>
+            <span class="font-serif text-xl font-bold text-obsidian-900">Up to 30% PLA[cite: 20]</span>
+            <span class="text-[10px] text-obsidian-800/60 block mt-0.5">Credit Transfer[cite: 20]</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Enrollment Card -->
+      <div class="lg:col-span-4 bg-white rounded-3xl p-7 border gold-border card-shadow space-y-5">
+        <div class="text-center pb-4 border-b gold-border">
+          <span class="text-[10px] font-serif uppercase tracking-widest text-gold-700 font-bold block mb-1">
+            Program Overview[cite: 10, 18]
+          </span>
+          <h3 class="font-serif text-2xl font-normal text-obsidian-900">Ministerial Licensure[cite: 14, 18]</h3>
+          <p class="text-xs text-obsidian-800/70 mt-1">Conferred upon completion of curriculum and practicum[cite: 18, 20]</p>
+        </div>
+
+        <div class="space-y-3 text-xs text-obsidian-800/80">
+          <div class="flex items-center justify-between">
+            <span class="text-obsidian-800/60">Program Level:</span>
+            <span class="font-medium text-obsidian-900">Postgraduate / Specialist[cite: 2]</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-obsidian-800/60">Core Modules:</span>
+            <span class="font-medium text-obsidian-900">16 Courses (57 Credits)[cite: 19]</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-obsidian-800/60">Electives:</span>
+            <span class="font-medium text-obsidian-900">2 Courses (6 Credits)[cite: 19, 25]</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-obsidian-800/60">Practicum Series:</span>
+            <span class="font-medium text-obsidian-900">3 Courses (9 Credits)[cite: 19, 26]</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-obsidian-800/60">Academic Dress:</span>
+            <span class="font-medium text-obsidian-900">Seminarian / Holy Orders[cite: 20]</span>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <a href="#inquire" class="block w-full py-3.5 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-center text-xs font-serif font-bold uppercase tracking-widest transition shadow-sm">
+            Inquire for Admission[cite: 10, 20]
+          </a>
+        </div>
+
+        <p class="text-[11px] text-center text-obsidian-800/60 font-light leading-normal">
+          Sponsored scholarship options available for candidates under Episcopal direction[cite: 20].
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STICKY SUB-NAVIGATION (MATCHING UNIATHENA) -->
+  <div class="sticky top-22 z-40 bg-linen-50/95 border-b gold-border backdrop-blur-md hidden md:block">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-14 text-xs font-semibold uppercase tracking-wider text-obsidian-800">
+      <div class="flex items-center gap-8">
+        <a href="#overview" class="hover:text-gold-600 transition">Overview</a>
+        <a href="#outcomes" class="hover:text-gold-600 transition">Learning Outcomes[cite: 18]</a>
+        <a href="#curriculum" class="hover:text-gold-600 transition">Curriculum (72 Credits)[cite: 18, 19]</a>
+        <a href="#admission" class="hover:text-gold-600 transition">Admission & Regulations[cite: 20]</a>
+        <a href="#governance" class="hover:text-gold-600 transition">Governance[cite: 27]</a>
+      </div>
+      <a href="#inquire" class="text-gold-700 hover:text-obsidian-900 transition font-bold">Apply Now &rarr;</a>
+    </div>
+  </div>
+
+  <!-- OVERVIEW & CHARISM -->
+  <section id="overview" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6 space-y-8">
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">Foundational Purpose[cite: 13, 14]</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-obsidian-900 font-normal">Nurturing Inner Spirituality in Ministry[cite: 13, 14]</h2>
+        <div class="w-16 h-0.5 gold-foil mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 text-xs sm:text-sm text-obsidian-800/85 font-light leading-relaxed pt-4">
+        <div class="space-y-4">
+          <p>
+            The Licentiate in Sacramental Ministry (L.S.Min) program offers comprehensive theological, pastoral, and practical training for individuals pursuing priestly ordination within the Independent Sacramental Movement and interfaith ministries[cite: 2, 18]. In his seminal writings, Patriarch Herman Adrian Spruit affirmed that <em>"Only mysticism sustains the vitality and reality of faith,"</em> establishing that ministerial education must transcend rigid scholasticism to awaken deep spiritual realization[cite: 13].
+          </p>
+          <p>
+            The program integrates a thorough understanding of historic sacramental theology with operative skills essential for pastoral care, inclusive altar facilitation, and contemplative guidance[cite: 18]. Students are equipped to administer the sacred mysteries without discrimination or prejudice, honoring the Antiochian heritage of sacramental justice[cite: 18].
+          </p>
+        </div>
+        <div class="space-y-4">
+          <p>
+            While ideally suited for ordinands preparing for holy orders, the program warmly welcomes non-ordained seekers, holistic practitioners, and ministers from diverse denominations who wish to master advanced sacramental praxis and metaphysical methods[cite: 2].
+          </p>
+          <div class="p-5 rounded-2xl bg-linen-100 border gold-border">
+            <h4 class="font-serif font-bold text-sm text-obsidian-900 mb-1">Ecclesiastical Freedom & Supportive Environment</h4>
+            <p class="text-xs text-obsidian-800/75 leading-relaxed font-light">
+              HASRC promotes an open and supportive sanctuary that fosters intellectual empathy and personal expression without dogmatic fear or sectarian constraints[cite: 18].
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEARNING OUTCOMES (ALL 9 POINTS FROM BOOKLET) -->
+  <section id="outcomes" class="py-20 bg-linen-100/50 border-y gold-border">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">Competencies & Mastery[cite: 18]</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-obsidian-900 font-normal">Program Learning Outcomes[cite: 18]</h2>
+        <div class="w-16 h-0.5 gold-foil mx-auto mt-4 mb-4"></div>
+        <p class="text-xs sm:text-sm text-obsidian-800/80 font-light">Upon completion of the 72 credit hours, the Licentiate holder will demonstrate the ability to[cite: 18]:</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 text-xs text-obsidian-800/85">
+        <div class="p-6 rounded-2xl bg-white border gold-border card-shadow flex gap-4">
+          <span class="font-serif text-2xl font-bold text-gold-700 shrink-0">01</span>
+          <p class="font-light leading-relaxed">Demonstrate comprehensive understanding of the principles, lineages, and ministry of the Independent Sacramental Movement[cite: 18].</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border gold-border card-shadow flex gap-4">
+          <span class="font-serif text-2xl font-bold text-gold-700 shrink-0">02</span>
+          <p class="font-light leading-relaxed">Analyze and evaluate mystical practices to develop profound personal connection to the Divine[cite: 18].</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border gold-border card-shadow flex gap-4">
+          <span class="font-serif text-2xl font-bold text-gold-700 shrink-0">03</span>
+          <p class="font-light leading-relaxed">Lead and administer sacramental rites to all souls without discrimination or prejudice using ancient and Liberal liturgies[cite: 18].</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border gold-border card-shadow flex gap-4">
+          <span class="font-serif text-2xl font-bold text-gold-700 shrink-0">04</span>
+          <p class="font-light leading-relaxed">Apply pastoral care suited to community needs through compassionate listening, counseling, and spiritual direction[cite: 18].</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border gold-border card-shadow flex gap-4">
+          <span class="font-serif text-2xl font-bold text-gold-700 shrink-0">05</span>
+          <p class="font-light leading-relaxed">Interpret scriptural texts using contemporary scholastic exegesis as insights for preaching, homiletics, and teaching[cite: 18].</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border gold-border card-shadow flex gap-4">
+          <span class="font-serif text-2xl font-bold text-gold-700 shrink-0">06</span>
+          <p class="font-light leading-relaxed">Engage positively with church history throughout the centuries, appreciating the progressive evolution of the ISM[cite: 18].</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border gold-border card-shadow flex gap-4">
+          <span class="font-serif text-2xl font-bold text-gold-700 shrink-0">07</span>
+          <p class="font-light leading-relaxed">Explore and integrate metaphysical spirituality, mind science, and subtle energy therapeutics for self-development and ministry[cite: 18].</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border gold-border card-shadow flex gap-4">
+          <span class="font-serif text-2xl font-bold text-gold-700 shrink-0">08</span>
+          <p class="font-light leading-relaxed">Develop theoretical and practical homiletical skills to deliver transformative, spiritually resonant messages[cite: 18].</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border gold-border card-shadow flex gap-4">
+          <span class="font-serif text-2xl font-bold text-gold-700 shrink-0">09</span>
+          <p class="font-light leading-relaxed">Engage respectfully with diverse religious traditions, cultivating genuine interfaith literacy, dialogue, and harmony[cite: 18].</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPLETE 72-CREDIT CURRICULUM ARCHITECTURE -->
+  <section id="curriculum" class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6 space-y-12">
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">Curriculum Architecture[cite: 19]</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-obsidian-900 font-normal">Complete 72 Credit Hours Syllabus[cite: 18, 19]</h2>
+        <div class="w-16 h-0.5 gold-foil mx-auto mt-4 mb-4"></div>
+        <p class="text-xs sm:text-sm text-obsidian-800/80 font-light">
+          Structured into 16 Core Courses (57 Credits), 2 Electives (6 Credits), and 3 Practical Series Units (9 Credits)[cite: 19].
+        </p>
+      </div>
+
+      <!-- PART 1: CORE COURSES (57 CREDITS) -->
+      <div class="space-y-6">
+        <div class="flex items-center justify-between pb-3 border-b gold-border">
+          <h3 class="font-serif text-xl sm:text-2xl text-obsidian-900 font-normal">I. Core Courses Series[cite: 19]</h3>
+          <span class="px-3 py-1 rounded-full bg-gold-300/40 text-obsidian-900 font-mono text-xs font-semibold">57 Credits Total[cite: 19]</span>
+        </div>
+
+        <div class="space-y-4">
+          <!-- 1. Ministerial Series -->
+          <div class="p-6 rounded-2xl bg-linen-50 border gold-border">
+            <div class="flex justify-between items-center mb-2">
+              <h4 class="font-serif font-bold text-base text-obsidian-900">Antiochian Sacramental Ministry (Basic Texts)[cite: 19, 21]</h4>
+              <span class="text-xs font-mono font-bold text-gold-700">9 Credits (360 Hours)[cite: 21]</span>
+            </div>
+            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+              Compulsory foundational text for holy orders candidates, divided into three parts (3 credits each): Part 1: The Esoteric Treasures of the Church; Part 2: The Making of Clergy; Part 3: Sacramental Power in the Church[cite: 21].
+            </p>
+          </div>
+
+          <!-- 2. Mysticism Series -->
+          <div class="p-6 rounded-2xl bg-linen-50 border gold-border space-y-3">
+            <div class="flex justify-between items-center">
+              <h4 class="font-serif font-bold text-base text-obsidian-900">Mysticism Series[cite: 19, 21]</h4>
+              <span class="text-xs font-mono font-bold text-gold-700">6 Credits[cite: 19, 21]</span>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-3 text-xs">
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Esoteric Christianity (3 Cr):</strong> Hidden and mystical interpretations of scripture and practices deepening direct connection to the Divine[cite: 19, 21].
+              </div>
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Christian Mysticism (3 Cr):</strong> Unseen dimensions of reality through Christian metaphysical concepts and contemplative theology[cite: 19, 21].
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Liturgical Studies -->
+          <div class="p-6 rounded-2xl bg-linen-50 border gold-border space-y-3">
+            <div class="flex justify-between items-center">
+              <h4 class="font-serif font-bold text-base text-obsidian-900">Liturgical Studies Series[cite: 19, 21]</h4>
+              <span class="text-xs font-mono font-bold text-gold-700">9 Credits[cite: 19, 21]</span>
+            </div>
+            <div class="grid sm:grid-cols-3 gap-3 text-xs">
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Sacramental Theology (3 Cr):</strong> History, theology, and administration of sacraments in the Christian tradition[cite: 19, 21].
+              </div>
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Science of the Sacraments (3 Cr):</strong> Metaphysical, clairvoyant, and energetic dynamics of the altar[cite: 19, 21].
+              </div>
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Christian Creed (3 Cr):</strong> Symbolic and esoteric meanings behind historical creeds and faith affirmations[cite: 19, 21].
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Pastoral Ministry -->
+          <div class="p-6 rounded-2xl bg-linen-50 border gold-border space-y-3">
+            <div class="flex justify-between items-center">
+              <h4 class="font-serif font-bold text-base text-obsidian-900">Pastoral Ministry Series[cite: 19, 22]</h4>
+              <span class="text-xs font-mono font-bold text-gold-700">9 Credits[cite: 19, 22]</span>
+            </div>
+            <div class="grid sm:grid-cols-3 gap-3 text-xs">
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Ethics in Pastoral Ministry (3 Cr):</strong> Professional boundaries, confidentiality, integrity, and ethical dilemmas[cite: 19, 22].
+              </div>
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Queer Theologies & Ministry (3 Cr):</strong> Inclusive pastoral care, biblical interpretation, and affirming ministry for LGBTQ+ communities[cite: 19, 22].
+              </div>
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Interfaith Ministry (3 Cr):</strong> World religious traditions, inter-religious dialogue, and fostering spiritual harmony[cite: 19, 22].
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Scriptural Studies -->
+          <div class="p-6 rounded-2xl bg-linen-50 border gold-border space-y-3">
+            <div class="flex justify-between items-center">
+              <h4 class="font-serif font-bold text-base text-obsidian-900">Scriptural Studies Series[cite: 19, 23]</h4>
+              <span class="text-xs font-mono font-bold text-gold-700">9 Credits[cite: 19, 23]</span>
+            </div>
+            <div class="grid sm:grid-cols-3 gap-3 text-xs">
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Contemporary Biblical Exegesis (3 Cr):</strong> Critical literary, historical, and cultural approaches to scripture[cite: 19, 23].
+              </div>
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Biblical Metaphors & Symbolism (3 Cr):</strong> Metaphysical, allegorical, and symbolic interpretations of sacred texts[cite: 19, 23].
+              </div>
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>History of the New Testament (3 Cr):</strong> Social and political contexts of early Christian canonical and extra-canonical writings[cite: 19, 23].
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Ecclesiology & Church History -->
+          <div class="p-6 rounded-2xl bg-linen-50 border gold-border space-y-3">
+            <div class="flex justify-between items-center">
+              <h4 class="font-serif font-bold text-base text-obsidian-900">Ecclesiology & Church History[cite: 19, 23]</h4>
+              <span class="text-xs font-mono font-bold text-gold-700">6 Credits[cite: 19, 23]</span>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-3 text-xs">
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Legacy of Patriarch Herman A. Spruit (3 Cr):</strong> His meta-Catholic synthesis, open communion, and impact on modern ISM[cite: 19, 23].
+              </div>
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>The Independent Sacramental Movement (3 Cr):</strong> Apostolic successions, lineages, catholicity, and progressive theology[cite: 19, 23].
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Metaphysical Spirituality -->
+          <div class="p-6 rounded-2xl bg-linen-50 border gold-border space-y-3">
+            <div class="flex justify-between items-center">
+              <h4 class="font-serif font-bold text-base text-obsidian-900">Metaphysical Spirituality Series[cite: 19, 24]</h4>
+              <span class="text-xs font-mono font-bold text-gold-700">9 Credits[cite: 19, 24]</span>
+            </div>
+            <div class="grid sm:grid-cols-3 gap-3 text-xs">
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Power of the Subconscious Mind (3 Cr):</strong> Mental science, subconscious reprogramming, and spiritual manifestation[cite: 19, 24].
+              </div>
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>The Magic of Believing (3 Cr):</strong> Operative principles of faith, consciousness, and personal transformation[cite: 19, 24].
+              </div>
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Energy Healing (3 Cr):</strong> Subtle energy medicine, aura dynamics, and holistic spiritual self-care[cite: 19, 24].
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PART 2: ELECTIVES (CHOOSE 2 = 6 CREDITS) -->
+      <div class="space-y-4 pt-6">
+        <div class="flex items-center justify-between pb-3 border-b gold-border">
+          <h3 class="font-serif text-xl sm:text-2xl text-obsidian-900 font-normal">II. Elective Courses (Choose TWO)[cite: 19, 25]</h3>
+          <span class="px-3 py-1 rounded-full bg-linen-200 text-obsidian-900 font-mono text-xs font-semibold">6 Credits Required[cite: 19, 25]</span>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs text-obsidian-800/85">
+          <div class="p-5 rounded-2xl bg-white border gold-border card-shadow">
+            <strong class="font-serif text-sm block mb-1 text-obsidian-900">Marriage & Family Counselling (3 Cr)[cite: 19, 25]</strong>
+            <p class="font-light leading-relaxed">Therapeutic communication and relational support for couples and family units[cite: 25].</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-white border gold-border card-shadow">
+            <strong class="font-serif text-sm block mb-1 text-obsidian-900">Organizational Leadership (3 Cr)[cite: 19, 25]</strong>
+            <p class="font-light leading-relaxed">Strategic planning, resource management, and administration in religious bodies[cite: 25].</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-white border gold-border card-shadow">
+            <strong class="font-serif text-sm block mb-1 text-obsidian-900">Comparative World Religions (3 Cr)[cite: 19, 25]</strong>
+            <p class="font-light leading-relaxed">Core teachings, histories, and practices across Eastern and Western traditions[cite: 25].</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-white border gold-border card-shadow">
+            <strong class="font-serif text-sm block mb-1 text-obsidian-900">Liturgical Music & Aesthetics (3 Cr)[cite: 19, 25]</strong>
+            <p class="font-light leading-relaxed">Acoustics, sacred hymns, choir direction, and music in liturgical ceremonies[cite: 25].</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-white border gold-border card-shadow">
+            <strong class="font-serif text-sm block mb-1 text-obsidian-900">Conflict Management (3 Cr)[cite: 19, 25]</strong>
+            <p class="font-light leading-relaxed">Mediation, reconciliation strategies, and constructive dialogue in faith communities[cite: 25].</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PART 3: PRACTICAL SERIES (9 CREDITS) -->
+      <div class="space-y-4 pt-6">
+        <div class="flex items-center justify-between pb-3 border-b gold-border">
+          <h3 class="font-serif text-xl sm:text-2xl text-obsidian-900 font-normal">III. Practical Ministerial Series[cite: 19, 26]</h3>
+          <span class="px-3 py-1 rounded-full bg-gold-300/40 text-obsidian-900 font-mono text-xs font-semibold">9 Credits Required[cite: 19, 26]</span>
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-4 text-xs text-obsidian-800/85">
+          <div class="p-5 rounded-2xl bg-linen-50 border gold-border">
+            <strong class="font-serif text-sm block mb-1 text-obsidian-900">Field Education & Homiletics (3 Cr)[cite: 19, 26]</strong>
+            <p class="font-light leading-relaxed">Practical ministry mentored under an experienced priest; liturgical homilies and pulpit delivery[cite: 19, 26].</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-linen-50 border gold-border">
+            <strong class="font-serif text-sm block mb-1 text-obsidian-900">Practicum in Sacramental Rites (3 Cr)[cite: 19, 26]</strong>
+            <p class="font-light leading-relaxed">Hands-on rubrics and administration of Initiation, Healing, and Vocational sacraments[cite: 26].</p>
+          </div>
+          <div class="p-5 rounded-2xl bg-linen-50 border gold-border">
+            <strong class="font-serif text-sm block mb-1 text-obsidian-900">Meditation Dynamics (3 Cr)[cite: 19, 26]</strong>
+            <p class="font-light leading-relaxed">Mindfulness, contemplative silence, and integrating interior prayer into active ministry[cite: 26].</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ADMISSION CRITERIA & GRADUATION REGULATIONS -->
+  <section id="admission" class="py-20 bg-linen-100/60 border-y gold-border">
+    <div class="max-w-5xl mx-auto px-6 space-y-10">
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">Academic Standards[cite: 20]</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-obsidian-900 font-normal">Admission & Graduation Criteria[cite: 20]</h2>
+        <div class="w-16 h-0.5 gold-foil mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 text-xs sm:text-sm text-obsidian-800/85">
+        <!-- Admission -->
+        <div class="p-7 rounded-3xl bg-white border gold-border card-shadow space-y-4">
+          <h3 class="font-serif text-xl font-normal text-obsidian-900 pb-2 border-b gold-border">
+            Admission Eligibility[cite: 20]
+          </h3>
+          <p class="font-light leading-relaxed text-xs">Candidates may qualify through any of the following criteria[cite: 20]:</p>
+          <ul class="space-y-2 text-xs font-light">
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-gold-600 shrink-0 mt-0.5"></i>
+              <span>Completion of Foundation Certificate in Sacramental Studies[cite: 20].</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-gold-600 shrink-0 mt-0.5"></i>
+              <span>Associate Diploma in Sacramental Ministry or equivalent[cite: 20].</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-gold-600 shrink-0 mt-0.5"></i>
+              <span>Tertiary qualification with a minimum of 3 years active pastoral ministry[cite: 20].</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-gold-600 shrink-0 mt-0.5"></i>
+              <span>Equivalent spiritual/educational experience approved by the Board of Studies[cite: 20].</span>
+            </li>
+          </ul>
+          <div class="p-4 rounded-xl bg-linen-50 border gold-border text-xs text-obsidian-800/75">
+            <strong>Prior Learning Assessment (PLA):</strong> Eligible candidates may transfer up to <strong>30%</strong> of required credits based on prior certified study or documented ministerial service[cite: 20].
+          </div>
+        </div>
+
+        <!-- Graduation Requirements -->
+        <div class="p-7 rounded-3xl bg-white border gold-border card-shadow space-y-4">
+          <h3 class="font-serif text-xl font-normal text-obsidian-900 pb-2 border-b gold-border">
+            Graduation Requirements[cite: 20]
+          </h3>
+          <ul class="space-y-3 text-xs font-light">
+            <li class="flex items-start gap-2">
+              <i data-lucide="award" class="w-4 h-4 text-gold-600 shrink-0 mt-0.5"></i>
+              <span><strong>Credit Hours:</strong> Successful completion of all 72 credit hours (inclusive of practical units)[cite: 18, 20].</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="award" class="w-4 h-4 text-gold-600 shrink-0 mt-0.5"></i>
+              <span><strong>Minimum Grade:</strong> Achieve a minimum of 65% on all coursework, written reflections, and practical examinations[cite: 20].</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="award" class="w-4 h-4 text-gold-600 shrink-0 mt-0.5"></i>
+              <span><strong>Post-Nominal:</strong> Conferred the ecclesiastical post-nominal <strong>L.S.Min</strong> upon graduation[cite: 20].</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="award" class="w-4 h-4 text-gold-600 shrink-0 mt-0.5"></i>
+              <span><strong>Fellowship Pathway:</strong> Direct eligibility for intermediate standing (Associate Fellow) in the HASRC Learned Society[cite: 2, 20].</span>
+            </li>
+          </ul>
+          <div class="p-4 rounded-xl bg-linen-50 border gold-border text-xs text-obsidian-800/75">
+            <strong>Learning Mode:</strong> Distance learning with flexible asynchronous modules. Expected learning is 40 hours per 1 credit (120 hours per 3-credit course)[cite: 20].
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOVERNANCE & FACULTY (FROM BOOKLET) -->
+  <section id="governance" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">Academic & Spiritual Leadership[cite: 27]</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-obsidian-900 font-normal">Direction & Faculty Oversight[cite: 27]</h2>
+        <div class="w-16 h-0.5 gold-foil mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid sm:grid-cols-3 gap-6 text-center">
+        <div class="p-6 rounded-2xl bg-linen-50 border gold-border card-shadow">
+          <div class="w-14 h-14 rounded-full overflow-hidden border gold-border mx-auto mb-4 bg-white">
+            <img src="+++frank.png" alt="Archbishop Frank Bugge" class="w-full h-full object-cover">
+          </div>
+          <span class="text-[10px] font-serif uppercase tracking-widest text-gold-700 block mb-1">Chancellor[cite: 27]</span>
+          <h4 class="font-serif text-lg font-bold text-obsidian-900">Archbishop Frank Bugge, DD[cite: 27]</h4>
+          <p class="text-xs text-obsidian-800/70 mt-1 font-light">Primate Emeritus, Australian Church of Antioch[cite: 2]</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-linen-50 border gold-border card-shadow">
+          <div class="w-14 h-14 rounded-full overflow-hidden border gold-border mx-auto mb-4 bg-white">
+            <img src="+++glenn.png" alt="Archbishop Glenn Taylor" class="w-full h-full object-cover">
+          </div>
+          <span class="text-[10px] font-serif uppercase tracking-widest text-gold-700 block mb-1">Honorary Provost[cite: 27]</span>
+          <h4 class="font-serif text-lg font-bold text-obsidian-900">Archbishop Glenn Taylor, DD[cite: 2, 27]</h4>
+          <p class="text-xs text-obsidian-800/70 mt-1 font-light">Presiding Archbishop & Primate, ACOA[cite: 2]</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-linen-50 border gold-border card-shadow">
+          <div class="w-14 h-14 rounded-full border gold-border mx-auto mb-4 bg-white flex items-center justify-center text-gold-700">
+            <i data-lucide="feather" class="w-6 h-6"></i>
+          </div>
+          <span class="text-[10px] font-serif uppercase tracking-widest text-gold-700 block mb-1">Director of Studies[cite: 2, 27]</span>
+          <h4 class="font-serif text-lg font-bold text-obsidian-900">The Rt. Rev. Mar Elisha Thoma[cite: 2]</h4>
+          <p class="text-xs text-obsidian-800/70 mt-1 font-light">Senior Fellow & Director, HASRC[cite: 2]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INQUIRY & ADMISSION CTA -->
+  <section id="inquire" class="py-20 bg-linen-100 border-t gold-border">
+    <div class="max-w-3xl mx-auto px-6 text-center space-y-6">
+      <div class="w-12 h-12 rounded-full bg-white border gold-border flex items-center justify-center mx-auto text-gold-600 shadow-xs">
+        <i data-lucide="mail" class="w-5 h-5"></i>
+      </div>
+      <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block">
+        Office of the Registrar[cite: 20]
+      </span>
+      <h2 class="font-serif text-3xl sm:text-4xl text-obsidian-900 font-normal">
+        Apply for the Licentiate in Sacramental Ministry[cite: 18, 20]
+      </h2>
+      <p class="text-xs sm:text-sm text-obsidian-800/80 font-light leading-relaxed max-w-xl mx-auto">
+        Holy orders candidates under episcopal direction, independent ministers, and non-ordained seekers are invited to submit their spiritual biography and transcripts for enrollment assessment[cite: 2, 20].
+      </p>
+
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="mailto:office@hasrc.org?subject=L.S.Min Admission Inquiry" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs uppercase tracking-widest font-semibold transition shadow-sm">
+          Submit Admission Inquiry[cite: 10, 20]
+        </a>
+        <a href="index.html" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white border gold-border text-obsidian-900 text-xs uppercase tracking-widest font-semibold hover:bg-linen-200 transition">
+          Return to Portal Home
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-12 bg-obsidian-900 text-linen-200 border-t gold-border text-xs text-center">
+    <p>&copy; 2026 Herman Adrian Spruit Research Centre (HASRC). Licentiate in Sacramental Ministry[cite: 2, 18].</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    document.addEventListener('contextmenu', e => e.preventDefault());
+  </script>
+</body>
+</html>
