@@ -190,46 +190,116 @@
         </div>
       </div>
 
-      <!-- Block 2: Four Best Practices (Reversed) -->
+      <!-- Block 2: Four Foundational Best Practices with Interactive Modals -->
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        
+        <!-- Left Column: Content & Interactive Cards -->
         <div class="space-y-6 order-2 lg:order-1">
-          <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block">Academic & Ethical Rigor</span>
+          <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block">
+            Academic & Ethical Rigor
+          </span>
           <h2 class="font-serif text-3xl sm:text-4xl text-obsidian-900 font-normal leading-tight">
             Our Four Foundational Best Practices
           </h2>
-          <p class="text-sm text-obsidian-800/80 leading-relaxed font-light">
-            We maintain a shared-academic ministry and collaboration with credible organizations, including St. Michael's Divinity School (SMDS), the official seminary of the Australian Church of Antioch (ACOA).
+          <p class="text-xs sm:text-sm text-obsidian-800/80 leading-relaxed font-light">
+            HASRC is committed to upholding the highest standards of scholarly integrity and spiritual authenticity, rooted in fidelity to our unique charism and the collaborative inquiry of our Fellows and Associates across the Independent Sacramental Movement. Click each approach below to review our full methodology.
           </p>
-          <div class="grid sm:grid-cols-2 gap-4 pt-2">
-            <div class="p-4 rounded-2xl bg-linen-100 border gold-border">
-              <h4 class="font-serif font-bold text-sm text-obsidian-900 mb-1">1. Charism Fidelity</h4>
-              <p class="text-xs text-obsidian-800/70 leading-relaxed">Focusing on practical spiritual engineering passed down through direct apostolic lines.</p>
-            </div>
-            <div class="p-4 rounded-2xl bg-linen-100 border gold-border">
-              <h4 class="font-serif font-bold text-sm text-obsidian-900 mb-1">2. Ethical Method</h4>
-              <p class="text-xs text-obsidian-800/70 leading-relaxed">Intellectually honest, non-coercive research honoring participant free will.</p>
-            </div>
-            <div class="p-4 rounded-2xl bg-linen-100 border gold-border">
-              <h4 class="font-serif font-bold text-sm text-obsidian-900 mb-1">3. Contextual Responsibility</h4>
-              <p class="text-xs text-obsidian-800/70 leading-relaxed">Bridging academic research with tangible tools for real-world personal progression.</p>
-            </div>
-            <div class="p-4 rounded-2xl bg-linen-100 border gold-border">
-              <h4 class="font-serif font-bold text-sm text-obsidian-900 mb-1">4. Inclusive Dialogue</h4>
-              <p class="text-xs text-obsidian-800/70 leading-relaxed">Engaging across academic, metaphysical, and interfaith traditions without dogma.</p>
-            </div>
-          </div>
-        </div>
-        <div class="relative rounded-3xl overflow-hidden card-shadow border gold-border order-1 lg:order-2">
-          <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?q=80&w=1200&auto=format&fit=crop" alt="Sacred Contemplation" class="w-full h-[450px] object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-obsidian-900/60 to-transparent"></div>
-          <div class="absolute bottom-6 left-6 right-6 text-linen-50">
-            <span class="text-xs font-serif uppercase tracking-widest text-gold-300 block mb-1">Pillar II</span>
-            <p class="font-serif italic text-lg font-light">"Bridging ancient apostolic lines with transformative metaphysical science."</p>
-          </div>
-        </div>
-      </div>
 
-    </div>
+          <!-- 4 Interactive Cards Grid -->
+          <div class="grid sm:grid-cols-2 gap-4 pt-2">
+            
+            <!-- Card 1: Charism Fidelity -->
+            <div onclick="openPracticeModal('fidelity')" class="p-5 rounded-2xl bg-linen-100 hover:bg-white border gold-border card-shadow cursor-pointer transition-all duration-300 hover:scale-[1.02] flex flex-col justify-between group">
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-white border gold-border flex items-center justify-center text-gold-600 mb-3 shadow-xs group-hover:bg-gold-300/30 transition">
+                  <i data-lucide="flame" class="w-5 h-5"></i>
+                </div>
+                <h4 class="font-serif font-bold text-sm text-obsidian-900 mb-1 group-hover:text-gold-700 transition">
+                  1. Charism Fidelity
+                </h4>
+                <p class="text-xs text-obsidian-800/70 leading-relaxed font-light">
+                  Spiritual engineering and specific rites evolved from our direct lineage.
+                </p>
+              </div>
+              <div class="inline-flex items-center gap-1.5 text-[11px] font-serif font-bold uppercase tracking-wider text-gold-700 pt-3 mt-2 border-t gold-border">
+                <span>Read Approach</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition"></i>
+              </div>
+            </div>
+
+            <!-- Card 2: Ethical Methodology -->
+            <div onclick="openPracticeModal('methodology')" class="p-5 rounded-2xl bg-linen-100 hover:bg-white border gold-border card-shadow cursor-pointer transition-all duration-300 hover:scale-[1.02] flex flex-col justify-between group">
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-white border gold-border flex items-center justify-center text-gold-600 mb-3 shadow-xs group-hover:bg-gold-300/30 transition">
+                  <i data-lucide="shield-check" class="w-5 h-5"></i>
+                </div>
+                <h4 class="font-serif font-bold text-sm text-obsidian-900 mb-1 group-hover:text-gold-700 transition">
+                  2. Ethical Method
+                </h4>
+                <p class="text-xs text-obsidian-800/70 leading-relaxed font-light">
+                  Intellectually honest, open inquiry honoring free will and transparency.
+                </p>
+              </div>
+              <div class="inline-flex items-center gap-1.5 text-[11px] font-serif font-bold uppercase tracking-wider text-gold-700 pt-3 mt-2 border-t gold-border">
+                <span>Read Approach</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition"></i>
+              </div>
+            </div>
+
+            <!-- Card 3: Contextual Responsibility -->
+            <div onclick="openPracticeModal('responsibility')" class="p-5 rounded-2xl bg-linen-100 hover:bg-white border gold-border card-shadow cursor-pointer transition-all duration-300 hover:scale-[1.02] flex flex-col justify-between group">
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-white border gold-border flex items-center justify-center text-gold-600 mb-3 shadow-xs group-hover:bg-gold-300/30 transition">
+                  <i data-lucide="cpu" class="w-5 h-5"></i>
+                </div>
+                <h4 class="font-serif font-bold text-sm text-obsidian-900 mb-1 group-hover:text-gold-700 transition">
+                  3. Contextual Responsibility
+                </h4>
+                <p class="text-xs text-obsidian-800/70 leading-relaxed font-light">
+                  Bridging scholarly research with tangible tools for spiritual progression.
+                </p>
+              </div>
+              <div class="inline-flex items-center gap-1.5 text-[11px] font-serif font-bold uppercase tracking-wider text-gold-700 pt-3 mt-2 border-t gold-border">
+                <span>Read Approach</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition"></i>
+              </div>
+            </div>
+
+            <!-- Card 4: Inclusive Dialogue -->
+            <div onclick="openPracticeModal('dialogue')" class="p-5 rounded-2xl bg-linen-100 hover:bg-white border gold-border card-shadow cursor-pointer transition-all duration-300 hover:scale-[1.02] flex flex-col justify-between group">
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-white border gold-border flex items-center justify-center text-gold-600 mb-3 shadow-xs group-hover:bg-gold-300/30 transition">
+                  <i data-lucide="globe" class="w-5 h-5"></i>
+                </div>
+                <h4 class="font-serif font-bold text-sm text-obsidian-900 mb-1 group-hover:text-gold-700 transition">
+                  4. Inclusive Dialogue
+                </h4>
+                <p class="text-xs text-obsidian-800/70 leading-relaxed font-light">
+                  Respectful discourse across spiritual, scientific, and academic traditions.
+                </p>
+              </div>
+              <div class="inline-flex items-center gap-1.5 text-[11px] font-serif font-bold uppercase tracking-wider text-gold-700 pt-3 mt-2 border-t gold-border">
+                <span>Read Approach</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition"></i>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Column: Featured Image with Quote -->
+        <div class="relative rounded-3xl overflow-hidden card-shadow border gold-border order-1 lg:order-2">
+          <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?q=80&w=1200&auto=format&fit=crop" alt="Sacred Contemplation" class="w-full h-[520px] object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-obsidian-900/70 via-obsidian-900/20 to-transparent"></div>
+          <div class="absolute bottom-8 left-8 right-8 text-linen-50">
+            <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-300 block mb-2">Committed to Excellence</span>
+            <p class="font-serif italic text-lg sm:text-xl font-light leading-relaxed">
+              "Developing practical spiritual applications derived directly from rigorous inquiry and authentic charism."
+            </p>
+          </div>
+        </div>
+
+      </div>
   </section>
 
   <!-- DARK CELESTIAL QUOTE BANNER -->
@@ -1035,5 +1105,140 @@
       }
     });
   </script>
-</body>
+<!-- ================= BEST PRACTICES MODAL DIALOG ================= -->
+<div id="practices-modal" class="fixed inset-0 z-[110] hidden items-center justify-center p-4 sm:p-6 bg-obsidian-900/80 backdrop-blur-md transition-opacity duration-300">
+  <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto border gold-border card-shadow relative p-6 sm:p-10 animate-in fade-in zoom-in-95 duration-200">
+    
+    <!-- Close Button -->
+    <button onclick="closePracticeModal()" class="absolute top-6 right-6 w-10 h-10 rounded-full bg-linen-100 hover:bg-linen-200 border gold-border flex items-center justify-center text-obsidian-900 transition z-10">
+      <i data-lucide="x" class="w-5 h-5"></i>
+    </button>
+
+    <!-- Modal Target Container -->
+    <div id="practice-modal-target"></div>
+  </div>
+</div>
+
+<!-- ================= HIDDEN BEST PRACTICES TEMPLATES ================= -->
+<div class="hidden">
+
+  <!-- 1. Spiritual & Charism Fidelity -->
+  <div id="practice-data-fidelity">
+    <div class="h-48 rounded-2xl overflow-hidden mb-6 border gold-border shadow-xs">
+      <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=1000&auto=format&fit=crop" alt="Charism Fidelity" class="w-full h-full object-cover">
+    </div>
+    <div class="flex items-center gap-3 mb-2">
+      <div class="w-9 h-9 rounded-xl bg-linen-100 border gold-border flex items-center justify-center text-gold-700">
+        <i data-lucide="flame" class="w-4 h-4"></i>
+      </div>
+      <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold">Best Practice I</span>
+    </div>
+    <h3 class="font-serif text-2xl sm:text-3xl text-obsidian-900 font-normal mb-4">
+      Spiritual & Charism Fidelity
+    </h3>
+    <p class="text-xs sm:text-sm text-obsidian-800/85 font-light leading-relaxed">
+      We ensure all research, training programs, and spiritual methods are authentically grounded in the specific 'inner Christian' charism of our lineage. This unconventional, practical approach focuses on spiritual engineering—developing the specific rites, meditations, and metaphysical techniques passed down and evolved from our spiritual predecessors, distinguishing our work from more common exoteric traditions.
+    </p>
+  </div>
+
+  <!-- 2. Open & Ethical Methodology -->
+  <div id="practice-data-methodology">
+    <div class="h-48 rounded-2xl overflow-hidden mb-6 border gold-border shadow-xs">
+      <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=1000&auto=format&fit=crop" alt="Ethical Methodology" class="w-full h-full object-cover">
+    </div>
+    <div class="flex items-center gap-3 mb-2">
+      <div class="w-9 h-9 rounded-xl bg-linen-100 border gold-border flex items-center justify-center text-gold-700">
+        <i data-lucide="shield-check" class="w-4 h-4"></i>
+      </div>
+      <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold">Best Practice II</span>
+    </div>
+    <h3 class="font-serif text-2xl sm:text-3xl text-obsidian-900 font-normal mb-4">
+      Open & Ethical Methodology
+    </h3>
+    <p class="text-xs sm:text-sm text-obsidian-800/85 font-light leading-relaxed">
+      We employ rigorous, intellectually honest methods in our research and are transparent about our sources. In our training programs, we adhere to the highest ethical standards, ensuring all spiritual methods are taught with clarity, integrity, and profound respect for the well-being and free will of every participant.
+    </p>
+  </div>
+
+  <!-- 3. Practical & Contextual Responsibility -->
+  <div id="practice-data-responsibility">
+    <div class="h-48 rounded-2xl overflow-hidden mb-6 border gold-border shadow-xs">
+      <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=1000&auto=format&fit=crop" alt="Practical Application" class="w-full h-full object-cover">
+    </div>
+    <div class="flex items-center gap-3 mb-2">
+      <div class="w-9 h-9 rounded-xl bg-linen-100 border gold-border flex items-center justify-center text-gold-700">
+        <i data-lucide="cpu" class="w-4 h-4"></i>
+      </div>
+      <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold">Best Practice III</span>
+    </div>
+    <h3 class="font-serif text-2xl sm:text-3xl text-obsidian-900 font-normal mb-4">
+      Practical & Contextual Responsibility
+    </h3>
+    <p class="text-xs sm:text-sm text-obsidian-800/85 font-light leading-relaxed">
+      We bridge scholarly research with tangible spiritual progression. Our "charism" lies in developing practical applications—such as spiritual methods, meditation protocols, and rites—derived directly from our research. We are responsible for teaching these practices within their proper spiritual context, ensuring participants understand their purpose, application, and scope as tools for personal development.
+    </p>
+  </div>
+
+  <!-- 4. Inclusive & Respectful Dialogue -->
+  <div id="practice-data-dialogue">
+    <div class="h-48 rounded-2xl overflow-hidden mb-6 border gold-border shadow-xs">
+      <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1000&auto=format&fit=crop" alt="Inclusive Dialogue" class="w-full h-full object-cover">
+    </div>
+    <div class="flex items-center gap-3 mb-2">
+      <div class="w-9 h-9 rounded-xl bg-linen-100 border gold-border flex items-center justify-center text-gold-700">
+        <i data-lucide="globe" class="w-4 h-4"></i>
+      </div>
+      <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold">Best Practice IV</span>
+    </div>
+    <h3 class="font-serif text-2xl sm:text-3xl text-obsidian-900 font-normal mb-4">
+      Inclusive & Respectful Dialogue
+    </h3>
+    <p class="text-xs sm:text-sm text-obsidian-800/85 font-light leading-relaxed">
+      We foster an inclusive hub that welcomes scholars, practitioners, and seekers from all backgrounds who share a serious interest in our work. We engage in respectful dialogue with other spiritual, scientific, and academic traditions, positioning our unique research and training methods as a valuable contribution to the broader conversation on inner spirituality and human development.
+    </p>
+  </div>
+
+</div>
+
+<!-- JavaScript for Modal Control -->
+<script>
+  function openPracticeModal(type) {
+    const template = document.getElementById('practice-data-' + type);
+    const target = document.getElementById('practice-modal-target');
+    const modal = document.getElementById('practices-modal');
+
+    if (template && target && modal) {
+      target.innerHTML = template.innerHTML;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.classList.add('overflow-hidden');
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    }
+  }
+
+  function closePracticeModal() {
+    const modal = document.getElementById('practices-modal');
+    if (modal) {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.classList.remove('overflow-hidden');
+    }
+  }
+
+  window.addEventListener('click', function(e) {
+    const modal = document.getElementById('practices-modal');
+    if (e.target === modal) {
+      closePracticeModal();
+    }
+  });
+
+  window.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closePracticeModal();
+    }
+  });
+</script>
+  </body>
 </html>
