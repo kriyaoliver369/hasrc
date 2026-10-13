@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Science of the Sacraments | Journal of Inner Spirituality (JOIS)</title>
+  <meta name="description" content="Inaugural monograph published in the Journal of Inner Spirituality (JOIS) by the Herman Adrian Spruit Research Centre.">
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            linen: { 50: '#FCFAF7', 100: '#F7F3EC', 200: '#EDE5D8', 300: '#DFD3C0' },
+            gold: { 300: '#F4E5B8', 400: '#E6CA7D', 500: '#C5A059', 600: '#A47E3B', 700: '#7B5D28' },
+            obsidian: { 800: '#22201E', 900: '#141312' }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { background-color: #FCFAF7; color: #22201E; }
+    .gold-foil { background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 35%, #B38728 70%, #FBF5B7 100%); }
+    .gold-border { border-color: rgba(197, 160, 89, 0.4); }
+    .card-shadow { box-shadow: 0 15px 35px -5px rgba(20, 19, 18, 0.05), 0 0 1px 1px rgba(197, 160, 89, 0.2); }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-gold-300 selection:text-obsidian-900">
+
+  <!-- TOP BANNER -->
+  <div class="gold-foil py-2 px-4 text-center">
+    <p class="text-[11px] sm:text-xs font-serif font-semibold tracking-[0.25em] uppercase text-obsidian-900">
+      Journal of Inner Spirituality &bull; Open Access Learned Review &bull; ISSN (Online): 2980-412X
+    </p>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-linen-50/95 border-b gold-border">
+    <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <div class="w-12 h-12 rounded-full border border-gold-500/60 bg-white flex items-center justify-center shadow-xs">
+          <i data-lucide="book-open" class="w-6 h-6 text-gold-600"></i>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif font-bold text-xl text-obsidian-900 tracking-wider leading-none">JOIS</span>
+          <span class="text-[10px] uppercase tracking-widest text-gold-700 font-sans font-semibold mt-1">HASRC Scholarly Review</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold uppercase tracking-widest text-obsidian-800">
+        <a href="index.html" class="hover:text-gold-600 transition">Portal Home</a>
+        <a href="#article" class="hover:text-gold-600 transition text-gold-700">Current Article</a>
+        <a href="#references" class="hover:text-gold-600 transition">References</a>
+        <a href="fellowship.html" class="hover:text-gold-600 transition">Fellowship Ranks</a>
+        <a href="hope.html" class="hover:text-gold-600 transition">HOPE Program</a>
+      </nav>
+
+      <a href="#how-to-cite" class="px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 hover:bg-gold-600 text-linen-50 transition shadow-sm">
+        Cite Monograph
+      </a>
+    </div>
+  </header>
+
+  <!-- OJS BREADCRUMB BAR -->
+  <nav class="bg-linen-100/70 border-b gold-border py-3 px-6 text-xs text-obsidian-800/70">
+    <div class="max-w-7xl mx-auto flex items-center gap-2 flex-wrap">
+      <a href="index.html" class="hover:text-gold-700">Home</a>
+      <span>/</span>
+      <span>Archives</span>
+      <span>/</span>
+      <span class="text-obsidian-900 font-medium">Vol. 1 No. 1 (2026): Inaugural Issue</span>
+      <span>/</span>
+      <span class="text-gold-700 font-medium">Theological & Historical Treatises</span>
+    </div>
+  </nav>
+
+  <!-- MAIN ARTICLE CONTAINER (OJS 2-COLUMN LAYOUT) -->
+  <main id="article" class="max-w-7xl mx-auto px-6 py-12 lg:py-16">
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+
+      <!-- ================= LEFT COLUMN: MAIN ARTICLE BODY (8 COLS) ================= -->
+      <article class="lg:col-span-8 space-y-10">
+
+        <!-- Article Header Block -->
+        <header class="space-y-4 pb-8 border-b gold-border">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-300/40 border gold-border text-obsidian-900 text-xs font-serif font-semibold">
+            Inaugural Research Monograph
+          </div>
+
+          <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-obsidian-900 font-normal leading-tight">
+            The Science of the Sacraments: Herman Adrian Spruit’s Meta-Catholic Synthesis and the Operative Mechanics of the Altar
+          </h1>
+
+          <!-- Author Info -->
+          <div class="pt-2">
+            <h3 class="font-serif text-lg sm:text-xl font-bold text-obsidian-900">
+              The Rt. Rev. Mar Elisha Thoma
+            </h3>
+            <p class="text-xs text-obsidian-800/80 font-sans mt-0.5">
+              Director of Studies & Senior Fellow, Herman Adrian Spruit Research Centre (HASRC)
+            </p>
+          </div>
+
+          <!-- DOI & Metadata Bar -->
+          <div class="flex flex-wrap gap-y-2 gap-x-6 text-xs text-obsidian-800/70 pt-2 font-mono border-t gold-border">
+            <div><strong class="text-obsidian-900 font-sans">DOI:</strong> https://doi.org/10.hasrc.jois.2026.01.001</div>
+            <div><strong class="text-obsidian-900 font-sans">Published:</strong> October 2026</div>
+            <div><strong class="text-obsidian-900 font-sans">Peer Review:</strong> Editorial College</div>
+          </div>
+        </header>
+
+        <!-- Abstract Block -->
+        <section class="space-y-4 bg-white p-8 rounded-3xl border gold-border card-shadow">
+          <h2 class="font-serif text-2xl text-obsidian-900 font-normal">Abstract</h2>
+          <div class="w-12 h-0.5 gold-foil mb-3"></div>
+          <p class="text-xs sm:text-sm text-obsidian-800/85 font-light leading-relaxed text-justify">
+            This foundational treatise investigates the synthesis achieved by Patriarch Herman Adrian Spruit (1911–1994) within the Independent Sacramental Movement (ISM), focusing specifically on his reconciliation of traditional Catholic sacramental realism with mid-twentieth-century metaphysical mental science and clairvoyant liturgical mechanics. Drawing on Charles Webster Leadbeater’s energetic observations of the Eucharistic thought-form and Spruit’s formative engagement with Ernest Holmes’ Religious Science movement, the paper deconstructs the shift from exoteric scholastic transubstantiation to an operative "science of the sacraments." It examines how Spruit conceived the altar not merely as a site of memorial or dogmatic observance, but as a calibrated matrix for subtle energetic alchemy and spiritual engineering. The paper further evaluates the ecclesiological consequences of this meta-Catholic synthesis, notably Spruit’s historic pioneering of "sacramental justice," unconditional communion, and co-equal female apostolic succession. The findings demonstrate that Spruit’s inner Christian charism offers an integrated metaphysical framework for contemporary independent sacramental practice that bridges esoteric mysticism and valid apostolic liturgy.
+          </p>
+
+          <div class="pt-4 border-t gold-border text-xs">
+            <strong class="font-sans text-obsidian-900">Keywords:</strong>
+            <span class="text-obsidian-800/75 italic">Herman Adrian Spruit, Independent Sacramental Movement (ISM), Sacramental Science, Meta-Catholicism, Altar Energetics, Christian Mysticism, Eucharistic Thought-Forms, Esoteric Liturgics</span>
+          </div>
+        </section>
+
+        <!-- Author Biography Card -->
+        <section class="p-6 rounded-2xl bg-linen-100/80 border gold-border space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-white border gold-border flex items-center justify-center text-gold-700 shadow-xs">
+              <i data-lucide="user" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h4 class="font-serif font-bold text-sm text-obsidian-900">Author Biography</h4>
+              <p class="text-xs text-obsidian-800/70">The Rt. Rev. Mar Elisha Thoma, Sen.F.HASRC</p>
+            </div>
+          </div>
+          <p class="text-xs text-obsidian-800/80 leading-relaxed font-light">
+            Mar Elisha Thoma serves as the Director of Studies and Senior Fellow at the Herman Adrian Spruit Research Centre. His research specializes in Antiochian sacramental theology, liturgical energetics, voice aesthetics in sacred acoustics, and the history of apostolic successions within the Independent Sacramental Movement.
+          </p>
+        </section>
+
+        <!-- Complete References List (APA 7th Edition) -->
+        <section id="references" class="space-y-4 pt-4">
+          <h2 class="font-serif text-2xl text-obsidian-900 font-normal">References</h2>
+          <div class="w-12 h-0.5 gold-foil mb-4"></div>
+          
+          <ul class="space-y-3 text-xs text-obsidian-800/80 font-light leading-relaxed pl-5 list-decimal">
+            <li>
+              Bugge, F. (1998). <em>The Esoteric Science of Numbers and the Antiochian Liturgy</em>. St. Michael's Divinity School Press.
+            </li>
+            <li>
+              Byrne, J. (2012). <em>The Other Catholics: Remaking America's Largest Religion</em>. Columbia University Press. https://doi.org/10.7312/byrn15998
+            </li>
+            <li>
+              Leadbeater, C. W. (1920). <em>The Science of the Sacraments</em>. Theosophical Publishing House.
+            </li>
+            <li>
+              Plummer, J. P. (2004). <em>The Many Paths of the Independent Sacramental Movement: A National Study of Its Diversity</em>. New Clarion Press.
+            </li>
+            <li>
+              Spruit, H. A. (1968). <em>The Treasure of Antioch: Liturgy, Faith, and the Living Spirit</em>. Catholic Apostolic Church of Antioch Press.
+            </li>
+            <li>
+              Spruit, H. A. (1981). <em>Mysticism as the Sustaining Reality of Faith</em>. Antiochian Research Tracts, 4(2), 15–28.
+            </li>
+            <li>
+              Spruit, M. L., & Spruit, H. A. (1987). <em>The Sacred Feminine in Apostolic Succession: Celtic and Druidic Lineages in the Modern Episcopacy</em>. Antiochian Archives.
+            </li>
+            <li>
+              Ward, G. (2006). <em>Independent Catholicism: A Primer</em>. Apocryphile Press.
+            </li>
+          </ul>
+        </section>
+
+      </article>
+
+      <!-- ================= RIGHT COLUMN: OJS METADATA SIDEBAR (4 COLS) ================= -->
+      <aside class="lg:col-span-4 space-y-6">
+
+        <!-- Issue Cover & PDF Download Card -->
+        <div class="bg-white rounded-3xl p-6 sm:p-7 border gold-border card-shadow space-y-5">
+          
+          <!-- Monograph Issue Cover Thumbnail -->
+          <div class="rounded-2xl overflow-hidden border gold-border bg-linen-100 p-4 text-center">
+            <div class="border border-gold-500/50 rounded-xl p-6 bg-white space-y-2">
+              <span class="text-[9px] font-serif uppercase tracking-[0.25em] text-gold-700 block">HASRC Journal Series</span>
+              <h4 class="font-serif text-lg font-bold text-obsidian-900 leading-tight">Journal of Inner Spirituality</h4>
+              <div class="w-8 h-0.5 gold-foil mx-auto my-2"></div>
+              <p class="text-[10px] font-serif text-obsidian-800/70 italic">Vol. 1, No. 1 (2026)</p>
+            </div>
+          </div>
+
+          <!-- Prominent PDF Download Button -->
+          <div>
+            <a href="HASRC_Inaugural_Monograph_Spruit_Sacramental_Science.pdf" download class="w-full py-4 px-6 rounded-2xl bg-obsidian-900 hover:bg-gold-600 text-linen-50 flex items-center justify-center gap-3 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm group">
+              <i data-lucide="file-text" class="w-4 h-4 text-gold-400 group-hover:text-white transition"></i>
+              <span>Download PDF (Full Text)</span>
+            </a>
+            <p class="text-[11px] text-center text-obsidian-800/60 mt-2 font-mono">Format: PDF (A4) &bull; 420 KB</p>
+          </div>
+
+          <div class="border-t gold-border pt-4 space-y-3 text-xs text-obsidian-800/80">
+            <div class="flex justify-between">
+              <span class="text-obsidian-800/60 font-medium">Issue:</span>
+              <span class="font-medium text-obsidian-900">Vol. 1 No. 1 (2026)</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-obsidian-800/60 font-medium">Section:</span>
+              <span class="font-medium text-obsidian-900">Research Articles</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-obsidian-800/60 font-medium">Published:</span>
+              <span class="font-medium text-obsidian-900">13 Oct 2026</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- How to Cite (OJS Style with Copy Button) -->
+        <div id="how-to-cite" class="bg-white rounded-3xl p-6 sm:p-7 border gold-border card-shadow space-y-4">
+          <div class="flex items-center justify-between">
+            <h4 class="font-serif text-base font-bold text-obsidian-900">How to Cite (APA 7th)</h4>
+            <i data-lucide="quote" class="w-4 h-4 text-gold-600"></i>
+          </div>
+
+          <div class="p-3.5 rounded-xl bg-linen-50 border gold-border text-xs text-obsidian-800/85 font-mono leading-relaxed" id="citation-text">
+            Thoma, M. E. (2026). The Science of the Sacraments: Herman Adrian Spruit’s Meta-Catholic Synthesis and the Operative Mechanics of the Altar. <em>Journal of Inner Spirituality</em>, 1(1), 1–18. https://doi.org/10.hasrc.jois.2026.01.001
+          </div>
+
+          <button onclick="copyCitation()" id="copy-btn" class="w-full py-2.5 rounded-xl border gold-border bg-white hover:bg-linen-100 text-obsidian-900 text-xs font-semibold uppercase tracking-wider transition flex items-center justify-center gap-2">
+            <i data-lucide="copy" class="w-3.5 h-3.5 text-gold-600"></i>
+            <span id="copy-label">Copy Citation</span>
+          </button>
+        </div>
+
+        <!-- Open Access & License -->
+        <div class="bg-linen-100/60 rounded-3xl p-6 border gold-border space-y-3 text-xs text-obsidian-800/80">
+          <div class="flex items-center gap-2 text-obsidian-900 font-serif font-bold text-sm">
+            <i data-lucide="unlock" class="w-4 h-4 text-gold-700"></i>
+            <span>Open Access Policy</span>
+          </div>
+          <p class="leading-relaxed font-light text-[11px]">
+            This article is distributed under the terms of the <strong>Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA 4.0)</strong> license, permitting unrestricted use, distribution, and adaptation in any medium provided the original work is properly cited.
+          </p>
+          <div class="pt-2 border-t gold-border flex items-center justify-between text-[11px]">
+            <span>Article Processing Charges:</span>
+            <strong class="text-obsidian-900">None (Free)</strong>
+          </div>
+        </div>
+
+        <!-- Call for Papers Banner -->
+        <div class="bg-white rounded-3xl p-6 border gold-border card-shadow text-center space-y-3">
+          <h4 class="font-serif text-base font-normal text-obsidian-900">Submit to JOIS</h4>
+          <p class="text-xs text-obsidian-800/75 leading-relaxed font-light">
+            We invite monographs and treatises on ISM history, sacramental science, and Christian mysticism.
+          </p>
+          <a href="mailto:office@hasrc.org?subject=JOIS Manuscript Submission" class="inline-block w-full py-2.5 rounded-full bg-linen-100 hover:bg-linen-200 border gold-border text-obsidian-900 text-xs font-semibold uppercase tracking-wider transition">
+            Author Guidelines & Submission
+          </a>
+        </div>
+
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="py-12 bg-obsidian-900 text-linen-200 border-t gold-border text-xs text-center">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <i data-lucide="sun" class="w-4 h-4 text-gold-400"></i>
+        <span class="font-serif font-bold text-white">HASRC &bull; Journal of Inner Spirituality</span>
+      </div>
+      <p>&copy; 2026 Herman Adrian Spruit Research Centre. All Rights Reserved.</p>
+      <a href="index.html" class="text-gold-400 hover:underline">Back to Main Portal</a>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    function copyCitation() {
+      const text = document.getElementById('citation-text').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const label = document.getElementById('copy-label');
+        label.innerText = 'Citation Copied!';
+        setTimeout(() => { label.innerText = 'Copy Citation'; }, 2000);
+      });
+    }
+
+    // Protection Script
+    document.addEventListener('contextmenu', e => e.preventDefault());
+  </script>
+</body>
+</html>
