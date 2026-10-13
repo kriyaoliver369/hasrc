@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Licentiate of Metaphysical Theology (L.Mphy.Th.) | HASRC</title>
+  <meta name="description" content="An advanced 72-credit specialist research degree exploring Independent Sacramental history, Antiochian lineage, comparative Christian mysticism, and spiritual theology.">
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS & Lucide Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            linen: { 50: '#FCFAF7', 100: '#F7F3EC', 200: '#EDE5D8', 300: '#DFD3C0' },
+            gold: { 300: '#F4E5B8', 400: '#E6CA7D', 500: '#C5A059', 600: '#A47E3B', 700: '#7B5D28' },
+            terracotta: { 100: '#F9ECE8', 500: '#B85D43', 600: '#96442E' },
+            obsidian: { 800: '#22201E', 900: '#141312' }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { background-color: #FCFAF7; color: #22201E; }
+    .gold-foil { background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 35%, #B38728 70%, #FBF5B7 100%); }
+    .gold-border { border-color: rgba(197, 160, 89, 0.4); }
+    .card-shadow { box-shadow: 0 15px 35px -5px rgba(20, 19, 18, 0.05), 0 0 1px 1px rgba(197, 160, 89, 0.2); }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-gold-300 selection:text-obsidian-900">
+
+  <!-- TOP BANNER -->
+  <div class="gold-foil py-2 px-4 text-center">
+    <p class="text-[11px] sm:text-xs font-serif font-semibold tracking-[0.25em] uppercase text-obsidian-900">
+      Herman Adrian Spruit Research Centre &bull; Department of Theological Research & Hermeneutics
+    </p>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-linen-50/95 border-b gold-border">
+    <div class="max-w-7xl mx-auto px-6 h-22 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <div class="w-11 h-11 rounded-full border border-gold-500/60 bg-white flex items-center justify-center shadow-xs">
+          <i data-lucide="book-open" class="w-5 h-5 text-gold-600"></i>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif font-bold text-lg text-obsidian-900 tracking-wider leading-none">HASRC</span>
+          <span class="text-[10px] uppercase tracking-widest text-gold-700 font-sans font-semibold mt-1">Metaphysical Theology</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-xs font-semibold uppercase tracking-wider text-obsidian-800">
+        <a href="index.html" class="hover:text-gold-600 transition">Main Portal</a>
+        <a href="#overview" class="hover:text-gold-600 transition">Overview</a>
+        <a href="#outcomes" class="hover:text-gold-600 transition">Outcomes</a>
+        <a href="#curriculum" class="hover:text-gold-600 transition">Curriculum (72 Cr)</a>
+        <a href="#dissertation" class="hover:text-gold-600 transition">Theology Thesis</a>
+        <a href="lsmin.html" class="hover:text-gold-600 transition">L.S.Min</a>
+        <a href="lamsc.html" class="hover:text-gold-600 transition">L.AMsc</a>
+        <a href="jois.html" class="hover:text-gold-600 transition">JOIS</a>
+      </nav>
+
+      <a href="#inquire" class="px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 hover:bg-gold-600 text-linen-50 transition shadow-sm">
+        Inquire for Admission
+      </a>
+    </div>
+  </header>
+
+  <!-- BREADCRUMBS -->
+  <nav class="bg-linen-100/70 border-b gold-border py-3 px-6 text-xs text-obsidian-800/70">
+    <div class="max-w-7xl mx-auto flex items-center gap-2 flex-wrap">
+      <a href="index.html" class="hover:text-gold-700">Home</a>
+      <span>/</span>
+      <span>Licentiate Pathways</span>
+      <span>/</span>
+      <span class="text-obsidian-900 font-medium">Licentiate of Metaphysical Theology (L.Mphy.Th.)</span>
+    </div>
+  </nav>
+
+  <!-- HERO HEADER & PROGRAM CARD -->
+  <section class="py-12 lg:py-16 bg-linen-100/40 border-b gold-border">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-10 items-center">
+      
+      <!-- Left Column: Title & Key Badges -->
+      <div class="lg:col-span-8 space-y-6">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="px-3 py-1 rounded-full bg-gold-300/40 border gold-border text-obsidian-900 text-xs font-serif font-semibold">
+            Postgraduate Specialist Degree
+          </span>
+          <span class="px-3 py-1 rounded-full bg-linen-200 border gold-border text-obsidian-900 text-xs font-sans">
+            Scholarly, Mystic & Author Track
+          </span>
+          <span class="px-3 py-1 rounded-full bg-white border gold-border text-gold-700 text-xs font-mono font-medium">
+            Post-nominal: L.Mphy.Th.
+          </span>
+        </div>
+
+        <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl text-obsidian-900 font-normal leading-tight">
+          Licentiate of <br class="hidden sm:inline">
+          <span class="italic gold-foil-text font-serif">Metaphysical Theology</span>
+        </h1>
+
+        <p class="text-sm sm:text-base text-obsidian-800/85 font-light leading-relaxed max-w-2xl">
+          An advanced study-focused curriculum designed for theologians, mystics, clergy, authors, and scholars seeking a profound academic and contemplative understanding of our spiritual tradition. Explore the "why" of our charism, covering the deep history of the Independent Sacramental Movement, Antiochian lineages, comparative Christian mysticism, and esoteric hermeneutics.
+        </p>
+
+        <!-- Quick Facts Matrix -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t gold-border">
+          <div class="p-3.5 bg-white rounded-2xl border gold-border">
+            <span class="text-[10px] font-serif uppercase tracking-wider text-gold-700 block">Total Credits</span>
+            <span class="font-serif text-xl font-bold text-obsidian-900">72 Credits</span>
+            <span class="text-[10px] text-obsidian-800/60 block mt-0.5">Modular Reading</span>
+          </div>
+          <div class="p-3.5 bg-white rounded-2xl border gold-border">
+            <span class="text-[10px] font-serif uppercase tracking-wider text-gold-700 block">Pacing</span>
+            <span class="font-serif text-xl font-bold text-obsidian-900">Self-Paced</span>
+            <span class="text-[10px] text-obsidian-800/60 block mt-0.5">Up to 3 Years</span>
+          </div>
+          <div class="p-3.5 bg-white rounded-2xl border gold-border">
+            <span class="text-[10px] font-serif uppercase tracking-wider text-gold-700 block">Assessment</span>
+            <span class="font-serif text-xl font-bold text-obsidian-900">Essays & Thesis</span>
+            <span class="text-[10px] text-obsidian-800/60 block mt-0.5">Scholarly Focus</span>
+          </div>
+          <div class="p-3.5 bg-white rounded-2xl border gold-border">
+            <span class="text-[10px] font-serif uppercase tracking-wider text-gold-700 block">Advancement</span>
+            <span class="font-serif text-xl font-bold text-obsidian-900">Assc.F.HASRC</span>
+            <span class="text-[10px] text-obsidian-800/60 block mt-0.5">Learned Society</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Enrollment Summary Card -->
+      <div class="lg:col-span-4 bg-white rounded-3xl p-7 border gold-border card-shadow space-y-5">
+        <div class="text-center pb-4 border-b gold-border">
+          <span class="text-[10px] font-serif uppercase tracking-widest text-gold-700 font-bold block mb-1">
+            Academic Track Overview
+          </span>
+          <h3 class="font-serif text-2xl font-normal text-obsidian-900">Contemplative Scholarship</h3>
+          <p class="text-xs text-obsidian-800/70 mt-1">Conferred upon curriculum completion and thesis defence</p>
+        </div>
+
+        <div class="space-y-3 text-xs text-obsidian-800/80">
+          <div class="flex items-center justify-between">
+            <span class="text-obsidian-800/60">Post-Nominal:</span>
+            <span class="font-medium text-obsidian-900">L.Mphy.Th.[cite: 2]</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-obsidian-800/60">Study Approach:</span>
+            <span class="font-medium text-obsidian-900">Required Reading & Essays[cite: 2]</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-obsidian-800/60">Core Focus:</span>
+            <span class="font-medium text-obsidian-900">Antiochian Ecclesiology & Mysticism[cite: 2]</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-obsidian-800/60">Final Capstone:</span>
+            <span class="font-medium text-obsidian-900">Master's-level Dissertation[cite: 2]</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-obsidian-800/60">Publishing:</span>
+            <span class="font-medium text-obsidian-900">Featured Monograph in JOIS[cite: 1, 2]</span>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <a href="#inquire" class="block w-full py-3.5 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-center text-xs font-serif font-bold uppercase tracking-widest transition shadow-sm">
+            Inquire for Admission
+          </a>
+        </div>
+
+        <p class="text-[11px] text-center text-obsidian-800/60 font-light leading-normal">
+          Ideal for authors, independent clergy, researchers, and religious philosophers[cite: 2].
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STICKY SUB-NAVIGATION -->
+  <div class="sticky top-22 z-40 bg-linen-50/95 border-b gold-border backdrop-blur-md hidden md:block">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-14 text-xs font-semibold uppercase tracking-wider text-obsidian-800">
+      <div class="flex items-center gap-8">
+        <a href="#overview" class="hover:text-gold-600 transition">Overview</a>
+        <a href="#outcomes" class="hover:text-gold-600 transition">Outcomes</a>
+        <a href="#curriculum" class="hover:text-gold-600 transition">Curriculum (72 Credits)</a>
+        <a href="#dissertation" class="hover:text-gold-600 transition">Thesis Requirements</a>
+        <a href="#admission" class="hover:text-gold-600 transition">Admission Criteria</a>
+      </div>
+      <a href="#inquire" class="text-gold-700 hover:text-obsidian-900 transition font-bold">Apply Now &rarr;</a>
+    </div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <section id="overview" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6 space-y-8">
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">The Theological "Why"</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-obsidian-900 font-normal">Understanding the Foundations of Our Charism[cite: 2]</h2>
+        <div class="w-16 h-0.5 gold-foil mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 text-xs sm:text-sm text-obsidian-800/85 font-light leading-relaxed pt-4">
+        <div class="space-y-4">
+          <p>
+            The Licentiate of Metaphysical Theology (L.Mphy.Th.) is intended for the theologian, mystic, clergy, or seeker who seeks a profound academic and contemplative understanding of the wisdom and context of our spiritual tradition[cite: 2]. While our practical programs emphasize ministerial mechanics and practitioner arts, this track investigates the theoretical and historical "why" behind the Independent Sacramental Movement[cite: 2].
+          </p>
+          <p>
+            It is particularly suited for authors, writers, teachers, and those focused on self-development who wish to gain a deep conceptual grasp of our heritage[cite: 2]. The curriculum encompasses Antiochian succession history, comparative Christian mysticism, early Gnostic and Hermetic roots, and the groundbreaking meta-Catholic universalism of Patriarch Herman Adrian Spruit[cite: 2].
+          </p>
+        </div>
+        <div class="space-y-4">
+          <p>
+            This program is earned by completing a curriculum of required reading, submitting analytical spiritual-theological essays, and producing a final research dissertation that demonstrates a comprehensive grasp of one's spiritual theology[cite: 2].
+          </p>
+          <div class="p-5 rounded-2xl bg-linen-100 border gold-border">
+            <h4 class="font-serif font-bold text-sm text-obsidian-900 mb-1">Rigorous Yet Non-Dogmatic Inquiry</h4>
+            <p class="text-xs text-obsidian-800/75 leading-relaxed font-light">
+              Students engage sacred scriptures, church history, and mystical philosophy with academic freedom, intellectual honesty, and deep contemplative respect[cite: 2].
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEARNING OUTCOMES -->
+  <section id="outcomes" class="py-20 bg-linen-100/50 border-y gold-border">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">Scholarly Objectives</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-obsidian-900 font-normal">Program Learning Outcomes</h2>
+        <div class="w-16 h-0.5 gold-foil mx-auto mt-4 mb-4"></div>
+        <p class="text-xs sm:text-sm text-obsidian-800/80 font-light">Upon earning the L.Mphy.Th. credential, the graduate will be able to[cite: 2]:</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 text-xs text-obsidian-800/85">
+        <div class="p-6 rounded-2xl bg-white border gold-border card-shadow flex gap-4">
+          <span class="font-serif text-2xl font-bold text-gold-700 shrink-0">01</span>
+          <p class="font-light leading-relaxed">Examine the historical genesis, catholicity, and apostolic lines of the Independent Sacramental Movement with scholarly authority[cite: 2, 19, 23].</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border gold-border card-shadow flex gap-4">
+          <span class="font-serif text-2xl font-bold text-gold-700 shrink-0">02</span>
+          <p class="font-light leading-relaxed">Analyze the unique theological synthesis of Patriarch Herman Adrian Spruit and Archbishop Frank Bugge within twentieth-century non-papal Catholicism[cite: 2, 19, 23].</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border gold-border card-shadow flex gap-4">
+          <span class="font-serif text-2xl font-bold text-gold-700 shrink-0">03</span>
+          <p class="font-light leading-relaxed">Deconstruct biblical texts through both contemporary historical exegesis and ancient allegorical/esoteric hermeneutics[cite: 19, 23].</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border gold-border card-shadow flex gap-4">
+          <span class="font-serif text-2xl font-bold text-gold-700 shrink-0">04</span>
+          <p class="font-light leading-relaxed">Situate Antiochian mysticism within the broader continuum of Christian mysticism, apophatic theology, and perennial philosophy[cite: 2, 19, 21].</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border gold-border card-shadow flex gap-4">
+          <span class="font-serif text-2xl font-bold text-gold-700 shrink-0">05</span>
+          <p class="font-light leading-relaxed">Articulate an integrative, non-creedal spiritual theology addressing contemporary ethical and interfaith dilemmas[cite: 2, 19, 22].</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-white border gold-border card-shadow flex gap-4">
+          <span class="font-serif text-2xl font-bold text-gold-700 shrink-0">06</span>
+          <p class="font-light leading-relaxed">Produce an original theological dissertation demonstrating rigorous research methodology in APA 7th style[cite: 2].</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 72-CREDIT CURRICULUM ARCHITECTURE -->
+  <section id="curriculum" class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6 space-y-12">
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">Curriculum Framework</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-obsidian-900 font-normal">72 Credit Hours Syllabus Architecture</h2>
+        <div class="w-16 h-0.5 gold-foil mx-auto mt-4 mb-4"></div>
+        <p class="text-xs sm:text-sm text-obsidian-800/80 font-light">
+          Organized across 4 core research clusters (36 Credits), a spiritual-theological essay portfolio (18 Credits), and a final research dissertation (18 Credits)[cite: 2].
+        </p>
+      </div>
+
+      <!-- PART 1: ADVANCED THEOLOGICAL MODULES (36 CREDITS) -->
+      <div class="space-y-6">
+        <div class="flex items-center justify-between pb-3 border-b gold-border">
+          <h3 class="font-serif text-xl sm:text-2xl text-obsidian-900 font-normal">I. Advanced Theological & Historical Coursework</h3>
+          <span class="px-3 py-1 rounded-full bg-gold-300/40 text-obsidian-900 font-mono text-xs font-semibold">36 Credits Total</span>
+        </div>
+
+        <div class="space-y-4">
+          <!-- 1. Ecclesiology & Lineages -->
+          <div class="p-6 rounded-2xl bg-linen-50 border gold-border space-y-3">
+            <div class="flex justify-between items-center">
+              <h4 class="font-serif font-bold text-base text-obsidian-900">Cluster A: ISM Ecclesiology & Antiochian Lineages</h4>
+              <span class="text-xs font-mono font-bold text-gold-700">9 Credits</span>
+            </div>
+            <div class="grid sm:grid-cols-3 gap-3 text-xs">
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Historical Lineages (3 Cr):</strong> Origins of the Independent Sacramental Movement, Vilatte successions, and lines of convergence[cite: 2, 19, 23].
+              </div>
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>The Spruit Legacy (3 Cr):</strong> Patriarch Herman A. Spruit's meta-Catholic ecclesiology, sacramental justice, and open communion[cite: 2, 19, 23].
+              </div>
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Celtic & Druidic Lines (3 Cr):</strong> Archbishop Frank Bugge, Archdruid Cluthin, and unbroken female lines of apostolic succession[cite: 2, 19, 23].
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Christian Mysticism & Esoteric Studies -->
+          <div class="p-6 rounded-2xl bg-linen-50 border gold-border space-y-3">
+            <div class="flex justify-between items-center">
+              <h4 class="font-serif font-bold text-base text-obsidian-900">Cluster B: Christian Mysticism & Esoteric Theology</h4>
+              <span class="text-xs font-mono font-bold text-gold-700">9 Credits</span>
+            </div>
+            <div class="grid sm:grid-cols-3 gap-3 text-xs">
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Comparative Mysticism (3 Cr):</strong> The apophatic way, Pseudo-Dionysius, Meister Eckhart, and the Desert Fathers[cite: 2, 19, 21].
+              </div>
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Esoteric Christianity (3 Cr):</strong> Hidden Gnostic traditions, Christian Hermeticism, and the cosmic Christos principle[cite: 2, 19, 21].
+              </div>
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Metaphysics of Faith (3 Cr):</strong> Unitive consciousness, mystical union, and the reality of the divine essence[cite: 2, 19, 21].
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Sacramental & Liturgical Theology -->
+          <div class="p-6 rounded-2xl bg-linen-50 border gold-border space-y-3">
+            <div class="flex justify-between items-center">
+              <h4 class="font-serif font-bold text-base text-obsidian-900">Cluster C: Sacramental & Creeds Metaphysics</h4>
+              <span class="text-xs font-mono font-bold text-gold-700">9 Credits</span>
+            </div>
+            <div class="grid sm:grid-cols-3 gap-3 text-xs">
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Sacramental Science (3 Cr):</strong> The operative energetic mechanics of the Eucharist and clairvoyant liturgical observation[cite: 19, 21].
+              </div>
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Esoteric Creeds (3 Cr):</strong> Deconstructing traditional dogma into cosmic truths: solar Christology, Monad, and regeneration[cite: 19, 21].
+              </div>
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Liturgical Theology (3 Cr):</strong> Evolution of Western rites, the Liberal Catholic liturgy, and contemporary Antiochian forms[cite: 19, 21].
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Biblical Hermeneutics -->
+          <div class="p-6 rounded-2xl bg-linen-50 border gold-border space-y-3">
+            <div class="flex justify-between items-center">
+              <h4 class="font-serif font-bold text-base text-obsidian-900">Cluster D: Biblical Hermeneutics & Symbolism</h4>
+              <span class="text-xs font-mono font-bold text-gold-700">9 Credits</span>
+            </div>
+            <div class="grid sm:grid-cols-3 gap-3 text-xs">
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Contemporary Exegesis (3 Cr):</strong> Critical historical, literary, and theological analysis of canonical biblical texts[cite: 19, 23].
+              </div>
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>Biblical Metaphors (3 Cr):</strong> Allegorical, kabbalistic, and metaphysical interpretations of scriptures[cite: 19, 23].
+              </div>
+              <div class="p-3 bg-white rounded-xl border gold-border">
+                <strong>New Testament Origins (3 Cr):</strong> Sociopolitical contexts, canonical development, and early extra-canonical literature[cite: 19, 23].
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PART 2: THEOLOGICAL ESSAY PORTFOLIO (18 CREDITS) -->
+      <div class="space-y-4 pt-6">
+        <div class="flex items-center justify-between pb-3 border-b gold-border">
+          <h3 class="font-serif text-xl sm:text-2xl text-obsidian-900 font-normal">II. Spiritual-Theological Essay Portfolio</h3>
+          <span class="px-3 py-1 rounded-full bg-linen-200 text-obsidian-900 font-mono text-xs font-semibold">18 Credits Required[cite: 2]</span>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-linen-50 border gold-border space-y-4 text-xs text-obsidian-800/85 font-light leading-relaxed">
+          <p>
+            Candidates submit three (3) peer-reviewed academic essays (3,000 words each, 6 credits each) exploring the theological foundation and practical charism of the tradition[cite: 2]:
+          </p>
+          <div class="grid sm:grid-cols-3 gap-3 pt-2 text-[11px]">
+            <div class="p-4 bg-white rounded-xl border gold-border">
+              <strong class="font-serif text-xs block mb-1 text-obsidian-900">Essay 1: Ecclesiological Synthesis</strong>
+              A critical paper on how Antiochian sacramentalism reconciles traditional apostolic succession with radical inclusion and modern metaphysics[cite: 2, 19, 23].
+            </div>
+            <div class="p-4 bg-white rounded-xl border gold-border">
+              <strong class="font-serif text-xs block mb-1 text-obsidian-900">Essay 2: Mystical Christology</strong>
+              A comparative analysis of historical Christian mysticism and Patriarch Spruit's formulation of the living Christic reality[cite: 2, 19, 21].
+            </div>
+            <div class="p-4 bg-white rounded-xl border gold-border">
+              <strong class="font-serif text-xs block mb-1 text-obsidian-900">Essay 3: Operative Liturgics</strong>
+              A philosophical investigation into the science of ritual efficacy, subtle energy mechanics, and modern contemplative consciousness[cite: 2, 19, 21].
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PART 3: MASTER'S THESIS / DISSERTATION (18 CREDITS) -->
+      <div class="space-y-4 pt-6">
+        <div class="flex items-center justify-between pb-3 border-b gold-border">
+          <h3 class="font-serif text-xl sm:text-2xl text-obsidian-900 font-normal">III. Final Theological Dissertation</h3>
+          <span class="px-3 py-1 rounded-full bg-gold-300/40 text-obsidian-900 font-mono text-xs font-semibold">18 Credits Required[cite: 2]</span>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-linen-50 border gold-border space-y-3 text-xs text-obsidian-800/85">
+          <p class="font-light leading-relaxed">
+            The culminating requirement is a formal academic research thesis (12,000 to 18,000 words) demonstrating a comprehensive and original grasp of one's spiritual theology[cite: 2].
+          </p>
+          <div class="grid sm:grid-cols-2 gap-3 pt-2 text-[11px]">
+            <div class="p-3 bg-white rounded-xl border gold-border">
+              <strong>Supervision & Direction:</strong> Undertaken under the advisement of the Director of Studies or an appointed Senior Fellow[cite: 2].
+            </div>
+            <div class="p-3 bg-white rounded-xl border gold-border">
+              <strong>Journal Archiving:</strong> High-merit dissertations are recommended for publication as featured monographs in the <em>Journal of Inner Spirituality (JOIS)</em>[cite: 1, 2].
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- THESIS & DISSERTATION GUIDELINES -->
+  <section id="dissertation" class="py-20 bg-linen-100/60 border-y gold-border">
+    <div class="max-w-4xl mx-auto px-6 space-y-6">
+      <div class="text-center">
+        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">Capstone Research</span>
+        <h2 class="font-serif text-3xl font-normal text-obsidian-900">The L.Mphy.Th. Thesis Standards[cite: 2]</h2>
+        <div class="w-16 h-0.5 gold-foil mx-auto mt-4"></div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-8 border gold-border card-shadow space-y-4 text-xs text-obsidian-800/85 leading-relaxed font-light">
+        <p>
+          The dissertation represents the candidate's formal contribution to the scholarly and theological corpus of the Independent Sacramental Movement[cite: 2]. The thesis must present an original, well-researched argument exploring theological history, sacramental philosophy, or esoteric Christian hermeneutics[cite: 2].
+        </p>
+        <ul class="list-disc list-inside space-y-2 pt-2">
+          <li><strong>Word Length:</strong> 12,000 – 18,000 words (exclusive of abstract, table of contents, and references)[cite: 2].</li>
+          <li><strong>Citation Standard:</strong> Full compliance with APA 7th Edition style (or Chicago Notes and Bibliography format for historical treatises)[cite: 2].</li>
+          <li><strong>Review Process:</strong> Evaluated by the Director of Studies and an external reader from our episcopal/academic fellowship[cite: 2].</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADMISSION CRITERIA -->
+  <section id="admission" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6 space-y-10">
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">Standards of Entry</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-obsidian-900 font-normal">Admission Criteria & Prerequisites[cite: 2]</h2>
+        <div class="w-16 h-0.5 gold-foil mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 text-xs sm:text-sm text-obsidian-800/85">
+        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow space-y-4">
+          <h3 class="font-serif text-xl font-normal text-obsidian-900 pb-2 border-b gold-border">
+            Academic Background[cite: 2]
+          </h3>
+          <ul class="space-y-2 text-xs font-light">
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-gold-600 shrink-0 mt-0.5"></i>
+              <span>Bachelor’s degree in theology, philosophy, religious studies, literature, or equivalent liberal arts[cite: 2].</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-gold-600 shrink-0 mt-0.5"></i>
+              <span>Candidates without a formal degree must demonstrate comprehension equivalent to a 3rd-year Bachelor of Arts[cite: 2].</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-gold-600 shrink-0 mt-0.5"></i>
+              <span>Demonstrated writing ability through previous articles, books, homilies, or theological reflections[cite: 2].</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow space-y-4">
+          <h3 class="font-serif text-xl font-normal text-obsidian-900 pb-2 border-b gold-border">
+            Prior Learning & Fellow Standing
+          </h3>
+          <p class="text-xs font-light leading-relaxed">
+            Prior accredited graduate studies in religion or published works in ecclesiastical history may be considered for up to <strong>30% Prior Learning Assessment (PLA) transfer credits</strong>[cite: 20].
+          </p>
+          <div class="p-4 rounded-xl bg-white border gold-border text-xs text-obsidian-800/75">
+            <strong>Post-Nominal & Learned Society:</strong> Graduates earn the post-nominal <strong>L.Mphy.Th.</strong> and receive fast-track recommendation for appointment as Associate Fellow (Assc.F.HASRC) or Research Fellow (Res.F.HASRC)[cite: 1, 2].
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INQUIRY & ADMISSION CTA -->
+  <section id="inquire" class="py-20 bg-linen-100 border-t gold-border">
+    <div class="max-w-3xl mx-auto px-6 text-center space-y-6">
+      <div class="w-12 h-12 rounded-full bg-white border gold-border flex items-center justify-center mx-auto text-gold-600 shadow-xs">
+        <i data-lucide="feather" class="w-5 h-5"></i>
+      </div>
+      <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block">
+        Office of the Registrar
+      </span>
+      <h2 class="font-serif text-3xl sm:text-4xl text-obsidian-900 font-normal">
+        Apply for the Licentiate of Metaphysical Theology[cite: 2]
+      </h2>
+      <p class="text-xs sm:text-sm text-obsidian-800/80 font-light leading-relaxed max-w-xl mx-auto">
+        Authors, mystics, clergy, and spiritual writers are warmly invited to submit their curriculum vitae and proposed research interest for candidacy review[cite: 2].
+      </p>
+
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="mailto:office@hasrc.org?subject=L.Mphy.Th. Admission Inquiry" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs uppercase tracking-widest font-semibold transition shadow-sm">
+          Submit Candidacy Inquiry
+        </a>
+        <a href="index.html" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white border gold-border text-obsidian-900 text-xs uppercase tracking-widest font-semibold hover:bg-linen-200 transition">
+          Return to Portal Home
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-12 bg-obsidian-900 text-linen-200 border-t gold-border text-xs text-center">
+    <p>&copy; 2026 Herman Adrian Spruit Research Centre (HASRC). Licentiate of Metaphysical Theology[cite: 2].</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    document.addEventListener('contextmenu', e => e.preventDefault());
+  </script>
+</body>
+</html>
