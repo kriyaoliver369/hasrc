@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Science of the Sacraments | Journal of Inner Spirituality (JOIS)</title>
-  <meta name="description" content="Inaugural monograph published in the Journal of Inner Spirituality (JOIS) by the Herman Adrian Spruit Research Centre.">
+  <title>The Science of the Sacraments | Journal of Inner Spirituality (JOIS) | HASRC Collegium</title>
+  <meta name="description" content="Inaugural monograph published in the Journal of Inner Spirituality (JOIS) by the Herman Adrian Spruit Research Collegium.">
   
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,35 +51,94 @@
 
   <!-- NAVIGATION -->
   <header class="sticky top-0 z-50 backdrop-blur-md bg-linen-50/95 border-b gold-border">
-    <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3.5 group">
-        <div class="w-12 h-12 rounded-full border border-gold-500/60 bg-white flex items-center justify-center shadow-xs">
-          <i data-lucide="book-open" class="w-6 h-6 text-gold-600"></i>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 sm:h-24 flex items-center justify-between gap-4">
+
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 shrink-0 group">
+        <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-gold-500/60 bg-white flex items-center justify-center shadow-xs group-hover:scale-105 transition">
+          <i data-lucide="book-marked" class="w-5 h-5 sm:w-6 sm:h-6 text-gold-600"></i>
         </div>
         <div class="flex flex-col">
-          <span class="font-serif font-bold text-xl text-obsidian-900 tracking-wider leading-none">JOIS</span>
-          <span class="text-[10px] uppercase tracking-widest text-gold-700 font-sans font-semibold mt-1">HASRC Scholarly Review</span>
+          <span class="font-serif font-bold text-xl sm:text-2xl text-obsidian-900 tracking-wider leading-none">HASRC</span>
+          <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-gold-700 font-sans font-semibold mt-1">Research Collegium</span>
         </div>
       </a>
 
-      <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold uppercase tracking-widest text-obsidian-800">
-        <a href="index.html" class="hover:text-gold-600 transition">Portal Home</a>
-        <a href="#article" class="hover:text-gold-600 transition text-gold-700">Current Article</a>
-        <a href="#references" class="hover:text-gold-600 transition">References</a>
-        <a href="fellowship.html" class="hover:text-gold-600 transition">Fellowship Ranks</a>
-        <a href="hope.html" class="hover:text-gold-600 transition">HOPE Program</a>
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden xl:flex items-center gap-7 text-[11px] font-semibold uppercase tracking-wider text-obsidian-800 whitespace-nowrap">
+        <a href="index.html#about" class="hover:text-gold-600 transition">Our Charism</a>
+        <a href="index.html#lineage" class="hover:text-gold-600 transition">Lineage</a>
+        <a href="index.html#ranks" class="hover:text-gold-600 transition">Ranks</a>
+        <a href="index.html#disciplines" class="hover:text-gold-600 transition">Disciplines</a>
+        <a href="fellowship.html" class="text-gold-700 hover:text-gold-600 font-bold transition">Collegiate Roll</a>
+        <a href="index.html#branches" class="hover:text-gold-600 transition">Chapters &amp; Oratories</a>
+        <a href="index.html#governance" class="hover:text-gold-600 transition">Collegiate Order</a>
+        <a href="jois.html" class="hover:text-gold-600 transition">JOIS Journal</a>
       </nav>
 
-      <a href="#how-to-cite" class="px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 hover:bg-gold-600 text-linen-50 transition shadow-sm">
-        Cite Monograph
-      </a>
+      <!-- Desktop Action & Mobile Hamburger -->
+      <div class="flex items-center gap-3">
+        <a href="index.html#ranks" class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 hover:bg-gold-600 text-linen-50 transition shadow-sm whitespace-nowrap">
+          Free Studies
+        </a>
+
+        <button onclick="toggleMobileMenu()" id="menu-toggle-btn" aria-label="Toggle Navigation" class="xl:hidden w-10 h-10 rounded-full bg-white border gold-border flex items-center justify-center text-obsidian-900 hover:bg-linen-100 transition shadow-xs">
+          <i data-lucide="menu" id="menu-icon" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden xl:hidden bg-white/98 backdrop-blur-md border-b gold-border px-6 py-6 transition-all">
+      <nav class="flex flex-col space-y-4 text-xs font-semibold uppercase tracking-widest text-obsidian-800">
+        <a href="index.html#about" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
+          <span>Our Charism</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
+        </a>
+        <a href="index.html#lineage" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
+          <span>Lineage &amp; Predecessors</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
+        </a>
+        <a href="index.html#ranks" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
+          <span>Collegiate Ranks</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
+        </a>
+        <a href="index.html#disciplines" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
+          <span>Specialist Disciplines</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
+        </a>
+        <a href="fellowship.html" onclick="toggleMobileMenu()" class="text-gold-700 hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200 font-bold">
+          <span>Collegiate Roll</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
+        </a>
+        <a href="index.html#branches" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
+          <span>Chapters &amp; Oratories</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
+        </a>
+        <a href="index.html#governance" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
+          <span>Collegiate Order &amp; Regalia</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
+        </a>
+        <a href="jois.html" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
+          <span>JOIS Journal</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
+        </a>
+        <div class="pt-2">
+          <a href="index.html#ranks" onclick="toggleMobileMenu()" class="w-full inline-flex items-center justify-center py-3 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 text-linen-50 hover:bg-gold-600 transition shadow-sm">
+            Explore Free Studies
+          </a>
+        </div>
+      </nav>
     </div>
   </header>
 
   <!-- OJS BREADCRUMB BAR -->
   <nav class="bg-linen-100/70 border-b gold-border py-3 px-6 text-xs text-obsidian-800/70">
     <div class="max-w-7xl mx-auto flex items-center gap-2 flex-wrap">
-      <a href="index.html" class="hover:text-gold-700">Home</a>
+      <a href="index.html" class="hover:text-gold-700">Collegium Portal</a>
+      <span>/</span>
+      <a href="jois.html" class="hover:text-gold-700">Journal of Inner Spirituality (JOIS)</a>
       <span>/</span>
       <span>Archives</span>
       <span>/</span>
@@ -109,10 +168,10 @@
           <!-- Author Info -->
           <div class="pt-2">
             <h3 class="font-serif text-lg sm:text-xl font-bold text-obsidian-900">
-              The Rt. Rev. Mar Elisha Thoma
+              The Most Reverend Mar Elisha Thoma, FHASRC (Founding)
             </h3>
             <p class="text-xs text-obsidian-800/80 font-sans mt-0.5">
-              Director of Studies & Senior Fellow, Herman Adrian Spruit Research Centre (HASRC)
+              Archbishop &amp; Founder, Provost and Prior-General, Herman Adrian Spruit Research Collegium (HASRC)
             </p>
           </div>
 
@@ -120,7 +179,7 @@
           <div class="flex flex-wrap gap-y-2 gap-x-6 text-xs text-obsidian-800/70 pt-2 font-mono border-t gold-border">
             <div><strong class="text-obsidian-900 font-sans">DOI:</strong> https://doi.org/10.hasrc.jois.2026.01.001</div>
             <div><strong class="text-obsidian-900 font-sans">Published:</strong> October 2026</div>
-            <div><strong class="text-obsidian-900 font-sans">Peer Review:</strong> Editorial College</div>
+            <div><strong class="text-obsidian-900 font-sans">Peer Review:</strong> Editorial screening &amp; collegiate peer review (Statute 7.3)</div>
           </div>
         </header>
 
@@ -146,11 +205,11 @@
             </div>
             <div>
               <h4 class="font-serif font-bold text-sm text-obsidian-900">Author Biography</h4>
-              <p class="text-xs text-obsidian-800/70">The Rt. Rev. Mar Elisha Thoma, Sen.F.HASRC</p>
+              <p class="text-xs text-obsidian-800/70">The Most Reverend Mar Elisha Thoma, FHASRC (Founding)</p>
             </div>
           </div>
           <p class="text-xs text-obsidian-800/80 leading-relaxed font-light">
-            Mar Elisha Thoma serves as the Director of Studies and Senior Fellow at the Herman Adrian Spruit Research Centre. His research specializes in Antiochian sacramental theology, liturgical energetics, voice aesthetics in sacred acoustics, and the history of apostolic successions within the Independent Sacramental Movement.
+            Mar Elisha Thoma is the Founder, Provost and Prior-General of the Herman Adrian Spruit Research Collegium and its Founding Fellow. The Founding Fellowship is not an examined rank. His research specializes in Antiochian sacramental theology, liturgical energetics, voice aesthetics in sacred acoustics, and the history of apostolic successions within the Independent Sacramental Movement.
           </p>
         </section>
 
@@ -255,19 +314,30 @@
             <span>Open Access Policy</span>
           </div>
           <p class="leading-relaxed font-light text-[11px]">
-            This article is distributed under the terms of the <strong>Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA 4.0)</strong> license, permitting unrestricted use, distribution, and adaptation in any medium provided the original work is properly cited.
+            JOIS operates a <strong>100% Diamond Open Access</strong> model: free to read globally without password barriers. All works are published under the <strong>Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA 4.0)</strong> licence, and authors retain copyright.
           </p>
           <div class="pt-2 border-t gold-border flex items-center justify-between text-[11px]">
             <span>Article Processing Charges:</span>
-            <strong class="text-obsidian-900">None (Free)</strong>
+            <strong class="text-obsidian-900">None (Free to authors)</strong>
           </div>
+        </div>
+
+        <!-- Authors' Views -->
+        <div class="bg-linen-100/60 rounded-3xl p-6 border gold-border space-y-2 text-xs text-obsidian-800/80">
+          <div class="flex items-center gap-2 text-obsidian-900 font-serif font-bold text-sm">
+            <i data-lucide="info" class="w-4 h-4 text-gold-700"></i>
+            <span>Authors&rsquo; Views</span>
+          </div>
+          <p class="leading-relaxed font-light text-[11px]">
+            Opinions in JOIS are the authors&rsquo; own. Publication is not an endorsement by the Collegium, the Provost or any officer, and confers no rank. No article is medical, psychological, counselling or other regulated professional advice.
+          </p>
         </div>
 
         <!-- Call for Papers Banner -->
         <div class="bg-white rounded-3xl p-6 border gold-border card-shadow text-center space-y-3">
           <h4 class="font-serif text-base font-normal text-obsidian-900">Submit to JOIS</h4>
           <p class="text-xs text-obsidian-800/75 leading-relaxed font-light">
-            We invite monographs and treatises on ISM history, sacramental science, and Christian mysticism.
+            JOIS accepts original research papers, analytical treatises, annotated historical documents and structured case studies (2,000 to 6,000 words), and standalone monographs (18,000+ words), in APA 7th Edition style, within one or more of its seven core research streams.
           </p>
           <a href="mailto:office@hasrc.org?subject=JOIS Manuscript Submission" class="inline-block w-full py-2.5 rounded-full bg-linen-100 hover:bg-linen-200 border gold-border text-obsidian-900 text-xs font-semibold uppercase tracking-wider transition">
             Author Guidelines & Submission
@@ -280,19 +350,53 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="py-12 bg-obsidian-900 text-linen-200 border-t gold-border text-xs text-center">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div class="flex items-center gap-2">
-        <i data-lucide="sun" class="w-4 h-4 text-gold-400"></i>
-        <span class="font-serif font-bold text-white">HASRC &bull; Journal of Inner Spirituality</span>
+  <footer class="py-16 bg-obsidian-900 text-linen-200 border-t gold-border text-xs">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <i data-lucide="book-marked" class="w-5 h-5 text-gold-400"></i>
+          <span class="font-serif font-bold text-lg text-white">HASRC</span>
+        </div>
+        <p class="text-xs text-linen-300 leading-relaxed font-light">
+          The Herman Adrian Spruit Research Collegium &bull;
+          An Autonomous Ecclesiastical Learned Society &amp;
+          research scriptorium and educational ministry: scholarship,
+          study and fellowship for those who pray, teach and serve.
+        </p>
       </div>
-      <p>&copy; 2026 Herman Adrian Spruit Research Centre. All Rights Reserved.</p>
-      <a href="index.html" class="text-gold-400 hover:underline">Back to Main Portal</a>
+      <div class="space-y-2">
+        <h4 class="font-serif text-sm font-semibold text-white uppercase tracking-wider mb-3">Chancery &amp; Public Registers</h4>
+        <div><a href="fellowship.html" class="hover:text-gold-400 transition">Collegiate Roll &amp; Public Register of Awards</a></div>
+        <div><a href="index.html#branches" class="hover:text-gold-400 transition">Warrants for Chapters, Oratories &amp; Foundations</a></div>
+        <div><a href="jois.html" class="hover:text-gold-400 transition">Journal of Inner Spirituality (JOIS)</a></div>
+        <div><a href="mailto:office@hasrc.org" class="hover:text-gold-400 transition">Office of the Chancery &amp; Privacy Contact</a></div>
+      </div>
+      <div>
+        <h4 class="font-serif text-sm font-semibold text-white uppercase tracking-wider mb-3">Great Seal &amp; Motto</h4>
+        <p class="font-serif italic text-gold-300 text-sm mb-1">Scientia et Sapientia Per Spiritum</p>
+        <p class="text-[10px] uppercase tracking-widest text-linen-300/80 mb-2">Sigillum Collegii Investigationis Hermanni Adriani Spruit</p>
+        <p class="text-[11px] text-linen-300 font-light">&copy; 2026 The Provost of HASRC. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
   <script>
-    lucide.createIcons();
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.lucide) { lucide.createIcons(); }
+    });
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('menu-icon');
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        if (icon) icon.setAttribute('data-lucide', 'x');
+      } else {
+        menu.classList.add('hidden');
+        if (icon) icon.setAttribute('data-lucide', 'menu');
+      }
+      if (window.lucide) lucide.createIcons();
+    }
 
     function copyCitation() {
       const text = document.getElementById('citation-text').innerText;
