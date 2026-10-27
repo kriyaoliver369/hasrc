@@ -95,7 +95,7 @@
         <a href="#ranks" class="hover:text-gold-600 transition">Ranks</a>
         <a href="#disciplines" class="hover:text-gold-600 transition">Disciplines</a>
         <a href="fellowship.html" class="text-gold-700 hover:text-gold-600 font-bold transition">Collegiate Roll</a>
-        <a href="#branches" class="hover:text-gold-600 transition">Chapters &amp; Oratories</a>
+        <a href="branches.html" class="hover:text-gold-600 transition">Chapters &amp; Oratories</a>
         <a href="#governance" class="hover:text-gold-600 transition">Collegiate Order</a>
         <a href="jois.html" class="hover:text-gold-600 transition">JOIS Journal</a>
       </nav>
@@ -136,7 +136,7 @@
           <span>Collegiate Roll</span>
           <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
         </a>
-        <a href="#branches" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
+        <a href="branches.html" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
           <span>Chapters &amp; Oratories</span>
           <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
         </a>
@@ -975,87 +975,59 @@
     </div>
   </section>
 
-  <!-- CHAPTERS, ORATORIES & COMBINED FOUNDATIONS -->
+  <!-- CHAPTERS, ORATORIES & FOUNDATIONS: INTRODUCTION -->
   <section id="branches" class="py-20 bg-linen-100/70 border-b gold-border">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center max-w-3xl mx-auto mb-14">
-        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">Decentralised Fellowship</span>
-        <h2 class="font-serif text-3xl sm:text-4xl text-obsidian-900 font-normal">Collegiate Chapters, Oratories &amp; Foundations</h2>
-        <div class="w-16 h-0.5 gold-foil mx-auto mt-4 mb-4"></div>
-        <p class="text-xs sm:text-sm text-obsidian-800/80 leading-relaxed font-light">
-          Wherever three or more Collegians in good standing gather to study, pray, and serve, they may petition the Provost for a Warrant of Constitution. Every branch stands in direct communion with the central Chancery, presided over by a Warden and/or an ordained Chaplain.
-        </p>
-      </div>
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
 
-      <div class="grid md:grid-cols-3 gap-6 mb-10">
-        <!-- Chapter -->
-        <div class="p-7 rounded-3xl bg-white border gold-border card-shadow flex flex-col justify-between space-y-4">
-          <div class="space-y-3">
-            <div class="w-12 h-12 rounded-2xl bg-linen-100 border gold-border flex items-center justify-center text-gold-600 shadow-xs">
-              <i data-lucide="compass" class="w-6 h-6"></i>
-            </div>
-            <h3 class="font-serif text-xl sm:text-2xl text-obsidian-900 font-normal">Collegiate Chapter <span class="block text-xs italic text-gold-700 mt-0.5">Capitulum Academicum</span></h3>
-            <p class="text-xs text-obsidian-800/80 leading-relaxed font-light">
-              A scholarly fellowship of the mind for colloquia, study of the Antiochian heritage and Spruitian Charism, meditation, and reunions, led by a Chapter Warden.
-            </p>
-          </div>
-          <div class="pt-3 border-t gold-border text-[11px] text-gold-700 font-semibold uppercase tracking-wider">
-            Focus: Sacred Scholarship &bull; Colloquia
-          </div>
+        <!-- Photo mosaic -->
+        <div class="grid grid-cols-5 grid-rows-6 gap-3 h-[420px] sm:h-[500px] order-2 lg:order-1">
+          <a href="branches.html" class="col-span-3 row-span-4 rounded-3xl overflow-hidden border gold-border card-shadow bg-linen-200 relative group" aria-label="Collegiate Chapters">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1000&auto=format&fit=crop" alt="A circle of people in conversation" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" onerror="this.style.display='none'">
+            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-white/90 text-[10px] font-serif font-bold uppercase tracking-widest text-gold-700">Study</span>
+          </a>
+          <a href="branches.html" class="col-span-2 row-span-3 rounded-3xl overflow-hidden border gold-border card-shadow bg-linen-200 relative group" aria-label="Oratories">
+            <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?q=80&w=800&auto=format&fit=crop" alt="Candlelight in contemplative prayer" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" onerror="this.style.display='none'">
+            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-white/90 text-[10px] font-serif font-bold uppercase tracking-widest text-rose-700">Prayer</span>
+          </a>
+          <a href="branches.html" class="col-span-2 row-span-3 rounded-3xl overflow-hidden border gold-border card-shadow bg-linen-200 relative group" aria-label="Combined Foundations">
+            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=800&auto=format&fit=crop" alt="Sacred texts open for study" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" onerror="this.style.display='none'">
+            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-white/90 text-[10px] font-serif font-bold uppercase tracking-widest text-obsidian-900">Both</span>
+          </a>
+          <a href="branches.html" class="col-span-3 row-span-2 rounded-3xl overflow-hidden border gold-border card-shadow bg-linen-200 relative group" aria-label="The sanctuary">
+            <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=1000&auto=format&fit=crop" alt="A quiet sanctuary" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" onerror="this.style.display='none'">
+            <span class="absolute inset-0 bg-gradient-to-t from-obsidian-900/60 to-transparent"></span>
+            <span class="absolute bottom-3 left-4 font-serif italic text-white text-lg">Wherever three gather</span>
+          </a>
         </div>
 
-        <!-- Oratory -->
-        <div class="p-7 rounded-3xl bg-white border gold-border card-shadow flex flex-col justify-between space-y-4">
-          <div class="space-y-3">
-            <div class="w-12 h-12 rounded-2xl bg-linen-100 border gold-border flex items-center justify-center text-rose-700 shadow-xs">
-              <i data-lucide="church" class="w-6 h-6"></i>
-            </div>
-            <h3 class="font-serif text-xl sm:text-2xl text-obsidian-900 font-normal">Oratory <span class="block text-xs italic text-rose-700 mt-0.5">Oratorium</span></h3>
-            <p class="text-xs text-obsidian-800/80 leading-relaxed font-light">
-              A fellowship of the heart for common prayer, contemplation, healing prayer, the Order of Prayer, and celebration of the Holy Eucharist on appointed Eucharistic Days.
-            </p>
-          </div>
-          <div class="pt-3 border-t gold-border text-[11px] text-rose-700 font-semibold uppercase tracking-wider">
-            Focus: Contemplative Liturgy &bull; Healing Prayer
-          </div>
-        </div>
-
-        <!-- Combined Foundation -->
-        <div class="p-7 rounded-3xl bg-white border gold-border card-shadow flex flex-col justify-between space-y-4">
-          <div class="space-y-3">
-            <div class="w-12 h-12 rounded-2xl bg-linen-100 border gold-border flex items-center justify-center text-obsidian-900 shadow-xs">
-              <i data-lucide="sparkles" class="w-6 h-6 text-gold-600"></i>
-            </div>
-            <h3 class="font-serif text-xl sm:text-2xl text-obsidian-900 font-normal">Combined Foundation <span class="block text-xs italic text-gold-700 mt-0.5">Capitulum et Oratorium</span></h3>
-            <p class="text-xs text-obsidian-800/80 leading-relaxed font-light">
-              Chartered under a single Warrant of Constitution for Collegians wishing both to conduct academic colloquia and to keep common prayer and Eucharistic liturgy together.
-            </p>
-          </div>
-          <div class="pt-3 border-t gold-border text-[11px] text-obsidian-900 font-semibold uppercase tracking-wider">
-            Focus: Integrated Study &amp; Sacramental Life
-          </div>
-        </div>
-      </div>
-
-      <!-- Highlights without parenthetical citations -->
-      <div class="grid md:grid-cols-2 gap-6 text-xs text-obsidian-800/85">
-        <div class="p-6 rounded-2xl bg-white/90 border gold-border space-y-2">
-          <h4 class="font-serif font-bold text-sm text-obsidian-900 uppercase tracking-wider flex items-center gap-2">
-            <i data-lucide="award" class="w-4 h-4 text-gold-600"></i>
-            Senior Warden &amp; Senior Chaplain
-          </h4>
-          <p class="font-light leading-relaxed">
-            After five years of cumulative active service in good standing, a Warden or Chaplain is recognised by the Provost for life as Senior Warden or Senior Chaplain, receiving the one-band black epitoge for life and a place on the collegiate Roll of Voters. Every chartered branch receives the Model Constitution, website listing, and the medallion of office.
+        <!-- Invitation -->
+        <div class="order-1 lg:order-2">
+          <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">Decentralised Fellowship</span>
+          <h2 class="font-serif text-3xl sm:text-5xl text-obsidian-900 font-normal leading-tight">Chapters, Oratories <span class="italic text-gold-700">&amp; Foundations</span></h2>
+          <div class="w-16 h-0.5 gold-foil mt-4 mb-5"></div>
+          <p class="text-sm sm:text-base text-obsidian-800/85 leading-relaxed font-light">
+            The Collegium was never meant to live only on a screen. Wherever three or more Collegians gather to study, to pray and to serve, they may petition the Provost for a Warrant of Constitution, which is granted gladly, and a new branch takes root.
           </p>
-        </div>
-        <div class="p-6 rounded-2xl bg-white/90 border gold-border space-y-2">
-          <h4 class="font-serif font-bold text-sm text-obsidian-900 uppercase tracking-wider flex items-center gap-2">
-            <i data-lucide="heart-handshake" class="w-4 h-4 text-rose-700"></i>
-            Safeguarding, Pastoral Care &amp; Operational Autonomy
-          </h4>
-          <p class="font-light leading-relaxed">
-            Every branch adopts the safeguarding provisions of the Model Constitution: no one is left alone in ministry with a child or adult at risk; prayer and meditation are spiritual practices and never replace medical or psychological care; and each chartered branch operates under an absolute legal and financial liability firewall from the central Chancery.
+          <p class="text-sm sm:text-base text-obsidian-800/85 leading-relaxed font-light mt-4">
+            Gather as a <strong class="font-semibold">Chapter</strong> to study, as an <strong class="font-semibold">Oratory</strong> to pray, or as a <strong class="font-semibold">Combined Foundation</strong> to do both. Govern your own life, with the Chancery beside you and no hierarchy between.
           </p>
+
+          <ul class="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2 text-xs text-obsidian-800/85">
+            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-gold-600 shrink-0"></i> Begin with just three Collegians</li>
+            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-gold-600 shrink-0"></i> Your own Constitution and programme</li>
+            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-gold-600 shrink-0"></i> Model Constitution and website listing</li>
+            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-gold-600 shrink-0"></i> No fees for any rank</li>
+          </ul>
+
+          <div class="mt-8 flex flex-col sm:flex-row gap-3">
+            <a href="branches.html" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
+              <span>Find your path</span><i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="branches.html#warrant" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-white border gold-border text-obsidian-900 hover:bg-linen-100 text-xs font-serif font-bold uppercase tracking-wider transition">
+              How a branch begins
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -1276,7 +1248,7 @@
       <div class="space-y-2">
         <h4 class="font-serif text-sm font-semibold text-white uppercase tracking-wider mb-3">Chancery &amp; Public Registers</h4>
         <div><a href="fellowship.html" class="hover:text-gold-400 transition">Collegiate Roll &amp; Public Register of Awards</a></div>
-        <div><a href="#branches" class="hover:text-gold-400 transition">Warrants for Chapters, Oratories &amp; Foundations</a></div>
+        <div><a href="branches.html" class="hover:text-gold-400 transition">Warrants for Chapters, Oratories &amp; Foundations</a></div>
         <div><a href="jois.html" class="hover:text-gold-400 transition">Journal of Inner Spirituality (JOIS)</a></div>
         <div><a href="mailto:office@hasrc.org" class="hover:text-gold-400 transition">Office of the Chancery &amp; Privacy Contact</a></div>
       </div>
