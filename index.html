@@ -92,6 +92,7 @@
       <nav class="hidden xl:flex items-center gap-7 text-[11px] font-semibold uppercase tracking-wider text-obsidian-800 whitespace-nowrap">
         <a href="#about" class="hover:text-gold-600 transition">Our Charism</a>
         <a href="#lineage" class="hover:text-gold-600 transition">Lineage</a>
+        <a href="#ranks" class="hover:text-gold-600 transition">Ranks</a>
         <a href="#licentiates" class="hover:text-gold-600 transition">Licentiates</a>
         <a href="fellowship.html" class="text-gold-700 hover:text-gold-600 font-bold transition">Collegiate Roll</a>
         <a href="#branches" class="hover:text-gold-600 transition">Chapters &amp; Oratories</a>
@@ -101,7 +102,7 @@
 
       <!-- Desktop Action & Mobile Hamburger -->
       <div class="flex items-center gap-3">
-        <a href="#licentiates" class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 hover:bg-gold-600 text-linen-50 transition shadow-sm whitespace-nowrap">
+        <a href="#ranks" class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 hover:bg-gold-600 text-linen-50 transition shadow-sm whitespace-nowrap">
           Free Studies
         </a>
         
@@ -121,6 +122,10 @@
         </a>
         <a href="#lineage" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
           <span>Lineage &amp; Predecessors</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
+        </a>
+        <a href="#ranks" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
+          <span>Collegiate Ranks</span>
           <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
         </a>
         <a href="#licentiates" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
@@ -144,7 +149,7 @@
           <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
         </a>
         <div class="pt-2">
-          <a href="#licentiates" onclick="toggleMobileMenu()" class="w-full inline-flex items-center justify-center py-3 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 text-linen-50 hover:bg-gold-600 transition shadow-sm">
+          <a href="#ranks" onclick="toggleMobileMenu()" class="w-full inline-flex items-center justify-center py-3 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 text-linen-50 hover:bg-gold-600 transition shadow-sm">
             Explore Free Studies
           </a>
         </div>
@@ -171,11 +176,11 @@
               A sacred sodality dedicated to preserving the inner Christian spirituality, sacramental science, and transformative metaphysics of the Antiochian tradition, operating under the British collegiate examining board convention with 100% free enrolment.
             </p>
             <div class="flex flex-wrap items-center justify-center gap-4">
-              <a href="#licentiates" class="px-8 py-3.5 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs uppercase tracking-widest font-semibold transition shadow-sm">
-                Explore Specialist Licentiates
+              <a href="#ranks" class="px-8 py-3.5 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs uppercase tracking-widest font-semibold transition shadow-sm">
+                Explore the Collegiate Ranks
               </a>
               <a href="fellowship.html" class="px-8 py-3.5 rounded-full bg-linen-100 hover:bg-linen-200 text-obsidian-900 border gold-border text-xs uppercase tracking-widest font-semibold transition">
-                Collegiate Ranks &amp; Roll
+                Collegiate Roll &amp; Register
               </a>
             </div>
           </div>
@@ -775,12 +780,132 @@
 
   </div>
 
+  <!-- COLLEGIATE RANKS (STATUTE 5.2) -->
+  <section id="ranks" class="py-24 bg-linen-100/60 border-y gold-border">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">
+          The Active Collegiate Ladder &bull; 100% Free Enrolment
+        </span>
+        <h2 class="font-serif text-3xl sm:text-5xl text-obsidian-900 font-normal">Associate, Licentiate &amp; Fellow</h2>
+        <div class="w-16 h-0.5 gold-foil mx-auto mt-4 mb-4"></div>
+        <p class="text-sm text-obsidian-800/80 font-light leading-relaxed">
+          The Collegium recognises progressive tiers of scholarly attainment, ministerial competence, and institutional stewardship. Each rank is conferred only on assessed attainment, by one of the routes set out in Ordinance 5. Enrolment, examination, assessment, and conferral are free of charge under every route, and no rank is a certificate of personal spiritual attainment.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Tier 1 -->
+        <div class="p-7 rounded-3xl bg-white border gold-border card-shadow flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <span class="text-[10px] font-serif uppercase tracking-widest text-gold-700 font-bold block">Tier 1 &bull; AHASRC</span>
+            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Associate of the Collegium</h3>
+            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+              A foundational scholar: one who has completed Modules 1 to 3 of a specialist stream and a Synthesis Theological Paper, or who shows equal standing by clergy service in early orders or by a recognised Bachelor&rsquo;s degree.
+            </p>
+            <div class="text-[11px] text-obsidian-800/75 font-light space-y-1">
+              <div>&bull; <strong>Route A:</strong> Curricular examination (6-month window)</div>
+              <div>&bull; <strong>Route B:</strong> Clergy &amp; portfolio</div>
+              <div>&bull; <strong>Route C:</strong> Academic degree bridge</div>
+            </div>
+          </div>
+          <div class="pt-3 border-t gold-border text-[11px] text-gold-700 font-semibold uppercase tracking-wider">
+            Black Cambridge BA gown &bull; crimson-lined hood
+          </div>
+        </div>
+
+        <!-- Tier 2 -->
+        <div class="p-7 rounded-3xl bg-white border gold-border card-shadow flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <span class="text-[10px] font-serif uppercase tracking-widest text-gold-700 font-bold block">Tier 2 &bull; LHASRC</span>
+            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Licentiate of the Collegium</h3>
+            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+              A specialist scholar licensed to teach (<em>licentia docendi</em>) in one discipline: one who has completed the six modules and the Capstone Treatise of a specialist stream, or who shows equal standing by at least five years of ministry or by a recognised Master&rsquo;s degree.
+            </p>
+            <div class="text-[11px] text-obsidian-800/75 font-light space-y-1">
+              <div>&bull; <strong>Route A:</strong> Full curricular examination (12-month window)</div>
+              <div>&bull; <strong>Route B:</strong> Ministerial &amp; RPEL</div>
+              <div>&bull; <strong>Route C:</strong> Graduate degree bridge</div>
+            </div>
+            <a href="#licentiates" class="inline-block text-[11px] text-gold-700 hover:text-gold-600 underline font-semibold transition">See the four specialist Licentiates &darr;</a>
+          </div>
+          <div class="pt-3 border-t gold-border text-[11px] text-gold-700 font-semibold uppercase tracking-wider">
+            Hood bound with 1-inch gold satin
+          </div>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="p-7 rounded-3xl bg-white border gold-border card-shadow flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <span class="text-[10px] font-serif uppercase tracking-widest text-gold-700 font-bold block">Tier 3 &bull; FHASRC</span>
+            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Fellow of the Collegium</h3>
+            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+              A senior scholar of research, at senior research level (rigour comparable to a Master of Arts thesis): one who has published research in JOIS or defended a Research Monograph, or who holds a Doctorate, or who is a bishop holding the Licentiate on the Episcopal Bench.
+            </p>
+            <div class="text-[11px] text-obsidian-800/75 font-light space-y-1">
+              <div>&bull; <strong>Route A:</strong> JOIS research &amp; monograph</div>
+              <div>&bull; <strong>Route B:</strong> Doctoral &amp; published author</div>
+              <div>&bull; <strong>Route C:</strong> Episcopal Bench</div>
+              <div>&bull; <strong>Route D:</strong> Discipline Fellowship by Research Monograph</div>
+            </div>
+          </div>
+          <div class="pt-3 border-t gold-border text-[11px] text-gold-700 font-semibold uppercase tracking-wider">
+            Cambridge MA gown &bull; gold doctoral hood
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Discipline designations & honours -->
+      <div class="grid md:grid-cols-2 gap-6 mt-8">
+        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow space-y-3">
+          <h3 class="font-serif font-bold text-sm text-obsidian-900 uppercase tracking-wider">Discipline Designations</h3>
+          <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+            Alongside the ranks, the Collegium names the stream in which a rank was earned by curricular or research examination. Associate designations apply to Route A only, and Fellow designations to Route D only.
+          </p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-[11px] text-obsidian-800/85 text-left">
+              <thead>
+                <tr class="border-b gold-border text-gold-700 uppercase tracking-wider">
+                  <th class="py-2 pr-3 font-semibold">Stream</th>
+                  <th class="py-2 pr-3 font-semibold">Associate</th>
+                  <th class="py-2 pr-3 font-semibold">Licentiate</th>
+                  <th class="py-2 font-semibold">Fellow</th>
+                </tr>
+              </thead>
+              <tbody class="font-mono">
+                <tr class="border-b border-linen-200"><td class="py-2 pr-3 font-sans">Sacramental Ministry</td><td class="pr-3">A.S.Min</td><td class="pr-3">L.S.Min</td><td>F.S.Min</td></tr>
+                <tr class="border-b border-linen-200"><td class="py-2 pr-3 font-sans">Metaphysical Theology</td><td class="pr-3">A.Mphy.Th.</td><td class="pr-3">L.Mphy.Th.</td><td>F.Mphy.Th.</td></tr>
+                <tr class="border-b border-linen-200"><td class="py-2 pr-3 font-sans">Applied Metaphysical Science</td><td class="pr-3">A.AMsc.</td><td class="pr-3">L.AMsc.</td><td>F.AMsc.</td></tr>
+                <tr><td class="py-2 pr-3 font-sans">Contemporary Spirituality</td><td class="pr-3">A.C.Sp.</td><td class="pr-3">L.C.Sp.</td><td>F.C.Sp.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow space-y-3">
+          <h3 class="font-serif font-bold text-sm text-obsidian-900 uppercase tracking-wider">Honours &amp; the Wider Roll</h3>
+          <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+            Outside the assessed ladder, the Provost may confer by Decree the Honorary Fellowship (HonFHASRC) and the Fellow Emeritus (FHASRC (Em.)) <em>honoris causa</em>. These confer no examination-based standing. The Founding Fellowship is held by the Founder by the Statutes, and is not an examined rank.
+          </p>
+          <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+            A general membership tier (Member of the Collegium, MHASRC) is reserved to the future discretion of the Provost and is not yet active. All conferred ranks are perpetual and are recorded in the Public Register of Awards.
+          </p>
+          <a href="fellowship.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
+            <span>View the Collegiate Roll &amp; Register &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- LICENTIATE CERTIFICATIONS -->
   <section id="licentiates" class="py-24 bg-white border-y gold-border">
     <div class="max-w-5xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-14">
         <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">
-          British Examining Board Convention &bull; 100% Free Enrolment
+          Tier 2 &bull; British Examining Board Convention &bull; 100% Free Enrolment
         </span>
         <h2 class="font-serif text-3xl sm:text-5xl text-obsidian-900 font-normal">The Four Specialist Licentiates</h2>
         <div class="w-16 h-0.5 gold-foil mx-auto mt-4 mb-4"></div>
