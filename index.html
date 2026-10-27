@@ -93,7 +93,7 @@
         <a href="#about" class="hover:text-gold-600 transition">Our Charism</a>
         <a href="#lineage" class="hover:text-gold-600 transition">Lineage</a>
         <a href="#ranks" class="hover:text-gold-600 transition">Ranks</a>
-        <a href="#licentiates" class="hover:text-gold-600 transition">Licentiates</a>
+        <a href="#streams" class="hover:text-gold-600 transition">Streams</a>
         <a href="fellowship.html" class="text-gold-700 hover:text-gold-600 font-bold transition">Collegiate Roll</a>
         <a href="#branches" class="hover:text-gold-600 transition">Chapters &amp; Oratories</a>
         <a href="#governance" class="hover:text-gold-600 transition">Collegiate Order</a>
@@ -128,8 +128,8 @@
           <span>Collegiate Ranks</span>
           <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
         </a>
-        <a href="#licentiates" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
-          <span>Specialist Licentiates</span>
+        <a href="#streams" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
+          <span>Specialist Streams</span>
           <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
         </a>
         <a href="fellowship.html" onclick="toggleMobileMenu()" class="text-gold-700 hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200 font-bold">
@@ -828,7 +828,10 @@
               <div>&bull; <strong>Route B:</strong> Ministerial &amp; RPEL</div>
               <div>&bull; <strong>Route C:</strong> Graduate degree bridge</div>
             </div>
-            <a href="#licentiates" class="inline-block text-[11px] text-gold-700 hover:text-gold-600 underline font-semibold transition">See the four specialist Licentiates &darr;</a>
+            <div class="flex flex-wrap gap-x-4 gap-y-1">
+              <a href="#streams" class="inline-block text-[11px] text-gold-700 hover:text-gold-600 underline font-semibold transition">See the four specialist streams &darr;</a>
+              <a href="#legal-notice" class="inline-block text-[11px] text-gold-700 hover:text-gold-600 underline font-semibold transition">See the legal notice</a>
+            </div>
           </div>
           <div class="pt-3 border-t gold-border text-[11px] text-gold-700 font-semibold uppercase tracking-wider">
             Hood bound with 1-inch gold satin
@@ -900,219 +903,72 @@
     </div>
   </section>
 
-  <!-- LICENTIATE CERTIFICATIONS -->
-  <section id="licentiates" class="py-24 bg-white border-y gold-border">
+  <!-- SPECIALIST STREAMS -->
+  <section id="streams" class="py-24 bg-white border-y gold-border">
     <div class="max-w-5xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-14">
         <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">
-          Tier 2 &bull; British Examining Board Convention &bull; 100% Free Enrolment
+          Specialist Streams &bull; British Examining Board Convention &bull; 100% Free Enrolment
         </span>
-        <h2 class="font-serif text-3xl sm:text-5xl text-obsidian-900 font-normal">The Four Specialist Licentiates</h2>
+        <h2 class="font-serif text-3xl sm:text-5xl text-obsidian-900 font-normal">The Four Specialist Streams</h2>
         <div class="w-16 h-0.5 gold-foil mx-auto mt-4 mb-4"></div>
         <p class="text-sm text-obsidian-800/80 font-light leading-relaxed">
-          Positioned canonically between the Associate and Fellow ranks, 
-          the HASRC Licentiate follows the British examination convention: 
-          a qualification conferred by a learned body on the strength of examination, 
-          assessed at a rigour comparable to upper-division undergraduate or early graduate theological inquiry. 
-          It grants the Collegium’s ecclesiastical licence to teach (<em>licentia docendi</em>)
-          within a sacred discipline. <a href="#legal-notice" class="text-gold-700 hover:text-gold-600 underline font-medium transition">See the legal notice below.</a>
+          The Associate, Licentiate and Fellow ranks are earned in one of four specialist streams. Every stream has six modules and an 8,000-word Capstone Treatise, and each carries its own discipline designation. Choose a stream to see its full syllabus and admission routes.
         </p>
       </div>
 
-      <!-- Tab Buttons -->
-      <div class="flex flex-wrap justify-center gap-2 mb-10">
-        <button onclick="switchTab('lsmin')" id="btn-lsmin" class="px-6 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition bg-obsidian-900 text-linen-50 shadow-sm">
-          L.S.Min (Sacramental)
-        </button>
-        <button onclick="switchTab('lmphyth')" id="btn-lmphyth" class="px-6 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition bg-linen-100 border gold-border text-obsidian-800 hover:bg-linen-200">
-          L.Mphy.Th. (Theology)
-        </button>
-        <button onclick="switchTab('lamsc')" id="btn-lamsc" class="px-6 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition bg-linen-100 border gold-border text-obsidian-800 hover:bg-linen-200">
-          L.AMsc. (Applied Metaphysics)
-        </button>
-        <button onclick="switchTab('lcsp')" id="btn-lcsp" class="px-6 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition bg-linen-100 border gold-border text-obsidian-800 hover:bg-linen-200">
-          L.C.Sp. (Contemporary)
-        </button>
-      </div>
+      <div class="grid sm:grid-cols-2 gap-6">
 
-      <!-- Panels -->
-      <div class="bg-linen-50 rounded-3xl p-8 sm:p-14 border gold-border card-shadow">
-        
-        <!-- 1. L.S.Min -->
-        <div id="panel-lsmin" class="tab-panel space-y-6">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b gold-border">
-            <div>
-              <span class="text-xs uppercase tracking-widest text-gold-700 font-bold">
-                Designations: A.S.Min &bull; L.S.Min &bull; F.S.Min
-              </span>
-              <h3 class="font-serif text-2xl sm:text-3xl text-obsidian-900 font-normal mt-1">Licentiate of Sacramental Ministry</h3>
-            </div>
-            <span class="px-4 py-1.5 rounded-full bg-gold-300/40 text-obsidian-900 border gold-border text-xs font-semibold self-start sm:self-auto">
-              Ordination Candidates, Clergy &amp; Liturgists
-            </span>
+        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow flex flex-col justify-between space-y-5">
+          <div class="space-y-3">
+            <span class="text-[10px] font-serif uppercase tracking-widest text-gold-700 font-bold block">A.S.Min &bull; L.S.Min &bull; F.S.Min</span>
+            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Sacramental Ministry</h3>
+            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+              A praxis-centred liturgical and ministerial programme preparing candidates for collaborative, inclusive sacramental ministry within the Independent Sacramental Movement. Open to ordination candidates, active clergy, and lay liturgists.
+            </p>
           </div>
-          <p class="text-sm text-obsidian-800/85 leading-relaxed font-light">
-            A praxis-centred liturgical and ministerial programme preparing candidates for collaborative, inclusive sacramental ministry within the Independent Sacramental Movement. Open to ordination candidates, active clergy, and lay liturgists.
-          </p>
-          
-          <div class="grid sm:grid-cols-2 gap-4 pt-2 text-xs">
-            <div class="p-5 rounded-2xl bg-white border gold-border space-y-2">
-              <span class="font-serif font-bold text-obsidian-900 text-sm block">Foundation (Associate Level &bull; AHASRC)</span>
-              <div>&bull; <strong>Module 1:</strong> Antiochian Sacramental Ministry &amp; Basic Texts</div>
-              <div>&bull; <strong>Module 2:</strong> Sacramental Theology (History, Validity &amp; Administration)</div>
-              <div>&bull; <strong>Module 3:</strong> The Science of the Sacraments &amp; Altar Energetics</div>
-            </div>
-            <div class="p-5 rounded-2xl bg-white border gold-border space-y-2">
-              <span class="font-serif font-bold text-obsidian-900 text-sm block">Licentiate Level (LHASRC)</span>
-              <div>&bull; <strong>Module 4:</strong> Homiletics &amp; Sacred Proclamation</div>
-              <div>&bull; <strong>Module 5:</strong> Liturgical Music &amp; Sacred Sound</div>
-              <div>&bull; <strong>Module 6:</strong> Practicum in Sacramental Rites &amp; Field Education</div>
-            </div>
-          </div>
-
-          <div class="p-4 rounded-2xl bg-white/80 border gold-border text-xs text-obsidian-800/85 space-y-1.5">
-            <div><strong>Consolidated Examination Folio:</strong> Six Module Essays (2,000 words each) + one original <strong>8,000-word Liturgical &amp; Ministerial Capstone Treatise</strong> in APA 7th Edition style. Completion of Modules 1–3 + a 2,000-word Synthesis Theological Paper qualifies for Associate rank.</div>
-            <div class="italic text-obsidian-800/70 pt-1">Completion certifies academic and spiritual preparation, but does not automatically confer or guarantee sacramental ordination.</div>
-          </div>
-
-          <div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 border-t gold-border">
-            <span class="text-xs text-gold-700 font-semibold uppercase tracking-wider">Free Enrolment &bull; Curricular, Clergy APEL &amp; Degree Bridge Tracks</span>
-            <a href="lsmin.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
-              <span>View Full 6-Module Syllabus &amp; Guide &rarr;</span>
-            </a>
-          </div>
+          <a href="lsmin.html" class="inline-flex items-center gap-2 self-start px-6 py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
+            <span>View the Syllabus &rarr;</span>
+          </a>
         </div>
 
-        <!-- 2. L.Mphy.Th. -->
-        <div id="panel-lmphyth" class="tab-panel hidden space-y-6">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b gold-border">
-            <div>
-              <span class="text-xs uppercase tracking-widest text-gold-700 font-bold">
-                Designations: A.Mphy.Th. &bull; L.Mphy.Th. &bull; F.Mphy.Th.
-              </span>
-              <h3 class="font-serif text-2xl sm:text-3xl text-obsidian-900 font-normal mt-1">Licentiate of Metaphysical Theology</h3>
-            </div>
-            <span class="px-4 py-1.5 rounded-full bg-linen-200 text-obsidian-900 border gold-border text-xs font-semibold self-start sm:self-auto">
-              Theologians, Mystics, Clergy &amp; Authors
-            </span>
+        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow flex flex-col justify-between space-y-5">
+          <div class="space-y-3">
+            <span class="text-[10px] font-serif uppercase tracking-widest text-gold-700 font-bold block">A.Mphy.Th. &bull; L.Mphy.Th. &bull; F.Mphy.Th.</span>
+            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Metaphysical Theology</h3>
+            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+              An academic and contemplative track for theologians, mystics, clergy, and authors investigating the historical, scriptural, and philosophical architecture of the Independent Sacramental Movement and the Antiochian tradition.
+            </p>
           </div>
-          <p class="text-sm text-obsidian-800/85 leading-relaxed font-light">
-            An academic and contemplative track for theologians, mystics, clergy, and authors investigating the historical, scriptural, and philosophical architecture of the Independent Sacramental Movement and the Antiochian tradition.
-          </p>
-          
-          <div class="grid sm:grid-cols-2 gap-4 pt-2 text-xs">
-            <div class="p-5 rounded-2xl bg-white border gold-border space-y-2">
-              <span class="font-serif font-bold text-obsidian-900 text-sm block">Foundation (Associate Level &bull; AHASRC)</span>
-              <div>&bull; <strong>Module 1:</strong> The Legacy of Patriarch Herman Adrian Spruit &amp; Matriarch Meri Spruit</div>
-              <div>&bull; <strong>Module 2:</strong> The Independent Sacramental Movement: History, Lineages &amp; Autocephaly</div>
-              <div>&bull; <strong>Module 3:</strong> Esoteric Christianity &amp; Primordial Wisdom Traditions</div>
-            </div>
-            <div class="p-5 rounded-2xl bg-white border gold-border space-y-2">
-              <span class="font-serif font-bold text-obsidian-900 text-sm block">Licentiate Level (LHASRC)</span>
-              <div>&bull; <strong>Module 4:</strong> Christian Mysticism &amp; The Contemplative Tradition</div>
-              <div>&bull; <strong>Module 5:</strong> The Christian Creed: Esoteric, Symbolic &amp; Metaphysical Exegesis</div>
-              <div>&bull; <strong>Module 6:</strong> Biblical Metaphors, Sacred Symbolism &amp; New Testament Context</div>
-            </div>
-          </div>
-
-          <div class="p-4 rounded-2xl bg-white/80 border gold-border text-xs text-obsidian-800/85">
-            <strong>Consolidated Examination Folio:</strong> Six Module Essays (2,000 words each) + one original <strong>8,000-word Capstone Treatise</strong> in APA 7th Edition style. Completion of Modules 1–3 + a 2,000-word Synthesis Theological Paper qualifies for Associate rank.
-          </div>
-
-          <div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 border-t gold-border">
-            <span class="text-xs text-gold-700 font-semibold uppercase tracking-wider">Free Enrolment &bull; Curricular, Clergy APEL &amp; Degree Bridge Tracks</span>
-            <a href="lmphyth.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
-              <span>View Full 6-Module Syllabus &amp; Guide &rarr;</span>
-            </a>
-          </div>
+          <a href="lmphyth.html" class="inline-flex items-center gap-2 self-start px-6 py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
+            <span>View the Syllabus &rarr;</span>
+          </a>
         </div>
 
-        <!-- 3. L.AMsc. -->
-        <div id="panel-lamsc" class="tab-panel hidden space-y-6">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b gold-border">
-            <div>
-              <span class="text-xs uppercase tracking-widest text-gold-700 font-bold">
-                Designations: A.AMsc. &bull; L.AMsc. &bull; F.AMsc.
-              </span>
-              <h3 class="font-serif text-2xl sm:text-3xl text-obsidian-900 font-normal mt-1">Licentiate of Applied Metaphysical Science</h3>
-            </div>
-            <span class="px-4 py-1.5 rounded-full bg-linen-200 text-obsidian-900 border gold-border text-xs font-semibold self-start sm:self-auto">
-              Practitioners, Ministers &amp; Contemplative Facilitators
-            </span>
+        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow flex flex-col justify-between space-y-5">
+          <div class="space-y-3">
+            <span class="text-[10px] font-serif uppercase tracking-widest text-gold-700 font-bold block">A.AMsc. &bull; L.AMsc. &bull; F.AMsc.</span>
+            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Applied Metaphysical Science</h3>
+            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+              Designed for spiritual practitioners, ministers, and facilitators seeking mastery in applied metaphysics, contemplative mindset practice, spiritual mind healing as prayer, and Christic energy traditions.
+            </p>
           </div>
-          <p class="text-sm text-obsidian-800/85 leading-relaxed font-light">
-            Designed for spiritual practitioners, ministers, and facilitators seeking mastery in applied metaphysics, contemplative mindset practice, spiritual mind healing as prayer, and Christic energy traditions. Examines scholarship and academic inquiry; no rank certifies personal spiritual attainment.
-          </p>
-          
-          <div class="grid sm:grid-cols-2 gap-4 pt-2 text-xs">
-            <div class="p-5 rounded-2xl bg-white border gold-border space-y-2">
-              <span class="font-serif font-bold text-obsidian-900 text-sm block">Foundation (Associate Level &bull; AHASRC)</span>
-              <div>&bull; <strong>Module 1:</strong> The Power of the Subconscious Mind &amp; Mental Science</div>
-              <div>&bull; <strong>Module 2:</strong> The Magic of Believing &amp; Creative Consciousness</div>
-              <div>&bull; <strong>Module 3:</strong> Spiritual Energy &amp; Prayer-Based Healing Traditions</div>
-            </div>
-            <div class="p-5 rounded-2xl bg-white border gold-border space-y-2">
-              <span class="font-serif font-bold text-obsidian-900 text-sm block">Licentiate Level (LHASRC)</span>
-              <div>&bull; <strong>Module 4:</strong> Meditation Dynamics &amp; Contemplative Protocols</div>
-              <div>&bull; <strong>Module 5:</strong> Contemporary Biblical Exegesis (Metaphysical &amp; Psychological Lens)</div>
-              <div>&bull; <strong>Module 6:</strong> Applied Affirmative Prayer &amp; Pastoral Case Studies</div>
-            </div>
-          </div>
-
-          <div class="p-4 rounded-2xl bg-white/80 border gold-border text-xs text-obsidian-800/85">
-            <strong>Consolidated Examination Folio:</strong> Six Module Essays (2,000 words each) + one original <strong>8,000-word Applied Metaphysical Science Treatise</strong> in APA 7th Edition style. Completion of Modules 1–3 + a 2,000-word Synthesis Theological Paper qualifies for Associate rank.
-          </div>
-
-          <div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 border-t gold-border">
-            <span class="text-xs text-gold-700 font-semibold uppercase tracking-wider">Free Enrolment &bull; Curricular, Clergy APEL &amp; Degree Bridge Tracks</span>
-            <a href="lamsc.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
-              <span>View Full 6-Module Syllabus &amp; Guide &rarr;</span>
-            </a>
-          </div>
+          <a href="lamsc.html" class="inline-flex items-center gap-2 self-start px-6 py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
+            <span>View the Syllabus &rarr;</span>
+          </a>
         </div>
 
-        <!-- 4. L.C.Sp. -->
-        <div id="panel-lcsp" class="tab-panel hidden space-y-6">
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b gold-border">
-            <div>
-              <span class="text-xs uppercase tracking-widest text-gold-700 font-bold">
-                Designations: A.C.Sp. &bull; L.C.Sp. &bull; F.C.Sp.
-              </span>
-              <h3 class="font-serif text-2xl sm:text-3xl text-obsidian-900 font-normal mt-1">Licentiate in Contemporary Spirituality</h3>
-            </div>
-            <span class="px-4 py-1.5 rounded-full bg-gold-300/40 text-obsidian-900 border gold-border text-xs font-semibold self-start sm:self-auto">
-              Spiritual Directors, Pastoral Companions &amp; Facilitators
-            </span>
+        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow flex flex-col justify-between space-y-5">
+          <div class="space-y-3">
+            <span class="text-[10px] font-serif uppercase tracking-widest text-gold-700 font-bold block">A.C.Sp. &bull; L.C.Sp. &bull; F.C.Sp.</span>
+            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Contemporary Spirituality</h3>
+            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+              An integrative pastoral and mentoring track for spiritual directors, pastoral companions, and community facilitators exploring inner ethics, interfaith dialogue, and inclusive pastoral care.
+            </p>
           </div>
-          <p class="text-sm text-obsidian-800/85 leading-relaxed font-light">
-            An integrative pastoral and mentoring track for spiritual directors, pastoral companions, and community facilitators exploring inner ethics, interfaith dialogue, and inclusive pastoral care.
-          </p>
-          
-          <div class="grid sm:grid-cols-2 gap-4 pt-2 text-xs">
-            <div class="p-5 rounded-2xl bg-white border gold-border space-y-2">
-              <span class="font-serif font-bold text-obsidian-900 text-sm block">Foundation (Associate Level &bull; AHASRC)</span>
-              <div>&bull; <strong>Module 1:</strong> Ethical Considerations in Pastoral Ministry &amp; Spiritual Direction</div>
-              <div>&bull; <strong>Module 2:</strong> Interfaith Ministry &amp; Comparative World Religions</div>
-              <div>&bull; <strong>Module 3:</strong> Queer Theologies &amp; Radical Inclusive Ministry</div>
-            </div>
-            <div class="p-5 rounded-2xl bg-white border gold-border space-y-2">
-              <span class="font-serif font-bold text-obsidian-900 text-sm block">Licentiate Level (LHASRC)</span>
-              <div>&bull; <strong>Module 4:</strong> Pastoral Guidance on Marriage, Family &amp; Relationships</div>
-              <div>&bull; <strong>Module 5:</strong> Conflict Management &amp; Community Peacebuilding</div>
-              <div>&bull; <strong>Module 6:</strong> Organisational Leadership &amp; Sacred Administration</div>
-            </div>
-          </div>
-
-          <div class="p-4 rounded-2xl bg-white/80 border gold-border text-xs text-obsidian-800/85">
-            <strong>Consolidated Examination Folio:</strong> Six Module Essays (2,000 words each) + one original <strong>8,000-word Contemporary Spirituality &amp; Pastoral Synthesis Treatise</strong> in APA 7th Edition style. Completion of Modules 1–3 + a 2,000-word Synthesis Theological Paper qualifies for Associate rank.
-          </div>
-
-          <div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 border-t gold-border">
-            <span class="text-xs text-gold-700 font-semibold uppercase tracking-wider">Free Enrolment &bull; Curricular, Clergy APEL &amp; Degree Bridge Tracks</span>
-            <a href="lcsp.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
-              <span>View Full 6-Module Syllabus &amp; Guide &rarr;</span>
-            </a>
-          </div>
+          <a href="lcsp.html" class="inline-flex items-center gap-2 self-start px-6 py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
+            <span>View the Syllabus &rarr;</span>
+          </a>
         </div>
 
       </div>
@@ -1547,30 +1403,6 @@
         if (icon) icon.setAttribute('data-lucide', 'menu');
       }
       if (window.lucide) lucide.createIcons();
-    }
-
-    // Tab Switching Functionality
-    function switchTab(tabId) {
-      document.querySelectorAll('.tab-panel').forEach(p => p.classList.add('hidden'));
-      const active = document.getElementById('panel-' + tabId);
-      if (active) active.classList.remove('hidden');
-
-      const buttons = [
-        { id: 'btn-lsmin', target: 'lsmin' },
-        { id: 'btn-lmphyth', target: 'lmphyth' },
-        { id: 'btn-lamsc', target: 'lamsc' },
-        { id: 'btn-lcsp', target: 'lcsp' }
-      ];
-      buttons.forEach(b => {
-        const btn = document.getElementById(b.id);
-        if (btn) {
-          if (b.target === tabId) {
-            btn.className = "px-6 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition bg-obsidian-900 text-linen-50 shadow-sm";
-          } else {
-            btn.className = "px-6 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition bg-linen-100 border gold-border text-obsidian-800 hover:bg-linen-200";
-          }
-        }
-      });
     }
 
     // Biographical Dossier Modal
