@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal of Inner Spirituality (JOIS) | HASRC Collegium</title>
+  <meta name="description" content="Journal of Inner Spirituality (JOIS): a peer-reviewed Diamond Open Access journal of contemplative, sacramental and mystical studies from the Herman Adrian Spruit Research Collegium.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@0.469.0"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { serif: ['"Cormorant Garamond"','Georgia','serif'], sans: ['"Plus Jakarta Sans"','system-ui','sans-serif'], mono: ['"JetBrains Mono"','monospace'] },
+      colors: {
+        linen: { 50:'#FCFAF7', 100:'#F7F3EC', 200:'#EDE5D8', 300:'#DFD3C0' },
+        gold: { 300:'#F4E5B8', 400:'#E6CA7D', 500:'#C5A059', 600:'#A47E3B', 700:'#7B5D28' },
+        obsidian: { 800:'#22201E', 900:'#141312' } } } } }
+  </script>
+  <style>
+    body { background-color:#FCFAF7; color:#22201E; }
+    .gold-foil { background: linear-gradient(135deg,#BF953F 0%,#FCF6BA 35%,#B38728 70%,#FBF5B7 100%); }
+    .gold-border { border-color: rgba(197,160,89,.4); }
+    .card-shadow { box-shadow: 0 15px 35px -5px rgba(20,19,18,.05), 0 0 1px 1px rgba(197,160,89,.2); }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-gold-300 selection:text-obsidian-900">
+
+  <div class="gold-foil py-2 px-4 text-center">
+    <p class="text-[11px] sm:text-xs font-serif font-semibold tracking-[0.25em] uppercase text-obsidian-900">
+      Journal of Inner Spirituality &bull; Open Access Learned Review &bull; ISSN (Online): 2980-412X
+    </p>
+  </div>
+
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-linen-50/95 border-b gold-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 sm:h-24 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3 shrink-0 group">
+        <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-gold-500/60 bg-white flex items-center justify-center group-hover:scale-105 transition">
+          <i data-lucide="book-marked" class="w-5 h-5 sm:w-6 sm:h-6 text-gold-600"></i>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif font-bold text-xl sm:text-2xl text-obsidian-900 tracking-wider leading-none">HASRC</span>
+          <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-gold-700 font-semibold mt-1">Research Collegium</span>
+        </div>
+      </a>
+      <nav class="hidden xl:flex items-center gap-7 text-[11px] font-semibold uppercase tracking-wider text-obsidian-800 whitespace-nowrap">
+        <a href="index.html#about" class="hover:text-gold-600 transition">Our Charism</a>
+        <a href="index.html#lineage" class="hover:text-gold-600 transition">Lineage</a>
+        <a href="index.html#ranks" class="hover:text-gold-600 transition">Ranks</a>
+        <a href="index.html#disciplines" class="hover:text-gold-600 transition">Disciplines</a>
+        <a href="fellowship.html" class="text-gold-700 hover:text-gold-600 font-bold transition">Collegiate Roll</a>
+        <a href="index.html#branches" class="hover:text-gold-600 transition">Chapters &amp; Oratories</a>
+        <a href="index.html#governance" class="hover:text-gold-600 transition">Collegiate Order</a>
+        <a href="jois.html" class="text-gold-700 font-bold hover:text-gold-600 transition">JOIS Journal</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="index.html#ranks" class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 hover:bg-gold-600 text-linen-50 transition whitespace-nowrap">Free Studies</a>
+        <button onclick="toggleMobileMenu()" aria-label="Toggle navigation" class="xl:hidden w-10 h-10 rounded-full bg-white border gold-border flex items-center justify-center text-obsidian-900 hover:bg-linen-100 transition">
+          <i data-lucide="menu" id="menu-icon" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden xl:hidden bg-white border-b gold-border px-6 py-6">
+      <nav class="flex flex-col space-y-4 text-xs font-semibold uppercase tracking-widest text-obsidian-800">
+        <a href="index.html#about" class="py-1 border-b border-linen-200">Our Charism</a>
+        <a href="index.html#lineage" class="py-1 border-b border-linen-200">Lineage &amp; Predecessors</a>
+        <a href="index.html#ranks" class="py-1 border-b border-linen-200">Collegiate Ranks</a>
+        <a href="index.html#disciplines" class="py-1 border-b border-linen-200">Specialist Disciplines</a>
+        <a href="fellowship.html" class="py-1 border-b border-linen-200 text-gold-700 font-bold">Collegiate Roll</a>
+        <a href="index.html#branches" class="py-1 border-b border-linen-200">Chapters &amp; Oratories</a>
+        <a href="index.html#governance" class="py-1 border-b border-linen-200">Collegiate Order &amp; Regalia</a>
+        <a href="jois.html" class="py-1 border-b border-linen-200 text-gold-700 font-bold">JOIS Journal</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- JOURNAL SUB-NAV (OJS style) -->
+  <nav class="bg-linen-100/70 border-b gold-border text-xs">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2 text-obsidian-800/70">
+        <a href="index.html" class="hover:text-gold-700">Collegium Portal</a><span>/</span>
+        <span class="text-obsidian-900 font-medium">Journal of Inner Spirituality (JOIS)</span>
+      </div>
+      <div class="flex items-center gap-5 font-semibold uppercase tracking-wider text-[11px]">
+        <a href="jois.html" class="text-gold-700 border-b-2 border-gold-500 pb-0.5">Journal Home</a>
+        <a href="jois-archive.html" class="hover:text-gold-700">All Volumes</a>
+        <a href="jois.html#submit" class="hover:text-gold-700">Submit</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="border-b gold-border bg-gradient-to-b from-linen-100/60 to-linen-50">
+    <div class="max-w-7xl mx-auto px-6 py-14 lg:py-20 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-8 space-y-6">
+        <p class="text-[11px] uppercase tracking-[0.3em] font-semibold text-gold-700">HASRC Journal Series &bull; Diamond Open Access</p>
+        <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.02] text-obsidian-900">Journal of<br><em class="text-gold-700">Inner Spirituality</em></h1>
+        <p class="text-base sm:text-lg text-obsidian-800/80 font-light leading-relaxed max-w-2xl">A peer-reviewed, open-access journal of contemplative, sacramental and mystical studies. It publishes argued treatises, historical documents and careful empirical work, read in the tradition from which each author writes.</p>
+        <div class="flex flex-wrap gap-3 pt-2">
+          <a href="#current" class="px-7 py-3.5 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-semibold uppercase tracking-wider transition">Read Current Issue</a>
+          <a href="jois-archive.html" class="px-7 py-3.5 rounded-full bg-white border gold-border hover:bg-linen-100 text-obsidian-900 text-xs font-semibold uppercase tracking-wider transition">Browse All Volumes</a>
+        </div>
+      </div>
+      <div class="lg:col-span-4">
+        <div class="bg-white rounded-3xl p-6 border gold-border card-shadow">
+          <div class="border border-gold-500/50 rounded-2xl p-7 bg-linen-50 text-center space-y-2">
+            <span class="text-[9px] font-serif uppercase tracking-[0.25em] text-gold-700 block">HASRC Journal Series</span>
+            <h2 class="font-serif text-2xl font-bold text-obsidian-900 leading-tight">Journal of Inner Spirituality</h2>
+            <div class="w-8 h-0.5 gold-foil mx-auto"></div>
+            <p id="cover-issue" class="text-xs font-serif italic text-obsidian-800/70"></p>
+          </div>
+          <dl class="mt-5 space-y-2.5 text-xs">
+            <div class="flex justify-between"><dt class="text-obsidian-800/60">ISSN (Online)</dt><dd class="font-mono font-medium">2980-412X</dd></div>
+            <div class="flex justify-between"><dt class="text-obsidian-800/60">Licence</dt><dd class="font-medium">CC-BY-SA 4.0</dd></div>
+            <div class="flex justify-between"><dt class="text-obsidian-800/60">Charges to authors</dt><dd class="font-medium">None</dd></div>
+            <div class="flex justify-between"><dt class="text-obsidian-800/60">Articles published</dt><dd id="stat-articles" class="font-medium"></dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="max-w-7xl mx-auto px-6 py-14 lg:py-16 grid lg:grid-cols-12 gap-12 items-start">
+
+    <div class="lg:col-span-8 space-y-16">
+
+      <!-- CURRENT ISSUE -->
+      <section id="current" class="scroll-mt-32">
+        <div class="flex items-end justify-between gap-4 flex-wrap">
+          <div>
+            <p class="text-[11px] uppercase tracking-[0.25em] font-semibold text-gold-700">Current Issue</p>
+            <h2 id="cur-title" class="font-serif text-3xl sm:text-4xl text-obsidian-900 mt-1"></h2>
+          </div>
+          <a href="jois-archive.html" class="text-xs font-semibold uppercase tracking-wider text-gold-700 hover:text-gold-600 inline-flex items-center gap-1.5">All volumes <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+        </div>
+        <div class="w-12 h-0.5 gold-foil my-4"></div>
+        <p class="text-xs text-obsidian-800/60 mb-2">Select an article to read its summary, then open the full text as a PDF.</p>
+        <div id="cur-list" class="border-t gold-border"></div>
+      </section>
+
+      <!-- AIMS & SCOPE -->
+      <section id="scope" class="scroll-mt-32 space-y-4">
+        <h2 class="font-serif text-3xl text-obsidian-900">Aims &amp; Scope</h2>
+        <div class="w-12 h-0.5 gold-foil"></div>
+        <p class="text-sm text-obsidian-800/85 font-light leading-relaxed text-justify">JOIS gives scholarly form to the study of the inner life of religion: contemplation, sacrament, liturgy, mysticism and spiritual formation. It does not require novelty, though original contributions are welcome. A careful reading of a source, a faithful edition of a document or a clear restatement of a tradition is publishable work.</p>
+        <p class="text-sm text-obsidian-800/85 font-light leading-relaxed text-justify">Authors write from a stated standpoint, confessional or descriptive, and name their sources. Reviewers judge the argument by the standards of that tradition and of sound scholarship, and are not asked to adopt a laboratory method that the subject does not call for.</p>
+      </section>
+
+      <!-- ARTICLE TYPES -->
+      <section id="types" class="scroll-mt-32 space-y-5">
+        <h2 class="font-serif text-3xl text-obsidian-900">Article Types</h2>
+        <div class="w-12 h-0.5 gold-foil"></div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-white rounded-2xl p-5 border gold-border"><h3 class="font-serif text-lg font-bold">Treatise / Essay</h3><p class="text-xs text-obsidian-800/75 font-light leading-relaxed mt-1">Argument-led study with its own section headings, footnotes and a short &ldquo;Sources and Standpoint&rdquo; paragraph. 2,000&ndash;6,000 words.</p></div>
+          <div class="bg-white rounded-2xl p-5 border gold-border"><h3 class="font-serif text-lg font-bold">Research Article</h3><p class="text-xs text-obsidian-800/75 font-light leading-relaxed mt-1">Empirical or historical-documentary work with a clear method, evidence and discussion. 2,000&ndash;6,000 words.</p></div>
+          <div class="bg-white rounded-2xl p-5 border gold-border"><h3 class="font-serif text-lg font-bold">Annotated Document</h3><p class="text-xs text-obsidian-800/75 font-light leading-relaxed mt-1">A historical text with transcription, notes on provenance and short commentary.</p></div>
+          <div class="bg-white rounded-2xl p-5 border gold-border"><h3 class="font-serif text-lg font-bold">Case Study</h3><p class="text-xs text-obsidian-800/75 font-light leading-relaxed mt-1">A structured account of one community, practice or event, with its limits stated.</p></div>
+          <div class="bg-white rounded-2xl p-5 border gold-border sm:col-span-2"><h3 class="font-serif text-lg font-bold">Monograph</h3><p class="text-xs text-obsidian-800/75 font-light leading-relaxed mt-1">A standalone book-length study of 18,000 words or more.</p></div>
+        </div>
+      </section>
+
+      <!-- POLICIES -->
+      <section id="policies" class="scroll-mt-32 space-y-5">
+        <h2 class="font-serif text-3xl text-obsidian-900">Publication Policies</h2>
+        <div class="w-12 h-0.5 gold-foil"></div>
+        <div class="grid sm:grid-cols-2 gap-x-8 gap-y-5 text-sm">
+          <div><h3 class="font-serif text-lg font-bold flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-gold-600"></i>Peer review</h3><p class="text-xs text-obsidian-800/75 font-light leading-relaxed mt-1">Editorial screening, then review of each manuscript by at least two reviewers. Reviewers are not told the author&rsquo;s identity. Decisions are made by the editor.</p></div>
+          <div><h3 class="font-serif text-lg font-bold flex items-center gap-2"><i data-lucide="scale" class="w-4 h-4 text-gold-600"></i>Ethics &amp; conflicts</h3><p class="text-xs text-obsidian-800/75 font-light leading-relaxed mt-1">Authors declare conflicts of interest and, where people are studied, ethical approval or consent. Plagiarism is checked before review.</p></div>
+          <div><h3 class="font-serif text-lg font-bold flex items-center gap-2"><i data-lucide="bot" class="w-4 h-4 text-gold-600"></i>AI disclosure</h3><p class="text-xs text-obsidian-800/75 font-light leading-relaxed mt-1">Any use of AI tools in research or writing must be stated in the manuscript. AI systems cannot be listed as authors.</p></div>
+          <div><h3 class="font-serif text-lg font-bold flex items-center gap-2"><i data-lucide="fingerprint" class="w-4 h-4 text-gold-600"></i>Identifiers</h3><p class="text-xs text-obsidian-800/75 font-light leading-relaxed mt-1">JOIS does not assign DOIs. Authors are encouraged to deposit their PDF in an open repository such as Zenodo and cite the DOI it issues.</p></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="lg:col-span-4 space-y-6 lg:sticky lg:top-32">
+      <div id="submit" class="bg-white rounded-3xl p-6 border gold-border card-shadow text-center space-y-3 scroll-mt-32">
+        <h3 class="font-serif text-xl text-obsidian-900">Submit to JOIS</h3>
+        <p class="text-xs text-obsidian-800/75 leading-relaxed font-light">Original research papers, analytical treatises, annotated historical documents and structured case studies (2,000 to 6,000 words), and standalone monographs (18,000+ words), in APA 7th Edition style.</p>
+        <a href="mailto:office@hasrc.org?subject=JOIS Manuscript Submission" class="inline-block w-full py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-semibold uppercase tracking-wider transition">Author Guidelines &amp; Submission</a>
+      </div>
+      <div class="bg-linen-100/60 rounded-3xl p-6 border gold-border space-y-3 text-xs text-obsidian-800/80">
+        <div class="flex items-center gap-2 font-serif font-bold text-sm text-obsidian-900"><i data-lucide="unlock" class="w-4 h-4 text-gold-700"></i>Open Access Policy</div>
+        <p class="leading-relaxed font-light text-[11px]">JOIS operates a <strong>100% Diamond Open Access</strong> model: free to read globally, no password barriers. All works are published under <strong>CC-BY-SA 4.0</strong>, and authors retain copyright.</p>
+        <div class="pt-2 border-t gold-border flex justify-between text-[11px]"><span>Article Processing Charges:</span><strong class="text-obsidian-900">None</strong></div>
+      </div>
+      <div class="bg-linen-100/60 rounded-3xl p-6 border gold-border space-y-2 text-xs text-obsidian-800/80">
+        <div class="flex items-center gap-2 font-serif font-bold text-sm text-obsidian-900"><i data-lucide="info" class="w-4 h-4 text-gold-700"></i>Authors&rsquo; Views</div>
+        <p class="leading-relaxed font-light text-[11px]">Opinions in JOIS are the authors&rsquo; own. Publication is not an endorsement by the Collegium, the Provost or any officer, and confers no rank. No article is medical, psychological, counselling or other regulated professional advice.</p>
+      </div>
+      <div class="bg-white rounded-3xl p-6 border gold-border space-y-2 text-xs">
+        <div class="font-serif font-bold text-sm text-obsidian-900 flex items-center gap-2"><i data-lucide="users" class="w-4 h-4 text-gold-700"></i>Editorial Office</div>
+        <p class="text-obsidian-800/75 font-light leading-relaxed">Editor-in-Chief: <em>to be named</em><br>Editorial board: <em>to be listed</em><br><a href="mailto:office@hasrc.org" class="text-gold-700 hover:text-gold-600">office@hasrc.org</a></p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="py-16 bg-obsidian-900 text-linen-200 border-t gold-border text-xs">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+      <div>
+        <div class="flex items-center gap-3 mb-4"><i data-lucide="book-marked" class="w-5 h-5 text-gold-400"></i><span class="font-serif font-bold text-lg text-white">HASRC</span></div>
+        <p class="text-xs text-linen-300 leading-relaxed font-light">The Herman Adrian Spruit Research Collegium &bull; An Autonomous Ecclesiastical Learned Society &amp; research scriptorium and educational ministry: scholarship, study and fellowship for those who pray, teach and serve.</p>
+      </div>
+      <div class="space-y-2">
+        <h4 class="font-serif text-sm font-semibold text-white uppercase tracking-wider mb-3">Chancery &amp; Public Registers</h4>
+        <div><a href="fellowship.html" class="hover:text-gold-400 transition">Collegiate Roll &amp; Public Register of Awards</a></div>
+        <div><a href="index.html#branches" class="hover:text-gold-400 transition">Warrants for Chapters, Oratories &amp; Foundations</a></div>
+        <div><a href="jois.html" class="hover:text-gold-400 transition">Journal of Inner Spirituality (JOIS)</a></div>
+        <div><a href="mailto:office@hasrc.org" class="hover:text-gold-400 transition">Office of the Chancery &amp; Privacy Contact</a></div>
+      </div>
+      <div>
+        <h4 class="font-serif text-sm font-semibold text-white uppercase tracking-wider mb-3">Great Seal &amp; Motto</h4>
+        <p class="font-serif italic text-gold-300 text-sm mb-1">Scientia et Sapientia Per Spiritum</p>
+        <p class="text-[10px] uppercase tracking-widest text-linen-300/80 mb-2">Sigillum Collegii Investigationis Hermanni Adriani Spruit</p>
+        <p class="text-[11px] text-linen-300 font-light">&copy; 2026 The Provost of HASRC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="jois-data.js"></script>
+  <script>if(!window.JOIS){document.body.insertAdjacentHTML("afterbegin","<div style='background:#fee;padding:12px;text-align:center;font:14px sans-serif'>jois-data.js not found. Put it in the same folder as this page.</div>");window.JOIS={issues:[],esc:String,row:function(){return ''}};}</script>
+  <script>
+    function toggleMobileMenu() {
+      var m = document.getElementById('mobile-menu'), i = document.getElementById('menu-icon');
+      m.classList.toggle('hidden');
+      i.setAttribute('data-lucide', m.classList.contains('hidden') ? 'menu' : 'x');
+      if (window.lucide) lucide.createIcons();
+    }
+
+    (function () {
+      var J = window.JOIS;
+      var live = J.issues.filter(function (i) { return !i.upcoming && i.articles.length; });
+      var cur = live[0];
+      var total = 0; J.issues.forEach(function (i) { total += i.articles.length; });
+      document.getElementById('cover-issue').textContent = 'Vol. ' + cur.volume + ', No. ' + cur.number + ' (' + cur.year + ')';
+      document.getElementById('stat-articles').textContent = total;
+      document.getElementById('cur-title').textContent = 'Vol. ' + cur.volume + ' No. ' + cur.number + ' (' + cur.year + '): ' + cur.title;
+      document.getElementById('cur-list').innerHTML = cur.articles.map(J.row).join('');
+      if (window.lucide) lucide.createIcons();
+    })();
+  </script>
+</body>
+</html>
