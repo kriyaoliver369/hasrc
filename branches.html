@@ -51,6 +51,8 @@
     .timeline-line { background: linear-gradient(to bottom, rgba(197,160,89,.6), rgba(197,160,89,.1)); }
     @media (prefers-reduced-motion: reduce) { .path-card, .chev { transition: none; } .path-card:hover, .path-card.is-picked { transform: none; } }
   </style>
+
+<style id="nav-css">.dd:hover .dd-panel,.dd:focus-within .dd-panel,.dd.open .dd-panel{display:block}details[open]>summary .chev{transform:rotate(180deg)}.chev{transition:transform .2s}</style>
 </head>
 <body class="font-sans antialiased selection:bg-gold-300 selection:text-obsidian-900">
 
@@ -62,49 +64,19 @@
   </div>
 
   <!-- NAVIGATION -->
-  <header class="sticky top-0 z-50 backdrop-blur-md bg-linen-50/95 border-b gold-border">
+  <header id="site-header" class="sticky top-0 z-50 backdrop-blur-md bg-linen-50/95 border-b gold-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 sm:h-24 flex items-center justify-between gap-4">
       <a href="index.html" class="flex items-center gap-3 shrink-0 group">
-        <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-gold-500/60 bg-white flex items-center justify-center shadow-xs group-hover:scale-105 transition">
-          <i data-lucide="book-marked" class="w-5 h-5 sm:w-6 sm:h-6 text-gold-600"></i>
-        </div>
-        <div class="flex flex-col">
-          <span class="font-serif font-bold text-xl sm:text-2xl text-obsidian-900 tracking-wider leading-none">HASRC</span>
-          <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-gold-700 font-sans font-semibold mt-1">Research Collegium</span>
-        </div>
+        <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-gold-500/60 bg-white flex items-center justify-center shadow-xs group-hover:scale-105 transition"><i data-lucide="book-marked" class="w-5 h-5 sm:w-6 sm:h-6 text-gold-600"></i></div>
+        <div class="flex flex-col"><span class="font-serif font-bold text-xl sm:text-2xl text-obsidian-900 tracking-wider leading-none">HASRC</span><span class="text-[11px] sm:text-xs uppercase tracking-widest text-gold-700 font-sans font-semibold mt-1">Research Collegium</span></div>
       </a>
-
-      <nav class="hidden xl:flex items-center gap-7 text-[11px] font-semibold uppercase tracking-wider text-obsidian-800 whitespace-nowrap">
-        <a href="index.html" class="hover:text-gold-600 transition">Main Portal</a>
-        <a href="#paths" class="hover:text-gold-600 transition">Three Paths</a>
-        <a href="#life" class="hover:text-gold-600 transition">Life of a Branch</a>
-        <a href="#warrant" class="hover:text-gold-600 transition">The Warrant</a>
-        <a href="#questions" class="hover:text-gold-600 transition">Questions</a>
-        <a href="fellowship.html" class="hover:text-gold-600 transition">Collegiate Roll</a>
-      </nav>
-
+      <nav class="hidden lg:flex items-center gap-7 text-[11px] font-semibold uppercase tracking-wider text-obsidian-800 whitespace-nowrap" aria-label="Primary"><a href="index.html#begin" class="text-gold-700 hover:text-gold-600 font-bold transition">Begin Free</a><div class="dd relative"><button type="button" class="dd-btn inline-flex items-center gap-1 uppercase tracking-wider font-semibold hover:text-gold-600 transition py-2" aria-haspopup="true" aria-expanded="false">Study<i data-lucide="chevron-down" class="w-3.5 h-3.5"></i></button><div class="dd-panel hidden absolute left-1/2 -translate-x-1/2 top-full pt-2 w-72 z-50"><div role="menu" class="bg-white rounded-2xl border gold-border card-shadow p-2 normal-case"><a role="menuitem" href="index.html#ranks" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Levels of award</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">The three assessed levels</span></a><a role="menuitem" href="index.html#disciplines" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Four programmes</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">Choose your field</span></a><a role="menuitem" href="lsmin.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Sacramental Ministry</span></a><a role="menuitem" href="lmphyth.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Metaphysical Theology</span></a><a role="menuitem" href="lamsc.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Applied Metaphysical Science</span></a><a role="menuitem" href="lcsp.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Contemporary Spirituality</span></a><a role="menuitem" href="fellowship.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">The Collegiate Roll</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">Levels, honours and the Public Register</span></a></div></div></div><div class="dd relative"><button type="button" class="dd-btn inline-flex items-center gap-1 uppercase tracking-wider font-semibold hover:text-gold-600 transition py-2" aria-haspopup="true" aria-expanded="false">Gather<i data-lucide="chevron-down" class="w-3.5 h-3.5"></i></button><div class="dd-panel hidden absolute left-1/2 -translate-x-1/2 top-full pt-2 w-72 z-50"><div role="menu" class="bg-white rounded-2xl border gold-border card-shadow p-2 normal-case"><a role="menuitem" href="branches.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Chapters, Oratories &amp; Foundations</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">Study and pray with others</span></a><a role="menuitem" href="branches.html#petition" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Start a branch</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">Petition for a Warrant</span></a><a role="menuitem" href="index.html#feast" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Feast of Holy Sophia</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">30 September</span></a></div></div></div><div class="dd relative"><button type="button" class="dd-btn inline-flex items-center gap-1 uppercase tracking-wider font-semibold hover:text-gold-600 transition py-2" aria-haspopup="true" aria-expanded="false">About<i data-lucide="chevron-down" class="w-3.5 h-3.5"></i></button><div class="dd-panel hidden absolute left-1/2 -translate-x-1/2 top-full pt-2 w-72 z-50"><div role="menu" class="bg-white rounded-2xl border gold-border card-shadow p-2 normal-case"><a role="menuitem" href="index.html#about" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Our charism</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">What we hold dear</span></a><a role="menuitem" href="index.html#lineage" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Lineage &amp; Founder</span></a><a role="menuitem" href="governance.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">How we are led</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">Provost, councils and regalia in plain words</span></a><a role="menuitem" href="index.html#legal-notice" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Legal notice</span></a></div></div></div><a href="jois.html" class="hover:text-gold-600 transition">Journal</a></nav>
       <div class="flex items-center gap-3">
-        <a href="#petition" class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 hover:bg-gold-600 text-linen-50 transition shadow-sm whitespace-nowrap">
-          Petition for a Warrant
-        </a>
-        <button id="menu-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu"
-                class="xl:hidden w-10 h-10 rounded-full bg-white border gold-border flex items-center justify-center text-obsidian-900 hover:bg-linen-100 transition">
-          <i data-lucide="menu" class="w-5 h-5"></i>
-        </button>
+        <a href="index.html#begin" class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 hover:bg-gold-600 text-linen-50 transition shadow-sm whitespace-nowrap">Enrol Free</a>
+        <button type="button" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-drawer" class="lg:hidden w-10 h-10 rounded-full bg-white border gold-border flex items-center justify-center text-obsidian-900 hover:bg-linen-100 transition"><i data-lucide="menu" class="w-5 h-5"></i></button>
       </div>
     </div>
-
-    <div id="mobile-menu" class="hidden xl:hidden bg-white border-t gold-border px-6 py-5">
-      <nav class="flex flex-col space-y-4 text-xs font-semibold uppercase tracking-widest text-obsidian-800">
-        <a href="index.html" class="py-1 border-b border-linen-200">Main Portal</a>
-        <a href="#paths" class="py-1 border-b border-linen-200">Three Paths</a>
-        <a href="#life" class="py-1 border-b border-linen-200">Life of a Branch</a>
-        <a href="#warrant" class="py-1 border-b border-linen-200">The Warrant</a>
-        <a href="#questions" class="py-1 border-b border-linen-200">Questions</a>
-        <a href="fellowship.html" class="py-1 border-b border-linen-200">Collegiate Roll</a>
-        <a href="#petition" class="inline-flex justify-center py-3 rounded-full bg-obsidian-900 text-linen-50">Petition for a Warrant</a>
-      </nav>
-    </div>
+    <div id="nav-drawer" class="hidden lg:hidden bg-white border-b gold-border px-6 py-4 max-h-[75vh] overflow-y-auto"><nav class="flex flex-col text-xs font-semibold uppercase tracking-widest text-obsidian-800" aria-label="Mobile"><a href="index.html#begin" class="text-gold-700 font-bold py-3 border-b border-linen-200">Begin Free</a><details class="border-b border-linen-200"><summary class="flex items-center justify-between py-3 cursor-pointer">Study<i data-lucide="chevron-down" class="w-4 h-4 chev"></i></summary><div class="pb-2 normal-case tracking-normal font-medium"><a href="index.html#ranks" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Levels of award</a><a href="index.html#disciplines" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Four programmes</a><a href="lsmin.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Sacramental Ministry</a><a href="lmphyth.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Metaphysical Theology</a><a href="lamsc.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Applied Metaphysical Science</a><a href="lcsp.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Contemporary Spirituality</a><a href="fellowship.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">The Collegiate Roll</a></div></details><details class="border-b border-linen-200"><summary class="flex items-center justify-between py-3 cursor-pointer">Gather<i data-lucide="chevron-down" class="w-4 h-4 chev"></i></summary><div class="pb-2 normal-case tracking-normal font-medium"><a href="branches.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Chapters, Oratories &amp; Foundations</a><a href="branches.html#petition" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Start a branch</a><a href="index.html#feast" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Feast of Holy Sophia</a></div></details><details class="border-b border-linen-200"><summary class="flex items-center justify-between py-3 cursor-pointer">About<i data-lucide="chevron-down" class="w-4 h-4 chev"></i></summary><div class="pb-2 normal-case tracking-normal font-medium"><a href="index.html#about" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Our charism</a><a href="index.html#lineage" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Lineage &amp; Founder</a><a href="governance.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">How we are led</a><a href="index.html#legal-notice" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Legal notice</a></div></details><a href="jois.html" class="py-3 border-b border-linen-200">Journal</a><a href="index.html#begin" class="mt-2 inline-flex justify-center py-3 rounded-full bg-obsidian-900 text-linen-50">Enrol Free</a></nav></div>
   </header>
 
   <!-- HERO -->
@@ -462,16 +434,6 @@
   <script>
     lucide.createIcons();
 
-    // Mobile menu
-    const btn = document.getElementById('menu-btn');
-    const menu = document.getElementById('mobile-menu');
-    btn.addEventListener('click', () => {
-      const open = menu.classList.toggle('hidden') === false;
-      btn.setAttribute('aria-expanded', String(open));
-    });
-    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      menu.classList.add('hidden'); btn.setAttribute('aria-expanded', 'false');
-    }));
 
     // "What would your gathering be for?" chooser
     const messages = {
@@ -492,5 +454,21 @@
       document.getElementById('chooser-msg').textContent = messages[pick];
     }));
   </script>
+
+<script id="nav-js">
+(function(){
+  var t=document.getElementById('nav-toggle'),d=document.getElementById('nav-drawer');
+  if(t&&d){t.addEventListener('click',function(){var o=d.classList.toggle('hidden')===false;t.setAttribute('aria-expanded',String(o));});
+    d.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){d.classList.add('hidden');t.setAttribute('aria-expanded','false');});});}
+  var dds=document.querySelectorAll('.dd');
+  function closeAll(except){dds.forEach(function(x){if(x!==except){x.classList.remove('open');x.querySelector('.dd-btn').setAttribute('aria-expanded','false');}});}
+  dds.forEach(function(x){var b=x.querySelector('.dd-btn');
+    b.addEventListener('click',function(e){e.stopPropagation();var o=x.classList.toggle('open');b.setAttribute('aria-expanded',String(o));closeAll(x);});
+    x.addEventListener('mouseenter',function(){b.setAttribute('aria-expanded','true');});
+    x.addEventListener('mouseleave',function(){b.setAttribute('aria-expanded',String(x.classList.contains('open')));});});
+  document.addEventListener('click',function(){closeAll();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeAll();if(d&&!d.classList.contains('hidden')){d.classList.add('hidden');t.setAttribute('aria-expanded','false');}}});
+})();
+</script>
 </body>
 </html>
