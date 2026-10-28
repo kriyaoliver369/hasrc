@@ -81,6 +81,8 @@
     .hero-glow { background: radial-gradient(60% 80% at 20% 30%, rgba(230,202,125,.18), transparent 70%); }
     @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto !important; } }
   </style>
+
+<style id="nav-css">.dd:hover .dd-panel,.dd:focus-within .dd-panel,.dd.open .dd-panel{display:block}details[open]>summary .chev{transform:rotate(180deg)}.chev{transition:transform .2s}</style>
 </head>
 <body class="font-sans antialiased selection:bg-gold-300 selection:text-obsidian-900">
   <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[200] focus:px-4 focus:py-2 focus:rounded-full focus:bg-obsidian-900 focus:text-white">Skip to content</a>
@@ -93,90 +95,19 @@
   </div>
 
   <!-- NAVIGATION -->
-  <header class="sticky top-0 z-50 backdrop-blur-md bg-linen-50/95 border-b gold-border">
+  <header id="site-header" class="sticky top-0 z-50 backdrop-blur-md bg-linen-50/95 border-b gold-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 sm:h-24 flex items-center justify-between gap-4">
-      
-      <!-- Brand Logo -->
       <a href="index.html" class="flex items-center gap-3 shrink-0 group">
-        <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-gold-500/60 bg-white flex items-center justify-center shadow-xs group-hover:scale-105 transition">
-          <i data-lucide="book-marked" class="w-5 h-5 sm:w-6 sm:h-6 text-gold-600"></i>
-        </div>
-        <div class="flex flex-col">
-          <span class="font-serif font-bold text-xl sm:text-2xl text-obsidian-900 tracking-wider leading-none">HASRC</span>
-          <span class="text-[11px] sm:text-xs uppercase tracking-widest text-gold-700 font-sans font-semibold mt-1">Research Collegium</span>
-        </div>
+        <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-gold-500/60 bg-white flex items-center justify-center shadow-xs group-hover:scale-105 transition"><i data-lucide="book-marked" class="w-5 h-5 sm:w-6 sm:h-6 text-gold-600"></i></div>
+        <div class="flex flex-col"><span class="font-serif font-bold text-xl sm:text-2xl text-obsidian-900 tracking-wider leading-none">HASRC</span><span class="text-[11px] sm:text-xs uppercase tracking-widest text-gold-700 font-sans font-semibold mt-1">Research Collegium</span></div>
       </a>
-
-      <!-- Desktop Navigation Links -->
-      <nav class="hidden xl:flex items-center gap-6 text-[11px] font-semibold uppercase tracking-wider text-obsidian-800 whitespace-nowrap" aria-label="Primary">
-        <a href="#begin" class="text-gold-700 hover:text-gold-600 font-bold transition">Begin Free</a>
-        <a href="#ranks" class="hover:text-gold-600 transition">Levels</a>
-        <a href="#disciplines" class="hover:text-gold-600 transition">Disciplines</a>
-        <a href="branches.html" class="hover:text-gold-600 transition">Chapters &amp; Oratories</a>
-        <a href="#about" class="hover:text-gold-600 transition">Our Charism</a>
-        <a href="fellowship.html" class="hover:text-gold-600 transition">Collegiate Roll</a>
-        <a href="jois.html" class="hover:text-gold-600 transition">JOIS Journal</a>
-      </nav>
-
-      <!-- Desktop Action & Mobile Hamburger -->
+      <nav class="hidden lg:flex items-center gap-7 text-[11px] font-semibold uppercase tracking-wider text-obsidian-800 whitespace-nowrap" aria-label="Primary"><a href="#begin" class="text-gold-700 hover:text-gold-600 font-bold transition">Begin Free</a><div class="dd relative"><button type="button" class="dd-btn inline-flex items-center gap-1 uppercase tracking-wider font-semibold hover:text-gold-600 transition py-2" aria-haspopup="true" aria-expanded="false">Study<i data-lucide="chevron-down" class="w-3.5 h-3.5"></i></button><div class="dd-panel hidden absolute left-1/2 -translate-x-1/2 top-full pt-2 w-72 z-50"><div role="menu" class="bg-white rounded-2xl border gold-border card-shadow p-2 normal-case"><a role="menuitem" href="#ranks" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Levels of award</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">The three assessed levels</span></a><a role="menuitem" href="#disciplines" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Four programmes</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">Choose your field</span></a><a role="menuitem" href="lsmin.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Sacramental Ministry</span></a><a role="menuitem" href="lmphyth.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Metaphysical Theology</span></a><a role="menuitem" href="lamsc.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Applied Metaphysical Science</span></a><a role="menuitem" href="lcsp.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Contemporary Spirituality</span></a><a role="menuitem" href="fellowship.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">The Collegiate Roll</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">Levels, honours and the Public Register</span></a></div></div></div><div class="dd relative"><button type="button" class="dd-btn inline-flex items-center gap-1 uppercase tracking-wider font-semibold hover:text-gold-600 transition py-2" aria-haspopup="true" aria-expanded="false">Gather<i data-lucide="chevron-down" class="w-3.5 h-3.5"></i></button><div class="dd-panel hidden absolute left-1/2 -translate-x-1/2 top-full pt-2 w-72 z-50"><div role="menu" class="bg-white rounded-2xl border gold-border card-shadow p-2 normal-case"><a role="menuitem" href="branches.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Chapters, Oratories &amp; Foundations</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">Study and pray with others</span></a><a role="menuitem" href="branches.html#petition" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Start a branch</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">Petition for a Warrant</span></a><a role="menuitem" href="#feast" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Feast of Holy Sophia</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">30 September</span></a></div></div></div><div class="dd relative"><button type="button" class="dd-btn inline-flex items-center gap-1 uppercase tracking-wider font-semibold hover:text-gold-600 transition py-2" aria-haspopup="true" aria-expanded="false">About<i data-lucide="chevron-down" class="w-3.5 h-3.5"></i></button><div class="dd-panel hidden absolute left-1/2 -translate-x-1/2 top-full pt-2 w-72 z-50"><div role="menu" class="bg-white rounded-2xl border gold-border card-shadow p-2 normal-case"><a role="menuitem" href="#about" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Our charism</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">What we hold dear</span></a><a role="menuitem" href="#lineage" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Lineage &amp; Founder</span></a><a role="menuitem" href="governance.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">How we are led</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">Provost, councils and regalia in plain words</span></a><a role="menuitem" href="#legal-notice" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Legal notice</span></a></div></div></div><a href="jois.html" class="hover:text-gold-600 transition">Journal</a></nav>
       <div class="flex items-center gap-3">
-        <a href="#begin" class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 hover:bg-gold-600 text-linen-50 transition shadow-sm whitespace-nowrap">
-          Enrol Free
-        </a>
-        
-        <button onclick="toggleMobileMenu()" id="menu-toggle-btn" aria-label="Toggle Navigation" class="xl:hidden w-10 h-10 rounded-full bg-white border gold-border flex items-center justify-center text-obsidian-900 hover:bg-linen-100 transition shadow-xs">
-          <i data-lucide="menu" id="menu-icon" class="w-5 h-5"></i>
-        </button>
+        <a href="#begin" class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 hover:bg-gold-600 text-linen-50 transition shadow-sm whitespace-nowrap">Enrol Free</a>
+        <button type="button" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-drawer" class="lg:hidden w-10 h-10 rounded-full bg-white border gold-border flex items-center justify-center text-obsidian-900 hover:bg-linen-100 transition"><i data-lucide="menu" class="w-5 h-5"></i></button>
       </div>
-
     </div>
-
-    <!-- Mobile Drawer Menu -->
-    <div id="mobile-menu" class="hidden xl:hidden bg-white/98 backdrop-blur-md border-b gold-border px-6 py-6 transition-all">
-      <nav class="flex flex-col space-y-4 text-xs font-semibold uppercase tracking-widest text-obsidian-800" aria-label="Mobile">
-        <a href="#begin" onclick="toggleMobileMenu()" class="text-gold-700 font-bold py-1 transition flex items-center justify-between border-b border-linen-200">
-          <span>Begin Free</span>
-          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
-        </a>
-        <a href="#ranks" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
-          <span>The Three Levels</span>
-          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
-        </a>
-        <a href="#disciplines" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
-          <span>Specialist Disciplines</span>
-          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
-        </a>
-        <a href="branches.html" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
-          <span>Chapters &amp; Oratories</span>
-          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
-        </a>
-        <a href="#about" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
-          <span>Our Charism</span>
-          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
-        </a>
-        <a href="#lineage" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
-          <span>Lineage &amp; Predecessors</span>
-          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
-        </a>
-        <a href="fellowship.html" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
-          <span>Collegiate Roll &amp; Register</span>
-          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
-        </a>
-        <a href="#governance" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
-          <span>Collegiate Order &amp; Regalia</span>
-          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
-        </a>
-        <a href="jois.html" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
-          <span>JOIS Journal</span>
-          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
-        </a>
-        <div class="pt-2">
-          <a href="#begin" onclick="toggleMobileMenu()" class="w-full inline-flex items-center justify-center py-3 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 text-linen-50 hover:bg-gold-600 transition shadow-sm">
-            Enrol Free
-          </a>
-        </div>
-      </nav>
-    </div>
+    <div id="nav-drawer" class="hidden lg:hidden bg-white border-b gold-border px-6 py-4 max-h-[75vh] overflow-y-auto"><nav class="flex flex-col text-xs font-semibold uppercase tracking-widest text-obsidian-800" aria-label="Mobile"><a href="#begin" class="text-gold-700 font-bold py-3 border-b border-linen-200">Begin Free</a><details class="border-b border-linen-200"><summary class="flex items-center justify-between py-3 cursor-pointer">Study<i data-lucide="chevron-down" class="w-4 h-4 chev"></i></summary><div class="pb-2 normal-case tracking-normal font-medium"><a href="#ranks" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Levels of award</a><a href="#disciplines" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Four programmes</a><a href="lsmin.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Sacramental Ministry</a><a href="lmphyth.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Metaphysical Theology</a><a href="lamsc.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Applied Metaphysical Science</a><a href="lcsp.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Contemporary Spirituality</a><a href="fellowship.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">The Collegiate Roll</a></div></details><details class="border-b border-linen-200"><summary class="flex items-center justify-between py-3 cursor-pointer">Gather<i data-lucide="chevron-down" class="w-4 h-4 chev"></i></summary><div class="pb-2 normal-case tracking-normal font-medium"><a href="branches.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Chapters, Oratories &amp; Foundations</a><a href="branches.html#petition" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Start a branch</a><a href="#feast" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Feast of Holy Sophia</a></div></details><details class="border-b border-linen-200"><summary class="flex items-center justify-between py-3 cursor-pointer">About<i data-lucide="chevron-down" class="w-4 h-4 chev"></i></summary><div class="pb-2 normal-case tracking-normal font-medium"><a href="#about" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Our charism</a><a href="#lineage" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Lineage &amp; Founder</a><a href="governance.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">How we are led</a><a href="#legal-notice" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Legal notice</a></div></details><a href="jois.html" class="py-3 border-b border-linen-200">Journal</a><a href="#begin" class="mt-2 inline-flex justify-center py-3 rounded-full bg-obsidian-900 text-linen-50">Enrol Free</a></nav></div>
   </header>
 
   <!-- HERO SECTION -->
@@ -1245,42 +1176,21 @@
 
   <!-- CONSTITUTIONAL GOVERNANCE & REGALIA -->
   <section id="governance" class="py-20 bg-white border-b gold-border">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center max-w-3xl mx-auto mb-14">
-        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">
-          Governance &amp; Traditions
-        </span>
-        <h2 class="font-serif text-3xl sm:text-4xl text-obsidian-900 font-normal">Constitutional Order, Councils &amp; Heraldic Regalia</h2>
-        <div class="w-16 h-0.5 gold-foil mx-auto mt-4 mb-4"></div>
-        <p class="text-xs sm:text-sm text-obsidian-800/80 leading-relaxed font-light">
-          HASRC balances executive stability with independent constitutional safeguards and British collegiate ceremonial order.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow space-y-3">
-          <span class="text-xs font-serif uppercase tracking-widest text-gold-700 font-bold">Executive &amp; Senate</span>
-          <h3 class="font-serif text-xl text-obsidian-900 font-normal">The Provost, Chancery &amp; Academic Senate</h3>
-          <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
-            The Decisive Voice and custody of the Great Seal vest in the Founder, Provost &amp; Prior-General, assisted in routine administration by the Secretary-General and in ceremony by Pro-Chancellors and Canons. Substantive Fellows hold an automatic seat with Consultative Voice in the Academic Senate, serving on Review Panels and as JOIS peer assessors.
-          </p>
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid md:grid-cols-5 gap-10 items-center">
+        <div class="md:col-span-3">
+          <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">How we are led</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-obsidian-900 font-normal">Who decides, who advises, and who keeps us honest</h2>
+          <div class="w-16 h-0.5 gold-foil mt-4 mb-4"></div>
+          <p class="text-sm sm:text-base text-obsidian-800/80 leading-relaxed font-light">One steward holds the vision. Fellows and senior members advise. An independent council makes sure no one judges their own case. It is a small, clear order, and we have written it out in plain words, with the story behind the gowns and medallions too.</p>
+          <a href="governance.html" class="mt-7 inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-semibold uppercase tracking-wider transition shadow-sm">Read how we are led <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
         </div>
-
-        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow space-y-3">
-          <span class="text-xs font-serif uppercase tracking-widest text-gold-700 font-bold">Constitutional Councils</span>
-          <h3 class="font-serif text-xl text-obsidian-900 font-normal">The Two Councils &amp; Custodian of the Register</h3>
-          <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
-            The Elder Council of senior Fellows acts in the Provost’s name only when the Provost is unreachable for 45 days or by formal Letter. The independent Council of Arbitration, appointed by the neutral Custodian of the Register, issues binding findings on constitutional screening, ballot integrity, and entrenched institutional protections.
-          </p>
-        </div>
-
-        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow space-y-3">
-          <span class="text-xs font-serif uppercase tracking-widest text-gold-700 font-bold">Academic Heraldry</span>
-          <h3 class="font-serif text-xl text-obsidian-900 font-normal">Cambridge Regalia, Medallions &amp; Epitoges</h3>
-          <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
-            Associates and Licentiates wear the black Cambridge BA gown and full-shape hood lined in crimson-red satin, with Licentiate cowls bound in 1-inch yellow-gold satin. Fellows wear the Cambridge MA gown and yellow-gold doctoral hood lined in crimson and edged with white faux ermine. Office is marked by the collegiate Medallion, and five-year service is honoured for life by the ermine-banded Epitoge.
-          </p>
-        </div>
+        <ul class="md:col-span-2 space-y-3 text-sm text-obsidian-800/85">
+          <li class="flex gap-3 p-4 rounded-2xl bg-linen-50 border gold-border"><i data-lucide="crown" class="w-5 h-5 text-gold-600 shrink-0 mt-0.5"></i><span><b class="font-semibold">The Provost</b><br><span class="font-light">The steward and Founder</span></span></li>
+          <li class="flex gap-3 p-4 rounded-2xl bg-linen-50 border gold-border"><i data-lucide="users" class="w-5 h-5 text-gold-600 shrink-0 mt-0.5"></i><span><b class="font-semibold">Senate &amp; Elder Council</b><br><span class="font-light">Scholars and counsellors</span></span></li>
+          <li class="flex gap-3 p-4 rounded-2xl bg-linen-50 border gold-border"><i data-lucide="scale" class="w-5 h-5 text-gold-600 shrink-0 mt-0.5"></i><span><b class="font-semibold">Council of Arbitration</b><br><span class="font-light">The independent check</span></span></li>
+          <li class="flex gap-3 p-4 rounded-2xl bg-linen-50 border gold-border"><i data-lucide="medal" class="w-5 h-5 text-gold-600 shrink-0 mt-0.5"></i><span><b class="font-semibold">Gowns, medallions &amp; epitoges</b><br><span class="font-light">What each one means</span></span></li>
+        </ul>
       </div>
     </div>
   </section>
@@ -1574,20 +1484,6 @@
       }
     });
 
-    // Mobile Navigation Drawer Toggle
-    function toggleMobileMenu() {
-      const menu = document.getElementById('mobile-menu');
-      const icon = document.getElementById('menu-icon');
-      if (menu.classList.contains('hidden')) {
-        menu.classList.remove('hidden');
-        if (icon) icon.setAttribute('data-lucide', 'x');
-      } else {
-        menu.classList.add('hidden');
-        if (icon) icon.setAttribute('data-lucide', 'menu');
-      }
-      if (window.lucide) lucide.createIcons();
-    }
-
     // Biographical Dossier Modal
     function openBio(leaderId) {
       const template = document.getElementById('dossier-' + leaderId);
@@ -1724,5 +1620,21 @@
     <span class="text-xs text-linen-200 font-light leading-tight">Freely offered.<br><span class="text-gold-300">Carefully assessed.</span></span>
     <a href="#begin" class="px-6 py-2.5 rounded-full gold-foil text-obsidian-900 text-xs font-serif font-bold uppercase tracking-wider">Enrol free</a>
   </div>
+
+<script id="nav-js">
+(function(){
+  var t=document.getElementById('nav-toggle'),d=document.getElementById('nav-drawer');
+  if(t&&d){t.addEventListener('click',function(){var o=d.classList.toggle('hidden')===false;t.setAttribute('aria-expanded',String(o));});
+    d.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){d.classList.add('hidden');t.setAttribute('aria-expanded','false');});});}
+  var dds=document.querySelectorAll('.dd');
+  function closeAll(except){dds.forEach(function(x){if(x!==except){x.classList.remove('open');x.querySelector('.dd-btn').setAttribute('aria-expanded','false');}});}
+  dds.forEach(function(x){var b=x.querySelector('.dd-btn');
+    b.addEventListener('click',function(e){e.stopPropagation();var o=x.classList.toggle('open');b.setAttribute('aria-expanded',String(o));closeAll(x);});
+    x.addEventListener('mouseenter',function(){b.setAttribute('aria-expanded','true');});
+    x.addEventListener('mouseleave',function(){b.setAttribute('aria-expanded',String(x.classList.contains('open')));});});
+  document.addEventListener('click',function(){closeAll();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeAll();if(d&&!d.classList.contains('hidden')){d.classList.add('hidden');t.setAttribute('aria-expanded','false');}}});
+})();
+</script>
 </body>
 </html>
