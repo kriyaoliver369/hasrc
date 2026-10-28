@@ -237,6 +237,7 @@
                   <option value="B">Associate level, Route B (clergy &amp; portfolio)</option>
                   <option value="C">Associate level, Route C (Bachelor&rsquo;s degree)</option>
                   <option value="L">Licentiate level (I hold a Master&rsquo;s or 5+ years&rsquo; ministry)</option>
+                  <option value="F">Fellow level (I have published research or a doctorate)</option>
                   <option value="?">Not sure yet, please advise</option>
                 </select>
               </div>
@@ -1572,13 +1573,18 @@
         amsc: { name: 'Applied Metaphysical Science', m: ['The Power of the Subconscious Mind & Mental Science', 'The Magic of Believing & Creative Consciousness', 'Spiritual Energy & Prayer-Based Healing Traditions'] },
         csp:  { name: 'Contemporary Spirituality', m: ['Ethical Considerations in Pastoral Ministry & Spiritual Direction', 'Interfaith Ministry & Comparative World Religions', 'Queer Theologies & Radical Inclusive Ministry'] }
       };
-      const ROUTES = { A: 'Associate level, Route A (curricular examination)', B: 'Associate level, Route B (clergy & portfolio)', C: 'Associate level, Route C (degree bridge)', L: 'Licentiate level (I hold a Master\u2019s degree or 5+ years\u2019 ministry)', '?': 'Not sure yet, please advise' };
+      const ROUTES = { A: 'Associate level, Route A (curricular examination)', B: 'Associate level, Route B (clergy & portfolio)', C: 'Associate level, Route C (degree bridge)', L: 'Licentiate level (I hold a Master\u2019s degree or 5+ years\u2019 ministry)', F: 'Fellow level (enquiry: published research or doctorate)', '?': 'Not sure yet, please advise' };
       const disc = document.getElementById('enrol-disc'), route = document.getElementById('enrol-route'),
             name = document.getElementById('enrol-name'), list = document.getElementById('peek-list'),
             title = document.getElementById('peek-title'), go = document.getElementById('enrol-go');
       if (!disc) return;
       function paint() {
         const d = MODULES[disc.value];
+        if (route.value === 'F') {
+          title.textContent = 'Fellowship is by petition';
+          list.innerHTML = '<li class="font-sans text-sm font-light leading-relaxed">The Fellow level recognises published research (for example, articles in our Journal or a defended monograph), or a doctorate or episcopal standing, alongside the Licentiate or a Master\u2019s degree. Send your request and the Chancery will guide you, or <a class="text-gold-700 underline" href="fellowship.html#framework">read how the Fellow level works</a>.</li>';
+          return;
+        }
         title.textContent = 'Your first three modules in ' + d.name;
         list.innerHTML = '';
         d.m.forEach((t, i) => { const li = document.createElement('li'); li.className = 'flex gap-3'; li.innerHTML = '<span class="text-gold-600 font-bold">' + (i + 1) + '</span><span></span>'; li.lastChild.textContent = t; list.appendChild(li); });
@@ -1598,7 +1604,7 @@
       function say(text, ok) {
         msg.textContent = text; msg.className = 'text-sm rounded-xl px-4 py-3 ' + (ok ? 'bg-linen-100 border gold-border text-obsidian-900' : 'bg-rose-700/10 text-rose-800');
       }
-      disc.addEventListener('change', paint);
+      disc.addEventListener('change', paint); route.addEventListener('change', paint);
       form.addEventListener('submit', async (ev) => {
         ev.preventDefault();
         if (hp.value) return; // spam trap
