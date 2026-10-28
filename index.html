@@ -203,17 +203,27 @@
         <!-- Enrol chooser -->
         <div class="reveal lg:col-span-3 p-7 sm:p-9 rounded-3xl bg-white border-2 border-gold-500/70 card-shadow">
           <h3 class="font-serif text-2xl sm:text-3xl text-obsidian-900">Start your enrolment</h3>
-          <p class="mt-1 text-sm text-obsidian-800/75 font-light">Pick a discipline to see where you would begin. Your own email app opens with the request ready to send.</p>
+          <p class="mt-1 text-sm text-obsidian-800/75 font-light">Pick a discipline to see where you would begin, then send your request. The Chancery replies by email with your next steps.</p>
 
-          <form id="enrol-form" class="mt-6 space-y-4" onsubmit="return false">
+          <form id="enrol-form" class="mt-6 space-y-4" novalidate>
             <div>
               <label for="enrol-name" class="block text-xs font-semibold uppercase tracking-wider text-obsidian-900 mb-1">Your name</label>
-              <input id="enrol-name" type="text" autocomplete="name" placeholder="e.g. Anna Carter" class="w-full rounded-xl border gold-border bg-linen-50 px-4 py-3 text-sm focus:bg-white">
+              <input id="enrol-name" name="name" type="text" autocomplete="name" required placeholder="e.g. Anna Carter" class="w-full rounded-xl border gold-border bg-linen-50 px-4 py-3 text-sm focus:bg-white">
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="enrol-email" class="block text-xs font-semibold uppercase tracking-wider text-obsidian-900 mb-1">Email</label>
+                <input id="enrol-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" class="w-full rounded-xl border gold-border bg-linen-50 px-4 py-3 text-sm focus:bg-white">
+              </div>
+              <div>
+                <label for="enrol-country" class="block text-xs font-semibold uppercase tracking-wider text-obsidian-900 mb-1">Country <span class="normal-case font-light text-obsidian-800/60">(optional)</span></label>
+                <input id="enrol-country" name="country" type="text" autocomplete="country-name" placeholder="e.g. Malaysia" class="w-full rounded-xl border gold-border bg-linen-50 px-4 py-3 text-sm focus:bg-white">
+              </div>
             </div>
             <div class="grid sm:grid-cols-2 gap-4">
               <div>
                 <label for="enrol-disc" class="block text-xs font-semibold uppercase tracking-wider text-obsidian-900 mb-1">Discipline</label>
-                <select id="enrol-disc" class="w-full rounded-xl border gold-border bg-linen-50 px-4 py-3 text-sm focus:bg-white">
+                <select id="enrol-disc" name="discipline" class="w-full rounded-xl border gold-border bg-linen-50 px-4 py-3 text-sm focus:bg-white">
                   <option value="smin">Sacramental Ministry</option>
                   <option value="mphy">Metaphysical Theology</option>
                   <option value="amsc">Applied Metaphysical Science</option>
@@ -222,7 +232,7 @@
               </div>
               <div>
                 <label for="enrol-route" class="block text-xs font-semibold uppercase tracking-wider text-obsidian-900 mb-1">Starting level &amp; route</label>
-                <select id="enrol-route" class="w-full rounded-xl border gold-border bg-linen-50 px-4 py-3 text-sm focus:bg-white">
+                <select id="enrol-route" name="route" class="w-full rounded-xl border gold-border bg-linen-50 px-4 py-3 text-sm focus:bg-white">
                   <option value="A">Associate level, Route A (study the modules)</option>
                   <option value="B">Associate level, Route B (clergy &amp; portfolio)</option>
                   <option value="C">Associate level, Route C (Bachelor&rsquo;s degree)</option>
@@ -237,9 +247,15 @@
               <ol id="peek-list" class="space-y-1.5 text-sm text-obsidian-800 font-serif"></ol>
             </div>
 
+            <div class="hidden" aria-hidden="true"><label>Leave this empty <input id="enrol-hp" name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+            <label class="flex items-start gap-3 text-xs text-obsidian-800/80 font-light leading-relaxed">
+              <input id="enrol-consent" type="checkbox" required class="mt-0.5 w-4 h-4 accent-gold-600 shrink-0">
+              <span>I agree that the Chancery may email me about my enrolment. It is used for nothing else and never shared.</span>
+            </label>
+            <p id="enrol-msg" role="status" aria-live="polite" class="hidden text-sm rounded-xl px-4 py-3"></p>
             <div class="flex flex-col sm:flex-row sm:items-center gap-3 pt-1">
-              <button id="enrol-go" type="button" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
-                <i data-lucide="mail" class="w-4 h-4"></i> Open my enrolment email
+              <button id="enrol-go" type="submit" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm disabled:opacity-60">
+                <i data-lucide="send" class="w-4 h-4"></i> <span id="enrol-go-label">Send my enrolment request</span>
               </button>
               <a id="enrol-fallback" href="mailto:info@hasrcollegium.com?subject=Free%20Enrolment" class="text-xs text-gold-700 underline">or write to info@hasrcollegium.com yourself</a>
             </div>
@@ -1567,16 +1583,42 @@
         list.innerHTML = '';
         d.m.forEach((t, i) => { const li = document.createElement('li'); li.className = 'flex gap-3'; li.innerHTML = '<span class="text-gold-600 font-bold">' + (i + 1) + '</span><span></span>'; li.lastChild.textContent = t; list.appendChild(li); });
       }
+      // Paste your Google Apps Script web-app URL here (see the setup guide).
+      const FORM_URL = 'https://script.google.com/macros/s/AKfycbz7ZaW01pd9rsY6_KyqqBgbHdSIp5MnMip1MeBMWYjljWXAeT46Eb50txjFXLJ_A9w/exec';
+      const email = document.getElementById('enrol-email'), country = document.getElementById('enrol-country'),
+            consent = document.getElementById('enrol-consent'), hp = document.getElementById('enrol-hp'),
+            msg = document.getElementById('enrol-msg'), label = document.getElementById('enrol-go-label'),
+            form = document.getElementById('enrol-form');
       function mail() {
         const d = MODULES[disc.value];
-        const subject = 'Free Enrolment: ' + d.name;
         const body = 'Dear Chancery,\n\nI would like to enrol in the Collegium, free of charge.\n\nName: ' + (name.value.trim() || '[your name]') +
-          '\nDiscipline: ' + d.name + '\nStarting level and route: ' + ROUTES[route.value] +
-          '\n\nPlease let me know my next steps.\n\nThank you.';
-        return 'mailto:info@hasrcollegium.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+          '\nDiscipline: ' + d.name + '\nStarting level and route: ' + ROUTES[route.value] + '\n\nPlease let me know my next steps.\n\nThank you.';
+        return 'mailto:info@hasrcollegium.com?subject=' + encodeURIComponent('Free Enrolment: ' + d.name) + '&body=' + encodeURIComponent(body);
+      }
+      function say(text, ok) {
+        msg.textContent = text; msg.className = 'text-sm rounded-xl px-4 py-3 ' + (ok ? 'bg-linen-100 border gold-border text-obsidian-900' : 'bg-rose-700/10 text-rose-800');
       }
       disc.addEventListener('change', paint);
-      go.addEventListener('click', () => { window.location.href = mail(); });
+      form.addEventListener('submit', async (ev) => {
+        ev.preventDefault();
+        if (hp.value) return; // spam trap
+        if (!name.value.trim()) { say('Please tell us your name.', false); name.focus(); return; }
+        if (!email.validity.valid || !email.value.trim()) { say('Please enter a valid email address so we can reply.', false); email.focus(); return; }
+        if (!consent.checked) { say('Please tick the box so we may email you.', false); return; }
+        if (FORM_URL.indexOf('PASTE_') === 0) { window.location.href = mail(); return; } // not connected yet: use email instead
+        go.disabled = true; label.textContent = 'Sending…';
+        const payload = { form: 'Enrolment', name: name.value.trim(), email: email.value.trim(), country: country.value.trim(),
+          discipline: MODULES[disc.value].name, route: ROUTES[route.value], page: location.href };
+        try {
+          await fetch(FORM_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(payload) });
+          form.reset(); paint();
+          say('Thank you, ' + payload.name.split(' ')[0] + '. Your request has reached the Chancery. Please check your email for a reply, and look in spam if you do not see it.', true);
+          label.textContent = 'Sent';
+        } catch (err) {
+          say('We could not send that just now. Please try again, or write to info@hasrcollegium.com.', false);
+          go.disabled = false; label.textContent = 'Send my enrolment request';
+        }
+      });
       paint();
     })();
 
