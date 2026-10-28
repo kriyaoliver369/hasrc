@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How We Are Led | HASRC</title>
+  <meta name="description" content="Who decides what at the Herman Adrian Spruit Research Collegium, how councils advise, how the Register is guarded, and what the gowns, medallions and epitoges mean, in plain words.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            linen: { 50: '#FCFAF7', 100: '#F7F3EC', 200: '#EDE5D8', 300: '#DFD3C0' },
+            gold: { 300: '#F4E5B8', 400: '#E6CA7D', 500: '#C5A059', 600: '#A47E3B', 700: '#7B5D28' },
+            rose: { 700: '#9E2A2B', 800: '#781D1E' },
+            obsidian: { 800: '#22201E', 900: '#141312' }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { background-color: #FCFAF7; color: #22201E; }
+    .gold-foil { background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 35%, #B38728 70%, #FBF5B7 100%); }
+    .gold-border { border-color: rgba(197, 160, 89, 0.4); }
+    .card-shadow { box-shadow: 0 15px 35px -5px rgba(20, 19, 18, 0.05), 0 0 1px 1px rgba(197, 160, 89, 0.2); }
+    section[id] { scroll-margin-top: 7rem; }
+    a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid #A47E3B; outline-offset: 3px; }
+    .photo { background: linear-gradient(135deg, #EDE5D8, #DFD3C0); }
+    .path-card { transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+    .path-card:hover { transform: translateY(-4px); }
+    .path-card.is-picked { border-color: #A47E3B; box-shadow: 0 0 0 3px rgba(197,160,89,.35), 0 20px 40px -10px rgba(20,19,18,.15); transform: translateY(-4px); }
+    .path-card.is-dim { opacity: .55; }
+    details > summary { list-style: none; cursor: pointer; }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] .chev { transform: rotate(180deg); }
+    .chev { transition: transform .2s ease; }
+    .timeline-line { background: linear-gradient(to bottom, rgba(197,160,89,.6), rgba(197,160,89,.1)); }
+    @media (prefers-reduced-motion: reduce) { .path-card, .chev { transition: none; } .path-card:hover, .path-card.is-picked { transform: none; } }
+  </style>
+
+
+<style>
+.gov-line{background:linear-gradient(to bottom,rgba(197,160,89,.9),rgba(197,160,89,.25))}
+.gov-rule{height:1px;background:linear-gradient(to right,transparent,rgba(197,160,89,.7),transparent)}
+.gov-drop::first-letter{font-family:"Cormorant Garamond",serif;font-size:3.4rem;line-height:.8;float:left;padding:.25rem .5rem 0 0;color:#A47E3B}
+.gov-col{position:relative}
+@media(min-width:1024px){
+ .gov-tree{position:relative}
+ .gov-tree:before{content:"";position:absolute;top:0;left:16.66%;right:16.66%;height:1px;background:rgba(197,160,89,.7)}
+ .gov-col:before{content:"";position:absolute;top:0;left:50%;width:1px;height:2rem;background:rgba(197,160,89,.7)}
+ .gov-col{padding-top:2rem}
+}
+.gov-item summary{list-style:none;cursor:pointer}.gov-item summary::-webkit-details-marker{display:none}
+.gov-item[open] .plus{transform:rotate(45deg)}.plus{transition:transform .2s}
+</style>
+<style id="nav-css">.dd:hover .dd-panel,.dd:focus-within .dd-panel,.dd.open .dd-panel{display:block}details[open]>summary .chev{transform:rotate(180deg)}.chev{transition:transform .2s}</style>
+</head>
+<body class="font-sans antialiased selection:bg-gold-300 selection:text-obsidian-900">
+
+  <!-- TOP BANNER -->
+  <div class="gold-foil py-2.5 px-4 text-center shadow-sm">
+    <p class="text-[11px] sm:text-xs font-serif font-semibold tracking-[0.25em] uppercase text-obsidian-900">
+      ✠ SCIENTIA ET SAPIENTIA PER SPIRITUM &bull; Knowledge and Wisdom Through Spirit ✠
+    </p>
+  </div>
+
+
+  <header id="site-header" class="sticky top-0 z-50 backdrop-blur-md bg-linen-50/95 border-b gold-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 sm:h-24 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3 shrink-0 group">
+        <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-gold-500/60 bg-white flex items-center justify-center shadow-xs group-hover:scale-105 transition"><i data-lucide="book-marked" class="w-5 h-5 sm:w-6 sm:h-6 text-gold-600"></i></div>
+        <div class="flex flex-col"><span class="font-serif font-bold text-xl sm:text-2xl text-obsidian-900 tracking-wider leading-none">HASRC</span><span class="text-[11px] sm:text-xs uppercase tracking-widest text-gold-700 font-sans font-semibold mt-1">Research Collegium</span></div>
+      </a>
+      <nav class="hidden lg:flex items-center gap-7 text-[11px] font-semibold uppercase tracking-wider text-obsidian-800 whitespace-nowrap" aria-label="Primary"><a href="index.html#begin" class="text-gold-700 hover:text-gold-600 font-bold transition">Begin Free</a><div class="dd relative"><button type="button" class="dd-btn inline-flex items-center gap-1 uppercase tracking-wider font-semibold hover:text-gold-600 transition py-2" aria-haspopup="true" aria-expanded="false">Study<i data-lucide="chevron-down" class="w-3.5 h-3.5"></i></button><div class="dd-panel hidden absolute left-1/2 -translate-x-1/2 top-full pt-2 w-72 z-50"><div role="menu" class="bg-white rounded-2xl border gold-border card-shadow p-2 normal-case"><a role="menuitem" href="index.html#ranks" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Levels of award</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">The three assessed levels</span></a><a role="menuitem" href="index.html#disciplines" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Four programmes</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">Choose your field</span></a><a role="menuitem" href="lsmin.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Sacramental Ministry</span></a><a role="menuitem" href="lmphyth.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Metaphysical Theology</span></a><a role="menuitem" href="lamsc.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Applied Metaphysical Science</span></a><a role="menuitem" href="lcsp.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Contemporary Spirituality</span></a><a role="menuitem" href="fellowship.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">The Collegiate Roll</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">Levels, honours and the Public Register</span></a></div></div></div><div class="dd relative"><button type="button" class="dd-btn inline-flex items-center gap-1 uppercase tracking-wider font-semibold hover:text-gold-600 transition py-2" aria-haspopup="true" aria-expanded="false">Gather<i data-lucide="chevron-down" class="w-3.5 h-3.5"></i></button><div class="dd-panel hidden absolute left-1/2 -translate-x-1/2 top-full pt-2 w-72 z-50"><div role="menu" class="bg-white rounded-2xl border gold-border card-shadow p-2 normal-case"><a role="menuitem" href="branches.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Chapters, Oratories &amp; Foundations</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">Study and pray with others</span></a><a role="menuitem" href="branches.html#petition" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Start a branch</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">Petition for a Warrant</span></a><a role="menuitem" href="index.html#feast" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Feast of Holy Sophia</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">30 September</span></a></div></div></div><div class="dd relative"><button type="button" class="dd-btn inline-flex items-center gap-1 uppercase tracking-wider font-semibold hover:text-gold-600 transition py-2" aria-haspopup="true" aria-expanded="false">About<i data-lucide="chevron-down" class="w-3.5 h-3.5"></i></button><div class="dd-panel hidden absolute left-1/2 -translate-x-1/2 top-full pt-2 w-72 z-50"><div role="menu" class="bg-white rounded-2xl border gold-border card-shadow p-2 normal-case"><a role="menuitem" href="index.html#about" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Our charism</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">What we hold dear</span></a><a role="menuitem" href="index.html#lineage" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Lineage &amp; Founder</span></a><a role="menuitem" href="governance.html" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">How we are led</span><span class="block text-[11px] normal-case tracking-normal font-light text-obsidian-800/70 mt-0.5">Provost, councils and regalia in plain words</span></a><a role="menuitem" href="index.html#legal-notice" class="block px-4 py-2.5 rounded-xl hover:bg-linen-100 transition"><span class="block text-[11px] font-semibold uppercase tracking-wider text-obsidian-900">Legal notice</span></a></div></div></div><a href="jois.html" class="hover:text-gold-600 transition">Journal</a></nav>
+      <div class="flex items-center gap-3">
+        <a href="index.html#begin" class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 hover:bg-gold-600 text-linen-50 transition shadow-sm whitespace-nowrap">Enrol Free</a>
+        <button type="button" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-drawer" class="lg:hidden w-10 h-10 rounded-full bg-white border gold-border flex items-center justify-center text-obsidian-900 hover:bg-linen-100 transition"><i data-lucide="menu" class="w-5 h-5"></i></button>
+      </div>
+    </div>
+    <div id="nav-drawer" class="hidden lg:hidden bg-white border-b gold-border px-6 py-4 max-h-[75vh] overflow-y-auto"><nav class="flex flex-col text-xs font-semibold uppercase tracking-widest text-obsidian-800" aria-label="Mobile"><a href="index.html#begin" class="text-gold-700 font-bold py-3 border-b border-linen-200">Begin Free</a><details class="border-b border-linen-200"><summary class="flex items-center justify-between py-3 cursor-pointer">Study<i data-lucide="chevron-down" class="w-4 h-4 chev"></i></summary><div class="pb-2 normal-case tracking-normal font-medium"><a href="index.html#ranks" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Levels of award</a><a href="index.html#disciplines" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Four programmes</a><a href="lsmin.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Sacramental Ministry</a><a href="lmphyth.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Metaphysical Theology</a><a href="lamsc.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Applied Metaphysical Science</a><a href="lcsp.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Contemporary Spirituality</a><a href="fellowship.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">The Collegiate Roll</a></div></details><details class="border-b border-linen-200"><summary class="flex items-center justify-between py-3 cursor-pointer">Gather<i data-lucide="chevron-down" class="w-4 h-4 chev"></i></summary><div class="pb-2 normal-case tracking-normal font-medium"><a href="branches.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Chapters, Oratories &amp; Foundations</a><a href="branches.html#petition" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Start a branch</a><a href="index.html#feast" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Feast of Holy Sophia</a></div></details><details class="border-b border-linen-200"><summary class="flex items-center justify-between py-3 cursor-pointer">About<i data-lucide="chevron-down" class="w-4 h-4 chev"></i></summary><div class="pb-2 normal-case tracking-normal font-medium"><a href="index.html#about" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Our charism</a><a href="index.html#lineage" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Lineage &amp; Founder</a><a href="governance.html" class="block py-2 pl-3 text-[11px] hover:text-gold-600">How we are led</a><a href="index.html#legal-notice" class="block py-2 pl-3 text-[11px] hover:text-gold-600">Legal notice</a></div></details><a href="jois.html" class="py-3 border-b border-linen-200">Journal</a><a href="index.html#begin" class="mt-2 inline-flex justify-center py-3 rounded-full bg-obsidian-900 text-linen-50">Enrol Free</a></nav></div>
+  </header>
+
+  <!-- HERO: letterhead -->
+  <section id="main" class="bg-linen-100/70 border-b gold-border py-16 sm:py-24 px-4">
+    <div class="max-w-3xl mx-auto text-center p-2 border gold-border rounded-sm bg-white/60"><div class="border gold-border px-6 sm:px-14 py-14 sm:py-16">
+      <i data-lucide="landmark" class="w-8 h-8 text-gold-600 mx-auto"></i>
+      <span class="block text-xs font-serif uppercase tracking-[0.35em] text-gold-700 font-bold mt-5">Ordo Collegii</span>
+      <h1 class="font-serif text-4xl sm:text-6xl text-obsidian-900 font-normal mt-3 leading-tight">How we are <span class="italic text-gold-700">led</span></h1>
+      <div class="gov-rule w-40 mx-auto mt-6 mb-6"></div>
+      <p class="font-serif text-lg sm:text-xl text-obsidian-800/85 leading-relaxed italic max-w-xl mx-auto">One steward to hold the vision, many to counsel, and an independent voice to keep everyone honest.</p>
+      <a href="#order" class="mt-8 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-obsidian-900 hover:text-gold-700 transition">See the order <i data-lucide="arrow-down" class="w-4 h-4"></i></a>
+    </div></div>
+  </section>
+
+  <!-- THE ORDER: hierarchy -->
+  <section id="order" class="py-24 bg-linen-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-2xl mx-auto text-center">
+        <p class="gov-drop text-left text-base text-obsidian-800/85 font-light leading-relaxed">Every learned society has someone who decides, people who advise, and a way of keeping everyone honest. Below is how HASRC arranges them. Tap any role to read more.</p>
+      </div>
+
+      <!-- Apex -->
+      <div class="mt-14 flex flex-col items-center">
+        <div class="relative max-w-xl w-full rounded-3xl bg-obsidian-900 text-linen-100 text-center px-8 py-9 shadow-2xl border border-gold-500/60">
+          <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full gold-foil flex items-center justify-center border-2 border-obsidian-900"><i data-lucide="crown" class="w-5 h-5 text-obsidian-900"></i></div>
+          <span class="text-[11px] font-serif uppercase tracking-[0.3em] text-gold-400 font-bold">The steward</span>
+          <h2 class="font-serif text-3xl text-white mt-2">The Provost &amp; Founder</h2>
+          <p class="text-sm text-linen-300 font-light leading-relaxed mt-3">The Collegium was founded in the person of its Founder, the Most Reverend Mar Elisha Thoma, who serves as Provost and Prior-General for life. The Provost holds the final say on matters such as changing the Statutes, conferring awards and caring for the Collegium&rsquo;s property, and keeps the Great Seal.</p>
+          <p class="text-sm text-gold-300 italic font-serif mt-3 text-base">One clear voice, so the Collegium&rsquo;s purpose is never pulled apart by factions.</p>
+        </div>
+        <div class="gov-line w-px h-10 hidden lg:block"></div>
+      </div>
+
+      <!-- Three branches -->
+      <div class="gov-tree grid lg:grid-cols-3 gap-8 lg:gap-0 mt-8 lg:mt-0">
+        <div class="gov-col px-2 lg:px-6">
+          <div class="text-center mb-4"><span class="inline-block px-4 py-1.5 rounded-full border border-gold-500/60 bg-white text-[11px] font-serif uppercase tracking-[0.25em] text-gold-700 font-bold">Administers</span><p class="text-xs text-obsidian-800/70 italic font-serif mt-2 text-base">who keep the work moving</p></div>
+          <div class="bg-white/70 border gold-border rounded-2xl px-5"><details class="gov-item py-5 border-t border-gold-500/30 first:border-t-0">
+            <summary class="flex items-start gap-4"><span class="font-serif italic text-gold-600 text-lg w-7 shrink-0">i.</span>
+              <span class="flex-1 min-w-0"><span class="block font-serif text-xl text-obsidian-900 leading-snug">The Secretary-General</span><span class="block text-sm text-obsidian-800/80 font-light leading-relaxed mt-1">Keeps the Collegium running day to day, in the Provost&rsquo;s name.</span></span>
+              <span class="plus text-gold-600 text-xl leading-none mt-0.5">+</span></summary>
+            <div class="pl-11 pt-3 text-sm text-obsidian-800/85 font-light leading-relaxed space-y-2"><p>The Provost may appoint a Secretary-General for routine administration and whatever the Provost lists in a written Schedule of Delegations, which can include signing diplomas in the Provost&rsquo;s name.</p><p>The Secretary-General acts <em>for</em> the Provost, never in place of the Provost, and does not become Provost by holding the post.</p></div></details><details class="gov-item py-5 border-t border-gold-500/30 first:border-t-0">
+            <summary class="flex items-start gap-4"><span class="font-serif italic text-gold-600 text-lg w-7 shrink-0">ii.</span>
+              <span class="flex-1 min-w-0"><span class="block font-serif text-xl text-obsidian-900 leading-snug">The Custodian of the Register</span><span class="block text-sm text-obsidian-800/80 font-light leading-relaxed mt-1">Guards the registers and the sealed decree of succession.</span></span>
+              <span class="plus text-gold-600 text-xl leading-none mt-0.5">+</span></summary>
+            <div class="pl-11 pt-3 text-sm text-obsidian-800/85 font-light leading-relaxed space-y-2"><p>The Custodian keeps the Collegium&rsquo;s registers and holds the Provost&rsquo;s sealed decree naming a successor, unopened, until it is needed. The Custodian also appoints the arbitrators, which keeps that choice at arm&rsquo;s length from the Provost.</p></div></details></div></div>
+        <div class="gov-col px-2 lg:px-6">
+          <div class="text-center mb-4"><span class="inline-block px-4 py-1.5 rounded-full border border-gold-500/60 bg-white text-[11px] font-serif uppercase tracking-[0.25em] text-gold-700 font-bold">Advises</span><p class="text-xs text-obsidian-800/70 italic font-serif mt-2 text-base">who lend counsel</p></div>
+          <div class="bg-white/70 border gold-border rounded-2xl px-5"><details class="gov-item py-5 border-t border-gold-500/30 first:border-t-0">
+            <summary class="flex items-start gap-4"><span class="font-serif italic text-gold-600 text-lg w-7 shrink-0">i.</span>
+              <span class="flex-1 min-w-0"><span class="block font-serif text-xl text-obsidian-900 leading-snug">The Academic Senate</span><span class="block text-sm text-obsidian-800/80 font-light leading-relaxed mt-1">Every substantive Fellow has a seat.</span></span>
+              <span class="plus text-gold-600 text-xl leading-none mt-0.5">+</span></summary>
+            <div class="pl-11 pt-3 text-sm text-obsidian-800/85 font-light leading-relaxed space-y-2"><p>The Senate reviews articles for the Journal, reads petitions through Review Panels of three, sponsors candidates and advises on research and archives.</p><p>Its voice is consultative: it examines, recommends and advises. Awards are conferred only as the Statutes provide.</p></div></details><details class="gov-item py-5 border-t border-gold-500/30 first:border-t-0">
+            <summary class="flex items-start gap-4"><span class="font-serif italic text-gold-600 text-lg w-7 shrink-0">ii.</span>
+              <span class="flex-1 min-w-0"><span class="block font-serif text-xl text-obsidian-900 leading-snug">The Elder Council</span><span class="block text-sm text-obsidian-800/80 font-light leading-relaxed mt-1">A small council the Provost may form, of three, five or seven.</span></span>
+              <span class="plus text-gold-600 text-xl leading-none mt-0.5">+</span></summary>
+            <div class="pl-11 pt-3 text-sm text-obsidian-800/85 font-light leading-relaxed space-y-2"><p>While the Provost is reachable it simply advises, and the Provost is free to follow or not.</p><p>It acts for the Provost in only two cases: the Provost cannot be reached for more than 45 days, or the Provost asks it to act by written Letter. That keeps the Collegium steady if the Provost is ever away.</p></div></details></div></div>
+        <div class="gov-col px-2 lg:px-6">
+          <div class="text-center mb-4"><span class="inline-block px-4 py-1.5 rounded-full border border-gold-500/60 bg-white text-[11px] font-serif uppercase tracking-[0.25em] text-gold-700 font-bold">Checks</span><p class="text-xs text-obsidian-800/70 italic font-serif mt-2 text-base">who keep it honest</p></div>
+          <div class="bg-white/70 border gold-border rounded-2xl px-5"><details class="gov-item py-5 border-t border-gold-500/30 first:border-t-0">
+            <summary class="flex items-start gap-4"><span class="font-serif italic text-gold-600 text-lg w-7 shrink-0">i.</span>
+              <span class="flex-1 min-w-0"><span class="block font-serif text-xl text-obsidian-900 leading-snug">The Council of Arbitration</span><span class="block text-sm text-obsidian-800/80 font-light leading-relaxed mt-1">Ensures no one judges their own case.</span></span>
+              <span class="plus text-gold-600 text-xl leading-none mt-0.5">+</span></summary>
+            <div class="pl-11 pt-3 text-sm text-obsidian-800/85 font-light leading-relaxed space-y-2"><p>Three permanent members, each appointed by the Custodian for a renewable five-year term. Their purpose is that no weighty question, such as a petition to remove a Provost, is decided by someone with a stake in it.</p><p>For certain grave petitions four more are drawn by lot, so seven sit. All are Collegians of good standing with at least five years&rsquo; standing.</p></div></details><details class="gov-item py-5 border-t border-gold-500/30 first:border-t-0">
+            <summary class="flex items-start gap-4"><span class="font-serif italic text-gold-600 text-lg w-7 shrink-0">ii.</span>
+              <span class="flex-1 min-w-0"><span class="block font-serif text-xl text-obsidian-900 leading-snug">The Founder&rsquo;s reserve authority</span><span class="block text-sm text-obsidian-800/80 font-light leading-relaxed mt-1">A personal safeguard, used only to protect the Collegium.</span></span>
+              <span class="plus text-gold-600 text-xl leading-none mt-0.5">+</span></summary>
+            <div class="pl-11 pt-3 text-sm text-obsidian-800/85 font-light leading-relaxed space-y-2"><p>The Founder holds a personal, non-transferable authority, used only if the Provost&rsquo;s act or omission would endanger the Collegium&rsquo;s existence or continuity. It sits in reserve while the Founder is Provost.</p></div></details><details class="gov-item py-5 border-t border-gold-500/30 first:border-t-0">
+            <summary class="flex items-start gap-4"><span class="font-serif italic text-gold-600 text-lg w-7 shrink-0">iii.</span>
+              <span class="flex-1 min-w-0"><span class="block font-serif text-xl text-obsidian-900 leading-snug">Declaration of Vacancy</span><span class="block text-sm text-obsidian-800/80 font-light leading-relaxed mt-1">A last resort, never for mere disagreement.</span></span>
+              <span class="plus text-gold-600 text-xl leading-none mt-0.5">+</span></summary>
+            <div class="pl-11 pt-3 text-sm text-obsidian-800/85 font-light leading-relaxed space-y-2"><p>If a Provost became a grave danger to the Collegium, the office can be declared vacant through a defined process involving the Council of Arbitration. Disagreement, dissent or private belief is never a ground.</p></div></details></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUCCESSION -->
+  <section id="succession" class="py-24 bg-obsidian-900 text-linen-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-serif uppercase tracking-[0.3em] text-gold-400 font-bold">Looking ahead</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-white font-normal mt-3">When a Provost&rsquo;s service ends</h2>
+        <div class="gov-rule w-32 mx-auto mt-5 mb-5"></div>
+        <p class="text-sm text-linen-300 font-light leading-relaxed">The Collegium is built to outlast any one person. The plan is written and sealed in advance, so there is never a scramble.</p>
+      </div>
+      <ol class="grid lg:grid-cols-5 gap-8"><li class="relative lg:text-center"><div class="hidden lg:block absolute top-4 left-0 right-0 h-px bg-gold-500/40"></div>
+      <div class="relative w-9 h-9 rounded-full bg-obsidian-900 border border-gold-500 text-gold-300 font-serif italic flex items-center justify-center lg:mx-auto">I</div>
+      <h3 class="font-serif text-xl text-linen-50 mt-3">A sealed decree</h3><p class="text-sm text-linen-300 font-light leading-relaxed mt-1">The Provost names a successor, and alternates in order, in a decree sealed with the Great Seal.</p></li><li class="relative lg:text-center"><div class="hidden lg:block absolute top-4 left-0 right-0 h-px bg-gold-500/40"></div>
+      <div class="relative w-9 h-9 rounded-full bg-obsidian-900 border border-gold-500 text-gold-300 font-serif italic flex items-center justify-center lg:mx-auto">II</div>
+      <h3 class="font-serif text-xl text-linen-50 mt-3">Kept unopened</h3><p class="text-sm text-linen-300 font-light leading-relaxed mt-1">The Custodian holds it. No one is asked to accept before it is opened.</p></li><li class="relative lg:text-center"><div class="hidden lg:block absolute top-4 left-0 right-0 h-px bg-gold-500/40"></div>
+      <div class="relative w-9 h-9 rounded-full bg-obsidian-900 border border-gold-500 text-gold-300 font-serif italic flex items-center justify-center lg:mx-auto">III</div>
+      <h3 class="font-serif text-xl text-linen-50 mt-3">Opened when needed</h3><p class="text-sm text-linen-300 font-light leading-relaxed mt-1">If the Provost is incapacitated or passes, the Custodian opens it without delay and gives public notice.</p></li><li class="relative lg:text-center"><div class="hidden lg:block absolute top-4 left-0 right-0 h-px bg-gold-500/40"></div>
+      <div class="relative w-9 h-9 rounded-full bg-obsidian-900 border border-gold-500 text-gold-300 font-serif italic flex items-center justify-center lg:mx-auto">IV</div>
+      <h3 class="font-serif text-xl text-linen-50 mt-3">Seven days to accept</h3><p class="text-sm text-linen-300 font-light leading-relaxed mt-1">The person named may accept in writing and becomes the Provost-Designate. The Collegium carries on meanwhile.</p></li><li class="relative lg:text-center"><div class="hidden lg:block absolute top-4 left-0 right-0 h-px bg-gold-500/40"></div>
+      <div class="relative w-9 h-9 rounded-full bg-obsidian-900 border border-gold-500 text-gold-300 font-serif italic flex items-center justify-center lg:mx-auto">V</div>
+      <h3 class="font-serif text-xl text-linen-50 mt-3">Installation</h3><p class="text-sm text-linen-300 font-light leading-relaxed mt-1">The Presiding Archbishop of the ACOA, as Episcopal Confrater, sees the Provost-Designate trained, ordained and consecrated as needed, then installed.</p></li></ol>
+      <p class="mt-12 text-center font-serif italic text-gold-300 text-lg">Until the installation, the Custodian is caretaker and the Provost-Designate handles routine matters, so students and Fellows notice no gap.</p>
+    </div>
+  </section>
+
+  <!-- HONORARY -->
+  <section id="honorary" class="py-24 bg-white border-b gold-border">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-serif uppercase tracking-[0.3em] text-gold-700 font-bold">Honorary &amp; ceremonial</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-obsidian-900 font-normal mt-3">Those who lend counsel and dignity</h2>
+        <div class="gov-rule w-32 mx-auto mt-5 mb-5"></div>
+        <p class="text-sm text-obsidian-800/80 font-light">These offices honour and support. They do not hold the decision.</p>
+      </div>
+      <div class="grid md:grid-cols-3 md:divide-x divide-gold-500/30 gap-y-8"><div class="px-6 py-4 text-center"><span class="text-[11px] font-serif uppercase tracking-[0.25em] text-gold-700 font-bold">Ceremonial</span><h3 class="font-serif text-2xl text-obsidian-900 mt-2">Pro-Chancellors</h3><p class="text-sm text-obsidian-800/85 font-light leading-relaxed mt-2">Prelates of high standing whom the Provost invites for a three-year term. They may countersign diplomas, bless convocations and graduations, represent the Collegium&rsquo;s goodwill to sister bodies and give counsel when asked.</p></div><div class="px-6 py-4 text-center"><span class="text-[11px] font-serif uppercase tracking-[0.25em] text-gold-700 font-bold">Counsel &amp; prayer</span><h3 class="font-serif text-2xl text-obsidian-900 mt-2">Canons</h3><p class="text-sm text-obsidian-800/85 font-light leading-relaxed mt-2">Collegians honoured to give counsel and keep the common prayer of the Collegium. Bishop, priest, deacon or layperson may serve (a layperson is styled Lay Canon). A role of counsel, not of governance.</p></div><div class="px-6 py-4 text-center"><span class="text-[11px] font-serif uppercase tracking-[0.25em] text-gold-700 font-bold">An honour</span><h3 class="font-serif text-2xl text-obsidian-900 mt-2">The Episcopal Confrater</h3><p class="text-sm text-obsidian-800/85 font-light leading-relaxed mt-2">An honorary mandate held by the Presiding Archbishop of the ACOA: a father in God and friend of the Collegium, serving at the time of succession through counsel, prayer and training. It carries no administrative power.</p></div></div>
+      <p class="mt-12 text-center text-sm text-obsidian-800/80 font-light max-w-2xl mx-auto leading-relaxed">The Collegium is not-for-profit, and its officers serve without stipend. Should it ever close, its assets pass to a kindred jurisdiction, library or trust, never to individuals.</p>
+    </div>
+  </section>
+
+  <!-- REGALIA -->
+  <section id="regalia" class="py-24 bg-linen-100/70">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-serif uppercase tracking-[0.3em] text-gold-700 font-bold">Academic dress</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-obsidian-900 font-normal mt-3">Gowns, medallions &amp; epitoges</h2>
+        <div class="gov-rule w-32 mx-auto mt-5 mb-5"></div>
+        <p class="text-sm text-obsidian-800/80 font-light leading-relaxed">The Collegium follows the British collegiate tradition. Dress shows three different things, and it helps to keep them apart.</p>
+      </div>
+      <div class="grid md:grid-cols-3 md:divide-x divide-gold-500/30 gap-y-8 mb-14">
+        <div class="px-6 py-2 text-center"><span class="font-serif italic text-gold-600">Your award</span><h3 class="font-serif text-2xl text-obsidian-900 mt-1">The gown &amp; hood</h3><p class="text-sm text-obsidian-800/85 font-light leading-relaxed mt-2">Associates and Licentiates wear the black Cambridge BA gown with a crimson-lined hood; the Licentiate&rsquo;s hood carries a 1-inch gold binding. Fellows wear the Cambridge MA gown with a gold doctoral hood trimmed with white faux ermine.</p></div>
+        <div class="px-6 py-2 text-center"><span class="font-serif italic text-gold-600">Your office</span><h3 class="font-serif text-2xl text-obsidian-900 mt-1">The medallion</h3><p class="text-sm text-obsidian-800/85 font-light leading-relaxed mt-2">A medallion on a ribbon belongs to the office, not the person: issued when an office is confirmed, returned when it ends. A Warden wears it over ordinary dress at every regular assembly; full gown and hood are for solemn occasions.</p></div>
+        <div class="px-6 py-2 text-center"><span class="font-serif italic text-gold-600">Your service</span><h3 class="font-serif text-2xl text-obsidian-900 mt-1">The epitoge</h3><p class="text-sm text-obsidian-800/85 font-light leading-relaxed mt-2">A pleated panel of cloth over the left shoulder, the sign of service: carrying the Collegium&rsquo;s burdens for one another as a servant of all. After five full years in good standing, an officer may keep it for life.</p></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white border gold-border rounded-2xl p-7"><h3 class="font-serif text-2xl text-obsidian-900 mb-2">Medallion ribbons</h3><ul><li class="py-3 border-t border-gold-500/30 first:border-t-0"><div class="text-sm text-obsidian-900">The Provost</div><div class="text-xs text-obsidian-800/75 font-light mt-1"><span class="inline-flex items-center gap-2"><span class="w-3 h-3 rounded-full border border-obsidian-900/20" style="background:linear-gradient(90deg,#9E2A2B 50%,#C5A059 50%)"></span>Red and gold</span> &middot; the Great Seal</div></li><li class="py-3 border-t border-gold-500/30 first:border-t-0"><div class="text-sm text-obsidian-900">Provost-Designate, Secretary-General, Acting and Coadjutor Provost</div><div class="text-xs text-obsidian-800/75 font-light mt-1"><span class="inline-flex items-center gap-2"><span class="w-3 h-3 rounded-full border border-obsidian-900/20" style="background:#9E2A2B"></span>Red</span> &middot; the Collegium&rsquo;s arms</div></li><li class="py-3 border-t border-gold-500/30 first:border-t-0"><div class="text-sm text-obsidian-900">Pro-Chancellor</div><div class="text-xs text-obsidian-800/75 font-light mt-1"><span class="inline-flex items-center gap-2"><span class="w-3 h-3 rounded-full border border-obsidian-900/20" style="background:linear-gradient(90deg,#141312 50%,#C5A059 50%)"></span>Black and gold</span> &middot; the Collegium&rsquo;s arms</div></li><li class="py-3 border-t border-gold-500/30 first:border-t-0"><div class="text-sm text-obsidian-900">Custodian, arbitrators, Dean of Studies, Treasurer, Keeper of the Archives, Editor-in-Chief, Wardens and Chaplains</div><div class="text-xs text-obsidian-800/75 font-light mt-1"><span class="inline-flex items-center gap-2"><span class="w-3 h-3 rounded-full border border-obsidian-900/20" style="background:#141312"></span>Black</span> &middot; the Collegium&rsquo;s arms</div></li></ul></div>
+        <div class="bg-white border gold-border rounded-2xl p-7"><h3 class="font-serif text-2xl text-obsidian-900 mb-2">Epitoges</h3><ul><li class="py-3 border-t border-gold-500/30 first:border-t-0 flex items-start justify-between gap-4"><div class="min-w-0"><div class="text-sm text-obsidian-900">Provost and Provost Emeritus</div><div class="text-xs text-obsidian-800/75 font-light mt-1">Red, three bands</div></div><div class="shrink-0 pt-1"><span class="inline-flex items-center gap-1.5"><span class="w-9 h-3.5 rounded-sm" style="background:#9E2A2B"></span><span class="w-2 h-3.5 rounded-sm bg-white border border-obsidian-900/25"></span><span class="w-2 h-3.5 rounded-sm bg-white border border-obsidian-900/25"></span><span class="w-2 h-3.5 rounded-sm bg-white border border-obsidian-900/25"></span></span></div></li><li class="py-3 border-t border-gold-500/30 first:border-t-0 flex items-start justify-between gap-4"><div class="min-w-0"><div class="text-sm text-obsidian-900">Provost-Designate, Secretary-General, Pro-Chancellor, Acting and Coadjutor Provost</div><div class="text-xs text-obsidian-800/75 font-light mt-1">Black, three bands</div></div><div class="shrink-0 pt-1"><span class="inline-flex items-center gap-1.5"><span class="w-9 h-3.5 rounded-sm" style="background:#141312"></span><span class="w-2 h-3.5 rounded-sm bg-white border border-obsidian-900/25"></span><span class="w-2 h-3.5 rounded-sm bg-white border border-obsidian-900/25"></span><span class="w-2 h-3.5 rounded-sm bg-white border border-obsidian-900/25"></span></span></div></li><li class="py-3 border-t border-gold-500/30 first:border-t-0 flex items-start justify-between gap-4"><div class="min-w-0"><div class="text-sm text-obsidian-900">Custodian, Dean of Studies, Keeper of the Archives, Editor-in-Chief, arbitrators</div><div class="text-xs text-obsidian-800/75 font-light mt-1">Black, two bands</div></div><div class="shrink-0 pt-1"><span class="inline-flex items-center gap-1.5"><span class="w-9 h-3.5 rounded-sm" style="background:#141312"></span><span class="w-2 h-3.5 rounded-sm bg-white border border-obsidian-900/25"></span><span class="w-2 h-3.5 rounded-sm bg-white border border-obsidian-900/25"></span></span></div></li><li class="py-3 border-t border-gold-500/30 first:border-t-0 flex items-start justify-between gap-4"><div class="min-w-0"><div class="text-sm text-obsidian-900">Treasurer and Examiner of Accounts, Senior Warden, Senior Chaplain</div><div class="text-xs text-obsidian-800/75 font-light mt-1">Black, one band</div></div><div class="shrink-0 pt-1"><span class="inline-flex items-center gap-1.5"><span class="w-9 h-3.5 rounded-sm" style="background:#141312"></span><span class="w-2 h-3.5 rounded-sm bg-white border border-obsidian-900/25"></span></span></div></li></ul></div>
+      </div>
+      <p class="mt-8 text-xs text-obsidian-800/70 font-light leading-relaxed text-center max-w-2xl mx-auto">A Senior Warden or Senior Chaplain keeps the one-band epitoge for life. An officer who leaves before five years stops wearing it but keeps the cloth they made.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-linen-50 border-t gold-border">
+    <div class="max-w-2xl mx-auto px-6 text-center">
+      <div class="gov-rule w-32 mx-auto mb-8"></div>
+      <h2 class="font-serif text-3xl sm:text-4xl text-obsidian-900 font-normal">Questions about how we work?</h2>
+      <p class="mt-4 text-sm text-obsidian-800/80 font-light leading-relaxed">This page is a friendly guide. Where it and the Statutes differ, the Statutes govern. We are glad to send the relevant passages.</p>
+      <div class="mt-7 flex flex-wrap justify-center gap-3 text-xs font-semibold uppercase tracking-wider">
+        <a href="mailto:info@hasrcollegium.com" class="px-7 py-3 rounded-full bg-obsidian-900 text-linen-50 hover:bg-gold-600 transition">Write to the Chancery</a>
+        <a href="index.html#begin" class="px-7 py-3 rounded-full border border-obsidian-900 hover:bg-white transition">Enrol free</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-14 bg-obsidian-900 text-linen-200 border-t gold-border text-xs">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+      <div>
+        <div class="flex items-center gap-3 mb-4"><i data-lucide="book-marked" class="w-5 h-5 text-gold-400"></i><span class="font-serif font-bold text-lg text-white">HASRC</span></div>
+        <p class="text-xs text-linen-300 leading-relaxed font-light">The Herman Adrian Spruit Research Collegium &bull; An Autonomous Ecclesiastical Learned Society, research scriptorium and educational ministry.</p>
+      </div>
+      <div class="space-y-2">
+        <h4 class="font-serif text-sm font-semibold text-white uppercase tracking-wider mb-3">Chancery &amp; Public Registers</h4>
+        <div><a href="index.html" class="hover:text-gold-400 transition">Return to Main Portal</a></div>
+        <div><a href="governance.html" class="hover:text-gold-400 transition">How We Are Led</a></div>
+        <div><a href="fellowship.html" class="hover:text-gold-400 transition">Collegiate Roll &amp; Public Register of Awards</a></div>
+        <div><a href="jois.html" class="hover:text-gold-400 transition">Journal of Inner Spirituality (JOIS)</a></div>
+        <div><a href="mailto:info@hasrcollegium.com" class="hover:text-gold-400 transition">Office of the Chancery</a></div>
+      </div>
+      <div>
+        <h4 class="font-serif text-sm font-semibold text-white uppercase tracking-wider mb-3">Great Seal &amp; Motto</h4>
+        <p class="font-serif italic text-gold-300 text-sm mb-1">Scientia et Sapientia Per Spiritum</p>
+        <p class="text-[11px] text-linen-300 font-light">&copy; 2026 The Provost of HASRC. All rights reserved.</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-8 pt-6 border-t border-white/10 text-[11px] text-linen-300 font-light leading-relaxed">
+      Nothing taught, offered or celebrated by the Collegium or any chartered branch is medical, psychological, counselling or other regulated professional advice or treatment. HASRC is a religious institute of sacred learning, not a secular university or civil college.
+    </div>
+  </footer>
+<script>if(window.lucide)lucide.createIcons();</script>
+<script id="nav-js">
+(function(){
+  var t=document.getElementById('nav-toggle'),d=document.getElementById('nav-drawer');
+  if(t&&d){t.addEventListener('click',function(){var o=d.classList.toggle('hidden')===false;t.setAttribute('aria-expanded',String(o));});
+    d.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){d.classList.add('hidden');t.setAttribute('aria-expanded','false');});});}
+  var dds=document.querySelectorAll('.dd');
+  function closeAll(except){dds.forEach(function(x){if(x!==except){x.classList.remove('open');x.querySelector('.dd-btn').setAttribute('aria-expanded','false');}});}
+  dds.forEach(function(x){var b=x.querySelector('.dd-btn');
+    b.addEventListener('click',function(e){e.stopPropagation();var o=x.classList.toggle('open');b.setAttribute('aria-expanded',String(o));closeAll(x);});
+    x.addEventListener('mouseenter',function(){b.setAttribute('aria-expanded','true');});
+    x.addEventListener('mouseleave',function(){b.setAttribute('aria-expanded',String(x.classList.contains('open')));});});
+  document.addEventListener('click',function(){closeAll();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeAll();if(d&&!d.classList.contains('hidden')){d.classList.add('hidden');t.setAttribute('aria-expanded','false');}}});
+})();
+</script>
+</body>
+</html>
