@@ -3,16 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Herman Adrian Spruit Research Collegium | HASRC</title>
-  <meta name="description" content="An Autonomous Ecclesiastical Learned Society, Research Centre, and Digital Scriptorium dedicated to inner Christian mysticism, sacramental science, and metaphysical theology.">
+  <title>HASRC | Grow in Mind and Spirit. Study Free.</title>
+  <meta name="description" content="The Herman Adrian Spruit Research Collegium: an ecclesiastical learned society offering four specialist disciplines of sacred study. Enrolment, assessment and awards are free by Statute, no award can be bought, and every award is entered in a public Register.">
+  <meta name="theme-color" content="#141312">
+  <link rel="canonical" href="https://hasrcollegium.com/index.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%23141312%27/%3E%3Ctext x=%2732%27 y=%2744%27 font-size=%2738%27 text-anchor=%27middle%27 fill=%27%23E6CA7D%27 font-family=%27Georgia,serif%27%3E%E2%9C%A0%3C/text%3E%3C/svg%3E">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HASRC | Herman Adrian Spruit Research Collegium">
+  <meta property="og:title" content="Grow in mind and spirit. Study theology, ministry and contemplative practice, free and assessed.">
+  <meta property="og:description" content="Four programmes of study, assessed by real readers. Free enrolment by Statute, no award can be bought, a public Register of Awards.">
+  <meta property="og:url" content="https://hasrcollegium.com/index.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=1200&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"The Herman Adrian Spruit Research Collegium","alternateName":"HASRC","url":"https://hasrcollegium.com/","email":"info@hasrcollegium.com","description":"An autonomous ecclesiastical learned society, research scriptorium and educational ministry."}</script>
   
   <!-- Typography: Luxury Editorial Serif & Clean Geometric Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://unpkg.com/lucide@0.469.0"></script>
 
   <script>
     tailwind.config = {
@@ -62,13 +73,21 @@
     }
     .gold-border { border-color: rgba(197, 160, 89, 0.4); }
     .card-shadow { box-shadow: 0 15px 35px -5px rgba(20, 19, 18, 0.05), 0 0 1px 1px rgba(197, 160, 89, 0.2); }
+  
+    section[id] { scroll-margin-top: 6.5rem; }
+    a:focus-visible, button:focus-visible, summary:focus-visible, select:focus-visible, input:focus-visible { outline: 2px solid #A47E3B; outline-offset: 3px; }
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.is-in { opacity: 1; transform: none; }
+    .hero-glow { background: radial-gradient(60% 80% at 20% 30%, rgba(230,202,125,.18), transparent 70%); }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto !important; } }
   </style>
 </head>
 <body class="font-sans antialiased selection:bg-gold-300 selection:text-obsidian-900">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[200] focus:px-4 focus:py-2 focus:rounded-full focus:bg-obsidian-900 focus:text-white">Skip to content</a>
 
   <!-- TOP LUXURY BANNER -->
   <div class="gold-foil py-2.5 px-4 text-center shadow-sm">
-    <p class="text-[11px] sm:text-xs font-serif font-semibold tracking-[0.25em] uppercase text-obsidian-900">
+    <p class="text-xs sm:text-xs font-serif font-semibold tracking-[0.25em] uppercase text-obsidian-900">
       ✠ SCIENTIA ET SAPIENTIA PER SPIRITUM &bull; Knowledge and Wisdom Through Spirit ✠
     </p>
   </div>
@@ -84,26 +103,25 @@
         </div>
         <div class="flex flex-col">
           <span class="font-serif font-bold text-xl sm:text-2xl text-obsidian-900 tracking-wider leading-none">HASRC</span>
-          <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-gold-700 font-sans font-semibold mt-1">Research Collegium</span>
+          <span class="text-[11px] sm:text-xs uppercase tracking-widest text-gold-700 font-sans font-semibold mt-1">Research Collegium</span>
         </div>
       </a>
 
       <!-- Desktop Navigation Links -->
-      <nav class="hidden xl:flex items-center gap-7 text-[11px] font-semibold uppercase tracking-wider text-obsidian-800 whitespace-nowrap">
-        <a href="#about" class="hover:text-gold-600 transition">Our Charism</a>
-        <a href="#lineage" class="hover:text-gold-600 transition">Lineage</a>
-        <a href="#ranks" class="hover:text-gold-600 transition">Ranks</a>
+      <nav class="hidden xl:flex items-center gap-6 text-[11px] font-semibold uppercase tracking-wider text-obsidian-800 whitespace-nowrap" aria-label="Primary">
+        <a href="#begin" class="text-gold-700 hover:text-gold-600 font-bold transition">Begin Free</a>
+        <a href="#ranks" class="hover:text-gold-600 transition">Levels</a>
         <a href="#disciplines" class="hover:text-gold-600 transition">Disciplines</a>
-        <a href="fellowship.html" class="text-gold-700 hover:text-gold-600 font-bold transition">Collegiate Roll</a>
         <a href="branches.html" class="hover:text-gold-600 transition">Chapters &amp; Oratories</a>
-        <a href="#governance" class="hover:text-gold-600 transition">Collegiate Order</a>
+        <a href="#about" class="hover:text-gold-600 transition">Our Charism</a>
+        <a href="fellowship.html" class="hover:text-gold-600 transition">Collegiate Roll</a>
         <a href="jois.html" class="hover:text-gold-600 transition">JOIS Journal</a>
       </nav>
 
       <!-- Desktop Action & Mobile Hamburger -->
       <div class="flex items-center gap-3">
-        <a href="#ranks" class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 hover:bg-gold-600 text-linen-50 transition shadow-sm whitespace-nowrap">
-          Free Studies
+        <a href="#begin" class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 hover:bg-gold-600 text-linen-50 transition shadow-sm whitespace-nowrap">
+          Enrol Free
         </a>
         
         <button onclick="toggleMobileMenu()" id="menu-toggle-btn" aria-label="Toggle Navigation" class="xl:hidden w-10 h-10 rounded-full bg-white border gold-border flex items-center justify-center text-obsidian-900 hover:bg-linen-100 transition shadow-xs">
@@ -115,7 +133,23 @@
 
     <!-- Mobile Drawer Menu -->
     <div id="mobile-menu" class="hidden xl:hidden bg-white/98 backdrop-blur-md border-b gold-border px-6 py-6 transition-all">
-      <nav class="flex flex-col space-y-4 text-xs font-semibold uppercase tracking-widest text-obsidian-800">
+      <nav class="flex flex-col space-y-4 text-xs font-semibold uppercase tracking-widest text-obsidian-800" aria-label="Mobile">
+        <a href="#begin" onclick="toggleMobileMenu()" class="text-gold-700 font-bold py-1 transition flex items-center justify-between border-b border-linen-200">
+          <span>Begin Free</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
+        </a>
+        <a href="#ranks" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
+          <span>The Three Levels</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
+        </a>
+        <a href="#disciplines" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
+          <span>Specialist Disciplines</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
+        </a>
+        <a href="branches.html" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
+          <span>Chapters &amp; Oratories</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
+        </a>
         <a href="#about" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
           <span>Our Charism</span>
           <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
@@ -124,20 +158,8 @@
           <span>Lineage &amp; Predecessors</span>
           <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
         </a>
-        <a href="#ranks" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
-          <span>Collegiate Ranks</span>
-          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
-        </a>
-        <a href="#disciplines" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
-          <span>Specialist Disciplines</span>
-          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
-        </a>
-        <a href="fellowship.html" onclick="toggleMobileMenu()" class="text-gold-700 hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200 font-bold">
-          <span>Collegiate Roll</span>
-          <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
-        </a>
-        <a href="branches.html" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
-          <span>Chapters &amp; Oratories</span>
+        <a href="fellowship.html" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
+          <span>Collegiate Roll &amp; Register</span>
           <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
         </a>
         <a href="#governance" onclick="toggleMobileMenu()" class="hover:text-gold-600 py-1 transition flex items-center justify-between border-b border-linen-200">
@@ -149,8 +171,8 @@
           <i data-lucide="chevron-right" class="w-4 h-4 text-gold-600"></i>
         </a>
         <div class="pt-2">
-          <a href="#ranks" onclick="toggleMobileMenu()" class="w-full inline-flex items-center justify-center py-3 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 text-linen-50 hover:bg-gold-600 transition shadow-sm">
-            Explore Free Studies
+          <a href="#begin" onclick="toggleMobileMenu()" class="w-full inline-flex items-center justify-center py-3 rounded-full text-xs font-semibold uppercase tracking-wider bg-obsidian-900 text-linen-50 hover:bg-gold-600 transition shadow-sm">
+            Enrol Free
           </a>
         </div>
       </nav>
@@ -158,31 +180,495 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section class="relative pt-12 pb-24 lg:pt-16 lg:pb-32 overflow-hidden bg-linen-100/60">
+  <section id="main" class="relative overflow-hidden bg-obsidian-900">
+    <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=1800&auto=format&fit=crop" alt="A candlelit sanctuary" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover filter brightness-[0.38]">
+    <div class="absolute inset-0 hero-glow"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-obsidian-900/85 via-obsidian-900/45 to-transparent"></div>
+
+    <div class="relative max-w-6xl mx-auto px-6 pt-20 pb-16 sm:pt-28 sm:pb-20 lg:pt-32">
+      <div class="max-w-3xl">
+        <span class="inline-flex items-center gap-2 text-xs font-serif uppercase tracking-[0.3em] text-gold-300 font-bold mb-5">
+          <span class="w-8 h-px bg-gold-400"></span> The Herman Adrian Spruit Research Collegium
+        </span>
+        <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl text-white font-normal leading-[1.05]">
+          Grow in mind and spirit.
+          <span class="block italic text-gold-300 mt-2">Study theology, ministry and contemplative practice.</span>
+        </h1>
+        <p class="mt-6 text-base sm:text-lg text-linen-100/90 font-light leading-relaxed max-w-2xl">
+          A learned society in the Antiochian sacramental tradition: four programmes of study, each assessed by real readers, with every award entered in a public Register. Christian, sacramental, and open to metaphysical and mystical traditions. <strong class="font-semibold text-white">Free to enrol, by Statute. No award can be bought.</strong>
+        </p>
+        <div class="mt-9 flex flex-col sm:flex-row gap-3">
+          <a href="#begin" class="inline-flex items-center justify-center gap-2 px-9 py-4 rounded-full gold-foil text-obsidian-900 text-xs font-serif font-bold uppercase tracking-widest shadow-lg hover:opacity-90 transition">
+            Enrol free <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+          <a href="#ranks" class="inline-flex items-center justify-center px-9 py-4 rounded-full bg-white/10 border border-white/30 text-white text-xs font-serif font-bold uppercase tracking-widest hover:bg-white/20 transition">
+            See the three levels
+          </a>
+        </div>
+        <p class="mt-5 text-xs text-linen-200/80 font-light">
+          Ecclesiastical and non-secular, not a civilly accredited university. <a href="#legal-notice" class="underline hover:text-gold-300">What that means</a>. &nbsp;Free? <a href="#faq" class="underline hover:text-gold-300">Here is exactly why</a>.
+        </p>
+      </div>
+    </div>
+
+    <!-- Trust strip -->
+    <div class="relative border-t border-white/15 bg-obsidian-900/70 backdrop-blur-sm">
+      <div class="max-w-6xl mx-auto px-6 py-5 grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-4 text-linen-100">
+        <div class="flex items-center gap-3"><i data-lucide="badge-check" class="w-6 h-6 text-gold-400 shrink-0"></i><div><div class="font-serif text-lg leading-none text-white">Free to enrol</div><div class="text-xs text-linen-300 mt-1">by Statute, no award can be bought</div></div></div>
+        <div class="flex items-center gap-3"><i data-lucide="file-check-2" class="w-6 h-6 text-gold-400 shrink-0"></i><div><div class="font-serif text-lg leading-none text-white">Assessed</div><div class="text-xs text-linen-300 mt-1">two readers for every submission</div></div></div>
+        <div class="flex items-center gap-3"><i data-lucide="search-check" class="w-6 h-6 text-gold-400 shrink-0"></i><div><div class="font-serif text-lg leading-none text-white">Verifiable</div><div class="text-xs text-linen-300 mt-1"><a href="fellowship.html#register" class="underline hover:text-gold-300">public Register of Awards</a></div></div></div>
+        <div class="flex items-center gap-3"><i data-lucide="library" class="w-6 h-6 text-gold-400 shrink-0"></i><div><div class="font-serif text-lg leading-none text-white">4 programmes</div><div class="text-xs text-linen-300 mt-1">six modules and a treatise each</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEGIN: THREE STEPS + ENROL -->
+  <section id="begin" class="py-24 bg-linen-50 border-b gold-border">
     <div class="max-w-6xl mx-auto px-6">
-      <div class="relative rounded-3xl overflow-hidden shadow-2xl border gold-border">
-        <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=1800&auto=format&fit=crop" alt="Sacred Sanctuary" class="w-full h-[560px] object-cover filter brightness-[0.38]">
-        
-        <div class="absolute inset-0 flex items-center justify-center p-6">
-          <div class="bg-white/95 backdrop-blur-md max-w-3xl w-full p-8 sm:p-14 rounded-2xl border gold-border card-shadow text-center">
-            <span class="text-xs font-serif uppercase tracking-[0.3em] text-gold-700 font-bold block mb-3">
-              ✦ Autonomous Ecclesiastical Learned Society &amp; Scriptorium ✦
-            </span>
-            <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl text-obsidian-900 font-normal leading-tight mb-6">
-              Nurturing Inner Divinity Through <br>
-              <span class="italic gold-foil-text font-serif">Sacred Wisdom &amp; Mystical Praxis</span>
-            </h1>
-            <p class="text-sm sm:text-base text-obsidian-800/80 font-light leading-relaxed max-w-xl mx-auto mb-8">
-              A sacred sodality dedicated to preserving the inner Christian spirituality, sacramental science, and transformative metaphysics of the Antiochian tradition, operating under the British collegiate examining board convention with 100% free enrolment.
-            </p>
-            <div class="flex flex-wrap items-center justify-center gap-4">
-              <a href="#ranks" class="px-8 py-3.5 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs uppercase tracking-widest font-semibold transition shadow-sm">
-                Explore the Collegiate Ranks
-              </a>
-              <a href="fellowship.html" class="px-8 py-3.5 rounded-full bg-linen-100 hover:bg-linen-200 text-obsidian-900 border gold-border text-xs uppercase tracking-widest font-semibold transition">
-                Collegiate Roll &amp; Register
-              </a>
+      <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">Begin where you are</span>
+        <h2 class="font-serif text-3xl sm:text-5xl text-obsidian-900 font-normal">Three steps to your first award</h2>
+        <div class="w-16 h-0.5 gold-foil mx-auto mt-4 mb-4"></div>
+        <p class="text-sm sm:text-base text-obsidian-800/80 font-light leading-relaxed">
+          Study at your own pace. There is no minimum time, no deadline pressure beyond the candidacy window, and no fee for enrolment, assessment or any award.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 mb-14">
+        <div class="reveal p-7 rounded-3xl bg-white border gold-border card-shadow relative">
+          <span class="absolute -top-4 left-7 w-9 h-9 rounded-full gold-foil flex items-center justify-center font-serif font-bold text-obsidian-900 shadow-sm">1</span>
+          <h3 class="font-serif text-2xl text-obsidian-900 mt-3">Choose your discipline</h3>
+          <p class="mt-2 text-sm text-obsidian-800/80 font-light leading-relaxed">Sacramental Ministry, Metaphysical Theology, Applied Metaphysical Science, or Contemporary Spirituality. Modules 1 to 3 of any one lead to the Associate level.</p>
+        </div>
+        <div class="reveal p-7 rounded-3xl bg-white border gold-border card-shadow relative">
+          <span class="absolute -top-4 left-7 w-9 h-9 rounded-full gold-foil flex items-center justify-center font-serif font-bold text-obsidian-900 shadow-sm">2</span>
+          <h3 class="font-serif text-2xl text-obsidian-900 mt-3">Enrol, free</h3>
+          <p class="mt-2 text-sm text-obsidian-800/80 font-light leading-relaxed">Tell the Chancery your discipline and route. Studied before, ordained, or hold a degree? Routes B and C recognise what you already have.</p>
+        </div>
+        <div class="reveal p-7 rounded-3xl bg-white border gold-border card-shadow relative">
+          <span class="absolute -top-4 left-7 w-9 h-9 rounded-full gold-foil flex items-center justify-center font-serif font-bold text-obsidian-900 shadow-sm">3</span>
+          <h3 class="font-serif text-2xl text-obsidian-900 mt-3">Submit when ready</h3>
+          <p class="mt-2 text-sm text-obsidian-800/80 font-light leading-relaxed">Two assessors read your work, and the Chancery aims to decide within ninety days. Your award is then entered in the public Register under a numbered certificate, and your diploma is signed under the Great Seal.</p>
+        </div>
+      </div>
+
+
+      <div class="reveal mb-14 rounded-3xl border-2 border-obsidian-900/80 bg-white p-7 sm:p-9">
+        <div class="flex flex-col lg:flex-row lg:items-center gap-6">
+          <div class="lg:w-1/3">
+            <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-1">Why you can trust an award</span>
+            <h3 class="font-serif text-2xl sm:text-3xl text-obsidian-900">Free, but not easy</h3>
+          </div>
+          <dl class="lg:w-2/3 grid sm:grid-cols-2 gap-x-8 gap-y-4 text-sm text-obsidian-800/85 font-light leading-relaxed">
+            <div><dt class="font-serif text-lg text-obsidian-900">8,000 words</dt><dd>Capstone Treatise for the Licentiate level, after six modules of study.</dd></div>
+            <div><dt class="font-serif text-lg text-obsidian-900">18,000&ndash;25,000 words</dt><dd>Research Monograph for Fellowship by Route D, defended before a Review Panel.</dd></div>
+            <div><dt class="font-serif text-lg text-obsidian-900">Two readers, always</dt><dd>At least two assessors read every submission, and a third joins for Fellowship.</dd></div>
+            <div><dt class="font-serif text-lg text-obsidian-900">Verified, not assumed</dt><dd>The Dean of Studies checks outside degrees and publications with the issuing bodies.</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-5 gap-8 items-start">
+        <!-- Enrol chooser -->
+        <div class="reveal lg:col-span-3 p-7 sm:p-9 rounded-3xl bg-white border-2 border-gold-500/70 card-shadow">
+          <h3 class="font-serif text-2xl sm:text-3xl text-obsidian-900">Start your enrolment</h3>
+          <p class="mt-1 text-sm text-obsidian-800/75 font-light">Pick a discipline to see where you would begin. Your own email app opens with the request ready to send.</p>
+
+          <form id="enrol-form" class="mt-6 space-y-4" onsubmit="return false">
+            <div>
+              <label for="enrol-name" class="block text-xs font-semibold uppercase tracking-wider text-obsidian-900 mb-1">Your name</label>
+              <input id="enrol-name" type="text" autocomplete="name" placeholder="e.g. Anna Carter" class="w-full rounded-xl border gold-border bg-linen-50 px-4 py-3 text-sm focus:bg-white">
             </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="enrol-disc" class="block text-xs font-semibold uppercase tracking-wider text-obsidian-900 mb-1">Discipline</label>
+                <select id="enrol-disc" class="w-full rounded-xl border gold-border bg-linen-50 px-4 py-3 text-sm focus:bg-white">
+                  <option value="smin">Sacramental Ministry</option>
+                  <option value="mphy">Metaphysical Theology</option>
+                  <option value="amsc">Applied Metaphysical Science</option>
+                  <option value="csp">Contemporary Spirituality</option>
+                </select>
+              </div>
+              <div>
+                <label for="enrol-route" class="block text-xs font-semibold uppercase tracking-wider text-obsidian-900 mb-1">Starting level &amp; route</label>
+                <select id="enrol-route" class="w-full rounded-xl border gold-border bg-linen-50 px-4 py-3 text-sm focus:bg-white">
+                  <option value="A">Associate level, Route A (study the modules)</option>
+                  <option value="B">Associate level, Route B (clergy &amp; portfolio)</option>
+                  <option value="C">Associate level, Route C (Bachelor&rsquo;s degree)</option>
+                  <option value="L">Licentiate level (I hold a Master&rsquo;s or 5+ years&rsquo; ministry)</option>
+                  <option value="?">Not sure yet, please advise</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="rounded-2xl bg-linen-100 border gold-border p-5">
+              <p class="text-xs uppercase tracking-widest text-gold-700 font-bold mb-2" id="peek-title">You would begin with</p>
+              <ol id="peek-list" class="space-y-1.5 text-sm text-obsidian-800 font-serif"></ol>
+            </div>
+
+            <div class="flex flex-col sm:flex-row sm:items-center gap-3 pt-1">
+              <button id="enrol-go" type="button" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
+                <i data-lucide="mail" class="w-4 h-4"></i> Open my enrolment email
+              </button>
+              <a id="enrol-fallback" href="mailto:info@hasrcollegium.com?subject=Free%20Enrolment" class="text-xs text-gold-700 underline">or write to info@hasrcollegium.com yourself</a>
+            </div>
+          </form>
+        </div>
+
+        <!-- Straight answers -->
+        <div class="lg:col-span-2 space-y-5">
+          <div class="reveal p-6 rounded-3xl bg-obsidian-900 text-linen-100">
+            <h3 class="font-serif text-xl text-white flex items-center gap-2"><i data-lucide="hand-heart" class="w-5 h-5 text-gold-400"></i> How can it be free?</h3>
+            <p class="mt-2 text-sm text-linen-200 font-light leading-relaxed">No award can be bought. By Statute, enrolment, examination, assessment, candidacy and the award itself carry no fee. The Collegium is sustained by voluntary offerings on a separate channel, never asked for or linked to any award. <a href="#faq" class="underline text-gold-300 hover:text-gold-400">Read the full answer</a>.</p>
+          </div>
+          <div class="reveal p-6 rounded-3xl bg-white border gold-border card-shadow">
+            <h3 class="font-serif text-xl text-obsidian-900 flex items-center gap-2"><i data-lucide="scale" class="w-5 h-5 text-gold-600"></i> Straight talk</h3>
+            <ul class="mt-3 space-y-2 text-sm text-obsidian-800/85 font-light leading-relaxed">
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-1 text-gold-600 shrink-0"></i> A HASRC award is ecclesiastical, not a civilly accredited degree.</li>
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-1 text-gold-600 shrink-0"></i> It prepares you for ministry and scholarship. It does not ordain you.</li>
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-1 text-gold-600 shrink-0"></i> Free does not mean easy. Nothing is awarded on request or on enrolment alone.</li>
+              <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-1 text-gold-600 shrink-0"></i> Awards are permanent, withdrawn only for falsification or grave canonical delinquency.</li>
+            </ul>
+            <a href="#legal-notice" class="mt-3 inline-block text-xs text-gold-700 underline font-semibold">Read the full notice</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ: IS IT REALLY FREE? -->
+  <section id="faq" class="py-24 bg-white border-b gold-border">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">Straight answers</span>
+        <h2 class="font-serif text-3xl sm:text-5xl text-obsidian-900 font-normal">Is it really free?</h2>
+        <div class="w-16 h-0.5 gold-foil mx-auto mt-4 mb-4"></div>
+        <p class="text-sm sm:text-base text-obsidian-800/80 font-light leading-relaxed">
+          Yes. And because free makes sensible people suspicious, here is exactly why, who pays, and what you are not signing up to.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="reveal p-7 rounded-3xl bg-linen-50 border-2 border-gold-500/70 card-shadow space-y-3">
+          <div class="w-11 h-11 rounded-2xl bg-white border gold-border flex items-center justify-center"><i data-lucide="scroll-text" class="w-5 h-5 text-gold-600"></i></div>
+          <h3 class="font-serif text-xl text-obsidian-900">Yes, and it is in the Statutes</h3>
+          <p class="text-sm text-obsidian-800/85 font-light leading-relaxed">Enrolment, examination, assessment, candidacy, the award itself and the Register cost nothing. That promise is written into the Collegium&rsquo;s Statutes (&sect;10.5) and overrides every other clause. No award can be bought, and none is made on request or on an offering alone.</p>
+        </div>
+
+        <div class="reveal p-7 rounded-3xl bg-white border gold-border card-shadow space-y-3">
+          <div class="w-11 h-11 rounded-2xl bg-linen-100 border gold-border flex items-center justify-center"><i data-lucide="dumbbell" class="w-5 h-5 text-gold-600"></i></div>
+          <h3 class="font-serif text-xl text-obsidian-900">Free, but not free of effort</h3>
+          <p class="text-sm text-obsidian-800/85 font-light leading-relaxed">No fee does not mean no homework. Expect modules to read, essays to write, and an 8,000-word treatise at the Licentiate level. Two readers assess everything you submit, and nothing is awarded for turning up. You pay with your attention, not your wallet.</p>
+        </div>
+
+        <div class="reveal p-7 rounded-3xl bg-white border gold-border card-shadow space-y-3">
+          <div class="w-11 h-11 rounded-2xl bg-linen-100 border gold-border flex items-center justify-center"><i data-lucide="church" class="w-5 h-5 text-rose-700"></i></div>
+          <h3 class="font-serif text-xl text-obsidian-900">Why free: a ministry open to all</h3>
+          <p class="text-sm text-obsidian-800/85 font-light leading-relaxed">The Collegium is a sacramental ministry and learned society, not a business. It is not-for-profit and pays no dividends. If it ever closed, its assets could not be shared out among members but would pass to a kindred jurisdiction, library or trust (&sect;10.1, &sect;10.4). Its altar is open to all, and its Statutes bar discrimination in admission and assessment (&sect;5.7). Free is not a marketing offer. It is how a ministry that is open to all has to work.</p>
+        </div>
+
+        <div class="reveal p-7 rounded-3xl bg-white border gold-border card-shadow space-y-3 lg:col-span-2">
+          <div class="w-11 h-11 rounded-2xl bg-linen-100 border gold-border flex items-center justify-center"><i data-lucide="heart-handshake" class="w-5 h-5 text-gold-600"></i></div>
+          <h3 class="font-serif text-xl text-obsidian-900">Who pays, and who benefits</h3>
+          <p class="text-sm text-obsidian-800/85 font-light leading-relaxed">The Collegium is sustained by voluntary freewill offerings, and by grants and bequests from aligned bodies and generous individuals. They pay for the servers and archives, the Chancery&rsquo;s administration, the journal, and the preparation of diplomas (&sect;10.2). That means:</p>
+          <ul class="text-sm text-obsidian-800/85 font-light leading-relaxed space-y-1.5">
+            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-1 text-gold-600 shrink-0"></i> A student with no spare money studies on the same terms as anyone else.</li>
+            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-1 text-gold-600 shrink-0"></i> The journal, JOIS, is free to read and free to publish in, with no author fees.</li>
+            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 mt-1 text-gold-600 shrink-0"></i> A living tradition is preserved and taught for the next generation, and local chapters and oratories can gather around it.</li>
+          </ul>
+          <p class="text-xs text-obsidian-800/70 font-light leading-relaxed pt-1">Officers serve without stipend. The Statutes allow only contracted Chancery staff and a modest honorarium for the Provost, paid only from a year&rsquo;s surplus after a twelve-month reserve and confirmed by an Examiner of Accounts. They also require a yearly statement of offerings received and how they were used (&sect;10.5(6), &sect;10.7).</p>
+        </div>
+
+        <div class="reveal p-7 rounded-3xl bg-white border gold-border card-shadow space-y-3">
+          <div class="w-11 h-11 rounded-2xl bg-linen-100 border gold-border flex items-center justify-center"><i data-lucide="door-open" class="w-5 h-5 text-gold-600"></i></div>
+          <h3 class="font-serif text-xl text-obsidian-900">Not a trap: no church to join</h3>
+          <p class="text-sm text-obsidian-800/85 font-light leading-relaxed">Studying here does not enlist you in a church. The Collegium is a scholarly and contemplative society, not a parish or diocese (&sect;1.2). There are no loyalty oaths and no test of belief: the acknowledgement signed before a diploma is issued is an undertaking of good order, not a creed (&sect;5.7, &sect;6.6). Admission never depends on your denomination or background. You may withdraw by written notice, and an award already made stays valid (&sect;5.6, &sect;6.8).</p>
+        </div>
+
+        <div class="reveal p-7 rounded-3xl bg-white border gold-border card-shadow space-y-3 md:col-span-2 lg:col-span-3">
+          <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+            <div class="w-11 h-11 rounded-2xl bg-linen-100 border gold-border flex items-center justify-center shrink-0"><i data-lucide="shield-check" class="w-5 h-5 text-gold-600"></i></div>
+            <div class="space-y-2">
+              <h3 class="font-serif text-xl text-obsidian-900">Not an upsell</h3>
+              <p class="text-sm text-obsidian-800/85 font-light leading-relaxed">No price, suggested amount or payment prompt appears anywhere in enrolment, study or assessment (&sect;10.5). Offerings go through a separate channel, and assessors are never told whether a candidate has given one. If books, courses or other resources are offered in future, they will stay separate from the path to an award, and will never be required for it or linked to it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- More questions -->
+      <div class="max-w-3xl mx-auto mt-14 reveal">
+        <h3 class="font-serif text-2xl text-obsidian-900 text-center mb-6">More questions</h3>
+        <div class="space-y-3">
+          <details class="rounded-2xl bg-linen-50 border gold-border">
+            <summary class="flex items-center justify-between gap-4 p-5 cursor-pointer font-serif text-lg text-obsidian-900">How long does it take?<i data-lucide="chevron-down" class="w-5 h-5 text-gold-600 shrink-0"></i></summary>
+            <p class="px-5 pb-5 text-sm text-obsidian-800/80 font-light leading-relaxed">It is self-paced, with no minimum time. Candidacy runs for at most six months at the Associate level and twelve months at the Licentiate level and for Fellowship by Route D. You can submit whenever your work is ready, and the Chancery aims to decide within ninety days of a complete submission.</p>
+          </details>
+          <details class="rounded-2xl bg-linen-50 border gold-border">
+            <summary class="flex items-center justify-between gap-4 p-5 cursor-pointer font-serif text-lg text-obsidian-900">What is an award worth, and what is it not?<i data-lucide="chevron-down" class="w-5 h-5 text-gold-600 shrink-0"></i></summary>
+            <p class="px-5 pb-5 text-sm text-obsidian-800/80 font-light leading-relaxed">It is an ecclesiastical award, recognised within the Collegium, its affiliated bodies and the wider Independent Sacramental Movement. It is not a civilly accredited degree, not a professional qualification, and not ordination: completing a programme prepares you, but ordination remains a separate act of your own ordaining bishop (&sect;6.3.1).</p>
+          </details>
+          <details class="rounded-2xl bg-linen-50 border gold-border">
+            <summary class="flex items-center justify-between gap-4 p-5 cursor-pointer font-serif text-lg text-obsidian-900">I am not Christian, or I belong to another church. May I study?<i data-lucide="chevron-down" class="w-5 h-5 text-gold-600 shrink-0"></i></summary>
+            <p class="px-5 pb-5 text-sm text-obsidian-800/80 font-light leading-relaxed">Yes. Admission is open to qualified seekers, scholars, clergy and practitioners of every background (&sect;5.7). The Collegium itself is Christian and sacramental, and its five pillars are the tradition&rsquo;s own teaching, but they do not bind your inquiry or your conclusions (&sect;2.2).</p>
+          </details>
+          <details class="rounded-2xl bg-linen-50 border gold-border">
+            <summary class="flex items-center justify-between gap-4 p-5 cursor-pointer font-serif text-lg text-obsidian-900">Who do I write to?<i data-lucide="chevron-down" class="w-5 h-5 text-gold-600 shrink-0"></i></summary>
+            <p class="px-5 pb-5 text-sm text-obsidian-800/80 font-light leading-relaxed">The Chancery, at <a href="mailto:info@hasrcollegium.com" class="text-gold-700 underline">info@hasrcollegium.com</a>. The enrolment form above opens an email with your choices ready.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLEGIATE RANKS (STATUTE 5.2) -->
+  <section id="ranks" class="py-24 bg-linen-100/60 border-y gold-border">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">
+          Three Levels of Study &amp; Recognition &bull; Free Enrolment
+        </span>
+        <h2 class="font-serif text-3xl sm:text-5xl text-obsidian-900 font-normal">Associate, Licentiate &amp; Fellow</h2>
+        <div class="w-16 h-0.5 gold-foil mx-auto mt-4 mb-4"></div>
+        <p class="text-sm text-obsidian-800/80 font-light leading-relaxed">
+          The Collegium recognises progressive levels of scholarly attainment, ministerial competence, and institutional stewardship. Each level is awarded only on assessed work, by one of the routes set out in Ordinance 5. Enrolment, examination, assessment and award are free of charge under every route, and no level is a certificate of personal spiritual attainment. <span class="whitespace-nowrap">(Our Statutes call these levels <em>ranks</em>.)</span>
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Tier 1 -->
+        <div class="p-7 rounded-3xl bg-white border gold-border card-shadow flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <span class="text-xs font-serif uppercase tracking-widest text-gold-700 font-bold block">Level 1 &bull; AHASRC</span>
+            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Associate of the Collegium</h3>
+            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+              A foundational scholar: one who has completed Modules 1 to 3 of a specialist discipline and a Synthesis Theological Paper, or who shows equal standing by clergy service in early orders or by a recognised Bachelor&rsquo;s degree.
+            </p>
+            <div class="text-xs text-obsidian-800/75 font-light space-y-1">
+              <div>&bull; <strong>Route A:</strong> Curricular examination (6-month window)</div>
+              <div>&bull; <strong>Route B:</strong> Clergy &amp; portfolio</div>
+              <div>&bull; <strong>Route C:</strong> Academic degree bridge</div>
+            </div>
+          </div>
+          <div class="pt-3 border-t gold-border text-xs text-gold-700 font-semibold uppercase tracking-wider">
+            Black Cambridge BA gown &bull; crimson-lined hood
+          </div>
+        </div>
+
+        <!-- Tier 2 -->
+        <div class="p-7 rounded-3xl bg-white border gold-border card-shadow flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <span class="text-xs font-serif uppercase tracking-widest text-gold-700 font-bold block">Level 2 &bull; LHASRC</span>
+            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Licentiate of the Collegium</h3>
+            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+              A specialist scholar licensed to teach (<em>licentia docendi</em>) in one discipline: one who has completed the six modules and the Capstone Treatise of a specialist discipline, or who shows equal standing by at least five years of ministry or by a recognised Master&rsquo;s degree.
+            </p>
+            <div class="text-xs text-obsidian-800/75 font-light space-y-1">
+              <div>&bull; <strong>Route A:</strong> Full curricular examination (12-month window)</div>
+              <div>&bull; <strong>Route B:</strong> Ministerial &amp; RPEL</div>
+              <div>&bull; <strong>Route C:</strong> Graduate degree bridge</div>
+            </div>
+            <div class="flex flex-wrap gap-x-4 gap-y-1">
+              <a href="#disciplines" class="inline-block text-xs text-gold-700 hover:text-gold-600 underline font-semibold transition">See the four specialist disciplines &darr;</a>
+              <a href="#legal-notice" class="inline-block text-xs text-gold-700 hover:text-gold-600 underline font-semibold transition">See the legal notice</a>
+            </div>
+          </div>
+          <div class="pt-3 border-t gold-border text-xs text-gold-700 font-semibold uppercase tracking-wider">
+            Hood bound with 1-inch gold satin
+          </div>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="p-7 rounded-3xl bg-white border gold-border card-shadow flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <span class="text-xs font-serif uppercase tracking-widest text-gold-700 font-bold block">Level 3 &bull; FHASRC</span>
+            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Fellow of the Collegium</h3>
+            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+              A senior scholar of research, at senior research level (rigour comparable to a Master of Arts thesis): one who has published research in JOIS or defended a Research Monograph, or who holds a Doctorate, or who is a bishop holding the Licentiate on the Episcopal Bench.
+            </p>
+            <div class="text-xs text-obsidian-800/75 font-light space-y-1">
+              <div>&bull; <strong>Route A:</strong> JOIS research &amp; monograph</div>
+              <div>&bull; <strong>Route B:</strong> Doctoral &amp; published author</div>
+              <div>&bull; <strong>Route C:</strong> Episcopal Bench</div>
+              <div>&bull; <strong>Route D:</strong> Discipline Fellowship by Research Monograph</div>
+            </div>
+          </div>
+          <div class="pt-3 border-t gold-border text-xs text-gold-700 font-semibold uppercase tracking-wider">
+            Cambridge MA gown &bull; gold doctoral hood
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Discipline designations & honours -->
+      <div class="grid md:grid-cols-2 gap-6 mt-8">
+        <div class="p-7 min-w-0 rounded-3xl bg-linen-50 border gold-border card-shadow space-y-3">
+          <h3 class="font-serif font-bold text-sm text-obsidian-900 uppercase tracking-wider">Discipline Designations</h3>
+          <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+            Alongside the levels, the Collegium names the programme in which a level was earned by curricular or research examination. Associate designations apply to Route A only, and Fellow designations to Route D only.
+          </p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs text-obsidian-800/85 text-left">
+              <thead>
+                <tr class="border-b gold-border text-gold-700 uppercase tracking-wider">
+                  <th class="py-2 pr-3 font-semibold">Discipline</th>
+                  <th class="py-2 pr-3 font-semibold">Associate</th>
+                  <th class="py-2 pr-3 font-semibold">Licentiate</th>
+                  <th class="py-2 font-semibold">Fellow</th>
+                </tr>
+              </thead>
+              <tbody class="font-mono">
+                <tr class="border-b border-linen-200"><td class="py-2 pr-3 font-sans">Sacramental Ministry</td><td class="pr-3">A.S.Min</td><td class="pr-3">L.S.Min</td><td>F.S.Min</td></tr>
+                <tr class="border-b border-linen-200"><td class="py-2 pr-3 font-sans">Metaphysical Theology</td><td class="pr-3">A.Mphy.Th.</td><td class="pr-3">L.Mphy.Th.</td><td>F.Mphy.Th.</td></tr>
+                <tr class="border-b border-linen-200"><td class="py-2 pr-3 font-sans">Applied Metaphysical Science</td><td class="pr-3">A.AMsc.</td><td class="pr-3">L.AMsc.</td><td>F.AMsc.</td></tr>
+                <tr><td class="py-2 pr-3 font-sans">Contemporary Spirituality</td><td class="pr-3">A.C.Sp.</td><td class="pr-3">L.C.Sp.</td><td>F.C.Sp.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="p-7 min-w-0 rounded-3xl bg-linen-50 border gold-border card-shadow space-y-3">
+          <h3 class="font-serif font-bold text-sm text-obsidian-900 uppercase tracking-wider">Honours &amp; the Wider Roll</h3>
+          <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+            Outside the assessed ladder, the Provost may confer by Decree the Honorary Fellowship (HonFHASRC) and the Fellow Emeritus (FHASRC (Em.)) <em>honoris causa</em>. These confer no examination-based standing. The Founding Fellowship is held by the Founder by the Statutes, and is not an examined rank.
+          </p>
+          <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+            A general membership tier (Member of the Collegium, MHASRC) is reserved to the future discretion of the Provost and is not yet active. All awards are permanent, withdrawn only for falsification or grave canonical delinquency, and are entered in the Public Register of Awards.
+          </p>
+          <a href="fellowship.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
+            <span>View the Collegiate Roll &amp; Register &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIALIST DISCIPLINES -->
+  <section id="disciplines" class="py-24 bg-white border-y gold-border">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">
+          Specialist Disciplines &bull; Assessed by Examination &bull; Free Enrolment by Statute
+        </span>
+        <h2 class="font-serif text-3xl sm:text-5xl text-obsidian-900 font-normal">The Four Specialist Disciplines</h2>
+        <div class="w-16 h-0.5 gold-foil mx-auto mt-4 mb-4"></div>
+        <p class="text-sm text-obsidian-800/80 font-light leading-relaxed">
+          The Associate, Licentiate and Fellow levels are earned in one of four specialist disciplines. Every discipline has six modules and an 8,000-word Capstone Treatise, and each carries its own discipline designation. Choose a discipline to see its full syllabus and admission routes.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-6">
+
+        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow flex flex-col justify-between space-y-5">
+          <div class="space-y-3">
+            <span class="text-xs font-serif uppercase tracking-widest text-gold-700 font-bold block">A.S.Min &bull; L.S.Min &bull; F.S.Min</span>
+            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Sacramental Ministry</h3>
+            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+              A praxis-centred liturgical and ministerial programme preparing candidates for collaborative, inclusive sacramental ministry within the Independent Sacramental Movement. Open to ordination candidates, active clergy, and lay liturgists.
+            </p>
+          </div>
+          <a href="lsmin.html" class="inline-flex items-center gap-2 self-start px-6 py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
+            <span>View the Syllabus &rarr;</span>
+          </a>
+        </div>
+
+        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow flex flex-col justify-between space-y-5">
+          <div class="space-y-3">
+            <span class="text-xs font-serif uppercase tracking-widest text-gold-700 font-bold block">A.Mphy.Th. &bull; L.Mphy.Th. &bull; F.Mphy.Th.</span>
+            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Metaphysical Theology</h3>
+            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+              An academic and contemplative track for theologians, mystics, clergy, and authors investigating the historical, scriptural, and philosophical architecture of the Independent Sacramental Movement and the Antiochian tradition.
+            </p>
+          </div>
+          <a href="lmphyth.html" class="inline-flex items-center gap-2 self-start px-6 py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
+            <span>View the Syllabus &rarr;</span>
+          </a>
+        </div>
+
+        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow flex flex-col justify-between space-y-5">
+          <div class="space-y-3">
+            <span class="text-xs font-serif uppercase tracking-widest text-gold-700 font-bold block">A.AMsc. &bull; L.AMsc. &bull; F.AMsc.</span>
+            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Applied Metaphysical Science</h3>
+            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+              Designed for spiritual practitioners, ministers, and facilitators seeking mastery in applied metaphysics, contemplative mindset practice, spiritual mind healing as prayer, and Christic energy traditions.
+            </p>
+          </div>
+          <a href="lamsc.html" class="inline-flex items-center gap-2 self-start px-6 py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
+            <span>View the Syllabus &rarr;</span>
+          </a>
+        </div>
+
+        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow flex flex-col justify-between space-y-5">
+          <div class="space-y-3">
+            <span class="text-xs font-serif uppercase tracking-widest text-gold-700 font-bold block">A.C.Sp. &bull; L.C.Sp. &bull; F.C.Sp.</span>
+            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Contemporary Spirituality</h3>
+            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
+              An integrative pastoral and mentoring track for spiritual directors, pastoral companions, and community facilitators exploring inner ethics, interfaith dialogue, and inclusive pastoral care.
+            </p>
+          </div>
+          <a href="lcsp.html" class="inline-flex items-center gap-2 self-start px-6 py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
+            <span>View the Syllabus &rarr;</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTERS, ORATORIES & FOUNDATIONS: INTRODUCTION -->
+  <section id="branches" class="py-20 bg-linen-100/70 border-b gold-border">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+        <!-- Photo mosaic -->
+        <div class="grid grid-cols-5 grid-rows-6 gap-3 h-[420px] sm:h-[500px] order-2 lg:order-1">
+          <a href="branches.html" class="col-span-3 row-span-4 rounded-3xl overflow-hidden border gold-border card-shadow bg-linen-200 relative group" aria-label="Collegiate Chapters">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1000&auto=format&fit=crop" alt="A circle of people in conversation" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" onerror="this.style.display='none'">
+            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-white/90 text-xs font-serif font-bold uppercase tracking-widest text-gold-700">Study</span>
+          </a>
+          <a href="branches.html" class="col-span-2 row-span-3 rounded-3xl overflow-hidden border gold-border card-shadow bg-linen-200 relative group" aria-label="Oratories">
+            <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?q=80&w=800&auto=format&fit=crop" alt="Candlelight in contemplative prayer" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" onerror="this.style.display='none'">
+            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-white/90 text-xs font-serif font-bold uppercase tracking-widest text-rose-700">Prayer</span>
+          </a>
+          <a href="branches.html" class="col-span-2 row-span-3 rounded-3xl overflow-hidden border gold-border card-shadow bg-linen-200 relative group" aria-label="Combined Foundations">
+            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=800&auto=format&fit=crop" alt="Sacred texts open for study" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" onerror="this.style.display='none'">
+            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-white/90 text-xs font-serif font-bold uppercase tracking-widest text-obsidian-900">Both</span>
+          </a>
+          <a href="branches.html" class="col-span-3 row-span-2 rounded-3xl overflow-hidden border gold-border card-shadow bg-linen-200 relative group" aria-label="The sanctuary">
+            <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=1000&auto=format&fit=crop" alt="A quiet sanctuary" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" onerror="this.style.display='none'">
+            <span class="absolute inset-0 bg-gradient-to-t from-obsidian-900/60 to-transparent"></span>
+            <span class="absolute bottom-3 left-4 font-serif italic text-white text-lg">Wherever three gather</span>
+          </a>
+        </div>
+
+        <!-- Invitation -->
+        <div class="order-1 lg:order-2">
+          <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">Decentralised Fellowship</span>
+          <h2 class="font-serif text-3xl sm:text-5xl text-obsidian-900 font-normal leading-tight">Chapters, Oratories <span class="italic text-gold-700">&amp; Foundations</span></h2>
+          <div class="w-16 h-0.5 gold-foil mt-4 mb-5"></div>
+          <p class="text-sm sm:text-base text-obsidian-800/85 leading-relaxed font-light">
+            The Collegium was never meant to live only on a screen. Wherever three or more Collegians gather to study, to pray and to serve, they may petition the Provost for a Warrant of Constitution, which is granted gladly, and a new branch takes root.
+          </p>
+          <p class="text-sm sm:text-base text-obsidian-800/85 leading-relaxed font-light mt-4">
+            Gather as a <strong class="font-semibold">Chapter</strong> to study, as an <strong class="font-semibold">Oratory</strong> to pray, or as a <strong class="font-semibold">Combined Foundation</strong> to do both. Govern your own life, with the Chancery beside you and no hierarchy between.
+          </p>
+
+          <ul class="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2 text-xs text-obsidian-800/85">
+            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-gold-600 shrink-0"></i> Begin with just three Collegians</li>
+            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-gold-600 shrink-0"></i> Your own Constitution and programme</li>
+            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-gold-600 shrink-0"></i> Model Constitution and website listing</li>
+            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-gold-600 shrink-0"></i> No fees for any level</li>
+          </ul>
+
+          <div class="mt-8 flex flex-col sm:flex-row gap-3">
+            <a href="branches.html" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
+              <span>Find your path</span><i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="branches.html#warrant" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-white border gold-border text-obsidian-900 hover:bg-linen-100 text-xs font-serif font-bold uppercase tracking-wider transition">
+              How a branch begins
+            </a>
           </div>
         </div>
       </div>
@@ -219,12 +705,12 @@
       <!-- Block 1: The Five Pillars of the Spruitian Charism -->
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         <div class="relative rounded-3xl overflow-hidden card-shadow border gold-border">
-          <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=1200&auto=format&fit=crop" alt="Sacred Texts and Contemplative Research" class="w-full h-[540px] object-cover">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=1200&auto=format&fit=crop" alt="Sacred Texts and Contemplative Research" class="w-full h-[540px] object-cover">
           <div class="absolute inset-0 bg-gradient-to-t from-obsidian-900/80 via-obsidian-900/20 to-transparent"></div>
           <div class="absolute bottom-6 left-6 right-6 text-linen-50">
             <span class="text-xs font-serif uppercase tracking-widest text-gold-300 block mb-1">Scientia et Sapientia</span>
             <p class="font-serif italic text-lg font-light">"Only mysticism sustains the vitality and reality of faith."</p>
-            <p class="text-[11px] text-linen-200/80 font-light mt-1">
+            <p class="text-xs text-linen-200/80 font-light mt-1">
               Guiding our curricula and scriptorium while preserving complete liberty of conscience and academic freedom for every Collegian.
             </p>
           </div>
@@ -292,7 +778,7 @@
                   Grounding research and training in the authentic inner-Christian and metaphysical charism of our spiritual predecessors.
                 </p>
               </div>
-              <div class="inline-flex items-center gap-1.5 text-[11px] font-serif font-bold uppercase tracking-wider text-gold-700 pt-3 mt-2 border-t gold-border">
+              <div class="inline-flex items-center gap-1.5 text-xs font-serif font-bold uppercase tracking-wider text-gold-700 pt-3 mt-2 border-t gold-border">
                 <span>Read Codification</span>
                 <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition"></i>
               </div>
@@ -311,7 +797,7 @@
                   Transparency of sources, intellectual honesty, and respect for free will and spiritual well-being.
                 </p>
               </div>
-              <div class="inline-flex items-center gap-1.5 text-[11px] font-serif font-bold uppercase tracking-wider text-gold-700 pt-3 mt-2 border-t gold-border">
+              <div class="inline-flex items-center gap-1.5 text-xs font-serif font-bold uppercase tracking-wider text-gold-700 pt-3 mt-2 border-t gold-border">
                 <span>Read Codification</span>
                 <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition"></i>
               </div>
@@ -330,7 +816,7 @@
                   Ensuring metaphysical rites, meditations, and energetic techniques are taught within a sound ethical framework.
                 </p>
               </div>
-              <div class="inline-flex items-center gap-1.5 text-[11px] font-serif font-bold uppercase tracking-wider text-gold-700 pt-3 mt-2 border-t gold-border">
+              <div class="inline-flex items-center gap-1.5 text-xs font-serif font-bold uppercase tracking-wider text-gold-700 pt-3 mt-2 border-t gold-border">
                 <span>Read Codification</span>
                 <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition"></i>
               </div>
@@ -349,7 +835,7 @@
                   Constructive discourse across the ISM, wider Christian bodies, secular academia, and interfaith circles.
                 </p>
               </div>
-              <div class="inline-flex items-center gap-1.5 text-[11px] font-serif font-bold uppercase tracking-wider text-gold-700 pt-3 mt-2 border-t gold-border">
+              <div class="inline-flex items-center gap-1.5 text-xs font-serif font-bold uppercase tracking-wider text-gold-700 pt-3 mt-2 border-t gold-border">
                 <span>Read Codification</span>
                 <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition"></i>
               </div>
@@ -360,54 +846,33 @@
 
         <!-- Right Column: Featured Image with Core Values Callout -->
         <div class="relative rounded-3xl overflow-hidden card-shadow border gold-border order-1 lg:order-2">
-          <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?q=80&w=1200&auto=format&fit=crop" alt="Sacred Contemplation" class="w-full h-[540px] object-cover">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?q=80&w=1200&auto=format&fit=crop" alt="Sacred Contemplation" class="w-full h-[540px] object-cover">
           <div class="absolute inset-0 bg-gradient-to-t from-obsidian-900/85 via-obsidian-900/35 to-transparent"></div>
           <div class="absolute bottom-8 left-8 right-8 text-linen-50">
             <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-300 block mb-2">Our Six Core Values &bull; W.R.I.T.E.S.</span>
             <p class="font-serif italic text-base sm:text-lg font-light leading-relaxed mb-3">
               Wisdom &amp; Mysticism &bull; Respectful Inquiry &bull; Inclusive Diversity &bull; Transformative Knowledge &bull; Excellence in Research &amp; Education &bull; Spiritual Exploration
             </p>
-            <span class="text-[11px] font-sans text-linen-300 tracking-wider uppercase block">Foundational Statutes of HASRC</span>
+            <span class="text-xs font-sans text-linen-300 tracking-wider uppercase block">Foundational Statutes of HASRC</span>
           </div>
         </div>
 
       </div>
 
-      <!-- Block 3: The Feast of Holy Sophia -->
-      <div class="rounded-3xl bg-linen-100/80 border gold-border p-8 sm:p-12 card-shadow">
-        <div class="grid lg:grid-cols-12 gap-8 items-center">
-          <div class="lg:col-span-4 space-y-3">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border gold-border text-[11px] font-serif uppercase tracking-widest text-gold-700 font-bold">
-              <i data-lucide="sun" class="w-3.5 h-3.5 text-gold-600"></i>
-              <span>Collegiate Calendar</span>
-            </div>
-            <h3 class="font-serif text-2xl sm:text-3xl text-obsidian-900 font-normal">
-              The Feast of Holy Sophia
-            </h3>
-            <p class="text-xs font-serif uppercase tracking-widest text-rose-700 font-bold">
-              30 September &bull; 17 September Julian Reckoning
-            </p>
-            <p class="text-xs text-obsidian-800/75 font-light leading-relaxed">
-              Commemorating the holy martyrs Faith, Hope, and Love and their mother Sophia (Wisdom) according to the ancient calendar of the Roman world in which the Church of Antioch arose.
-            </p>
+      <!-- Block 3: Collegiate calendar (compact) -->
+      <div id="feast" class="rounded-2xl bg-linen-100/80 border gold-border p-6 sm:p-7">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
+          <div class="inline-flex items-center gap-2 text-xs font-serif uppercase tracking-widest text-gold-700 font-bold shrink-0">
+            <i data-lucide="sun" class="w-4 h-4 text-gold-600"></i> Collegiate calendar
           </div>
-          <div class="lg:col-span-8 lg:pl-8 lg:border-l gold-border space-y-3 text-xs sm:text-sm text-obsidian-800/85 font-light leading-relaxed">
-            <p>
-              <strong>Contemplative Reading:</strong> In the Collegium’s contemplative tradition, 
-              the number <strong>30</strong> is three and a circle: symbolizes the three daughters—<em>Faith, Hope, and Love</em>
-              —held within the unending circle of their mother <em>Sophia, Wisdom</em>, for which the zero (<em>śūnya</em>, 
-              fullness) stands. The Hebrew letter <strong>Lamed</strong> has the value 30: it is the letter of learning and 
-              teaching, whose stem rises above all others, while in the Kabbalah, Wisdom (<em>Chokhmah</em>) 
-              is the primordial source from which understanding flows.
-            </p>
-            <p class="text-xs text-obsidian-800/70 italic">
-              The old reckoning date, <strong>17</strong>, reduces to <strong>8</strong>, 
-              the eighth day of new creation, which turned on its side is the sign of infinity. 
-              Observed voluntarily by assembly or solitary meditation, the lighting of a candle, 
-              and the Collegium’s Order of Prayer.
-            </p>
-          </div>
+          <p class="text-sm text-obsidian-800/85 font-light leading-relaxed">
+            <strong class="font-semibold">Feast of Holy Sophia, 30 September</strong> (17 September, Julian). Kept voluntarily by chapters, oratories and solitary Collegians with a candle and the Order of Prayer, in memory of the holy martyrs Faith, Hope and Love and their mother Sophia, Wisdom.
+          </p>
         </div>
+        <details class="mt-3 text-sm text-obsidian-800/80 font-light leading-relaxed">
+          <summary class="cursor-pointer text-xs font-semibold uppercase tracking-wider text-gold-700 hover:text-gold-600">Contemplative reading</summary>
+          <p class="mt-3">In the Collegium&rsquo;s contemplative tradition the number <strong>30</strong> is three and a circle: the three daughters, <em>Faith, Hope and Love</em>, held within the unending circle of their mother <em>Sophia, Wisdom</em>, for which the zero (<em>&#347;&#363;nya</em>, fullness) stands. The Hebrew letter <strong>Lamed</strong> has the value 30: the letter of learning and teaching, whose stem rises above all others. The old reckoning date, <strong>17</strong>, reduces to <strong>8</strong>, the eighth day of new creation, which turned on its side is the sign of infinity.</p>
+        </details>
       </div>
 
     </div>
@@ -453,10 +918,10 @@
           <div>
             <div class="flex items-start gap-5 mb-5">
               <div class="w-24 h-28 sm:w-28 sm:h-32 rounded-2xl overflow-hidden border-2 gold-border shadow-xs bg-linen-50 shrink-0">
-                <img src="Abp Herman Spruit2.png" alt="Patriarch Herman Adrian Spruit" class="w-full h-full object-cover object-top">
+                <img loading="lazy" src="Abp Herman Spruit2.png" alt="Patriarch Herman Adrian Spruit" class="w-full h-full object-cover object-top">
               </div>
               <div>
-                <span class="text-[11px] font-serif uppercase tracking-widest text-gold-700 font-bold block mb-1">
+                <span class="text-xs font-serif uppercase tracking-widest text-gold-700 font-bold block mb-1">
                   1911–1994 &bull; First Patriarch &amp; Primus &bull; His Sacred Beatitude
                 </span>
                 <h3 class="font-serif text-xl sm:text-2xl text-obsidian-900 font-normal leading-snug">
@@ -466,8 +931,8 @@
                   Catholic Apostolic Church of Antioch (With Matriarch +++Meri Spruit)
                 </p>
                 <div class="flex flex-wrap gap-1.5 mt-3">
-                  <span class="px-2.5 py-0.5 rounded-full bg-gold-300/40 border gold-border text-obsidian-900 text-[10px] font-serif">17+2 Apostolic Lines</span>
-                  <span class="px-2.5 py-0.5 rounded-full bg-linen-100 border gold-border text-obsidian-900 text-[10px] font-serif">Meta-Catholicity</span>
+                  <span class="px-2.5 py-0.5 rounded-full bg-gold-300/40 border gold-border text-obsidian-900 text-xs font-serif">17+2 Apostolic Lines</span>
+                  <span class="px-2.5 py-0.5 rounded-full bg-linen-100 border gold-border text-obsidian-900 text-xs font-serif">Meta-Catholicity</span>
                 </div>
               </div>
             </div>
@@ -486,10 +951,10 @@
           <div>
             <div class="flex items-start gap-5 mb-5">
               <div class="w-24 h-28 sm:w-28 sm:h-32 rounded-2xl overflow-hidden border-2 gold-border shadow-xs bg-linen-50 shrink-0">
-                <img src="+++frank.png" alt="Archbishop Frank R. Bugge" class="w-full h-full object-cover object-top">
+                <img loading="lazy" src="+++frank.png" alt="Archbishop Frank R. Bugge" class="w-full h-full object-cover object-top">
               </div>
               <div>
-                <span class="text-[11px] font-serif uppercase tracking-widest text-gold-700 font-bold block mb-1">
+                <span class="text-xs font-serif uppercase tracking-widest text-gold-700 font-bold block mb-1">
                   First Primate &amp; Primate Emeritus &bull; Founding Patriarch
                 </span>
                 <h3 class="font-serif text-xl sm:text-2xl text-obsidian-900 font-normal leading-snug">
@@ -499,8 +964,8 @@
                   Father of Fathers of the Succession in Australia &amp; Beyond (ACOA)
                 </p>
                 <div class="flex flex-wrap gap-1.5 mt-3">
-                  <span class="px-2.5 py-0.5 rounded-full bg-gold-300/40 border gold-border text-obsidian-900 text-[10px] font-serif">19 Converged Lines</span>
-                  <span class="px-2.5 py-0.5 rounded-full bg-linen-100 border gold-border text-obsidian-900 text-[10px] font-serif">Consecrator of the Founder</span>
+                  <span class="px-2.5 py-0.5 rounded-full bg-gold-300/40 border gold-border text-obsidian-900 text-xs font-serif">19 Converged Lines</span>
+                  <span class="px-2.5 py-0.5 rounded-full bg-linen-100 border gold-border text-obsidian-900 text-xs font-serif">Consecrator of the Founder</span>
                 </div>
               </div>
             </div>
@@ -519,10 +984,10 @@
           <div>
             <div class="flex items-start gap-5 mb-5">
               <div class="w-24 h-28 sm:w-28 sm:h-32 rounded-2xl overflow-hidden border-2 gold-border shadow-xs bg-linen-50 shrink-0">
-                <img src="+++glenn.png" alt="Archbishop Glenn W. Taylor" class="w-full h-full object-cover object-top">
+                <img loading="lazy" src="+++glenn.png" alt="Archbishop Glenn W. Taylor" class="w-full h-full object-cover object-top">
               </div>
               <div>
-                <span class="text-[11px] font-serif uppercase tracking-widest text-gold-700 font-bold block mb-1">
+                <span class="text-xs font-serif uppercase tracking-widest text-gold-700 font-bold block mb-1">
                   Presiding Archbishop &amp; Second Primate &bull; His Eminence
                 </span>
                 <h3 class="font-serif text-xl sm:text-2xl text-obsidian-900 font-normal leading-snug">
@@ -532,8 +997,8 @@
                   Presiding Archbishop &amp; Primate, Australian Church of Antioch
                 </p>
                 <div class="flex flex-wrap gap-1.5 mt-3">
-                  <span class="px-2.5 py-0.5 rounded-full bg-obsidian-900 text-linen-50 text-[10px] font-serif">Second Primate of ACOA</span>
-                  <span class="px-2.5 py-0.5 rounded-full bg-linen-100 border gold-border text-obsidian-900 text-[10px] font-serif">Dean of SMDS</span>
+                  <span class="px-2.5 py-0.5 rounded-full bg-obsidian-900 text-linen-50 text-xs font-serif">Second Primate of ACOA</span>
+                  <span class="px-2.5 py-0.5 rounded-full bg-linen-100 border gold-border text-obsidian-900 text-xs font-serif">Dean of SMDS</span>
                 </div>
               </div>
             </div>
@@ -552,10 +1017,10 @@
           <div>
             <div class="flex items-start gap-5 mb-5">
               <div class="w-24 h-28 sm:w-28 sm:h-32 rounded-2xl overflow-hidden border-2 gold-border shadow-xs bg-linen-50 shrink-0">
-                <img src="Abp Leonie 3.png" alt="Archbishop Leonie Newman" class="w-full h-full object-cover object-top">
+                <img loading="lazy" src="Abp Leonie 3.png" alt="Archbishop Leonie Newman" class="w-full h-full object-cover object-top">
               </div>
               <div>
-                <span class="text-[11px] font-serif uppercase tracking-widest text-gold-700 font-bold block mb-1">
+                <span class="text-xs font-serif uppercase tracking-widest text-gold-700 font-bold block mb-1">
                   1951–2024 &bull; In Memoriam &bull; Her Grace
                 </span>
                 <h3 class="font-serif text-xl sm:text-2xl text-obsidian-900 font-normal leading-snug">
@@ -565,8 +1030,8 @@
                   Late Primate, The Temple of Ancient Wisdom (TAW) &amp; ACOA Archbishop
                 </p>
                 <div class="flex flex-wrap gap-1.5 mt-3">
-                  <span class="px-2.5 py-0.5 rounded-full bg-linen-100 border gold-border text-obsidian-900 text-[10px] font-serif">Primordial Esotericism</span>
-                  <span class="px-2.5 py-0.5 rounded-full bg-linen-100 border gold-border text-obsidian-900 text-[10px] font-serif">Spiritual Healing Rites</span>
+                  <span class="px-2.5 py-0.5 rounded-full bg-linen-100 border gold-border text-obsidian-900 text-xs font-serif">Primordial Esotericism</span>
+                  <span class="px-2.5 py-0.5 rounded-full bg-linen-100 border gold-border text-obsidian-900 text-xs font-serif">Spiritual Healing Rites</span>
                 </div>
               </div>
             </div>
@@ -616,7 +1081,7 @@
       <div class="grid lg:grid-cols-12 gap-8 pt-6 items-start">
         <div class="lg:col-span-4 flex flex-col items-center">
           <div class="w-48 h-60 sm:w-56 sm:h-72 rounded-2xl overflow-hidden border-2 gold-border shadow-md bg-linen-50 mb-4 shrink-0">
-            <img src="Abp Herman Spruit2.png" alt="Patriarch Herman Adrian Spruit" class="w-full h-full object-cover object-top">
+            <img loading="lazy" src="Abp Herman Spruit2.png" alt="Patriarch Herman Adrian Spruit" class="w-full h-full object-cover object-top">
           </div>
           <div class="w-full bg-linen-50 rounded-2xl p-5 border gold-border space-y-3 text-xs">
             <h4 class="font-serif font-bold text-obsidian-900 uppercase tracking-wider">Apostolic Custodianship</h4>
@@ -660,7 +1125,7 @@
       <div class="grid lg:grid-cols-12 gap-8 pt-6 items-start">
         <div class="lg:col-span-4 flex flex-col items-center">
           <div class="w-48 h-60 sm:w-56 sm:h-72 rounded-2xl overflow-hidden border-2 gold-border shadow-md bg-linen-50 mb-4 shrink-0">
-            <img src="+++frank.png" alt="Archbishop Frank R. Bugge" class="w-full h-full object-cover object-top">
+            <img loading="lazy" src="+++frank.png" alt="Archbishop Frank R. Bugge" class="w-full h-full object-cover object-top">
           </div>
           <div class="w-full bg-linen-50 rounded-2xl p-5 border gold-border space-y-3 text-xs">
             <h4 class="font-serif font-bold text-obsidian-900 uppercase tracking-wider">Historical Office</h4>
@@ -699,7 +1164,7 @@
         <p class="text-xs font-sans text-obsidian-800/70 mt-1">
           Presiding Archbishop and Second Primate of The Australian Church of Antioch (ACOA)
         </p>
-        <p class="text-[11px] font-mono text-gold-700 mt-1">
+        <p class="text-xs font-mono text-gold-700 mt-1">
           DD, F. Dip FSSB, FCMD, LCMD, L Dip A (Aust), ANZM, ANZT, Hon SCSM, EOSF
         </p>
       </div>
@@ -707,7 +1172,7 @@
       <div class="grid lg:grid-cols-12 gap-8 pt-6 items-start">
         <div class="lg:col-span-4 flex flex-col items-center">
           <div class="w-48 h-60 sm:w-56 sm:h-72 rounded-2xl overflow-hidden border-2 gold-border shadow-md bg-linen-50 mb-4 shrink-0">
-            <img src="+++glenn.png" alt="Archbishop Glenn W. Taylor" class="w-full h-full object-cover object-top">
+            <img loading="lazy" src="+++glenn.png" alt="Archbishop Glenn W. Taylor" class="w-full h-full object-cover object-top">
           </div>
           <div class="w-full bg-linen-50 rounded-2xl p-5 border gold-border space-y-3 text-xs">
             <h4 class="font-serif font-bold text-obsidian-900 uppercase tracking-wider">Ecclesiastical Offices</h4>
@@ -751,7 +1216,7 @@
       <div class="grid lg:grid-cols-12 gap-8 pt-6 items-start">
         <div class="lg:col-span-4 flex flex-col items-center">
           <div class="w-48 h-60 sm:w-56 sm:h-72 rounded-2xl overflow-hidden border-2 gold-border shadow-md bg-linen-50 mb-4 shrink-0">
-            <img src="Abp Leonie 3.png" alt="Archbishop Leonie Newman" class="w-full h-full object-cover object-top">
+            <img loading="lazy" src="Abp Leonie 3.png" alt="Archbishop Leonie Newman" class="w-full h-full object-cover object-top">
           </div>
           <div class="w-full bg-linen-50 rounded-2xl p-5 border gold-border space-y-3 text-xs">
             <h4 class="font-serif font-bold text-obsidian-900 uppercase tracking-wider">Archival Summary</h4>
@@ -780,259 +1245,6 @@
 
   </div>
 
-  <!-- COLLEGIATE RANKS (STATUTE 5.2) -->
-  <section id="ranks" class="py-24 bg-linen-100/60 border-y gold-border">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center max-w-3xl mx-auto mb-14">
-        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">
-          The Active Collegiate Ladder &bull; 100% Free Enrolment
-        </span>
-        <h2 class="font-serif text-3xl sm:text-5xl text-obsidian-900 font-normal">Associate, Licentiate &amp; Fellow</h2>
-        <div class="w-16 h-0.5 gold-foil mx-auto mt-4 mb-4"></div>
-        <p class="text-sm text-obsidian-800/80 font-light leading-relaxed">
-          The Collegium recognises progressive tiers of scholarly attainment, ministerial competence, and institutional stewardship. Each rank is conferred only on assessed attainment, by one of the routes set out in Ordinance 5. Enrolment, examination, assessment, and conferral are free of charge under every route, and no rank is a certificate of personal spiritual attainment.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-6">
-
-        <!-- Tier 1 -->
-        <div class="p-7 rounded-3xl bg-white border gold-border card-shadow flex flex-col justify-between space-y-4">
-          <div class="space-y-3">
-            <span class="text-[10px] font-serif uppercase tracking-widest text-gold-700 font-bold block">Tier 1 &bull; AHASRC</span>
-            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Associate of the Collegium</h3>
-            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
-              A foundational scholar: one who has completed Modules 1 to 3 of a specialist discipline and a Synthesis Theological Paper, or who shows equal standing by clergy service in early orders or by a recognised Bachelor&rsquo;s degree.
-            </p>
-            <div class="text-[11px] text-obsidian-800/75 font-light space-y-1">
-              <div>&bull; <strong>Route A:</strong> Curricular examination (6-month window)</div>
-              <div>&bull; <strong>Route B:</strong> Clergy &amp; portfolio</div>
-              <div>&bull; <strong>Route C:</strong> Academic degree bridge</div>
-            </div>
-          </div>
-          <div class="pt-3 border-t gold-border text-[11px] text-gold-700 font-semibold uppercase tracking-wider">
-            Black Cambridge BA gown &bull; crimson-lined hood
-          </div>
-        </div>
-
-        <!-- Tier 2 -->
-        <div class="p-7 rounded-3xl bg-white border gold-border card-shadow flex flex-col justify-between space-y-4">
-          <div class="space-y-3">
-            <span class="text-[10px] font-serif uppercase tracking-widest text-gold-700 font-bold block">Tier 2 &bull; LHASRC</span>
-            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Licentiate of the Collegium</h3>
-            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
-              A specialist scholar licensed to teach (<em>licentia docendi</em>) in one discipline: one who has completed the six modules and the Capstone Treatise of a specialist discipline, or who shows equal standing by at least five years of ministry or by a recognised Master&rsquo;s degree.
-            </p>
-            <div class="text-[11px] text-obsidian-800/75 font-light space-y-1">
-              <div>&bull; <strong>Route A:</strong> Full curricular examination (12-month window)</div>
-              <div>&bull; <strong>Route B:</strong> Ministerial &amp; RPEL</div>
-              <div>&bull; <strong>Route C:</strong> Graduate degree bridge</div>
-            </div>
-            <div class="flex flex-wrap gap-x-4 gap-y-1">
-              <a href="#disciplines" class="inline-block text-[11px] text-gold-700 hover:text-gold-600 underline font-semibold transition">See the four specialist disciplines &darr;</a>
-              <a href="#legal-notice" class="inline-block text-[11px] text-gold-700 hover:text-gold-600 underline font-semibold transition">See the legal notice</a>
-            </div>
-          </div>
-          <div class="pt-3 border-t gold-border text-[11px] text-gold-700 font-semibold uppercase tracking-wider">
-            Hood bound with 1-inch gold satin
-          </div>
-        </div>
-
-        <!-- Tier 3 -->
-        <div class="p-7 rounded-3xl bg-white border gold-border card-shadow flex flex-col justify-between space-y-4">
-          <div class="space-y-3">
-            <span class="text-[10px] font-serif uppercase tracking-widest text-gold-700 font-bold block">Tier 3 &bull; FHASRC</span>
-            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Fellow of the Collegium</h3>
-            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
-              A senior scholar of research, at senior research level (rigour comparable to a Master of Arts thesis): one who has published research in JOIS or defended a Research Monograph, or who holds a Doctorate, or who is a bishop holding the Licentiate on the Episcopal Bench.
-            </p>
-            <div class="text-[11px] text-obsidian-800/75 font-light space-y-1">
-              <div>&bull; <strong>Route A:</strong> JOIS research &amp; monograph</div>
-              <div>&bull; <strong>Route B:</strong> Doctoral &amp; published author</div>
-              <div>&bull; <strong>Route C:</strong> Episcopal Bench</div>
-              <div>&bull; <strong>Route D:</strong> Discipline Fellowship by Research Monograph</div>
-            </div>
-          </div>
-          <div class="pt-3 border-t gold-border text-[11px] text-gold-700 font-semibold uppercase tracking-wider">
-            Cambridge MA gown &bull; gold doctoral hood
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Discipline designations & honours -->
-      <div class="grid md:grid-cols-2 gap-6 mt-8">
-        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow space-y-3">
-          <h3 class="font-serif font-bold text-sm text-obsidian-900 uppercase tracking-wider">Discipline Designations</h3>
-          <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
-            Alongside the ranks, the Collegium names the discipline in which a rank was earned by curricular or research examination. Associate designations apply to Route A only, and Fellow designations to Route D only.
-          </p>
-          <div class="overflow-x-auto">
-            <table class="w-full text-[11px] text-obsidian-800/85 text-left">
-              <thead>
-                <tr class="border-b gold-border text-gold-700 uppercase tracking-wider">
-                  <th class="py-2 pr-3 font-semibold">Discipline</th>
-                  <th class="py-2 pr-3 font-semibold">Associate</th>
-                  <th class="py-2 pr-3 font-semibold">Licentiate</th>
-                  <th class="py-2 font-semibold">Fellow</th>
-                </tr>
-              </thead>
-              <tbody class="font-mono">
-                <tr class="border-b border-linen-200"><td class="py-2 pr-3 font-sans">Sacramental Ministry</td><td class="pr-3">A.S.Min</td><td class="pr-3">L.S.Min</td><td>F.S.Min</td></tr>
-                <tr class="border-b border-linen-200"><td class="py-2 pr-3 font-sans">Metaphysical Theology</td><td class="pr-3">A.Mphy.Th.</td><td class="pr-3">L.Mphy.Th.</td><td>F.Mphy.Th.</td></tr>
-                <tr class="border-b border-linen-200"><td class="py-2 pr-3 font-sans">Applied Metaphysical Science</td><td class="pr-3">A.AMsc.</td><td class="pr-3">L.AMsc.</td><td>F.AMsc.</td></tr>
-                <tr><td class="py-2 pr-3 font-sans">Contemporary Spirituality</td><td class="pr-3">A.C.Sp.</td><td class="pr-3">L.C.Sp.</td><td>F.C.Sp.</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow space-y-3">
-          <h3 class="font-serif font-bold text-sm text-obsidian-900 uppercase tracking-wider">Honours &amp; the Wider Roll</h3>
-          <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
-            Outside the assessed ladder, the Provost may confer by Decree the Honorary Fellowship (HonFHASRC) and the Fellow Emeritus (FHASRC (Em.)) <em>honoris causa</em>. These confer no examination-based standing. The Founding Fellowship is held by the Founder by the Statutes, and is not an examined rank.
-          </p>
-          <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
-            A general membership tier (Member of the Collegium, MHASRC) is reserved to the future discretion of the Provost and is not yet active. All conferred ranks are perpetual and are recorded in the Public Register of Awards.
-          </p>
-          <a href="fellowship.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
-            <span>View the Collegiate Roll &amp; Register &rarr;</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SPECIALIST DISCIPLINES -->
-  <section id="disciplines" class="py-24 bg-white border-y gold-border">
-    <div class="max-w-5xl mx-auto px-6">
-      <div class="text-center max-w-3xl mx-auto mb-14">
-        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">
-          Specialist Disciplines &bull; British Examining Board Convention &bull; 100% Free Enrolment
-        </span>
-        <h2 class="font-serif text-3xl sm:text-5xl text-obsidian-900 font-normal">The Four Specialist Disciplines</h2>
-        <div class="w-16 h-0.5 gold-foil mx-auto mt-4 mb-4"></div>
-        <p class="text-sm text-obsidian-800/80 font-light leading-relaxed">
-          The Associate, Licentiate and Fellow ranks are earned in one of four specialist disciplines. Every discipline has six modules and an 8,000-word Capstone Treatise, and each carries its own discipline designation. Choose a discipline to see its full syllabus and admission routes.
-        </p>
-      </div>
-
-      <div class="grid sm:grid-cols-2 gap-6">
-
-        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow flex flex-col justify-between space-y-5">
-          <div class="space-y-3">
-            <span class="text-[10px] font-serif uppercase tracking-widest text-gold-700 font-bold block">A.S.Min &bull; L.S.Min &bull; F.S.Min</span>
-            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Sacramental Ministry</h3>
-            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
-              A praxis-centred liturgical and ministerial programme preparing candidates for collaborative, inclusive sacramental ministry within the Independent Sacramental Movement. Open to ordination candidates, active clergy, and lay liturgists.
-            </p>
-          </div>
-          <a href="lsmin.html" class="inline-flex items-center gap-2 self-start px-6 py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
-            <span>View the Syllabus &rarr;</span>
-          </a>
-        </div>
-
-        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow flex flex-col justify-between space-y-5">
-          <div class="space-y-3">
-            <span class="text-[10px] font-serif uppercase tracking-widest text-gold-700 font-bold block">A.Mphy.Th. &bull; L.Mphy.Th. &bull; F.Mphy.Th.</span>
-            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Metaphysical Theology</h3>
-            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
-              An academic and contemplative track for theologians, mystics, clergy, and authors investigating the historical, scriptural, and philosophical architecture of the Independent Sacramental Movement and the Antiochian tradition.
-            </p>
-          </div>
-          <a href="lmphyth.html" class="inline-flex items-center gap-2 self-start px-6 py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
-            <span>View the Syllabus &rarr;</span>
-          </a>
-        </div>
-
-        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow flex flex-col justify-between space-y-5">
-          <div class="space-y-3">
-            <span class="text-[10px] font-serif uppercase tracking-widest text-gold-700 font-bold block">A.AMsc. &bull; L.AMsc. &bull; F.AMsc.</span>
-            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Applied Metaphysical Science</h3>
-            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
-              Designed for spiritual practitioners, ministers, and facilitators seeking mastery in applied metaphysics, contemplative mindset practice, spiritual mind healing as prayer, and Christic energy traditions.
-            </p>
-          </div>
-          <a href="lamsc.html" class="inline-flex items-center gap-2 self-start px-6 py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
-            <span>View the Syllabus &rarr;</span>
-          </a>
-        </div>
-
-        <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow flex flex-col justify-between space-y-5">
-          <div class="space-y-3">
-            <span class="text-[10px] font-serif uppercase tracking-widest text-gold-700 font-bold block">A.C.Sp. &bull; L.C.Sp. &bull; F.C.Sp.</span>
-            <h3 class="font-serif text-2xl text-obsidian-900 font-normal">Contemporary Spirituality</h3>
-            <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
-              An integrative pastoral and mentoring track for spiritual directors, pastoral companions, and community facilitators exploring inner ethics, interfaith dialogue, and inclusive pastoral care.
-            </p>
-          </div>
-          <a href="lcsp.html" class="inline-flex items-center gap-2 self-start px-6 py-3 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
-            <span>View the Syllabus &rarr;</span>
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CHAPTERS, ORATORIES & FOUNDATIONS: INTRODUCTION -->
-  <section id="branches" class="py-20 bg-linen-100/70 border-b gold-border">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-
-        <!-- Photo mosaic -->
-        <div class="grid grid-cols-5 grid-rows-6 gap-3 h-[420px] sm:h-[500px] order-2 lg:order-1">
-          <a href="branches.html" class="col-span-3 row-span-4 rounded-3xl overflow-hidden border gold-border card-shadow bg-linen-200 relative group" aria-label="Collegiate Chapters">
-            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1000&auto=format&fit=crop" alt="A circle of people in conversation" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" onerror="this.style.display='none'">
-            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-white/90 text-[10px] font-serif font-bold uppercase tracking-widest text-gold-700">Study</span>
-          </a>
-          <a href="branches.html" class="col-span-2 row-span-3 rounded-3xl overflow-hidden border gold-border card-shadow bg-linen-200 relative group" aria-label="Oratories">
-            <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?q=80&w=800&auto=format&fit=crop" alt="Candlelight in contemplative prayer" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" onerror="this.style.display='none'">
-            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-white/90 text-[10px] font-serif font-bold uppercase tracking-widest text-rose-700">Prayer</span>
-          </a>
-          <a href="branches.html" class="col-span-2 row-span-3 rounded-3xl overflow-hidden border gold-border card-shadow bg-linen-200 relative group" aria-label="Combined Foundations">
-            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=800&auto=format&fit=crop" alt="Sacred texts open for study" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" onerror="this.style.display='none'">
-            <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-white/90 text-[10px] font-serif font-bold uppercase tracking-widest text-obsidian-900">Both</span>
-          </a>
-          <a href="branches.html" class="col-span-3 row-span-2 rounded-3xl overflow-hidden border gold-border card-shadow bg-linen-200 relative group" aria-label="The sanctuary">
-            <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=1000&auto=format&fit=crop" alt="A quiet sanctuary" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" loading="lazy" onerror="this.style.display='none'">
-            <span class="absolute inset-0 bg-gradient-to-t from-obsidian-900/60 to-transparent"></span>
-            <span class="absolute bottom-3 left-4 font-serif italic text-white text-lg">Wherever three gather</span>
-          </a>
-        </div>
-
-        <!-- Invitation -->
-        <div class="order-1 lg:order-2">
-          <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">Decentralised Fellowship</span>
-          <h2 class="font-serif text-3xl sm:text-5xl text-obsidian-900 font-normal leading-tight">Chapters, Oratories <span class="italic text-gold-700">&amp; Foundations</span></h2>
-          <div class="w-16 h-0.5 gold-foil mt-4 mb-5"></div>
-          <p class="text-sm sm:text-base text-obsidian-800/85 leading-relaxed font-light">
-            The Collegium was never meant to live only on a screen. Wherever three or more Collegians gather to study, to pray and to serve, they may petition the Provost for a Warrant of Constitution, which is granted gladly, and a new branch takes root.
-          </p>
-          <p class="text-sm sm:text-base text-obsidian-800/85 leading-relaxed font-light mt-4">
-            Gather as a <strong class="font-semibold">Chapter</strong> to study, as an <strong class="font-semibold">Oratory</strong> to pray, or as a <strong class="font-semibold">Combined Foundation</strong> to do both. Govern your own life, with the Chancery beside you and no hierarchy between.
-          </p>
-
-          <ul class="mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2 text-xs text-obsidian-800/85">
-            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-gold-600 shrink-0"></i> Begin with just three Collegians</li>
-            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-gold-600 shrink-0"></i> Your own Constitution and programme</li>
-            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-gold-600 shrink-0"></i> Model Constitution and website listing</li>
-            <li class="flex gap-2"><i data-lucide="check" class="w-4 h-4 text-gold-600 shrink-0"></i> No fees for any rank</li>
-          </ul>
-
-          <div class="mt-8 flex flex-col sm:flex-row gap-3">
-            <a href="branches.html" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-obsidian-900 hover:bg-gold-600 text-linen-50 text-xs font-serif font-bold uppercase tracking-wider transition shadow-sm">
-              <span>Find your path</span><i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </a>
-            <a href="branches.html#warrant" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-white border gold-border text-obsidian-900 hover:bg-linen-100 text-xs font-serif font-bold uppercase tracking-wider transition">
-              How a branch begins
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- CONSTITUTIONAL GOVERNANCE & REGALIA -->
   <section id="governance" class="py-20 bg-white border-b gold-border">
     <div class="max-w-6xl mx-auto px-6">
@@ -1049,7 +1261,7 @@
 
       <div class="grid md:grid-cols-3 gap-6">
         <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow space-y-3">
-          <span class="text-[11px] font-serif uppercase tracking-widest text-gold-700 font-bold">Executive &amp; Senate</span>
+          <span class="text-xs font-serif uppercase tracking-widest text-gold-700 font-bold">Executive &amp; Senate</span>
           <h3 class="font-serif text-xl text-obsidian-900 font-normal">The Provost, Chancery &amp; Academic Senate</h3>
           <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
             The Decisive Voice and custody of the Great Seal vest in the Founder, Provost &amp; Prior-General, assisted in routine administration by the Secretary-General and in ceremony by Pro-Chancellors and Canons. Substantive Fellows hold an automatic seat with Consultative Voice in the Academic Senate, serving on Review Panels and as JOIS peer assessors.
@@ -1057,7 +1269,7 @@
         </div>
 
         <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow space-y-3">
-          <span class="text-[11px] font-serif uppercase tracking-widest text-gold-700 font-bold">Constitutional Councils</span>
+          <span class="text-xs font-serif uppercase tracking-widest text-gold-700 font-bold">Constitutional Councils</span>
           <h3 class="font-serif text-xl text-obsidian-900 font-normal">The Two Councils &amp; Custodian of the Register</h3>
           <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
             The Elder Council of senior Fellows acts in the Provost’s name only when the Provost is unreachable for 45 days or by formal Letter. The independent Council of Arbitration, appointed by the neutral Custodian of the Register, issues binding findings on constitutional screening, ballot integrity, and entrenched institutional protections.
@@ -1065,7 +1277,7 @@
         </div>
 
         <div class="p-7 rounded-3xl bg-linen-50 border gold-border card-shadow space-y-3">
-          <span class="text-[11px] font-serif uppercase tracking-widest text-gold-700 font-bold">Academic Heraldry</span>
+          <span class="text-xs font-serif uppercase tracking-widest text-gold-700 font-bold">Academic Heraldry</span>
           <h3 class="font-serif text-xl text-obsidian-900 font-normal">Cambridge Regalia, Medallions &amp; Epitoges</h3>
           <p class="text-xs text-obsidian-800/80 font-light leading-relaxed">
             Associates and Licentiates wear the black Cambridge BA gown and full-shape hood lined in crimson-red satin, with Licentiate cowls bound in 1-inch yellow-gold satin. Fellows wear the Cambridge MA gown and yellow-gold doctoral hood lined in crimson and edged with white faux ermine. Office is marked by the collegiate Medallion, and five-year service is honoured for life by the ermine-banded Epitoge.
@@ -1091,7 +1303,7 @@
             <i data-lucide="award" class="w-8 h-8 text-obsidian-900"></i>
           </div>
           <h4 class="font-serif font-bold text-base uppercase tracking-wider">Learned Society Ladder</h4>
-          <p class="text-xs font-serif font-medium mt-1">100% Free Enrolment &bull; Perpetual &amp; Indelible Standing</p>
+          <p class="text-xs font-serif font-medium mt-1">Free Enrolment by Statute &bull; Perpetual &amp; Indelible Standing</p>
         </div>
         <div class="flex flex-col items-center">
           <div class="w-16 h-16 rounded-full border-2 border-obsidian-900 flex items-center justify-center mb-3">
@@ -1174,7 +1386,7 @@
                 <span>Explore JOIS Portal &amp; Call for Papers</span>
                 <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
               </a>
-              <span class="text-[11px] text-obsidian-800/60 font-light italic">
+              <span class="text-xs text-obsidian-800/60 font-light italic">
                 Zero Article Processing Charges (Zero APCs)
               </span>
             </div>
@@ -1194,7 +1406,7 @@
           <i data-lucide="scroll" class="w-5 h-5"></i>
         </div>
         
-        <span class="text-[11px] font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">
+        <span class="text-xs font-serif uppercase tracking-[0.25em] text-gold-700 font-bold block mb-2">
           Canonical Governance &amp; Civil Disclosure
         </span>
         
@@ -1217,11 +1429,11 @@
         
         <div class="pt-5 mt-4 border-t gold-border grid sm:grid-cols-2 gap-6 text-xs text-obsidian-800/80">
           <div class="p-4 rounded-xl bg-linen-50 border gold-border">
-            <strong class="uppercase tracking-wider text-obsidian-900 block mb-1 font-serif text-[11px]">Diploma Short-Form Certification:</strong>
+            <strong class="uppercase tracking-wider text-obsidian-900 block mb-1 font-serif text-xs">Diploma Short-Form Certification:</strong>
             <p class="italic">“Conferred under the Great Seal in accordance with the ecclesiastical and educational status of the Herman Adrian Spruit Research Collegium, a religious learned society erected by Archiepiscopal Decree.”</p>
           </div>
           <div class="p-4 rounded-xl bg-linen-50 border gold-border">
-            <strong class="uppercase tracking-wider text-obsidian-900 block mb-1 font-serif text-[11px]">Transcript Short-Form Certification:</strong>
+            <strong class="uppercase tracking-wider text-obsidian-900 block mb-1 font-serif text-xs">Transcript Short-Form Certification:</strong>
             <p class="italic">“An ecclesiastical record, not a secular or civilly accredited transcript.”</p>
           </div>
         </div>
@@ -1250,13 +1462,14 @@
         <div><a href="fellowship.html" class="hover:text-gold-400 transition">Collegiate Roll &amp; Public Register of Awards</a></div>
         <div><a href="branches.html" class="hover:text-gold-400 transition">Warrants for Chapters, Oratories &amp; Foundations</a></div>
         <div><a href="jois.html" class="hover:text-gold-400 transition">Journal of Inner Spirituality (JOIS)</a></div>
-        <div><a href="mailto:office@hasrc.org" class="hover:text-gold-400 transition">Office of the Chancery &amp; Privacy Contact</a></div>
+        <div><a href="#feast" class="hover:text-gold-400 transition">Collegiate calendar: Feast of Holy Sophia</a></div>
+        <div><a href="mailto:info@hasrcollegium.com" class="hover:text-gold-400 transition">Office of the Chancery &amp; Privacy Contact</a></div>
       </div>
       <div>
         <h4 class="font-serif text-sm font-semibold text-white uppercase tracking-wider mb-3">Great Seal &amp; Motto</h4>
         <p class="font-serif italic text-gold-300 text-sm mb-1">Scientia et Sapientia Per Spiritum</p>
-        <p class="text-[10px] uppercase tracking-widest text-linen-300/80 mb-2">Sigillum Collegii Investigationis Hermanni Adriani Spruit</p>
-        <p class="text-[11px] text-linen-300 font-light">&copy; 2026 The Provost of HASRC. All rights reserved.</p>
+        <p class="text-xs uppercase tracking-widest text-linen-300/80 mb-2">Sigillum Collegii Investigationis Hermanni Adriani Spruit</p>
+        <p class="text-xs text-linen-300 font-light">&copy; 2026 The Provost of HASRC. All rights reserved.</p>
       </div>
     </div>
   </footer>
@@ -1279,7 +1492,7 @@
     <!-- 1. Spiritual & Charism Fidelity -->
     <div id="practice-data-fidelity">
       <div class="h-48 rounded-2xl overflow-hidden mb-6 border gold-border shadow-xs">
-        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=1000&auto=format&fit=crop" alt="Charism Fidelity" class="w-full h-full object-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=1000&auto=format&fit=crop" alt="Charism Fidelity" class="w-full h-full object-cover">
       </div>
       <div class="flex items-center gap-3 mb-2">
         <div class="w-9 h-9 rounded-xl bg-linen-100 border gold-border flex items-center justify-center text-gold-700">
@@ -1298,7 +1511,7 @@
     <!-- 2. Open & Ethical Methodology -->
     <div id="practice-data-methodology">
       <div class="h-48 rounded-2xl overflow-hidden mb-6 border gold-border shadow-xs">
-        <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=1000&auto=format&fit=crop" alt="Ethical Methodology" class="w-full h-full object-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?q=80&w=1000&auto=format&fit=crop" alt="Ethical Methodology" class="w-full h-full object-cover">
       </div>
       <div class="flex items-center gap-3 mb-2">
         <div class="w-9 h-9 rounded-xl bg-linen-100 border gold-border flex items-center justify-center text-gold-700">
@@ -1317,7 +1530,7 @@
     <!-- 3. Practical & Contextual Responsibility -->
     <div id="practice-data-responsibility">
       <div class="h-48 rounded-2xl overflow-hidden mb-6 border gold-border shadow-xs">
-        <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=1000&auto=format&fit=crop" alt="Practical Application" class="w-full h-full object-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=1000&auto=format&fit=crop" alt="Practical Application" class="w-full h-full object-cover">
       </div>
       <div class="flex items-center gap-3 mb-2">
         <div class="w-9 h-9 rounded-xl bg-linen-100 border gold-border flex items-center justify-center text-gold-700">
@@ -1336,7 +1549,7 @@
     <!-- 4. Inclusive & Respectful Dialogue -->
     <div id="practice-data-dialogue">
       <div class="h-48 rounded-2xl overflow-hidden mb-6 border gold-border shadow-xs">
-        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1000&auto=format&fit=crop" alt="Inclusive Dialogue" class="w-full h-full object-cover">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1000&auto=format&fit=crop" alt="Inclusive Dialogue" class="w-full h-full object-cover">
       </div>
       <div class="flex items-center gap-3 mb-2">
         <div class="w-9 h-9 rounded-xl bg-linen-100 border gold-border flex items-center justify-center text-gold-700">
@@ -1440,13 +1653,78 @@
       }
     });
 
-    // Page Security / Script Protection
-    document.addEventListener('contextmenu', e => e.preventDefault());
-    document.addEventListener('keydown', e => {
-      if (e.key === 'F12' || ((e.ctrlKey || e.metaKey) && (e.key === 'I' || e.key === 'i' || e.key === 'u' || e.key === 'U'))) {
-        e.preventDefault();
+    
+    // ---- Enrolment chooser ----
+    (function () {
+      const MODULES = {
+        smin: { name: 'Sacramental Ministry', m: ['Antiochian Sacramental Ministry & Basic Texts', 'Sacramental Theology: History, Validity & Administration', 'The Science of the Sacraments & Altar Energetics'] },
+        mphy: { name: 'Metaphysical Theology', m: ['The Legacy of Patriarch Herman Adrian Spruit & Matriarch Meri Spruit', 'The Independent Sacramental Movement: History, Lineages & Autocephaly', 'Esoteric Christianity & Primordial Wisdom Traditions'] },
+        amsc: { name: 'Applied Metaphysical Science', m: ['The Power of the Subconscious Mind & Mental Science', 'The Magic of Believing & Creative Consciousness', 'Spiritual Energy & Prayer-Based Healing Traditions'] },
+        csp:  { name: 'Contemporary Spirituality', m: ['Ethical Considerations in Pastoral Ministry & Spiritual Direction', 'Interfaith Ministry & Comparative World Religions', 'Queer Theologies & Radical Inclusive Ministry'] }
+      };
+      const ROUTES = { A: 'Associate level, Route A (curricular examination)', B: 'Associate level, Route B (clergy & portfolio)', C: 'Associate level, Route C (degree bridge)', L: 'Licentiate level (I hold a Master\u2019s degree or 5+ years\u2019 ministry)', '?': 'Not sure yet, please advise' };
+      const disc = document.getElementById('enrol-disc'), route = document.getElementById('enrol-route'),
+            name = document.getElementById('enrol-name'), list = document.getElementById('peek-list'),
+            title = document.getElementById('peek-title'), go = document.getElementById('enrol-go');
+      if (!disc) return;
+      function paint() {
+        const d = MODULES[disc.value];
+        title.textContent = 'Your first three modules in ' + d.name;
+        list.innerHTML = '';
+        d.m.forEach((t, i) => { const li = document.createElement('li'); li.className = 'flex gap-3'; li.innerHTML = '<span class="text-gold-600 font-bold">' + (i + 1) + '</span><span></span>'; li.lastChild.textContent = t; list.appendChild(li); });
       }
-    });
+      function mail() {
+        const d = MODULES[disc.value];
+        const subject = 'Free Enrolment: ' + d.name;
+        const body = 'Dear Chancery,\n\nI would like to enrol in the Collegium, free of charge.\n\nName: ' + (name.value.trim() || '[your name]') +
+          '\nDiscipline: ' + d.name + '\nStarting level and route: ' + ROUTES[route.value] +
+          '\n\nPlease let me know my next steps.\n\nThank you.';
+        return 'mailto:info@hasrcollegium.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      }
+      disc.addEventListener('change', paint);
+      go.addEventListener('click', () => { window.location.href = mail(); });
+      paint();
+    })();
+
+    // ---- Scroll reveal ----
+    (function () {
+      const els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) { els.forEach(e => e.classList.add('is-in')); return; }
+      const io = new IntersectionObserver((entries) => entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); } }), { threshold: 0.12 });
+      els.forEach(e => io.observe(e));
+    })();
+
+    // ---- Mobile sticky enrol bar: shown after the hero, hidden while the enrol section is in view ----
+    (function () {
+      const bar = document.getElementById('sticky-cta'), begin = document.getElementById('begin');
+      if (!bar || !begin) return;
+      let beginVisible = false;
+      const update = () => bar.classList.toggle('translate-y-full', window.scrollY < 600 || beginVisible);
+      new IntersectionObserver(es => { beginVisible = es[0].isIntersecting; update(); }).observe(begin);
+      window.addEventListener('scroll', update, { passive: true }); update();
+    })();
+
+    // ---- Dialog accessibility: focus in, focus back ----
+    (function () {
+      let last = null;
+      [['bio-modal', 'Biographical dossier'], ['practices-modal', 'Foundational best practice']].forEach(([id, label]) => {
+        const m = document.getElementById(id); if (m) { m.setAttribute('role', 'dialog'); m.setAttribute('aria-modal', 'true'); m.setAttribute('aria-label', label); }
+      });
+      [['openBio', 'bio-modal'], ['openPracticeModal', 'practices-modal']].forEach(([fn, id]) => {
+        const o = window[fn]; if (!o) return;
+        window[fn] = function () { last = document.activeElement; o.apply(this, arguments); const b = document.getElementById(id).querySelector('button'); if (b) b.focus(); };
+      });
+      ['closeBio', 'closePracticeModal'].forEach(fn => {
+        const o = window[fn]; if (!o) return;
+        window[fn] = function () { o.apply(this, arguments); if (last && last.focus) last.focus(); };
+      });
+    })();
   </script>
+
+  <!-- Mobile sticky enrol bar -->
+  <div id="sticky-cta" class="fixed bottom-0 inset-x-0 z-40 sm:hidden translate-y-full transition-transform duration-300 bg-obsidian-900/95 backdrop-blur border-t gold-border px-4 py-3 flex items-center justify-between gap-3">
+    <span class="text-xs text-linen-200 font-light leading-tight">Free to enrol.<br><span class="text-gold-300">No award can be bought.</span></span>
+    <a href="#begin" class="px-6 py-2.5 rounded-full gold-foil text-obsidian-900 text-xs font-serif font-bold uppercase tracking-wider">Enrol free</a>
+  </div>
 </body>
 </html>
