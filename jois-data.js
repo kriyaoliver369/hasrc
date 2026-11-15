@@ -4,10 +4,41 @@
      pages, sizes). Replace or delete them when real papers arrive.
    - doi (FAKE examples below, for layout only): leave "" unless the author registered one (e.g. via Zenodo).
      A DOI line only appears when this field is filled.
-   - pdf: path or URL of the PDF. It opens in a new window/tab.
+   - status: "Preprint; peer review pending" until review is complete, then "Peer reviewed".
+     Never use "Peer reviewed" before two reviewers have reported and the Editor-in-Chief has accepted.
+   - streams: numbers of the research streams above, e.g. [1, 3].
+   - received / accepted: optional dates, shown in the pop-up.
+   - pdf: path or URL of the PDF (PDFs live in the jois-pdfs folder). It opens in a new window/tab.
    ===================================================================== */
 window.JOIS = {
-  issn: "2980-412X",
+  /* The seven research streams (Statuta Fundamentalia s.7.2). Articles refer to them by number. */
+  streams: [
+    "ISM History & Theology",
+    "Systematic Theology & Biblical Doctrine",
+    "Sacramental Science & Altar Energetics",
+    "Metaphysical Science & Spiritual Mind Healing",
+    "Christian Mysticism & Esoteric Theology",
+    "Ecumenical & Interfaith Theology",
+    "Pastoral Psychology & Ethical Leadership"
+  ],
+  /* PREPRINTS: listed separately. Under the manual (D5) a preprint is NOT an article published in JOIS,
+     is never called peer reviewed, and is not counted as a published article.
+     When review is complete and the Editor-in-Chief accepts, move the entry into an issue below,
+     remove "preprint: true", set status to "Peer reviewed", and fill pages and dates. */
+  preprints: [
+        {
+          id: "a1", sample: false, preprint: true,
+          title: "The Science of the Sacraments: Herman Adrian Spruit’s Meta-Catholic Synthesis and the Operative Mechanics of the Altar",
+          authors: "The Most Reverend Mar Elisha Thoma, FHASRC (Founding)",
+          cite: "Thoma, M. E.",
+          affil: "Herman Adrian Spruit Research Collegium (HASRC)",
+          status: "Preprint; peer review pending", streams: [1, 3],
+          type: "Analytical Treatise", pages: "1–18", published: "13 Oct 2026",
+          abstract: "This foundational treatise investigates the synthesis achieved by Patriarch Herman Adrian Spruit (1911–1994) within the Independent Sacramental Movement (ISM), focusing on his reconciliation of traditional Catholic sacramental realism with mid-twentieth-century metaphysical mental science and clairvoyant liturgical mechanics. Drawing on Charles Webster Leadbeater’s observations of the Eucharistic thought-form and Spruit’s engagement with Ernest Holmes’ Religious Science movement, the paper examines the shift from exoteric scholastic transubstantiation to an operative “science of the sacraments.” It further evaluates the ecclesiological consequences of this meta-Catholic synthesis, notably “sacramental justice,” unconditional communion, and co-equal female apostolic succession.",
+          keywords: ["Herman Adrian Spruit", "Independent Sacramental Movement", "Sacramental Science", "Meta-Catholicism", "Esoteric Liturgics"],
+          pdf: "jois-pdfs/HASRC_Inaugural_Monograph_Spruit_Sacramental_Science.pdf", size: "420 KB", doi: ""
+        }
+  ],
   issues: [
     {
       id: "v1n2", volume: 1, number: 2, year: 2026,
@@ -19,45 +50,40 @@ window.JOIS = {
       title: "Inaugural Issue", published: "13 Oct 2026",
       articles: [
         {
-          id: "a1", sample: false,
-          title: "The Science of the Sacraments: Herman Adrian Spruit’s Meta-Catholic Synthesis and the Operative Mechanics of the Altar",
-          authors: "The Most Reverend Mar Elisha Thoma, FHASRC (Founding)",
-          cite: "Thoma, M. E.",
-          affil: "Herman Adrian Spruit Research Collegium (HASRC)",
-          type: "Treatise", pages: "1–18", published: "13 Oct 2026",
-          abstract: "This foundational treatise investigates the synthesis achieved by Patriarch Herman Adrian Spruit (1911–1994) within the Independent Sacramental Movement (ISM), focusing on his reconciliation of traditional Catholic sacramental realism with mid-twentieth-century metaphysical mental science and clairvoyant liturgical mechanics. Drawing on Charles Webster Leadbeater’s observations of the Eucharistic thought-form and Spruit’s engagement with Ernest Holmes’ Religious Science movement, the paper examines the shift from exoteric scholastic transubstantiation to an operative “science of the sacraments.” It further evaluates the ecclesiological consequences of this meta-Catholic synthesis, notably “sacramental justice,” unconditional communion, and co-equal female apostolic succession.",
-          keywords: ["Herman Adrian Spruit", "Independent Sacramental Movement", "Sacramental Science", "Meta-Catholicism", "Esoteric Liturgics"],
-          pdf: "HASRC_Inaugural_Monograph_Spruit_Sacramental_Science.pdf", size: "420 KB", doi: "10.5281/zenodo.1234501"
-        },
-        {
           id: "a2", sample: true,
           title: "Silence as Sacrament: A Conceptual Reading of Contemplative Prayer in Early Desert Sources",
           authors: "Sample Author One", cite: "Author, S. O.",
           affil: "Sample Institution, Country",
-          type: "Research Article", pages: "19–34", published: "13 Oct 2026",
+          status: "Peer reviewed", streams: [5],
+          received: "2 Aug 2026", accepted: "20 Sep 2026",
+          type: "Original Research Paper", pages: "19–34", published: "13 Oct 2026",
           abstract: "Sample abstract for layout illustration only. This paper would examine how silence is framed as a sacramental act in selected desert-tradition sources, setting out the primary texts, the standpoint of the reader, and the argument in three movements. Replace this text with the author’s submitted abstract (150–250 words).",
           keywords: ["Contemplative prayer", "Desert tradition", "Silence", "Sacramental theology"],
-          pdf: "sample-article-2.pdf", size: "512 KB", doi: "10.5281/zenodo.1234502"
+          pdf: "jois-pdfs/sample-article-2.pdf", size: "512 KB", doi: "10.5281/zenodo.1234502"
         },
         {
           id: "a3", sample: true,
           title: "An Annotated Edition of a Twentieth-Century Consecration Rite",
           authors: "Sample Author Two; Sample Author Three", cite: "Author, S. T., & Author, S. T.",
           affil: "Sample Archive, Country",
-          type: "Annotated Document", pages: "35–52", published: "13 Oct 2026",
+          status: "Peer reviewed", streams: [1],
+          received: "10 Aug 2026", accepted: "25 Sep 2026",
+          type: "Annotated Historical Document", pages: "35–52", published: "13 Oct 2026",
           abstract: "Sample abstract for layout illustration only. This entry would present a historical document with a transcription, textual notes and a short commentary on provenance. Replace with the real abstract.",
           keywords: ["Liturgical history", "Annotated edition", "Consecration rite"],
-          pdf: "sample-article-3.pdf", size: "388 KB", doi: "10.5281/zenodo.1234503"
+          pdf: "jois-pdfs/sample-article-3.pdf", size: "388 KB", doi: "10.5281/zenodo.1234503"
         },
         {
           id: "a4", sample: true,
           title: "Gratitude and Inner Life in a Parish Community: A Structured Case Study",
           authors: "Sample Author Four", cite: "Author, S. F.",
           affil: "Sample Institution, Country",
-          type: "Case Study", pages: "53–68", published: "13 Oct 2026",
+          status: "Peer reviewed", streams: [7],
+          received: "15 Aug 2026", accepted: "28 Sep 2026",
+          type: "Structured Case Study", pages: "53–68", published: "13 Oct 2026",
           abstract: "Sample abstract for layout illustration only. This case study would describe a single community, the data gathered, and the limits of generalisation. Replace with the real abstract.",
           keywords: ["Gratitude", "Parish life", "Case study", "Spiritual formation"],
-          pdf: "sample-article-4.pdf", size: "455 KB", doi: "10.5281/zenodo.1234504"
+          pdf: "jois-pdfs/sample-article-4.pdf", size: "455 KB", doi: "10.5281/zenodo.1234504"
         }
       ]
     }
@@ -71,12 +97,15 @@ window.JOIS = {
   J.esc = esc;
 
   J.find = function (id) {
+    for (var p = 0; p < (J.preprints || []).length; p++)
+      if (J.preprints[p].id === id) return { issue: null, art: J.preprints[p] };
     for (var i = 0; i < J.issues.length; i++) for (var j = 0; j < J.issues[i].articles.length; j++)
       if (J.issues[i].articles[j].id === id) return { issue: J.issues[i], art: J.issues[i].articles[j] };
     return null;
   };
   J.citation = function (r) {
     var a = r.art, i = r.issue;
+    if (!i) return a.cite + " (" + a.published.slice(-4) + "). " + a.title + " [Preprint; peer review pending]. Herman Adrian Spruit Research Collegium." + (a.doi ? " https://doi.org/" + a.doi : "");
     return a.cite + " (" + i.year + "). " + a.title + " <em>Journal of Inner Spirituality</em>, " + i.volume + "(" + i.number + "), " + a.pages + "." + (a.doi ? " https://doi.org/" + a.doi : "");
   };
 
@@ -102,17 +131,20 @@ window.JOIS = {
     document.getElementById("m-body").innerHTML =
       '<div class="flex flex-wrap items-center gap-2 pr-10">' +
         '<span class="px-3 py-1 rounded-full bg-gold-300/40 border gold-border text-xs font-serif font-semibold text-obsidian-900">' + esc(a.type) + '</span>' +
+        '<span class="px-3 py-1 rounded-full border gold-border text-xs font-medium ' + (a.status === 'Peer reviewed' ? 'bg-white text-obsidian-900' : 'bg-linen-200 text-obsidian-800') + '">' + esc(a.status) + '</span>' +
         (a.sample ? '<span class="px-2.5 py-1 rounded-full bg-linen-200 text-[10px] uppercase tracking-wider font-semibold text-obsidian-800/70">Sample entry</span>' : '') +
       '</div>' +
       '<h2 id="m-title" class="font-serif text-2xl sm:text-3xl leading-tight text-obsidian-900 mt-4">' + esc(a.title) + '</h2>' +
       '<p class="font-serif text-lg font-bold text-obsidian-900 mt-3">' + esc(a.authors) + '</p>' +
       '<p class="text-xs text-obsidian-800/70">' + esc(a.affil) + '</p>' +
       '<div class="flex flex-wrap gap-x-6 gap-y-1 mt-4 pt-3 border-t gold-border text-xs font-mono text-obsidian-800/70">' +
-        '<span>Vol. ' + i.volume + ' No. ' + i.number + ' (' + i.year + ')</span><span>pp. ' + esc(a.pages) + '</span><span>' + esc(a.published) + '</span>' +
+        (i ? '<span>Vol. ' + i.volume + ' No. ' + i.number + ' (' + i.year + ')</span><span>pp. ' + esc(a.pages) + '</span>' : '<span>Preprint</span>') + '<span>' + (a.received ? 'Received ' + esc(a.received) + ' &bull; ' : '') + (a.accepted ? 'Accepted ' + esc(a.accepted) + ' &bull; ' : '') + (i ? 'Published ' : 'Posted ') + esc(a.published) + '</span>' +
         (a.doi ? '<span>DOI: ' + esc(a.doi) + '</span>' : '') + '</div>' +
+      (i ? '' : '<p class="mt-5 p-3.5 rounded-xl bg-linen-200/70 border gold-border text-xs leading-relaxed text-obsidian-800/85"><strong>Preprint.</strong> Peer review is pending. A preprint is not an article published in JOIS and is not called peer reviewed (Editorial Policy &amp; Style Manual, D5).</p>') +
       '<h3 class="font-serif text-xl text-obsidian-900 mt-6">Summary</h3><div class="w-12 h-0.5 gold-foil my-2"></div>' +
       '<p class="text-sm text-obsidian-800/85 font-light leading-relaxed text-justify">' + esc(a.abstract) + '</p>' +
-      '<p class="text-xs mt-4"><strong class="text-obsidian-900">Keywords:</strong> <span class="italic text-obsidian-800/75">' + a.keywords.map(esc).join(", ") + '</span></p>' +
+      '<p class="text-xs mt-4"><strong class="text-obsidian-900">Research streams:</strong> <span class="text-obsidian-800/75">' + a.streams.map(function (n) { return n + '. ' + esc(J.streams[n - 1]); }).join('; ') + '</span></p>' +
+      '<p class="text-xs mt-2"><strong class="text-obsidian-900">Keywords:</strong> <span class="italic text-obsidian-800/75">' + a.keywords.map(esc).join(", ") + '</span></p>' +
       '<div class="mt-6 p-4 rounded-xl bg-white border gold-border"><p class="text-[11px] uppercase tracking-wider font-semibold text-obsidian-800/60 mb-1">How to cite (APA 7th)</p>' +
         '<p id="m-cite" class="text-xs font-mono leading-relaxed text-obsidian-800/85">' + J.citation(r) + '</p>' +
         '<button id="m-copy" class="mt-3 text-xs font-semibold uppercase tracking-wider text-gold-700 hover:text-gold-600 inline-flex items-center gap-1.5"><i data-lucide="copy" class="w-3.5 h-3.5"></i><span>Copy citation</span></button></div>' +
@@ -139,9 +171,10 @@ window.JOIS = {
   /* one article row, used by home (current issue) and archive */
   J.row = function (a) {
     return '<button type="button" onclick="JOIS.open(\'' + a.id + '\')" class="w-full text-left group py-5 px-1 flex gap-5 items-start border-b gold-border hover:bg-white/70 transition">' +
-      '<div class="hidden sm:block w-14 shrink-0 text-xs font-mono text-obsidian-800/50 pt-1">' + esc(a.pages) + '</div>' +
+      '<div class="hidden sm:block w-14 shrink-0 text-xs font-mono text-obsidian-800/50 pt-1">' + esc(a.pages || '') + '</div>' +
       '<div class="flex-1 min-w-0">' +
         '<div class="flex flex-wrap items-center gap-2 mb-1.5"><span class="text-[10px] uppercase tracking-widest font-semibold text-gold-700">' + esc(a.type) + '</span>' +
+          (a.preprint ? '<span class="text-[9px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-gold-300/50 text-obsidian-900 font-semibold">Preprint &bull; peer review pending</span>' : '') +
         (a.sample ? '<span class="text-[9px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-linen-200 text-obsidian-800/60 font-semibold">Sample</span>' : '') + '</div>' +
         '<h3 class="font-serif text-xl sm:text-2xl leading-snug text-obsidian-900 group-hover:text-gold-700 transition">' + esc(a.title) + '</h3>' +
         '<p class="text-xs text-obsidian-800/75 mt-1.5">' + esc(a.authors) + '</p></div>' +
