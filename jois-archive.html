@@ -29,7 +29,7 @@
 
   <div class="gold-foil py-2 px-4 text-center">
     <p class="text-[11px] sm:text-xs font-serif font-semibold tracking-[0.25em] uppercase text-obsidian-900">
-      Journal of Inner Spirituality &bull; Open Access Learned Review &bull; ISSN (Online): 2980-412X
+      Journal of Inner Spirituality &bull; Open Access Learned Review &bull; Peer-Reviewed
     </p>
   </div>
 
@@ -121,7 +121,7 @@
       <div class="lg:col-span-9 space-y-12">
         <div id="issues"></div>
         <p id="empty" class="hidden text-sm text-obsidian-800/70 py-10 text-center">No articles match your search.</p>
-        <p class="text-[11px] text-obsidian-800/55 font-light border-t gold-border pt-5">Entries tagged &ldquo;Sample&rdquo; are placeholders showing the layout. Contact the <a href="mailto:office@hasrc.org" class="text-gold-700">editorial office</a> to submit a manuscript.</p>
+        <p class="text-[11px] text-obsidian-800/55 font-light border-t gold-border pt-5">Entries tagged &ldquo;Sample&rdquo; are placeholders showing the layout. See the <a href="jois-pdfs/JOIS_Editorial_Policy_and_Style_Manual_v1.0.pdf" target="_blank" rel="noopener" class="text-gold-700">Editorial Policy &amp; Style Manual</a> or contact the <a href="mailto:info@hasrcollegium.com" class="text-gold-700">editorial office</a> to submit a manuscript.</p>
       </div>
     </div>
   </main>
@@ -137,7 +137,7 @@
         <div><a href="fellowship.html" class="hover:text-gold-400 transition">Collegiate Roll &amp; Public Register of Awards</a></div>
         <div><a href="index.html#branches" class="hover:text-gold-400 transition">Warrants for Chapters, Oratories &amp; Foundations</a></div>
         <div><a href="jois.html" class="hover:text-gold-400 transition">Journal of Inner Spirituality (JOIS)</a></div>
-        <div><a href="mailto:office@hasrc.org" class="hover:text-gold-400 transition">Office of the Chancery &amp; Privacy Contact</a></div>
+        <div><a href="mailto:info@hasrcollegium.com" class="hover:text-gold-400 transition">Office of the Chancery &amp; Privacy Contact</a></div>
       </div>
       <div>
         <h4 class="font-serif text-sm font-semibold text-white uppercase tracking-wider mb-3">Great Seal &amp; Motto</h4>
@@ -149,7 +149,7 @@
   </footer>
 
   <script src="jois-data.js"></script>
-  <script>if(!window.JOIS){document.body.insertAdjacentHTML("afterbegin","<div style='background:#fee;padding:12px;text-align:center;font:14px sans-serif'>jois-data.js not found. Put it in the same folder as this page.</div>");window.JOIS={issues:[],esc:String,row:function(){return ''}};}</script>
+  <script>if(!window.JOIS){document.body.insertAdjacentHTML("afterbegin","<div style='background:#fee;padding:12px;text-align:center;font:14px sans-serif'>jois-data.js not found. Put it in the same folder as this page.</div>");window.JOIS={issues:[],preprints:[],streams:[],esc:String,row:function(){return ''}};}</script>
   <script>
     function toggleMobileMenu() {
       var m = document.getElementById('mobile-menu'), i = document.getElementById('menu-icon');
@@ -160,7 +160,7 @@
 
     (function () {
       var J = window.JOIS, esc = J.esc, type = 'All', q = '';
-      var types = ['All', 'Treatise', 'Research Article', 'Annotated Document', 'Case Study', 'Monograph'];
+      var types = ['All', 'Original Research Paper', 'Analytical Treatise', 'Annotated Historical Document', 'Structured Case Study', 'Monograph'];
 
       document.getElementById('types').innerHTML = types.map(function (t) {
         return '<button data-t="' + t + '" class="tbtn px-3.5 py-1.5 rounded-full border gold-border text-xs font-medium text-left transition"></button>';
@@ -169,7 +169,7 @@
         b.textContent = b.dataset.t;
         b.onclick = function () { type = b.dataset.t; render(); };
       });
-      document.getElementById('jump').innerHTML = J.issues.map(function (i) {
+      document.getElementById('jump').innerHTML = (J.preprints.length ? '<a href="#preprints-sec" class="px-3.5 py-1.5 rounded-full bg-white border gold-border hover:bg-linen-100 transition">Preprints</a>' : '') + J.issues.map(function (i) {
         return '<a href="#' + i.id + '-sec" class="px-3.5 py-1.5 rounded-full bg-white border gold-border hover:bg-linen-100 transition">Vol. ' + i.volume + ' No. ' + i.number + ' (' + i.year + ')</a>';
       }).join('');
       document.getElementById('q').addEventListener('input', function (e) { q = e.target.value.toLowerCase().trim(); render(); });
@@ -185,7 +185,9 @@
           b.className = 'tbtn px-3.5 py-1.5 rounded-full border gold-border text-xs font-medium text-left transition ' + (on ? 'bg-obsidian-900 text-linen-50' : 'bg-white hover:bg-linen-100');
         });
         var shown = 0, filtering = type !== 'All' || q;
-        document.getElementById('issues').innerHTML = J.issues.map(function (i) {
+        var pl = J.preprints.filter(match); shown += pl.length;
+        var preHtml = (J.preprints.length && (!filtering || pl.length)) ? '<section id="preprints-sec" class="scroll-mt-32 mb-12"><div class="pb-3 border-b-2 border-gold-500/60"><p class="text-[11px] uppercase tracking-[0.25em] font-semibold text-gold-700">Preprints</p><h2 class="font-serif text-2xl sm:text-3xl text-obsidian-900">Peer review pending</h2></div><p class="text-xs text-obsidian-800/65 mt-3">A preprint is not an article published in JOIS and is never called peer reviewed.</p>' + pl.map(J.row).join('') + '</section>' : '';
+        document.getElementById('issues').innerHTML = preHtml + J.issues.map(function (i) {
           var list = i.articles.filter(match); shown += list.length;
           if (filtering && !list.length) return '';
           var body = i.upcoming
