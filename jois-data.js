@@ -1,8 +1,7 @@
 /* =====================================================================
    JOIS DATA FILE  -  the ONLY place to edit when adding issues/articles.
-   - Entries with sample:true are ILLUSTRATIVE placeholders (fake names,
-     pages, sizes). Replace or delete them when real papers arrive.
-   - doi (FAKE examples below, for layout only): leave "" unless the author registered one (e.g. via Zenodo).
+   - Every entry must be a real article. Never add placeholder or invented entries.
+   - doi: leave "" unless the author has registered a real one (e.g. via Zenodo).
      A DOI line only appears when this field is filled.
    - status: "Preprint; peer review pending" until review is complete, then "Peer reviewed".
      Never use "Peer reviewed" before two reviewers have reported and the Editor-in-Chief has accepted.
@@ -52,53 +51,13 @@ window.JOIS = {
           pdf: "jois-pdfs/HASRC_Inaugural_Monograph_Spruit_Sacramental_Science.pdf", size: "420 KB", doi: ""
         }
   ],
+  /* ISSUES: add an issue here only when it has real, peer-reviewed articles ready to list.
+     An issue with an empty articles list and upcoming: true shows as "in preparation". */
   issues: [
     {
-      id: "v1n2", volume: 1, number: 2, year: 2026,
-      title: "Contemplative Practice & Liturgy", published: "Planned: Jan 2027", upcoming: true,
-      articles: []
-    },
-    {
       id: "v1n1", volume: 1, number: 1, year: 2026,
-      title: "Inaugural Issue", published: "13 Oct 2026",
-      articles: [
-        {
-          id: "a2", sample: true,
-          title: "Silence as Sacrament: A Conceptual Reading of Contemplative Prayer in Early Desert Sources",
-          authors: "Sample Author One", cite: "Author, S. O.",
-          affil: "Sample Institution, Country",
-          status: "Peer reviewed", streams: [5],
-          received: "2 Aug 2026", accepted: "20 Sep 2026",
-          type: "Original Research Paper", pages: "19–34", published: "13 Oct 2026",
-          abstract: "Sample abstract for layout illustration only. This paper would examine how silence is framed as a sacramental act in selected desert-tradition sources, setting out the primary texts, the standpoint of the reader, and the argument in three movements. Replace this text with the author’s submitted abstract (150–250 words).",
-          keywords: ["Contemplative prayer", "Desert tradition", "Silence", "Sacramental theology"],
-          pdf: "jois-pdfs/sample-article-2.pdf", size: "512 KB", doi: "10.5281/zenodo.1234502"
-        },
-        {
-          id: "a3", sample: true,
-          title: "An Annotated Edition of a Twentieth-Century Consecration Rite",
-          authors: "Sample Author Two; Sample Author Three", cite: "Author, S. T., & Author, S. T.",
-          affil: "Sample Archive, Country",
-          status: "Peer reviewed", streams: [1],
-          received: "10 Aug 2026", accepted: "25 Sep 2026",
-          type: "Annotated Historical Document", pages: "35–52", published: "13 Oct 2026",
-          abstract: "Sample abstract for layout illustration only. This entry would present a historical document with a transcription, textual notes and a short commentary on provenance. Replace with the real abstract.",
-          keywords: ["Liturgical history", "Annotated edition", "Consecration rite"],
-          pdf: "jois-pdfs/sample-article-3.pdf", size: "388 KB", doi: "10.5281/zenodo.1234503"
-        },
-        {
-          id: "a4", sample: true,
-          title: "Gratitude and Inner Life in a Parish Community: A Structured Case Study",
-          authors: "Sample Author Four", cite: "Author, S. F.",
-          affil: "Sample Institution, Country",
-          status: "Peer reviewed", streams: [7],
-          received: "15 Aug 2026", accepted: "28 Sep 2026",
-          type: "Structured Case Study", pages: "53–68", published: "13 Oct 2026",
-          abstract: "Sample abstract for layout illustration only. This case study would describe a single community, the data gathered, and the limits of generalisation. Replace with the real abstract.",
-          keywords: ["Gratitude", "Parish life", "Case study", "Spiritual formation"],
-          pdf: "jois-pdfs/sample-article-4.pdf", size: "455 KB", doi: "10.5281/zenodo.1234504"
-        }
-      ]
+      title: "Inaugural Issue", published: "In preparation", upcoming: true,
+      articles: []
     }
   ]
 };
@@ -145,7 +104,6 @@ window.JOIS = {
       '<div class="flex flex-wrap items-center gap-2 pr-10">' +
         '<span class="px-3 py-1 rounded-full bg-gold-300/40 border gold-border text-xs font-serif font-semibold text-obsidian-900">' + esc(a.type) + '</span>' +
         '<span class="px-3 py-1 rounded-full border gold-border text-xs font-medium ' + (a.status === 'Peer reviewed' ? 'bg-white text-obsidian-900' : 'bg-linen-200 text-obsidian-800') + '">' + esc(a.status) + '</span>' +
-        (a.sample ? '<span class="px-2.5 py-1 rounded-full bg-linen-200 text-[10px] uppercase tracking-wider font-semibold text-obsidian-800/70">Sample entry</span>' : '') +
       '</div>' +
       '<h2 id="m-title" class="font-serif text-2xl sm:text-3xl leading-tight text-obsidian-900 mt-4">' + esc(a.title) + '</h2>' +
       '<p class="font-serif text-lg font-bold text-obsidian-900 mt-3">' + esc(a.authors) + '</p>' +
@@ -187,8 +145,7 @@ window.JOIS = {
       '<div class="hidden sm:block w-14 shrink-0 text-xs font-mono text-obsidian-800/50 pt-1">' + esc(a.pages || '') + '</div>' +
       '<div class="flex-1 min-w-0">' +
         '<div class="flex flex-wrap items-center gap-2 mb-1.5"><span class="text-[10px] uppercase tracking-widest font-semibold text-gold-700">' + esc(a.type) + '</span>' +
-          (a.preprint ? '<span class="text-[9px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-gold-300/50 text-obsidian-900 font-semibold">Preprint &bull; peer review pending</span>' : '') +
-        (a.sample ? '<span class="text-[9px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-linen-200 text-obsidian-800/60 font-semibold">Sample</span>' : '') + '</div>' +
+          (a.preprint ? '<span class="text-[9px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-gold-300/50 text-obsidian-900 font-semibold">Preprint &bull; peer review pending</span>' : '') + '</div>' +
         '<h3 class="font-serif text-xl sm:text-2xl leading-snug text-obsidian-900 group-hover:text-gold-700 transition">' + esc(a.title) + '</h3>' +
         '<p class="text-xs text-obsidian-800/75 mt-1.5">' + esc(a.authors) + '</p></div>' +
       '<span class="shrink-0 mt-1 text-[11px] uppercase tracking-wider font-semibold text-gold-700 inline-flex items-center gap-1">Summary<i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></span></button>';
