@@ -28,25 +28,25 @@ window.JOIS = {
   preprints: [
         {
           id: "a5", sample: false, preprint: true,
-          title: "Christus Victor and the Necessity of the Work: Patristic Universal Hope and Bohdey’s Evolutionary Soteriology in Dialogue",
+          title: "Christus Victor and the Necessity of the Work: Patristic Universal Hope and Bohdey\u2019s Evolutionary Soteriology in Dialogue",
           authors: "Mar Elisha Thoma",
           cite: "Thoma, M. E.",
           affil: "Herman Adrian Spruit Research Collegium (HASRC)",
           status: "Preprint; peer review pending", streams: [2, 3, 5],
           type: "Analytical Treatise", pages: "", published: "16 Nov 2026",
-          abstract: "This article argues that the patristic claim of a complete divine victory over sin and death and the esoteric claim that the soul must still do its own work of growth are complementary rather than rival accounts of salvation. It reads Gustaf Aulén’s Christus Victor model and the patristic tradition of universal hope (Irenaeus, Origen, Gregory of Nyssa, and Kallistos Ware’s “hopeful universalism”) alongside the evolutionary soteriology of Bishop Bohdey of the Australian Church of Antioch (ACOA), as compiled by Archbishop Frank Bugge and informed by the Theosophical and Liberal Catholic literature of Besant and Leadbeater. Using a comparative theological method, it proposes that the Victory is the objective change in the human situation, while the Work is the means by which each person comes to participate in that change. The Sacraments are presented as the principal means of participation. The article also sets out the limits of the proposal: the conciliar history of apokatastasis, the problem of reincarnation, the place of human freedom, and the unpublished status of its central source.",
+          abstract: "This article argues that the patristic claim of a complete divine victory over sin and death and the esoteric claim that the soul must still do its own work of growth are complementary rather than rival accounts of salvation. It reads Gustaf Aul\u00e9n\u2019s Christus Victor model and the patristic tradition of universal hope (Irenaeus, Origen, Gregory of Nyssa, and Kallistos Ware\u2019s \u201chopeful universalism\u201d) alongside the evolutionary soteriology of Bishop Bohdey of the Australian Church of Antioch (ACOA), as compiled by Archbishop Frank Bugge and informed by the Theosophical and Liberal Catholic literature of Besant and Leadbeater. Using a comparative theological method, it proposes that the Victory is the objective change in the human situation, while the Work is the means by which each person comes to participate in that change. The Sacraments are presented as the principal means of participation. The article also sets out the limits of the proposal: the conciliar history of apokatastasis, the problem of reincarnation, the place of human freedom, and the unpublished status of its central source.",
           keywords: ["Christus Victor", "apokatastasis", "universal salvation", "recapitulation", "Sacramental Science", "Bishop Bohdey", "Theosophy", "Independent Sacramental Movement"],
           pdf: "jois-pdfs/Thoma_2026_Christus_Victor.pdf", size: "230 KB", doi: ""
         },
         {
           id: "a1", sample: false, preprint: true,
-          title: "The Science of the Sacraments: Herman Adrian Spruit’s Meta-Catholic Synthesis and the Operative Mechanics of the Altar",
+          title: "The Science of the Sacraments: Herman Adrian Spruit\u2019s Meta-Catholic Synthesis and the Operative Mechanics of the Altar",
           authors: "The Most Reverend Mar Elisha Thoma, FHASRC (Founding)",
           cite: "Thoma, M. E.",
           affil: "Herman Adrian Spruit Research Collegium (HASRC)",
           status: "Preprint; peer review pending", streams: [1, 3],
-          type: "Analytical Treatise", pages: "1–18", published: "13 Oct 2026",
-          abstract: "This foundational treatise investigates the synthesis achieved by Patriarch Herman Adrian Spruit (1911–1994) within the Independent Sacramental Movement (ISM), focusing on his reconciliation of traditional Catholic sacramental realism with mid-twentieth-century metaphysical mental science and clairvoyant liturgical mechanics. Drawing on Charles Webster Leadbeater’s observations of the Eucharistic thought-form and Spruit’s engagement with Ernest Holmes’ Religious Science movement, the paper examines the shift from exoteric scholastic transubstantiation to an operative “science of the sacraments.” It further evaluates the ecclesiological consequences of this meta-Catholic synthesis, notably “sacramental justice,” unconditional communion, and co-equal female apostolic succession.",
+          type: "Analytical Treatise", pages: "1\u201318", published: "13 Oct 2026",
+          abstract: "This foundational treatise investigates the synthesis achieved by Patriarch Herman Adrian Spruit (1911\u20131994) within the Independent Sacramental Movement (ISM), focusing on his reconciliation of traditional Catholic sacramental realism with mid-twentieth-century metaphysical mental science and clairvoyant liturgical mechanics. Drawing on Charles Webster Leadbeater\u2019s observations of the Eucharistic thought-form and Spruit\u2019s engagement with Ernest Holmes\u2019 Religious Science movement, the paper examines the shift from exoteric scholastic transubstantiation to an operative \u201cscience of the sacraments.\u201d It further evaluates the ecclesiological consequences of this meta-Catholic synthesis, notably \u201csacramental justice,\u201d unconditional communion, and co-equal female apostolic succession.",
           keywords: ["Herman Adrian Spruit", "Independent Sacramental Movement", "Sacramental Science", "Meta-Catholicism", "Esoteric Liturgics"],
           pdf: "jois-pdfs/HASRC_Inaugural_Monograph_Spruit_Sacramental_Science.pdf", size: "420 KB", doi: ""
         }
