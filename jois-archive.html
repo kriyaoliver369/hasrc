@@ -121,7 +121,7 @@
       <div class="lg:col-span-9 space-y-12">
         <div id="issues"></div>
         <p id="empty" class="hidden text-sm text-obsidian-800/70 py-10 text-center">No articles match your search.</p>
-        <p class="text-[11px] text-obsidian-800/55 font-light border-t gold-border pt-5">Entries tagged &ldquo;Sample&rdquo; are placeholders showing the layout. See the <a href="jois-pdfs/JOIS_Editorial_Policy_and_Style_Manual_v1.0.pdf" target="_blank" rel="noopener" class="text-gold-700">Editorial Policy &amp; Style Manual</a> or contact the <a href="mailto:info@hasrcollegium.com" class="text-gold-700">editorial office</a> to submit a manuscript.</p>
+        <p class="text-[11px] text-obsidian-800/55 font-light border-t gold-border pt-5">Entries tagged &ldquo;Sample&rdquo; are placeholders showing the layout. See the <a href="jois-pdfs/JOIS_Manual_v1.1.pdf" target="_blank" rel="noopener" class="text-gold-700">Editorial Policy &amp; Style Manual</a> or contact the <a href="mailto:info@hasrcollegium.com" class="text-gold-700">editorial office</a> to submit a manuscript.</p>
       </div>
     </div>
   </main>
@@ -186,7 +186,7 @@
         });
         var shown = 0, filtering = type !== 'All' || q;
         var pl = J.preprints.filter(match); shown += pl.length;
-        var preHtml = (J.preprints.length && (!filtering || pl.length)) ? '<section id="preprints-sec" class="scroll-mt-32 mb-12"><div class="pb-3 border-b-2 border-gold-500/60"><p class="text-[11px] uppercase tracking-[0.25em] font-semibold text-gold-700">Preprints</p><h2 class="font-serif text-2xl sm:text-3xl text-obsidian-900">Peer review pending</h2></div><p class="text-xs text-obsidian-800/65 mt-3">A preprint is not an article published in JOIS and is never called peer reviewed.</p>' + pl.map(J.row).join('') + '</section>' : '';
+        var preHtml = (J.preprints.length && (!filtering || pl.length)) ? '<section id="preprints-sec" class="scroll-mt-32 mb-12"><div class="pb-3 border-b-2 border-gold-500/60"><p class="text-[11px] uppercase tracking-[0.25em] font-semibold text-gold-700">Preprints</p><h2 class="font-serif text-2xl sm:text-3xl text-obsidian-900">Peer review pending</h2></div><p class="text-xs text-obsidian-800/65 mt-3">A preprint here is an article by an editor of the journal, shown while its review is being arranged. It is not an article published in JOIS and is never called peer reviewed.</p>' + pl.map(J.row).join('') + '</section>' : '';
         document.getElementById('issues').innerHTML = preHtml + J.issues.map(function (i) {
           var list = i.articles.filter(match); shown += list.length;
           if (filtering && !list.length) return '';
