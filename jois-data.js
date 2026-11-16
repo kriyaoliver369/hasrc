@@ -21,11 +21,24 @@ window.JOIS = {
     "Ecumenical & Interfaith Theology",
     "Pastoral Psychology & Ethical Leadership"
   ],
-  /* PREPRINTS: listed separately. Under the manual (D5) a preprint is NOT an article published in JOIS,
+  /* PREPRINTS: listed separately. Under the manual (D5) the web page carries a preprint only where the author
+     is an editor and review cannot yet be arranged. A preprint is NOT an article published in JOIS,
      is never called peer reviewed, and is not counted as a published article.
      When review is complete and the Editor-in-Chief accepts, move the entry into an issue below,
      remove "preprint: true", set status to "Peer reviewed", and fill pages and dates. */
   preprints: [
+        {
+          id: "a5", sample: false, preprint: true,
+          title: "Christus Victor and the Necessity of the Work: Patristic Universal Hope and Bohdey’s Evolutionary Soteriology in Dialogue",
+          authors: "Mar Elisha Thoma",
+          cite: "Thoma, M. E.",
+          affil: "Herman Adrian Spruit Research Collegium (HASRC)",
+          status: "Preprint; peer review pending", streams: [2, 3, 5],
+          type: "Analytical Treatise", pages: "", published: "16 Nov 2026",
+          abstract: "This article argues that the patristic claim of a complete divine victory over sin and death and the esoteric claim that the soul must still do its own work of growth are complementary rather than rival accounts of salvation. It reads Gustaf Aulén’s Christus Victor model and the patristic tradition of universal hope (Irenaeus, Origen, Gregory of Nyssa, and Kallistos Ware’s “hopeful universalism”) alongside the evolutionary soteriology of Bishop Bohdey of the Australian Church of Antioch (ACOA), as compiled by Archbishop Frank Bugge and informed by the Theosophical and Liberal Catholic literature of Besant and Leadbeater. Using a comparative theological method, it proposes that the Victory is the objective change in the human situation, while the Work is the means by which each person comes to participate in that change. The Sacraments are presented as the principal means of participation. The article also sets out the limits of the proposal: the conciliar history of apokatastasis, the problem of reincarnation, the place of human freedom, and the unpublished status of its central source.",
+          keywords: ["Christus Victor", "apokatastasis", "universal salvation", "recapitulation", "Sacramental Science", "Bishop Bohdey", "Theosophy", "Independent Sacramental Movement"],
+          pdf: "jois-pdfs/Thoma_2026_Christus_Victor.pdf", size: "230 KB", doi: ""
+        },
         {
           id: "a1", sample: false, preprint: true,
           title: "The Science of the Sacraments: Herman Adrian Spruit’s Meta-Catholic Synthesis and the Operative Mechanics of the Altar",
@@ -140,7 +153,7 @@ window.JOIS = {
       '<div class="flex flex-wrap gap-x-6 gap-y-1 mt-4 pt-3 border-t gold-border text-xs font-mono text-obsidian-800/70">' +
         (i ? '<span>Vol. ' + i.volume + ' No. ' + i.number + ' (' + i.year + ')</span><span>pp. ' + esc(a.pages) + '</span>' : '<span>Preprint</span>') + '<span>' + (a.received ? 'Received ' + esc(a.received) + ' &bull; ' : '') + (a.accepted ? 'Accepted ' + esc(a.accepted) + ' &bull; ' : '') + (i ? 'Published ' : 'Posted ') + esc(a.published) + '</span>' +
         (a.doi ? '<span>DOI: ' + esc(a.doi) + '</span>' : '') + '</div>' +
-      (i ? '' : '<p class="mt-5 p-3.5 rounded-xl bg-linen-200/70 border gold-border text-xs leading-relaxed text-obsidian-800/85"><strong>Preprint.</strong> Peer review is pending. A preprint is not an article published in JOIS and is not called peer reviewed (Editorial Policy &amp; Style Manual, D5).</p>') +
+      (i ? '' : '<p class="mt-5 p-3.5 rounded-xl bg-linen-200/70 border gold-border text-xs leading-relaxed text-obsidian-800/85"><strong>Preprint.</strong> Peer review is pending. Its author is an editor of the journal, so review is still being arranged. A preprint is not an article published in JOIS and is never called peer reviewed (Editorial Policy &amp; Style Manual, D2 and D5).</p>') +
       '<h3 class="font-serif text-xl text-obsidian-900 mt-6">Summary</h3><div class="w-12 h-0.5 gold-foil my-2"></div>' +
       '<p class="text-sm text-obsidian-800/85 font-light leading-relaxed text-justify">' + esc(a.abstract) + '</p>' +
       '<p class="text-xs mt-4"><strong class="text-obsidian-900">Research streams:</strong> <span class="text-obsidian-800/75">' + a.streams.map(function (n) { return n + '. ' + esc(J.streams[n - 1]); }).join('; ') + '</span></p>' +
