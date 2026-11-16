@@ -121,7 +121,7 @@
       <div class="lg:col-span-9 space-y-12">
         <div id="issues"></div>
         <p id="empty" class="hidden text-sm text-obsidian-800/70 py-10 text-center">No articles match your search.</p>
-        <p class="text-[11px] text-obsidian-800/55 font-light border-t gold-border pt-5">Entries tagged &ldquo;Sample&rdquo; are placeholders showing the layout. See the <a href="jois-pdfs/JOIS_Manual_v1.1.pdf" target="_blank" rel="noopener" class="text-gold-700">Editorial Policy &amp; Style Manual</a> or contact the <a href="mailto:info@hasrcollegium.com" class="text-gold-700">editorial office</a> to submit a manuscript.</p>
+        <p class="text-[11px] text-obsidian-800/55 font-light border-t gold-border pt-5">See the <a href="jois-pdfs/JOIS_Manual_v1.1.pdf" target="_blank" rel="noopener" class="text-gold-700">Editorial Policy &amp; Style Manual</a> or contact the <a href="mailto:info@hasrcollegium.com" class="text-gold-700">editorial office</a> to submit a manuscript.</p>
       </div>
     </div>
   </main>
@@ -197,7 +197,7 @@
             '<div class="flex flex-wrap items-end justify-between gap-3 pb-3 border-b-2 border-gold-500/60">' +
               '<div><p class="text-[11px] uppercase tracking-[0.25em] font-semibold text-gold-700">Volume ' + i.volume + ' &bull; ' + i.year + '</p>' +
               '<h2 class="font-serif text-2xl sm:text-3xl text-obsidian-900">No. ' + i.number + ': ' + esc(i.title) + '</h2></div>' +
-              '<div class="text-xs font-mono text-obsidian-800/60">' + esc(i.published) + ' &bull; ' + i.articles.length + ' article' + (i.articles.length === 1 ? '' : 's') + '</div></div>' +
+              '<div class="text-xs font-mono text-obsidian-800/60">' + esc(i.published) + (i.upcoming ? '' : ' &bull; ' + i.articles.length + ' article' + (i.articles.length === 1 ? '' : 's')) + '</div></div>' +
             body + '</section>';
         }).join('');
         document.getElementById('empty').classList.toggle('hidden', !(filtering && shown === 0));
