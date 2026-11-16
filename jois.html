@@ -137,7 +137,7 @@
           <a href="jois-archive.html" class="text-xs font-semibold uppercase tracking-wider text-gold-700 hover:text-gold-600 inline-flex items-center gap-1.5">All volumes <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
         </div>
         <div class="w-12 h-0.5 gold-foil my-4"></div>
-        <p class="text-xs text-obsidian-800/60 mb-2">Select an article to read its summary, then open the full text as a PDF.</p>
+        <p id="cur-note" class="text-xs text-obsidian-800/60 mb-2">Select an article to read its summary, then open the full text as a PDF.</p>
         <div id="cur-list" class="border-t gold-border"></div>
       </section>
 
@@ -260,13 +260,21 @@
       var live = J.issues.filter(function (i) { return !i.upcoming && i.articles.length; });
       var cur = live[0];
       var total = 0; J.issues.forEach(function (i) { total += i.articles.length; });
-      document.getElementById('cover-issue').textContent = 'Vol. ' + cur.volume + ', No. ' + cur.number + ' (' + cur.year + ')';
-      document.getElementById('stat-articles').textContent = total;
+      if (cur) {
+        document.getElementById('cover-issue').textContent = 'Vol. ' + cur.volume + ', No. ' + cur.number + ' (' + cur.year + ')';
+        document.getElementById('cur-title').textContent = 'Vol. ' + cur.volume + ' No. ' + cur.number + ' (' + cur.year + '): ' + cur.title;
+        document.getElementById('cur-list').innerHTML = cur.articles.map(J.row).join('');
+      } else {
+        var nxt = J.issues[0];
+        document.getElementById('cover-issue').textContent = nxt ? 'Vol. ' + nxt.volume + ', No. ' + nxt.number + ' (' + nxt.year + ')' : '';
+        document.getElementById('cur-title').textContent = nxt ? 'Vol. ' + nxt.volume + ' No. ' + nxt.number + ' (' + nxt.year + '): ' + nxt.title : 'First issue';
+        document.getElementById('cur-note').style.display = 'none';
+        document.getElementById('cur-list').innerHTML = '<p class="py-8 text-sm text-obsidian-800/70 leading-relaxed">The first issue is in preparation. Peer-reviewed articles will be listed here as soon as review is complete. Preprints awaiting review are shown below. Submissions are open.</p>';
+      }
+      document.getElementById('stat-articles').textContent = total || 'First issue in preparation';
       document.getElementById('stat-pre').textContent = J.preprints.length;
       document.getElementById('pre-list').innerHTML = J.preprints.map(J.row).join('');
       if (!J.preprints.length) document.getElementById('preprints').style.display = 'none';
-      document.getElementById('cur-title').textContent = 'Vol. ' + cur.volume + ' No. ' + cur.number + ' (' + cur.year + '): ' + cur.title;
-      document.getElementById('cur-list').innerHTML = cur.articles.map(J.row).join('');
       document.getElementById('stream-list').innerHTML = J.streams.map(function (s, n) { return '<li class="bg-white rounded-2xl p-4 border gold-border flex gap-3 items-start"><span class="font-serif text-2xl text-gold-600 leading-none">' + (n + 1) + '</span><span class="text-sm font-medium text-obsidian-900 leading-snug pt-0.5">' + J.esc(s) + '</span></li>'; }).join('');
       if (window.lucide) lucide.createIcons();
     })();
